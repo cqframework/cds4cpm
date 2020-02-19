@@ -41,6 +41,7 @@ define "Lookback Date":
 define "Qualifying Query":
   AgeInYearsAt( start of "Timeframe" ) >= 18
     and "English Speaking Patient"
+    and exists ( "Office Visits During Timeframe" )
     and (
       "Has Qualifying Fibromyalgia Diagnosis"
         or "Has Qualifying Hip Osteoarthritis Diagnosis"
