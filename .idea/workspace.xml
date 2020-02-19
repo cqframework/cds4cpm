@@ -41,21 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initial-qualifying-query-r4.cql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="initial-qualifying-query-r4.cql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query-r4.cql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initial-qualifying-query-stu3.cql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="initial-qualifying-query-stu3.cql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query-stu3.cql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="51" />
+            <state relative-caret-position="90">
+              <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -80,21 +80,20 @@
             <state relative-caret-position="198">
               <caret line="163" column="58" lean-forward="false" selection-start-line="163" selection-start-column="58" selection-end-line="163" selection-end-column="58" />
               <folding>
-                <marker date="1582100875460" expanded="true" signature="18913:19484" ph="..." />
-                <marker date="1582100875460" expanded="true" signature="18913:19497" ph="..." />
-                <marker date="1582100875460" expanded="true" signature="18913:19535" ph="..." />
-                <marker date="1582100875460" expanded="true" signature="18913:19567" ph="..." />
-                <marker date="1582100875460" expanded="false" signature="18977:18991" ph="..." />
-                <marker date="1582100875460" expanded="true" signature="18992:19471" ph="..." />
-                <marker date="1582100875460" expanded="false" signature="19033:19047" ph="..." />
-                <marker date="1582100875460" expanded="false" signature="19116:19130" ph="..." />
-                <marker date="1582100875460" expanded="false" signature="19190:19204" ph="..." />
-                <marker date="1582100875460" expanded="false" signature="19336:19360" ph="..." />
-                <marker date="1582100875460" expanded="true" signature="19654:19779" ph="..." />
-                <marker date="1582100875460" expanded="true" signature="19714:19747" ph="..." />
-                <marker date="1582100875460" expanded="true" signature="19861:19941" ph="..." />
-                <marker date="1582100875460" expanded="true" signature="20414:20470" ph="..." />
-                <marker date="1582100875460" expanded="true" signature="20483:20553" ph="..." />
+                <marker date="1582101174082" expanded="true" signature="19081:19652" ph="..." />
+                <marker date="1582101174082" expanded="true" signature="19081:19665" ph="..." />
+                <marker date="1582101174082" expanded="true" signature="19081:19703" ph="..." />
+                <marker date="1582101174082" expanded="true" signature="19081:19735" ph="..." />
+                <marker date="1582101174082" expanded="false" signature="19145:19159" ph="..." />
+                <marker date="1582101174082" expanded="true" signature="19160:19639" ph="..." />
+                <marker date="1582101174082" expanded="false" signature="19201:19215" ph="..." />
+                <marker date="1582101174082" expanded="false" signature="19284:19298" ph="..." />
+                <marker date="1582101174082" expanded="false" signature="19358:19372" ph="..." />
+                <marker date="1582101174082" expanded="false" signature="19504:19528" ph="..." />
+                <marker date="1582101174082" expanded="true" signature="19822:19947" ph="..." />
+                <marker date="1582101174082" expanded="true" signature="19882:19915" ph="..." />
+                <marker date="1582101174082" expanded="true" signature="20029:20109" ph="..." />
+                <marker date="1582101174082" expanded="true" signature="20651:20721" ph="..." />
               </folding>
             </state>
           </provider>
@@ -157,8 +156,8 @@
         <option value="$PROJECT_DIR$/input/cds4cpm.xml" />
         <option value="$PROJECT_DIR$/input/pagecontent/index.md" />
         <option value="$PROJECT_DIR$/input/pagecontent/qualifying-query.md" />
-        <option value="$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query-stu3.cql" />
         <option value="$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query-r4.cql" />
+        <option value="$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query-stu3.cql" />
       </list>
     </option>
   </component>
@@ -332,12 +331,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581983219917</updated>
-      <workItem from="1581983221192" duration="16140000" />
+      <workItem from="1581983221192" duration="16749000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16140000" />
+    <option name="totallyTimeSpent" value="16749000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -494,21 +493,20 @@
         <state relative-caret-position="198">
           <caret line="163" column="58" lean-forward="false" selection-start-line="163" selection-start-column="58" selection-end-line="163" selection-end-column="58" />
           <folding>
-            <marker date="1582100875460" expanded="true" signature="18913:19484" ph="..." />
-            <marker date="1582100875460" expanded="true" signature="18913:19497" ph="..." />
-            <marker date="1582100875460" expanded="true" signature="18913:19535" ph="..." />
-            <marker date="1582100875460" expanded="true" signature="18913:19567" ph="..." />
-            <marker date="1582100875460" expanded="false" signature="18977:18991" ph="..." />
-            <marker date="1582100875460" expanded="true" signature="18992:19471" ph="..." />
-            <marker date="1582100875460" expanded="false" signature="19033:19047" ph="..." />
-            <marker date="1582100875460" expanded="false" signature="19116:19130" ph="..." />
-            <marker date="1582100875460" expanded="false" signature="19190:19204" ph="..." />
-            <marker date="1582100875460" expanded="false" signature="19336:19360" ph="..." />
-            <marker date="1582100875460" expanded="true" signature="19654:19779" ph="..." />
-            <marker date="1582100875460" expanded="true" signature="19714:19747" ph="..." />
-            <marker date="1582100875460" expanded="true" signature="19861:19941" ph="..." />
-            <marker date="1582100875460" expanded="true" signature="20414:20470" ph="..." />
-            <marker date="1582100875460" expanded="true" signature="20483:20553" ph="..." />
+            <marker date="1582101174082" expanded="true" signature="19081:19652" ph="..." />
+            <marker date="1582101174082" expanded="true" signature="19081:19665" ph="..." />
+            <marker date="1582101174082" expanded="true" signature="19081:19703" ph="..." />
+            <marker date="1582101174082" expanded="true" signature="19081:19735" ph="..." />
+            <marker date="1582101174082" expanded="false" signature="19145:19159" ph="..." />
+            <marker date="1582101174082" expanded="true" signature="19160:19639" ph="..." />
+            <marker date="1582101174082" expanded="false" signature="19201:19215" ph="..." />
+            <marker date="1582101174082" expanded="false" signature="19284:19298" ph="..." />
+            <marker date="1582101174082" expanded="false" signature="19358:19372" ph="..." />
+            <marker date="1582101174082" expanded="false" signature="19504:19528" ph="..." />
+            <marker date="1582101174082" expanded="true" signature="19822:19947" ph="..." />
+            <marker date="1582101174082" expanded="true" signature="19882:19915" ph="..." />
+            <marker date="1582101174082" expanded="true" signature="20029:20109" ph="..." />
+            <marker date="1582101174082" expanded="true" signature="20651:20721" ph="..." />
           </folding>
         </state>
       </provider>
@@ -535,18 +533,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query-stu3.cql">
+    <entry file="file://$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query-r4.cql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="51" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query-r4.cql">
+    <entry file="file://$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query-stu3.cql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+        <state relative-caret-position="90">
+          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
           <folding />
         </state>
       </provider>

@@ -1,21 +1,5 @@
 library InitialQualifyingQuerySTU3 version '1.0'
 
-/*
-
-- timeframe is [2019 January 1 - Current Day]
-- office visit (should be encounter type 101) in timeframe
-- in problem list as an active problem OR was a visit diagnosis since timeframe
-- Patient is >=18 on or after and including 1/1/2019
-- Patient is English speaking
-- Target sites – clinics/providers (MUST SPECIFY) with visit (what kind? – probably an office visit) on or after and including 1/1/2019
-- Diagnosis (provider diagnosis or outpatient encounter diagnosis) for a visit that becomes the billing diagnosis OR active problem within timeframe
-  - Fibromyalgia
-  - Hip osteoarthritis
-  - Knee osteoarthritis
-  - Lower back pain
-
-*/
-
 using FHIR version '3.0.0'
 
 include FHIRHelpers version '3.0.0' called FHIRHelpers
