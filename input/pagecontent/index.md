@@ -8,7 +8,7 @@ pain management use cases.
 - Gap analysis of CDS connect (TODO)
 - Assessment of how we get CDS content into PMD (TODO)
 
-**Outstanding Questions**
+**Questions**
 - How you get PM to call PDMP repos through Arganot ONC meds IG?
 - How you get PMD to show results form MyPain?
 - How you get MyPain to work at all? Dynamic? Manual?
