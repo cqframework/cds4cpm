@@ -5,7 +5,8 @@ chronic pain management.
 
 ### Scope
 
-- Gap analysis of CDS connect (TODO)
+- [Initial Qualifying Query](qualifying-query.html) (IN PROGRESS)
+- [Gap analysis of CDS connect](fhir-to-cdsconnect-gap-analysis.html) (IN PROGRESS)
 - Assessment of how we get CDS content into PMD (TODO)
 
 **Questions**
@@ -15,5 +16,3 @@ chronic pain management.
 - How you get MyPain to take answers and plug them into sidecar? Or EHR? Or both?
 
 ### Getting Started
-
-[Initial Qualifying Query](qualifying-query.html)
