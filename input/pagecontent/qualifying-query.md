@@ -1,4 +1,4 @@
-### Initial Qualifying Query
+### Introduction
 
 The initial qualifying query defines a set of patients that qualify for chronic pain management for the following 
 **diagnoses/problems** during a specified **timeframe**:

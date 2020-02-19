@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6cdb0adf-aebc-404a-9b2f-e064ab26314d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/input/pagecontent/index.md" afterPath="$PROJECT_DIR$/input/pagecontent/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/input/pagecontent/qualifying-query.md" afterPath="$PROJECT_DIR$/input/pagecontent/qualifying-query.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,12 +27,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input/pagecontent/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="120">
-                <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+              <first_editor relative-caret-position="240">
+                <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -60,12 +60,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qualifying-query.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="qualifying-query.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/input/pagecontent/qualifying-query.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="210">
-                <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -79,21 +79,21 @@
             <state relative-caret-position="198">
               <caret line="163" column="58" lean-forward="false" selection-start-line="163" selection-start-column="58" selection-end-line="163" selection-end-column="58" />
               <folding>
-                <marker date="1582100643252" expanded="true" signature="18973:19544" ph="..." />
-                <marker date="1582100643252" expanded="true" signature="18973:19557" ph="..." />
-                <marker date="1582100643252" expanded="true" signature="18973:19595" ph="..." />
-                <marker date="1582100643252" expanded="true" signature="18973:19627" ph="..." />
-                <marker date="1582100643252" expanded="false" signature="19037:19051" ph="..." />
-                <marker date="1582100643252" expanded="true" signature="19052:19531" ph="..." />
-                <marker date="1582100643252" expanded="false" signature="19093:19107" ph="..." />
-                <marker date="1582100643252" expanded="false" signature="19176:19190" ph="..." />
-                <marker date="1582100643252" expanded="false" signature="19250:19264" ph="..." />
-                <marker date="1582100643252" expanded="false" signature="19396:19420" ph="..." />
-                <marker date="1582100643252" expanded="true" signature="19714:19839" ph="..." />
-                <marker date="1582100643252" expanded="true" signature="19774:19807" ph="..." />
-                <marker date="1582100643252" expanded="true" signature="19921:20001" ph="..." />
-                <marker date="1582100643252" expanded="true" signature="20474:20530" ph="..." />
-                <marker date="1582100643252" expanded="true" signature="20543:20613" ph="..." />
+                <marker date="1582100875460" expanded="true" signature="18913:19484" ph="..." />
+                <marker date="1582100875460" expanded="true" signature="18913:19497" ph="..." />
+                <marker date="1582100875460" expanded="true" signature="18913:19535" ph="..." />
+                <marker date="1582100875460" expanded="true" signature="18913:19567" ph="..." />
+                <marker date="1582100875460" expanded="false" signature="18977:18991" ph="..." />
+                <marker date="1582100875460" expanded="true" signature="18992:19471" ph="..." />
+                <marker date="1582100875460" expanded="false" signature="19033:19047" ph="..." />
+                <marker date="1582100875460" expanded="false" signature="19116:19130" ph="..." />
+                <marker date="1582100875460" expanded="false" signature="19190:19204" ph="..." />
+                <marker date="1582100875460" expanded="false" signature="19336:19360" ph="..." />
+                <marker date="1582100875460" expanded="true" signature="19654:19779" ph="..." />
+                <marker date="1582100875460" expanded="true" signature="19714:19747" ph="..." />
+                <marker date="1582100875460" expanded="true" signature="19861:19941" ph="..." />
+                <marker date="1582100875460" expanded="true" signature="20414:20470" ph="..." />
+                <marker date="1582100875460" expanded="true" signature="20483:20553" ph="..." />
               </folding>
             </state>
           </provider>
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query.cql" />
         <option value="$PROJECT_DIR$/input/pagecontent/cql/initial-qualifying-query-stu3.cql" />
         <option value="$PROJECT_DIR$/input/cds4cpm.xml" />
-        <option value="$PROJECT_DIR$/input/pagecontent/qualifying-query.md" />
         <option value="$PROJECT_DIR$/input/pagecontent/index.md" />
+        <option value="$PROJECT_DIR$/input/pagecontent/qualifying-query.md" />
       </list>
     </option>
   </component>
@@ -330,12 +330,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581983219917</updated>
-      <workItem from="1581983221192" duration="15814000" />
+      <workItem from="1581983221192" duration="15979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15814000" />
+    <option name="totallyTimeSpent" value="15979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -348,7 +348,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1329" y="80" width="1329" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -357,7 +356,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="RNConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -508,41 +507,41 @@
         <state relative-caret-position="198">
           <caret line="163" column="58" lean-forward="false" selection-start-line="163" selection-start-column="58" selection-end-line="163" selection-end-column="58" />
           <folding>
-            <marker date="1582100643252" expanded="true" signature="18973:19544" ph="..." />
-            <marker date="1582100643252" expanded="true" signature="18973:19557" ph="..." />
-            <marker date="1582100643252" expanded="true" signature="18973:19595" ph="..." />
-            <marker date="1582100643252" expanded="true" signature="18973:19627" ph="..." />
-            <marker date="1582100643252" expanded="false" signature="19037:19051" ph="..." />
-            <marker date="1582100643252" expanded="true" signature="19052:19531" ph="..." />
-            <marker date="1582100643252" expanded="false" signature="19093:19107" ph="..." />
-            <marker date="1582100643252" expanded="false" signature="19176:19190" ph="..." />
-            <marker date="1582100643252" expanded="false" signature="19250:19264" ph="..." />
-            <marker date="1582100643252" expanded="false" signature="19396:19420" ph="..." />
-            <marker date="1582100643252" expanded="true" signature="19714:19839" ph="..." />
-            <marker date="1582100643252" expanded="true" signature="19774:19807" ph="..." />
-            <marker date="1582100643252" expanded="true" signature="19921:20001" ph="..." />
-            <marker date="1582100643252" expanded="true" signature="20474:20530" ph="..." />
-            <marker date="1582100643252" expanded="true" signature="20543:20613" ph="..." />
+            <marker date="1582100875460" expanded="true" signature="18913:19484" ph="..." />
+            <marker date="1582100875460" expanded="true" signature="18913:19497" ph="..." />
+            <marker date="1582100875460" expanded="true" signature="18913:19535" ph="..." />
+            <marker date="1582100875460" expanded="true" signature="18913:19567" ph="..." />
+            <marker date="1582100875460" expanded="false" signature="18977:18991" ph="..." />
+            <marker date="1582100875460" expanded="true" signature="18992:19471" ph="..." />
+            <marker date="1582100875460" expanded="false" signature="19033:19047" ph="..." />
+            <marker date="1582100875460" expanded="false" signature="19116:19130" ph="..." />
+            <marker date="1582100875460" expanded="false" signature="19190:19204" ph="..." />
+            <marker date="1582100875460" expanded="false" signature="19336:19360" ph="..." />
+            <marker date="1582100875460" expanded="true" signature="19654:19779" ph="..." />
+            <marker date="1582100875460" expanded="true" signature="19714:19747" ph="..." />
+            <marker date="1582100875460" expanded="true" signature="19861:19941" ph="..." />
+            <marker date="1582100875460" expanded="true" signature="20414:20470" ph="..." />
+            <marker date="1582100875460" expanded="true" signature="20483:20553" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input/pagecontent/qualifying-query.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="210">
-            <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/input/pagecontent/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="120">
-            <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <first_editor relative-caret-position="240">
+            <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/pagecontent/qualifying-query.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
             <folding />
           </first_editor>
           <second_editor />
