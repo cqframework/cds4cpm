@@ -27,6 +27,11 @@
         <title value="IG Home Page" />
         <generation value="markdown" />
       </page>
+      <page>
+        <nameUrl value="qualifying-query.html" />
+        <title value="Initial Qualifying Query Page" />
+        <generation value="markdown" />
+      </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
