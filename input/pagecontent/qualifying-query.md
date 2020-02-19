@@ -1,6 +1,6 @@
 ### Introduction
 
-The initial qualifying query defines a set of patients that qualify for chronic pain management for the following 
+The initial qualifying query defines a set of patients that qualify for chronic pain management with the following 
 **diagnoses/problems** during a specified **timeframe**:
 - Fibromyalgia
 - Hip osteoarthritis
@@ -9,7 +9,7 @@ The initial qualifying query defines a set of patients that qualify for chronic 
 
 ### Functional Description
 
-The **timeframe** is specified as an interval from 1/1/2019 to the current day.
+The **timeframe** is specified as an interval from January 1st of the prior year to the current day.
 
 The patient must be 18 years or older at the beginning of the **timeframe**.
 
