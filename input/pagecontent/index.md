@@ -1,7 +1,7 @@
 ### Introduction
 
-The purpose of this implementation guide is to provide clinical decision support, documentation and guidance for chronic 
-pain management use cases.
+This implementation guide provides resources and discussion in support of clinical decision support use cases for 
+chronic pain management.
 
 ### Scope
 
