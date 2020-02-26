@@ -1,0 +1,59 @@
+@startuml "sequence-use-case-1"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+skinparam backgroundColor #FFFFFF
+
+title DRAFT: Use Case 1 Sequence Chart
+
+skinparam sequence {
+	ArrowColor #666666
+    ArrowFontColor #666666
+    ArrowFontSize 12
+
+    DelayFontColor #666666
+    DelayFontSize 12
+
+    ActorBorderColor #3C7FC0
+    ActorBackgroundColor #1168BD
+    ActorFontColor #000000
+    ActorShadowing false
+    ActorFontSize 12
+
+	ParticipantBorderColor #3C7FC0
+    ParticipantBackgroundColor #1168BD
+    ParticipantFontColor #FFFFFF
+    ParticipantShadowing false
+    ParticipantFontSize 12
+    
+	LifeLineBorderColor #1168BD
+}
+
+
+hide footbox
+
+== Assessment ==
+Trigger -> Epic: Appointment
+Epic -> Phenotype: Request Care Pathway
+Phenotype --> Epic: Return MyPain Pathway
+actor "Mr. Delta" as Patient
+Epic -> Patient: Notification of MyPain Availability
+Patient -> MyPain: Launches
+MyPain -> Patient: Gives Assessment
+Patient --> MyPain: Completes Assessment
+MyPain --> Epic: Saves Assessment
+
+== Encounter ==
+actor "Dr. Charlie" as DR
+
+DR -> PainManager: Launches
+PainManager --> DR: Returns Guidance
+DR <-> Patient: Shared Decision Making
+DR -> PainManager: Notes Result of SDM
+PainManager --> Epic: Saves Encounter
+
+
+
+
+@enduml

@@ -1,0 +1,44 @@
+@startuml "container-mypain"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+skinparam backgroundColor #FFFFFF
+
+title DRAFT: MyPain Container Diagram
+
+Person(patient, "Patient")
+Person(clinician, "Clinician")
+
+System(epic, "Epic", "EHR providing SMART-on-FHIR support")
+System(pm, "PainManager", "Provider facing CDS and dashboard")
+'System(mp, "MyPAIN", "Patient facing CDS and dashboard")
+
+System_Boundary(mp, "MyPain") {
+    Container(mp_user, "MyPain App", "Web / Phone Application", "Patient Portal")
+    Container(mp_service, "MyPain Services", "Technology TBD", "CDS, Questionnaire")
+
+    Rel_L(mp_user, mp_service, "Uses")
+}
+
+'System_Ext(mc, "MyChart")
+SystemDb(pdmp, "PDMP")
+
+Rel_D(pm, pdmp, "Writes to")
+' Rel_D(mp_user, epic, "Reads from and Writes to")
+Rel_D(mp_service, epic, "Reads from and Writes to")
+
+Rel_U(epic, patient, "Notifies", "via MyChart app, e-mail, or other communication")
+'Rel(mc, mp, "Launches")
+Rel_D(patient, mp_user, "Uses")
+'Rel(mc, epic, "Reads from")
+Rel(clinician, pm, "Uses")
+
+clinician <-> patient: ===Performs SDM with
+
+'Lay_D(patient, mp)
+Lay_D(clinician, mp)
+'Lay_D(mp, epic)
+
+
+@enduml

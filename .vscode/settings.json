@@ -1,0 +1,14 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": true
+    },
+    
+    "markdownlint.config": {
+        "MD003": { "style": "atx" },
+        "MD041": false
+    },
+    
+    "plantuml.exportOutDir": "input/pagecontent/assets/diagrams",
+    "plantuml.exportSubFolder": false,
+    "plantuml.diagramsRoot": "input/diagrams"
+}

@@ -1,0 +1,48 @@
+@startuml "container-epic"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+skinparam backgroundColor #FFFFFF
+
+title DRAFT: Epic Container Diagram
+
+Person(patient, "Patient")
+Person(clinician, "Clinician")
+
+System_Boundary(epic, "Epic") {
+    Container(mc, "MyChart", "Web / Phone Application", "Epic's Patient Portal")
+    ContainerDb(epic_repo, "Epic", "Server", "Clinical data repository")
+    Container(scheduling, "Scheduling", "Epic's Sheduling")
+    Container(phenotype, "Phenotype", "cds-hooks (or similar)", "Determines care pathway")
+    Container(adapter, "Site Specific Adapter", "FHIR REST")
+    Rel(mc, epic_repo, "Reads data from")
+    Rel_R(scheduling, epic_repo, "Writes appointments to")
+    Rel_R(epic_repo, phenotype, "Uses")
+
+    Rel(adapter, epic_repo, "Reads from and Writes to")
+}
+
+System(pm, "PainManager", "Provider facing CDS and dashboard")
+System(mp, "MyPAIN", "Patient facing CDS and dashboard")
+'System_Ext(mc, "MyChart")
+SystemDb(pdmp, "PDMP")
+
+Rel_L(pm, pdmp, "Writes to")
+Rel_D(pm, adapter, "Reads from and Writes to")
+Rel_D(mp, adapter, "Reads from and Writes to")
+
+Rel(mc, patient, "Notifies")
+'Rel(mc, mp, "Launches")
+Rel(patient, mp, "Uses")
+'Rel(mc, epic, "Reads from")
+Rel(clinician, pm, "Uses")
+
+clinician <-> patient: ===Performs SDM with
+
+Lay_D(mp, epic)
+Lay_D(pm, epic)
+
+
+
+@enduml

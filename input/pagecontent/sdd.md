@@ -110,9 +110,19 @@ Both components are planned to be implemented as Substitutable Medical Applicati
 
 As of the time of this writing there are several open questions that need to be addressed in order ot fully define the system architecture, including potential shared components for MyPain and PainManager or site-specific services for the integration of these components into an EHR environment. As noted above the PainManager will be based on the PMD. There is a pre-existing system called PatientWisdom that is being considered for use as the basis of MyPain.
 
-The diagrams in this document follow the C4 model for visualizing software architecture, which represents four levels granularity (Context, Containers, Components, Code). The following diagram is at the coarsest level of granularity.
+The following is high-level diagram showing the main systems and their interactions:
 
 Diagram 1 - Context Diagram for CDS4CPM
+![Diagram 1](assets/diagrams/context.svg)
+
+Diagram 2 - Container Diagram for Epic
+![Diagram 2](assets/diagrams/container-epic.svg)
+
+Diagram 3 - Container Diagram for MyPain
+![Diagram 3](assets/diagrams/container-mypain.svg)
+
+Diagram 4 - Container Diagram for PainManager
+![Diagram 3](assets/diagrams/container-painmanager.svg)
 
 ### 2.2 Assumptions/Constraints/Risks
 
@@ -362,11 +372,11 @@ Assessments: Several assessments are under consideration for inclusion in MyPAIN
 
 Exhibit XX: Sample PROMIS User Interface for CAT
 
-![Exhibit XX](images/promis-sample-cat.png)
+![Exhibit XX](assets/images/promis-sample-cat.png)
 
 Exhibit YY: Sample PROMIS User Interface for CAT
 
-![Exhibit YY](images/promis-sample-cat-2.png)
+![Exhibit YY](assets/images/promis-sample-cat-2.png)
 
 **PainManager**
 
@@ -374,7 +384,7 @@ The basic UI of the existing PMD artifact will persist in this system. The curre
 
 Exhibit ZZ: Sample User Interface for PainManager Based on the PMD
 
-![Exhibit ZZ](images/pain-manager-interface.png)
+![Exhibit ZZ](assets/images/pain-manager-interface.png)
 
 #### 5.5.1 Section 508 Compliance
 
@@ -395,6 +405,11 @@ Typical use case scenarios include:
         (1) When a chronic lower back pain patient with no history of recent opioid use schedules a pain-related appointment with their primary care provider:
 
 Mr. Delta, a 43-year-old patient with a recent history of chronic lower back pain schedules a visit with Dr. Charlie and cites his back pain as his primary reason for the visit. The system identifies Mr. Delta, who has no history of recent opioid use [1, see p. 24 for definition used for PMD], as a candidate to receive an invitation to MyPAIN. Before his visit, Mr. Delta receives an invitation to MyPAIN via the local EHR patient portal, MyChart. Mr. Delta accesses MyPAIN and spends about 15 minutes or less reviewing educational material and completing assessments, including indicating how ready he is for his upcoming SDM encounter with Dr. Charlie. When Mr. Delta finishes and exits MyPain or the linked materials, the system automatically sends Dr. Charlie a secure message that Mr. Delta’s materials from MyPAIN are ready for review. Just prior to his visit with Mr. Delta, Dr. Charlie spends a few minutes reviewing the information assembled for his SDM encounter in PainManager which includes all of the information Mr. Delta submitted via MyPAIN. Dr. Charlie notes that Mr. Delta’s pain functional status has been unacceptably low, and his pain level has remained elevated over the past 6 months. When Mr. Delta arrives for his visit, Dr. Charlie discusses possible therapeutic approaches with Mr. Delta using the SHARE framework for SDM. Noting that no non-pharmacologic treatments have been ordered for Mr. Delta in the past 6 months, Dr. Charlie recommends physical therapy to Mr. Delta to help improve his functional status as well as acupuncture to reduce his level of pain. Mr. Delta agrees to both options for treatment and this information is documented by Dr. Charlie.
+
+The following diagram represents the interaction of the system components for this use case:
+
+Diagram UC1 - Use Case 1 Sequence Diagram
+![Diagram UC1](assets/diagrams/sequence-use-case-1.svg)
 
         (2) When a patient with chronic osteoarthritic knee and hip pain has a history of recent opioid use schedules a pain-related appointment with their primary care provider:
 

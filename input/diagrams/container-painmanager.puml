@@ -1,0 +1,43 @@
+@startuml "container-painmanager"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+skinparam backgroundColor #FFFFFF
+
+title DRAFT: PainManager Container Diagram
+
+Person(patient, "Patient")
+Person(clinician, "Clinician")
+
+System_Ext(epic, "Epic", "EHR providing SMART-on-FHIR support")
+System(pm, "PainManager", "Provider facing CDS and dashboard")
+'System(mp, "MyPAIN", "Patient facing CDS and dashboard")
+
+System(epic, "Epic", "EHR providing SMART-on-FHIR support")
+
+System_Boundary(pm, "PainManager") {
+    Container(pm_dashboard, "PainManager Dashboard", "SMART-on-FHIR / Javascript", "Provider Portal")
+    Container(pm_cds, "PainManager CDS", "cds-hooks", "Provides Opioid Prescription Support")
+    Rel_L(pm_dashboard, pm_cds, "Uses")
+}
+
+System(mp, "MyPAIN", "Patient facing CDS and dashboard")
+'System_Ext(mc, "MyChart")
+SystemDb(pdmp, "PDMP")
+
+Rel(pm_dashboard, pdmp, "Writes to")
+Rel(pm_dashboard, epic, "Reads from and Writes to")
+Rel(mp, epic, "Reads from and Writes to")
+
+Rel_U(epic, patient, "Notifies", "via MyChart app, e-mail, or other communication")
+'Rel(mc, mp, "Launches")
+Rel(patient, mp, "Uses")
+'Rel(mc, epic, "Reads from")
+Rel(clinician, pm_dashboard, "Uses")
+
+
+clinician <-> patient: ===Performs SDM with
+
+
+@enduml

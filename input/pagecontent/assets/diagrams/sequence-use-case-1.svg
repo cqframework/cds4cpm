@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="606px" preserveAspectRatio="none" style="width:851px;height:606px;" version="1.1" viewBox="0 0 851 606" width="851px" zoomAndPan="magnify"><defs><filter height="300%" id="fb7si8v4gyji0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="283" x="279.75" y="22.9951">DRAFT: Use Case 1 Sequence Chart</text><line style="stroke: #1168BD; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="37" x2="37" y1="110.2656" y2="594.0938"/><line style="stroke: #1168BD; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="141" x2="141" y1="110.2656" y2="594.0938"/><line style="stroke: #1168BD; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="309.5" x2="309.5" y1="110.2656" y2="594.0938"/><line style="stroke: #1168BD; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="391.5" x2="391.5" y1="110.2656" y2="594.0938"/><line style="stroke: #1168BD; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="561" x2="561" y1="110.2656" y2="594.0938"/><line style="stroke: #1168BD; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="635" x2="635" y1="110.2656" y2="594.0938"/><line style="stroke: #1168BD; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="786.5" x2="786.5" y1="110.2656" y2="594.0938"/><rect fill="#1168BD" height="27.9688" style="stroke: #3C7FC0; stroke-width: 1.5;" width="58" x="8" y="81.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="44" x="15" y="99.4355">Trigger</text><rect fill="#1168BD" height="27.9688" style="stroke: #3C7FC0; stroke-width: 1.5;" width="40" x="121" y="81.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="26" x="128" y="99.4355">Epic</text><rect fill="#1168BD" height="27.9688" style="stroke: #3C7FC0; stroke-width: 1.5;" width="81" x="269.5" y="81.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="67" x="276.5" y="99.4355">Phenotype</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="360.5" y="107.4355">Mr. Delta</text><ellipse cx="391.5" cy="43.2969" fill="#1168BD" rx="8" ry="8" style="stroke: #3C7FC0; stroke-width: 2.0;"/><path d="M391.5,51.2969 L391.5,78.2969 M378.5,59.2969 L404.5,59.2969 M391.5,78.2969 L378.5,93.2969 M391.5,78.2969 L404.5,93.2969 " fill="none" style="stroke: #3C7FC0; stroke-width: 2.0;"/><rect fill="#1168BD" height="27.9688" style="stroke: #3C7FC0; stroke-width: 1.5;" width="57" x="533" y="81.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="43" x="540" y="99.4355">MyPain</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="600" y="107.4355">Dr. Charlie</text><ellipse cx="635.5" cy="43.2969" fill="#1168BD" rx="8" ry="8" style="stroke: #3C7FC0; stroke-width: 2.0;"/><path d="M635.5,51.2969 L635.5,78.2969 M622.5,59.2969 L648.5,59.2969 M635.5,78.2969 L622.5,93.2969 M635.5,78.2969 L648.5,93.2969 " fill="none" style="stroke: #3C7FC0; stroke-width: 2.0;"/><rect fill="#1168BD" height="27.9688" style="stroke: #3C7FC0; stroke-width: 1.5;" width="96" x="738.5" y="81.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="745.5" y="99.4355">PainManager</text><rect fill="#EEEEEE" filter="url(#fb7si8v4gyji0)" height="3" style="stroke: #EEEEEE; stroke-width: 1.0;" width="836.5" x="3" y="140.832"/><line style="stroke: #000000; stroke-width: 1.0;" x1="3" x2="839.5" y1="140.832" y2="140.832"/><line style="stroke: #000000; stroke-width: 1.0;" x1="3" x2="839.5" y1="143.832" y2="143.832"/><rect fill="#EEEEEE" filter="url(#fb7si8v4gyji0)" height="23.1328" style="stroke: #000000; stroke-width: 2.0;" width="108" x="367.25" y="130.2656"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="89" x="373.25" y="146.3325">Assessment</text><polygon fill="#666666" points="129,179.3672,139,183.3672,129,187.3672,133,183.3672" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0;" x1="37" x2="135" y1="183.3672" y2="183.3672"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80" x="44" y="178.5371">Appointment</text><polygon fill="#666666" points="298,207.3359,308,211.3359,298,215.3359,302,211.3359" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0;" x1="141" x2="304" y1="211.3359" y2="211.3359"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="141" x="148" y="206.5059">Request Care Pathway</text><polygon fill="#666666" points="152,235.3047,142,239.3047,152,243.3047,148,239.3047" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="146" x2="309" y1="239.3047" y2="239.3047"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="145" x="158" y="234.4746">Return MyPain Pathway</text><polygon fill="#666666" points="379.5,277.2422,389.5,281.2422,379.5,285.2422,383.5,281.2422" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0;" x1="141" x2="385.5" y1="281.2422" y2="281.2422"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="134" x="148" y="262.4434">Notification of MyPain</text><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="148" y="276.4121">Availability</text><polygon fill="#666666" points="549.5,305.2109,559.5,309.2109,549.5,313.2109,553.5,309.2109" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0;" x1="391.5" x2="555.5" y1="309.2109" y2="309.2109"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="398.5" y="304.3809">Launches</text><polygon fill="#666666" points="402.5,333.1797,392.5,337.1797,402.5,341.1797,398.5,337.1797" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0;" x1="396.5" x2="560.5" y1="337.1797" y2="337.1797"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="113" x="408.5" y="332.3496">Gives Assessment</text><polygon fill="#666666" points="549.5,361.1484,559.5,365.1484,549.5,369.1484,553.5,365.1484" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="391.5" x2="555.5" y1="365.1484" y2="365.1484"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="146" x="398.5" y="360.3184">Completes Assessment</text><polygon fill="#666666" points="152,389.1172,142,393.1172,152,397.1172,148,393.1172" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="146" x2="560.5" y1="393.1172" y2="393.1172"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="117" x="158" y="388.2871">Saves Assessment</text><rect fill="#EEEEEE" filter="url(#fb7si8v4gyji0)" height="3" style="stroke: #EEEEEE; stroke-width: 1.0;" width="836.5" x="3" y="421.6836"/><line style="stroke: #000000; stroke-width: 1.0;" x1="3" x2="839.5" y1="421.6836" y2="421.6836"/><line style="stroke: #000000; stroke-width: 1.0;" x1="3" x2="839.5" y1="424.6836" y2="424.6836"/><rect fill="#EEEEEE" filter="url(#fb7si8v4gyji0)" height="23.1328" style="stroke: #000000; stroke-width: 2.0;" width="93" x="374.75" y="411.1172"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="74" x="380.75" y="427.1841">Encounter</text><polygon fill="#666666" points="774.5,460.2188,784.5,464.2188,774.5,468.2188,778.5,464.2188" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0;" x1="635.5" x2="780.5" y1="464.2188" y2="464.2188"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="642.5" y="459.3887">Launches</text><polygon fill="#666666" points="646.5,488.1875,636.5,492.1875,646.5,496.1875,642.5,492.1875" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="640.5" x2="785.5" y1="492.1875" y2="492.1875"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="112" x="652.5" y="487.3574">Returns Guidance</text><polygon fill="#666666" points="402.5,516.1563,392.5,520.1563,402.5,524.1563,398.5,520.1563" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="623.5,516.1563,633.5,520.1563,623.5,524.1563,627.5,520.1563" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0;" x1="396.5" x2="629.5" y1="520.1563" y2="520.1563"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="150" x="408.5" y="515.3262">Shared Decision Making</text><polygon fill="#666666" points="774.5,544.125,784.5,548.125,774.5,552.125,778.5,548.125" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0;" x1="635.5" x2="780.5" y1="548.125" y2="548.125"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="127" x="642.5" y="543.2949">Notes Result of SDM</text><polygon fill="#666666" points="152,572.0938,142,576.0938,152,580.0938,148,576.0938" style="stroke: #666666; stroke-width: 1.0;"/><line style="stroke: #666666; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="146" x2="785.5" y1="576.0938" y2="576.0938"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="106" x="158" y="571.2637">Saves Encounter</text><!--
+@startuml "sequence-use-case-1"
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam database<<component>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+
+
+
+
+skinparam backgroundColor #FFFFFF
+
+title DRAFT: Use Case 1 Sequence Chart
+
+skinparam sequence {
+	ArrowColor #666666
+    ArrowFontColor #666666
+    ArrowFontSize 12
+
+    DelayFontColor #666666
+    DelayFontSize 12
+
+    ActorBorderColor #3C7FC0
+    ActorBackgroundColor #1168BD
+    ActorFontColor #000000
+    ActorShadowing false
+    ActorFontSize 12
+
+	ParticipantBorderColor #3C7FC0
+    ParticipantBackgroundColor #1168BD
+    ParticipantFontColor #FFFFFF
+    ParticipantShadowing false
+    ParticipantFontSize 12
+    
+	LifeLineBorderColor #1168BD
+}
+
+
+hide footbox
+
+== Assessment ==
+Trigger -> Epic: Appointment
+Epic -> Phenotype: Request Care Pathway
+Phenotype - -> Epic: Return MyPain Pathway
+actor "Mr. Delta" as Patient
+Epic -> Patient: Notification of MyPain Availability
+Patient -> MyPain: Launches
+MyPain -> Patient: Gives Assessment
+Patient - -> MyPain: Completes Assessment
+MyPain - -> Epic: Saves Assessment
+
+== Encounter ==
+actor "Dr. Charlie" as DR
+
+DR -> PainManager: Launches
+PainManager - -> DR: Returns Guidance
+DR <-> Patient: Shared Decision Making
+DR -> PainManager: Notes Result of SDM
+PainManager - -> Epic: Saves Encounter
+
+
+
+
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 10:19:51 MDT 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Eclipse OpenJ9 VM
+Java Version: 11.0.6+10
+Operating System: Linux
+OS Version: 5.3.0-40-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,32 @@
+@startuml "context"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Context.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+skinparam backgroundColor #FFFFFF
+
+title DRAFT: CDS4CPM Context Diagram
+
+Person(patient, "Patient")
+Person(clinician, "Clinician")
+
+System_Ext(epic, "Epic", "EHR providing SMART-on-FHIR support")
+System(pm, "PainManager", "Provider facing CDS and dashboard")
+System(mp, "MyPAIN", "Patient facing CDS and dashboard")
+'System_Ext(mc, "MyChart")
+SystemDb(pdmp, "PDMP")
+
+Rel_D(pm, pdmp, "Writes to")
+Rel_D(pm, epic, "Reads from and Writes to")
+Rel_D(mp, epic, "Reads from and Writes to")
+
+Rel(epic, patient, "Notifies", "via MyChart, e-mail, or other communication")
+'Rel(mc, mp, "Launches")
+Rel(patient, mp, "Uses")
+'Rel(mc, epic, "Reads from")
+Rel(clinician, pm, "Uses")
+
+clinician <-> patient: ===Performs SDM with
+
+
+@enduml

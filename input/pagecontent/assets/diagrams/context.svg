@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="432px" preserveAspectRatio="none" style="width:631px;height:432px;" version="1.1" viewBox="0 0 631 432" width="631px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="320" x="159.5" y="16.708">DRAFT: CDS4CPM Context Diagram</text><!--entity patient--><rect fill="#08427B" height="52.5938" style="stroke: #073B6F; stroke-width: 1.5;" width="84" x="316.5" y="28.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="57" x="330" y="50.0918">«person»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="64" x="326.5" y="67.7734">Patient</text><!--entity clinician--><rect fill="#08427B" height="52.5938" style="stroke: #073B6F; stroke-width: 1.5;" width="90" x="47.5" y="28.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="57" x="64" y="50.0918">«person»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="70" x="57.5" y="67.7734">Clinician</text><!--entity epic--><rect fill="#999999" height="85.1875" style="stroke: #8A8A8A; stroke-width: 1.5;" width="220" x="219.5" y="335.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="115" x="272" y="357.0918">«external_system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="312" y="374.7734">Epic</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="200" x="229.5" y="391.542">EHR providing SMART-on-FHIR</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="302.5" y="407.8389">support</text><!--entity pm--><rect fill="#1168BD" height="85.1875" style="stroke: #3C7FC0; stroke-width: 1.5;" width="173" x="6" y="158.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="57" x="64" y="180.0918">«system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="114" x="35.5" y="197.7734">PainManager</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="153" x="16" y="214.542">Provider facing CDS and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="74" x="55.5" y="230.8389">dashboard</text><!--entity mp--><rect fill="#1168BD" height="85.1875" style="stroke: #3C7FC0; stroke-width: 1.5;" width="165" x="245" y="158.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="57" x="299" y="180.0918">«system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="69" x="293" y="197.7734">MyPAIN</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="145" x="255" y="214.542">Patient facing CDS and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="74" x="290.5" y="230.8389">dashboard</text><!--entity pdmp--><path d="M16,357.4531 C16,347.4531 54.5,347.4531 54.5,347.4531 C54.5,347.4531 93,347.4531 93,357.4531 L93,399.0469 C93,409.0469 54.5,409.0469 54.5,409.0469 C54.5,409.0469 16,409.0469 16,399.0469 L16,357.4531 " fill="#1168BD" style="stroke: #3C7FC0; stroke-width: 1.5;"/><path d="M16,357.4531 C16,367.4531 54.5,367.4531 54.5,367.4531 C54.5,367.4531 93,367.4531 93,357.4531 " fill="none" style="stroke: #3C7FC0; stroke-width: 1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="57" x="26" y="382.5918">«system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="53" x="28" y="400.2734">PDMP</text><!--link pm to pdmp--><path d="M63.7188,243.9801 C58.6748,253.4632 54.1866,263.7448 51.5,273.9531 C45.666,296.1209 46.3185,321.8503 48.4773,342.2316 " fill="none" id="pm-&gt;pdmp" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="49.0556,347.2926,52.0081,337.8967,48.488,342.3249,44.0598,338.8049,49.0556,347.2926" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="67" x="52.5" y="294.52">Writes to</text><!--link pm to epic--><path d="M128.1825,244.1869 C146.4123,264.4248 169.7282,288.0277 193.5,305.9531 C206.4716,315.7346 220.9407,324.9546 235.4672,333.3292 " fill="none" id="pm-&gt;epic" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="239.9757,335.9007,234.1399,327.9671,235.6325,333.4234,230.1762,334.9161,239.9757,335.9007" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="119" x="194.5" y="287.02">Reads from and</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="67" x="223" y="302.1528">Writes to</text><!--link mp to epic--><path d="M327.868,244.1618 C328.0416,263.0923 328.2627,285.6341 328.5,305.9531 C328.5938,313.9794 328.7028,322.5053 328.8138,330.7841 " fill="none" id="mp-&gt;epic" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="328.883,335.9001,332.7607,326.8468,328.8153,330.9006,324.7615,326.9551,328.883,335.9001" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="119" x="329.5" y="287.02">Reads from and</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="67" x="358" y="302.1528">Writes to</text><!--link epic to patient--><path d="M431.5371,335.9183 C442.2458,327.5101 451.6887,317.5944 458.5,305.9531 C501.9722,231.6537 431.4443,134.8896 388.225,86.2376 " fill="none" id="epic-&gt;patient" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="384.6479,82.25,387.6802,91.6205,387.9867,85.9719,393.6352,86.2784,384.6479,82.25" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="57" x="517.5" y="192.02">Notifies</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="143" x="472.5" y="206.2246">[via MyChart, e-mail, or</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="138" x="477" y="220.1934">other communication]</text><!--link patient to mp--><path d="M352.8141,82.2318 C348.5713,102.2142 342.6618,130.0461 337.6195,153.7934 " fill="none" id="patient-&gt;mp" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="336.5576,158.7945,342.3398,150.8217,337.5962,153.9036,334.5143,149.16,336.5576,158.7945" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="346.5" y="125.02">Uses</text><!--link clinician to pm--><path d="M92.5,82.2318 C92.5,102.2142 92.5,130.0461 92.5,153.7934 " fill="none" id="clinician-&gt;pm" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="92.5,158.7945,96.5,149.7945,92.5,153.7945,88.5,149.7945,92.5,158.7945" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="93.5" y="125.02">Uses</text><!--link clinician to patient--><path d="M142.6957,55.4531 C191.0825,55.4531 263.7521,55.4531 311.1557,55.4531 " fill="none" id="clinician-patient" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="316.2344,55.4531,307.2344,51.4531,311.2344,55.4531,307.2344,59.4531,316.2344,55.4531" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="137.6233,55.4531,146.6233,59.4531,142.6233,55.4531,146.6233,51.4531,137.6233,55.4531" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="142" x="156" y="48.52">Performs SDM with</text><!--
+@startuml "context"
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #FFFFFF
+
+title DRAFT: CDS4CPM Context Diagram
+
+rectangle "==Patient" <<person>> as patient
+rectangle "==Clinician" <<person>> as clinician
+
+rectangle "==Epic\n\n EHR providing SMART-on-FHIR support" <<external_system>> as epic
+rectangle "==PainManager\n\n Provider facing CDS and dashboard" <<system>> as pm
+rectangle "==MyPAIN\n\n Patient facing CDS and dashboard" <<system>> as mp
+database "==PDMP" <<system>> as pdmp
+
+pm -DOWN-> pdmp : "===Writes to"
+pm -DOWN-> epic : "===Reads from and Writes to"
+mp -DOWN-> epic : "===Reads from and Writes to"
+
+epic - -> patient : "===Notifies\n//<size:12>[via MyChart, e-mail, or other communication]</size>//"
+patient - -> mp : "===Uses"
+clinician - -> pm : "===Uses"
+
+clinician <-> patient: ===Performs SDM with
+
+
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 10:19:51 MDT 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Eclipse OpenJ9 VM
+Java Version: 11.0.6+10
+Operating System: Linux
+OS Version: 5.3.0-40-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
