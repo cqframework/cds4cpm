@@ -24,7 +24,17 @@
       <generation value="html" />
       <page>
         <nameUrl value="index.html" />
-        <title value="IG Home Page" />
+        <title value="CDS4CPM Home Page" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="fhir-to-cdsconnect-gap-analysis.html" />
+        <title value="FHIR CDS to CDS Connect Artifact Gap Analysis Page" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="qualifying-query.html" />
+        <title value="Initial Qualifying Query Page" />
         <generation value="markdown" />
       </page>
     </page>
