@@ -112,6 +112,9 @@ As of the time of this writing there are several open questions that need to be 
 
 The following is high-level diagram showing the main systems and their interactions:
 
+Diagram Test - Context Diagram for CDS4CPM
+![Diagram Test](assets/diagrams/context-new.svg)
+
 Diagram 1 - Context Diagram for CDS4CPM
 ![Diagram 1](assets/diagrams/context.svg)
 
