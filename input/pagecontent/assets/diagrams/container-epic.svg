@@ -148,7 +148,7 @@ skinparam database<<component>> {
     StereotypeFontColor #FFFFFF
     FontColor #000000
     BackgroundColor #85BBF0
-    BorderColor #78A8D8
+    BorderColor #444444
 }
 
 
