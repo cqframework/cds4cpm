@@ -1,0 +1,30 @@
+{
+    "resource":{
+    "resourceType":"Patient",
+    "id": "23346666-f301-4cc8-b9f4-c0a83b6573c4",
+    "name":[
+        {
+            "given":[
+                "Ms"
+            ],
+            "family": "Echo"
+        }
+    ],
+    "gender": "Female",
+    "_birthDate": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "Today() - 65 years"
+                }
+            }
+        ]
+    }
+  },
+  "request": {
+    "method": "PUT",
+    "url": "Patient/23346666-f301-4cc8-b9f4-c0a83b6573c4"
+  }
+}

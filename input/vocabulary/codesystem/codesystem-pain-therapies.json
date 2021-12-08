@@ -1,0 +1,153 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "pain-therapies",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "executable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-therapies",
+  "name": "PainTherapies",
+  "title": "Pain Therapies",
+  "status": "active",
+  "experimental": false,
+  "description": "Code system for Pain Therapy and Strategy Observations used in MyPAIN and Pain Manager",
+  "caseSensitive": true,
+  "valueSet": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-therapies",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "exercises",
+      "display": "Exercises at home or outside",
+      "definition": "Exercises at home (such as those assigned by a therapist) or outside (such as walking, jogging, swimming)"
+    },
+    {
+      "code": "sleep-positioners",
+      "display": "Sleep positioners or devices",
+      "definition": "Sleep positioners or devices (such as additional pillows, padding, etc.)"
+    },
+    {
+      "code": "stretching",
+      "display": "Stretching",
+      "definition": "Stretching exercises to relieve pain."
+    },
+    {
+      "code": "diet-changes",
+      "display": "Weight loss or changes in your diet.",
+      "definition": "Weight loss or changes in your diet."
+    },
+    {
+      "code": "activity-goals",
+      "display": "Setting and reaching activity goals.",
+      "definition": "Setting and reaching activity goals to relieve pain."
+    },
+    {
+      "code": "ice-therapy",
+      "display": "Ice therapy",
+      "definition": "Pain relief through ice therapy."
+    },
+    {
+      "code": "heat-therapy",
+      "display": "Heat therapy",
+      "definition": "Pain relief through heat therapy."
+    },
+    {
+      "code": "physical-therapy",
+      "display": "Physical therapy",
+      "definition": "Physical therapy for pain relief."
+    },
+    {
+      "code": "acupuncture",
+      "display": "Acupuncture",
+      "definition": "Acupuncture for relief of pain."
+    },
+    {
+      "code": "chiropractic-treatment",
+      "display": "Chiropractic treatment",
+      "definition": "Chiropractic pain treatments."
+    },
+    {
+      "code": "yoga",
+      "display": "Yoga",
+      "definition": "Use of yoga techniques for pain management."
+    },
+    {
+      "code": "massage",
+      "display": "Massage",
+      "definition": "Massage therapy to manage pain."
+    },
+    {
+      "code": "meditation",
+      "display": "Meditation",
+      "definition": "Mediation as a form of pain control."
+    },
+    {
+      "code": "mindfulness-based-training",
+      "display": "Relaxation or mindfulness-based training.",
+      "definition": "Training in relaxation or mindfulness-based training to treat pain."
+    },
+    {
+      "code": "pain-therapy",
+      "display": "Group or individual therapy for pain.",
+      "definition": "Group or individual therapy for pain."
+    },
+    {
+      "code": "acceptance-commitment-therapy",
+      "display": "Acceptance and commitment therapy",
+      "definition": "Therapy utilizing acceptance and/or commitment."
+    },
+    {
+      "code": "sleep-management",
+      "display": "Sleep management (such as a sleep study or CPAP)",
+      "definition": "Sleep management to control pain using a sleep study or a CPAP device."
+    },
+    {
+      "code": "aromatherapy",
+      "display": "Aromatherapy",
+      "definition": "Non-traditional therapy using scent."
+    },
+    {
+      "code": "crystals",
+      "display": "Crystals",
+      "definition": "Non-traditional therapy utilizing crystals."
+    },
+    {
+      "code": "essential-oils",
+      "display": "Essential oils",
+      "definition": "Non-traditional therapy utilizing essential oils either olfactory or applied to the body."
+    },
+    {
+      "code": "music-therapy",
+      "display": "Music therapy.",
+      "definition": "Non-traditional therapy using music to control pain."
+    },
+    {
+      "code": "other",
+      "display": "Other non-traditional pain therapy.",
+      "definition": "Other non-traditional therapy to control pain."
+    }
+  ]
+}

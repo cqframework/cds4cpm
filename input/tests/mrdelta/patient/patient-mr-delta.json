@@ -1,0 +1,24 @@
+{
+    "resourceType":"Patient",
+    "id": "8ac0c21f-89a5-4c4c-b335-4a99a5a73618",
+    "name":[
+        {
+            "given":[
+                "Mr"
+            ],
+            "family": "Delta"
+        }
+    ],
+    "gender": "Male",
+    "_birthDate": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "Today() - 43 years"
+                }
+            }
+        ]
+    }
+}

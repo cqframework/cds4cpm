@@ -1,0 +1,38 @@
+{
+  "resource":{
+    "resourceType": "MedicationRequest",
+    "id": "1c11b0a0-ff66-479f-8ab1-5e738fd36ff3",
+    "status": "completed",
+    "intent": "order",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+            "code": "community",
+            "display": "community"
+          }
+        ]
+      }
+    ],
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1010600",
+          "display": "Physical Therapy and Acupuncture recommendation"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/d68463ce-3cad-4309-a271-e2860694ede7"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-office-visit"
+    }
+  },
+  "request": {
+    "method": "PUT",
+    "url": "MedicationRequest/1c11b0a0-ff66-479f-8ab1-5e738fd36ff3"
+  }
+}

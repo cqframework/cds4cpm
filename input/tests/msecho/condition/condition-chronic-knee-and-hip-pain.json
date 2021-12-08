@@ -1,0 +1,47 @@
+{
+    "resource":{
+    "resourceType": "Condition",
+    "id": "8fa99b7a-098e-4f68-9faf-ebf220e3c122",
+    "meta": {
+      "profile": [
+        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+            "code": "encounter-diagnosis",
+            "display": "Encounter Diagnosis"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "116288000",
+          "display": "chronic knee pain and hip pain"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/23346666-f301-4cc8-b9f4-c0a83b6573c4"
+    }
+   },
+   "request": {
+     "method": "PUT",
+     "url": "Condition/8fa99b7a-098e-4f68-9faf-ebf220e3c122"
+   }
+  }

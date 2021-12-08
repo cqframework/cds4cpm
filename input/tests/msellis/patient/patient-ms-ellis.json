@@ -1,0 +1,30 @@
+{
+    "resource":{
+    "resourceType":"Patient",
+    "id": "9cf3a26e-42b5-43a4-96de-f071a39bba2f",
+    "name":[
+        {
+            "given":[
+                "Ms"
+            ],
+            "family": "Ellis"
+        }
+    ],
+    "gender": "female",
+    "_birthDate": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "Today() - 63 years"
+                }
+            }
+        ]
+    }
+ },
+ "request": {
+   "method": "PUT",
+   "url": "Patient/9cf3a26e-42b5-43a4-96de-f071a39bba2f"
+ }
+}

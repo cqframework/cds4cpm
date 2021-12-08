@@ -1,0 +1,131 @@
+{
+  "resourceType": "Bundle",
+  "id": "ms_hotel",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-mme-greater-than-fifty",
+        "name": [
+          {
+            "given": [
+              "Ms"
+            ],
+            "family": "Hotel"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1982-01-07",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+              "valueExpression": {
+                "language": "text/cql",
+                "expression": "Today() - 38 years"
+              }
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/patient-mme-greater-than-fifty"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "example-rec-05-mme-greater-than-fifty-context",
+        "status": "active",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "community"
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197696",
+              "display": "72 HR Fentanyl 0.075 MG/HR Transdermal System"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-mme-greater-than-fifty"
+        },
+        "encounter": {
+          "reference": "Encounter/example-rec-05-mme-greater-than-fifty-context"
+        },
+        "authoredOn": "2020-08-17",
+        "_authoredOn": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+              "valueExpression": {
+                "language": "text/cql",
+                "expression": "Today()"
+              }
+            }
+          ]
+        },
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 3.0,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1.0,
+                  "unit": "patch"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2020-08-17",
+            "end": "2021-02-17"
+          },
+          "_validityPeriod": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                "valueExpression": {
+                  "language": "text/cql",
+                  "expression": "FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() + 6 months } }"
+                }
+              }
+            ]
+          },
+          "numberOfRepeatsAllowed": 3,
+          "expectedSupplyDuration": {
+            "value": 30,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/example-rec-05-mme-greater-than-fifty-context"
+      }
+    }
+  ]
+}

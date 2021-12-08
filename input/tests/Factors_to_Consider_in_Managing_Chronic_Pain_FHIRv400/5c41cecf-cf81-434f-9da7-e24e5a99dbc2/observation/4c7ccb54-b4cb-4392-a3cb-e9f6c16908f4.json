@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "4c7ccb54-b4cb-4392-a3cb-e9f6c16908f4",
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "38221-8",
+        "display": "Pain severity Wong-Baker FACES Scale"
+      }
+    ],
+    "text": "Pain severity Wong-Baker FACES Scale"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "value": 10
+  },
+  "interpretation": [
+    {
+      "text": "Hurts Worst"
+    }
+  ],
+  "issued": "2019-06-15T16:00:00.000Z"
+}

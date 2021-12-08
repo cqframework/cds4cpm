@@ -1,0 +1,20 @@
+{
+    "resource":{
+    "resourceType" : "Practitioner",
+    "id": "95a047ef-8280-48ab-9aec-c9b1b98b580e",
+    "active" : true, 
+    "name":[
+        {
+            "given":[
+                "Dr"
+            ],
+            "family": "Clark"
+        }
+    ],
+    "gender" : "male"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Practitioner/95a047ef-8280-48ab-9aec-c9b1b98b580e"
+    }
+ }

@@ -1,0 +1,20 @@
+{
+    "resource":{
+    "resourceType" : "Practitioner",
+    "id": "ee53e004-ebad-4eb0-8087-0c9dd09deaa1",
+    "active" : true, 
+    "name":[
+        {
+            "given":[
+                "Dr"
+            ],
+            "family": "Alpha"
+        }
+    ],
+    "gender" : "male"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Practitioner/ee53e004-ebad-4eb0-8087-0c9dd09deaa1"
+    }
+  }

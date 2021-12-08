@@ -1,0 +1,39 @@
+{
+  "resourceType": "Condition",
+  "id": "20f61c6d-b588-41c0-af09-8280524aa2d0",
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ],
+    "text": "Active"
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ],
+    "text": "Confirmed"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "M54.5",
+        "display": "Low back pain"
+      }
+    ],
+    "text": "Low back pain"
+  },
+  "onsetDateTime": "2008-11-12T16:00:00.000Z",
+  "recordedDate": "2008-11-12T00:00:00.000Z"
+}

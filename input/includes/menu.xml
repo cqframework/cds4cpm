@@ -3,13 +3,40 @@
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment Details<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="sdd.html">System Design Document</a></li>
+      <li><a href="implementation.html">System Deployment Instructions</a></li>
+      <li><a href="analytics.html">Analytics</a></li>
+      <li><a href="scenarios.html">Operational Scenarios</a></li>
+      <li><a href="pm-opioid-logic-assessment.html">Related CDS Content for Pain Management</a></li>
+      <li><a href="fhir-to-cdsconnect-gap-analysis.html">FHIR to CDS Content Mapping</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Resources &amp; Artifacts<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="logic.html">Logic</a></li>
+      <li><a href="data-elements.html">Data Elements</a></li>
+      <li><a href="terminology.html">Terminology</a></li>
+      <li><a href="qualifying-query.html">Initial Qualifying Query</a></li>
+      <li><a href="artifacts.html">Artifact Summary</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation Materials<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="glossary-and-acronyms.html">Glossary and Acronyms</a></li>
+      <li><a href="implementation-resources.html">Implementation Materials</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
-      </li>
+      <li><a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
     </ul>
   </li>
 </ul>

@@ -1,0 +1,303 @@
+{
+  "resourceType": "ValueSet",
+  "id": "mypain-all-questionnaireresponse-codes",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "executable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+      "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+    }
+  ],
+  "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/mypain-all-questionnaireresponse-codes",
+  "name": "MyPAINAllQuestionnaireResponseCodes",
+  "title": "MyPAIN All QuestionnaireResponse Codes",
+  "status": "active",
+  "experimental": false,
+  "description": "Value set for All Questionnaire Response Codes used in the MyPAIN Questionnaire",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "valueSet": [ "http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-types" ]
+      },
+      {
+        "valueSet": [ "http://fhir.org/guides/cqf/cds4cpm/ValueSet/three-item-likert" ]
+      },
+      {
+        "valueSet": [ "http://loinc.org/vs/LL2949-7" ]
+      },
+      {
+        "valueSet": [ "http://loinc.org/vs/LL2951-3" ]
+      },
+      {
+        "valueSet": [ "http://loinc.org/vs/LL1017-4" ]
+      },
+      {
+        "valueSet": [ "http://loinc.org/vs/LL1606-4" ]
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2020-10-27T21:08:47-06:00",
+    "contains": [ {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://snomed.info/sct",
+      "code": "27635008",
+      "display": "Aching"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://snomed.info/sct",
+      "code": "36349006",
+      "display": "Burning"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://snomed.info/sct",
+      "code": "55145008",
+      "display": "Stabbing"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://snomed.info/sct",
+      "code": "29695002",
+      "display": "Throbbing"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://snomed.info/sct",
+      "code": "162506004",
+      "display": "Prickling"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://snomed.info/sct",
+      "code": "786837007",
+      "display": "Tingling"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+      "code": "mpqr-1000",
+      "display": "Never"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+      "code": "mpqr-1001",
+      "display": "Sometimes"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+      "code": "mpqr-1002",
+      "display": "Always"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA13879-4",
+      "display": "Had no pain"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA6752-5",
+      "display": "Mild"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA6751-7",
+      "display": "Moderate"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA6750-9",
+      "display": "Severe"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA13958-6",
+      "display": "Very severe"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA131-5",
+      "display": "No pain"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA6752-5",
+      "display": "Mild"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA6751-7",
+      "display": "Moderate"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA6750-9",
+      "display": "Severe"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA13958-6",
+      "display": "Very severe"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA6568-5",
+      "display": "Not at all"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA13863-8",
+      "display": "A little bit"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA13909-9",
+      "display": "Somewhat"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA13902-4",
+      "display": "Quite a bit"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA13914-9",
+      "display": "Very much"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA15238-1",
+      "display": "Disagree a lot"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA15239-9",
+      "display": "Disagree a little"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA15240-7",
+      "display": "Neither agree nor disagree"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA15241-5",
+      "display": "Agree a little"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://loinc.org",
+      "code": "LA15242-3",
+      "display": "Agree a lot"
+    } ]
+  }
+}

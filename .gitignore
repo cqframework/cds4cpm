@@ -1,4 +1,6 @@
-.idea
+.idea/
 output/
 temp/
 template/
+input-cache/
+.DS_Store

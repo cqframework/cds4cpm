@@ -1,0 +1,304 @@
+Running tests.
+Data path: D:\Projects\cds4cpm\input\tests\PainManager
+Terminology path: D:\Projects\cds4cpm\input\vocabulary\valueset
+Test 5c41cecf-cf81-434f-9da7-e24e5a99dbc2
+Thu Oct 22 2020 18:58:45 GMT-0600 (Mountain Daylight Time)
+Patient=org.hl7.fhir.r4.model.Patient@14f7e21a
+ActiveOpioidMedications=[org.hl7.fhir.r4.model.MedicationRequest@7d80f543, org.hl7.fhir.r4.model.MedicationRequest@63d93e91, org.hl7.fhir.r4.model.MedicationRequest@18be3e85, org.hl7.fhir.r4.model.MedicationRequest@396d21ec]
+CurrentMME=null
+ReportCurrentMME=[null]
+QuestionnaireObservations=[org.hl7.fhir.r4.model.Observation@69d142f6, org.hl7.fhir.r4.model.Observation@67d85d5f, org.hl7.fhir.r4.model.Observation@13d86de8, org.hl7.fhir.r4.model.Observation@61466b5f, org.hl7.fhir.r4.model.Observation@fd51fb3, org.hl7.fhir.r4.model.Observation@745b4ed4, org.hl7.fhir.r4.model.Observation@da1382f, org.hl7.fhir.r4.model.Observation@5467016f, org.hl7.fhir.r4.model.Observation@7b8247bc, org.hl7.fhir.r4.model.Observation@17c83403, org.hl7.fhir.r4.model.Observation@1164d004, org.hl7.fhir.r4.model.Observation@3b6f1227, org.hl7.fhir.r4.model.Observation@33588b68, org.hl7.fhir.r4.model.Observation@3f51fcf5, org.hl7.fhir.r4.model.Observation@16463f2, org.hl7.fhir.r4.model.Observation@401516ad, org.hl7.fhir.r4.model.Observation@7f277cf6, org.hl7.fhir.r4.model.Observation@4d121ab6, org.hl7.fhir.r4.model.Observation@55c445e5, org.hl7.fhir.r4.model.Observation@12329d37, org.hl7.fhir.r4.model.Observation@565b04e9, org.hl7.fhir.r4.model.Observation@4d760ddb, org.hl7.fhir.r4.model.Observation@607fa188, org.hl7.fhir.r4.model.Observation@132b00bb, org.hl7.fhir.r4.model.Observation@5ddc735b, org.hl7.fhir.r4.model.Observation@26501a93, org.hl7.fhir.r4.model.Observation@6636e1dd, org.hl7.fhir.r4.model.Observation@6e28a726, org.hl7.fhir.r4.model.Observation@22ef78d8, org.hl7.fhir.r4.model.Observation@20f1cf40, org.hl7.fhir.r4.model.Observation@505f8cf, org.hl7.fhir.r4.model.Observation@224d6d02, org.hl7.fhir.r4.model.Observation@1c2912bb, org.hl7.fhir.r4.model.Observation@44fa2df3, org.hl7.fhir.r4.model.Observation@495b3b23, org.hl7.fhir.r4.model.Observation@f4915c7, org.hl7.fhir.r4.model.Observation@4e4892bf, org.hl7.fhir.r4.model.Observation@7b7aaaf6, org.hl7.fhir.r4.model.Observation@57d1cbb1, org.hl7.fhir.r4.model.Observation@6ed000ba, org.hl7.fhir.r4.model.Observation@71bc7d1e, org.hl7.fhir.r4.model.Observation@23339a25, org.hl7.fhir.r4.model.Observation@56b6e072, org.hl7.fhir.r4.model.Observation@746a671, org.hl7.fhir.r4.model.Observation@745f4c49, org.hl7.fhir.r4.model.Observation@567a2954, org.hl7.fhir.r4.model.Observation@87852fb, org.hl7.fhir.r4.model.Observation@49d52df2, org.hl7.fhir.r4.model.Observation@68e47ff9, org.hl7.fhir.r4.model.Observation@5f914d68, org.hl7.fhir.r4.model.Observation@4d4c0408, org.hl7.fhir.r4.model.Observation@38cbc9a7, org.hl7.fhir.r4.model.Observation@473c1e53, org.hl7.fhir.r4.model.Observation@6b21a869, org.hl7.fhir.r4.model.Observation@6f3059ad, org.hl7.fhir.r4.model.Observation@4219e848, org.hl7.fhir.r4.model.Observation@7bb5f1b5, org.hl7.fhir.r4.model.Observation@742af13a, org.hl7.fhir.r4.model.Observation@7ee0af8c, org.hl7.fhir.r4.model.Observation@5426f313, org.hl7.fhir.r4.model.Observation@40190f7f, org.hl7.fhir.r4.model.Observation@54eaf69d, org.hl7.fhir.r4.model.Observation@96effb1]
+ReportMyPAINSubmitDate=[null, DateTimeType[2020-10-21T13:52:02-06:00]]
+ReportActivityGoals=[These are my goals for a pain-free environment.  Get up every morning and have a great day with no back spasms and no hip pain and no aches and pains throughout my whole body.]
+ReportActivityBarriers=[My barriers to a pain free life are 1.  It is impossible. 2. I am too lazy to exercise.  3. I am overweight.  4. I am too old to change now.]
+ReportPainLocations=[[Tuple {
+	"Location": What type of HEAD pain?
+	"PainYesNo": true
+	"Description": Stabbing
+}], [Tuple {
+	"Location": What type of HIPS pain?
+	"PainYesNo": true
+	"Description": Tingling
+}], [Tuple {
+	"Location": What type of UPPER LEGS pain?
+	"PainYesNo": true
+	"Description": Prickling
+}], [Tuple {
+	"Location": What type of KNEES pain?
+	"PainYesNo": true
+	"Description": Throbbing
+}], [Tuple {
+	"Location": What type of LOWER LEGS pain?
+	"PainYesNo": true
+	"Description": Stabbing
+}], [Tuple {
+	"Location": What type of FEET pain?
+	"PainYesNo": true
+	"Description": Burning
+}], [Tuple {
+	"Location": What type of EVERYWHERE pain?
+	"PainYesNo": true
+	"Description": Aching
+}], [Tuple {
+	"Location": Other, please describe
+	"PainYesNo": true
+	"Description": pain location other
+}], [Tuple {
+	"Location": What type of NECK pain?
+	"PainYesNo": true
+	"Description": Burning
+}], [Tuple {
+	"Location": What type of SHOULDERS pain?
+	"PainYesNo": true
+	"Description": Aching
+}], [Tuple {
+	"Location": What type of ARMS pain?
+	"PainYesNo": true
+	"Description": Tingling
+}], [Tuple {
+	"Location": What type of UPPER BACK pain?
+	"PainYesNo": true
+	"Description": Prickling
+}], [Tuple {
+	"Location": What type of LOWER BACK pain?
+	"PainYesNo": true
+	"Description": Throbbing
+}], [Tuple {
+	"Location": What type of HANDS pain?
+	"PainYesNo": true
+	"Description": Stabbing
+}], [Tuple {
+	"Location": What type of ABDOMEN pain?
+	"PainYesNo": true
+	"Description": Burning
+}], [Tuple {
+	"Location": What type of PELVIS pain?
+	"PainYesNo": true
+	"Description": Aching
+}]]
+ReportPainIntensityAndInterference=[Tuple {
+	"Question": How intense was your pain at its worst?
+	"Response": Had no pain
+}, Tuple {
+	"Question": How intense was your average pain?
+	"Response": Mild
+}, Tuple {
+	"Question": What is your level of pain right now?
+	"Response": Moderate
+}, Tuple {
+	"Question": How much did pain interfere with your day to day activities?
+	"Response": Not at all
+}, Tuple {
+	"Question": How much did pain interfere with your work around the home?
+	"Response": A little bit
+}, Tuple {
+	"Question": How much did pain interfere with your ability to participate in social activities?
+	"Response": Somewhat
+}, Tuple {
+	"Question": How much did pain interfere with your household chores?
+	"Response": Quite a bit
+}]
+ReportResourcesProvidedInMyPAIN=[[Tuple {
+	"Resource": US Pain Foundation website
+	"ResourceUrl": https://uspainfoundation.org/living-with-pain/
+	"ViewedOn": DateTimeType[2020-10-21T13:52:02-06:00]
+}], [Tuple {
+	"Resource": ACPA four flat tires video
+	"ResourceUrl": https://www.youtube.com/embed/QWcr9J3MLfo
+	"ViewedOn": DateTimeType[2020-10-21T13:52:02-06:00]
+}]]
+ReportSelfReportedTreatmentsFromMyPAIN=[[Tuple {
+	"Treatment": []
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": []
+	"Effectiveness": other tx exercise other
+}], [Tuple {
+	"Treatment": []
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": []
+	"Effectiveness": Always
+}], [Tuple {
+	"Treatment": []
+	"Effectiveness": prescription other
+}], [Tuple {
+	"Treatment": []
+	"Effectiveness": other yoga
+}]]
+ReportRecommendation3Text=Per CDC guidelines, before starting, and periodically during opioid therapy, clinicians should discuss with patients known risks and realistic benefits of opioid therapy and patient and clinician responsibilities for managing therapy (recommendation category: A, evidence type: 3).  [CDC Opioid Prescribing Guideline, Recommendation #3](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)
+ReportRecommendation5Text=null
+ReportRecommendation8Text=Per CDC guidelines, before starting, and periodically during continuation of opioid therapy, clinicians should evaluate risk factors for opioid-related harms. Clinicians should incorporate into the management plan strategies to mitigate risk, including considering offering naloxone when factors that increase risk for opioid overdose, such as history of overdose, history of substance use disorder, higher opioid dosages (greater than or equal to [?] 50 morphine milligram equivalents [MME]/day), or concurrent benzodiazepine use, are present (recommendation category: A, evidence type: 4). [CDC Opioid Prescribing Guideline, Recommendation #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)
+ReportRecommendation10Text=null
+ReportRecommendation11Text=null
+Summary=Tuple {
+	"CurrentPainTreatments": Tuple {
+	"CurrentMME": [null]
+	"MostRecentMME": [Tuple {
+	"Name": Morphine Milligram Equivalent (MME)
+	"Result": 220 {MME}/d
+	"Date": 2020-10-09T16:00:00.000
+}]
+	"OpioidMedications": [Tuple {
+	"Type": Request
+	"Name": 12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet
+	"Start": 2019-01-15T16:02:00.000
+	"End": null
+	"Status": active
+}, Tuple {
+	"Type": Request
+	"Name": 12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet
+	"Start": 2020-10-15T16:02:00.000
+	"End": null
+	"Status": active
+}]
+	"NonOpioidMedications": [Tuple {
+	"Type": Request
+	"Name": Ibuprofen 600 MG Oral Tablet
+	"Start": 2020-09-25T16:00:00.000
+	"End": null
+	"Status": active
+}, Tuple {
+	"Type": Request
+	"Name": Acetaminophen 500 MG Oral Tablet
+	"Start": 2020-09-28T16:00:00.000
+	"End": null
+	"Status": active
+}]
+	"BenzodiazepineMedications": []
+	"NaloxoneMedications": []
+	"SelfReportedTreatementsFromMyPAIN": [[Tuple {
+	"Treatment": []
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": []
+	"Effectiveness": other tx exercise other
+}], [Tuple {
+	"Treatment": []
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": []
+	"Effectiveness": Always
+}], [Tuple {
+	"Treatment": []
+	"Effectiveness": prescription other
+}], [Tuple {
+	"Treatment": []
+	"Effectiveness": other yoga
+}]]
+	"Recommendation3Text": Per CDC guidelines, before starting, and periodically during opioid therapy, clinicians should discuss with patients known risks and realistic benefits of opioid therapy and patient and clinician responsibilities for managing therapy (recommendation category: A, evidence type: 3).  [CDC Opioid Prescribing Guideline, Recommendation #3](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)
+	"Recommendation5Text": null
+	"Recommendation11Text": null
+}
+	"UrineDrugScreening": Tuple {
+	"UrineDrugScreens": [Tuple {
+	"Name": Opiates [Presence] in Urine by Screen method
+	"Result": 2500 ng/mL
+	"Interpretation": Positive
+	"Date": 2020-10-15T16:00:00.000
+}]
+	"Recommendation10Text": null
+}
+	"SharedDecisionMaking": Tuple {
+	"MyPAINSubmitDate": [null, DateTimeType[2020-10-21T13:52:02-06:00]]
+	"ActivityGoals": [These are my goals for a pain-free environment.  Get up every morning and have a great day with no back spasms and no hip pain and no aches and pains throughout my whole body.]
+	"ActivityBarriers": [My barriers to a pain free life are 1.  It is impossible. 2. I am too lazy to exercise.  3. I am overweight.  4. I am too old to change now.]
+	"PainLocations": [[Tuple {
+	"Location": What type of HEAD pain?
+	"PainYesNo": true
+	"Description": Stabbing
+}], [Tuple {
+	"Location": What type of HIPS pain?
+	"PainYesNo": true
+	"Description": Tingling
+}], [Tuple {
+	"Location": What type of UPPER LEGS pain?
+	"PainYesNo": true
+	"Description": Prickling
+}], [Tuple {
+	"Location": What type of KNEES pain?
+	"PainYesNo": true
+	"Description": Throbbing
+}], [Tuple {
+	"Location": What type of LOWER LEGS pain?
+	"PainYesNo": true
+	"Description": Stabbing
+}], [Tuple {
+	"Location": What type of FEET pain?
+	"PainYesNo": true
+	"Description": Burning
+}], [Tuple {
+	"Location": What type of EVERYWHERE pain?
+	"PainYesNo": true
+	"Description": Aching
+}], [Tuple {
+	"Location": Other, please describe
+	"PainYesNo": true
+	"Description": pain location other
+}], [Tuple {
+	"Location": What type of NECK pain?
+	"PainYesNo": true
+	"Description": Burning
+}], [Tuple {
+	"Location": What type of SHOULDERS pain?
+	"PainYesNo": true
+	"Description": Aching
+}], [Tuple {
+	"Location": What type of ARMS pain?
+	"PainYesNo": true
+	"Description": Tingling
+}], [Tuple {
+	"Location": What type of UPPER BACK pain?
+	"PainYesNo": true
+	"Description": Prickling
+}], [Tuple {
+	"Location": What type of LOWER BACK pain?
+	"PainYesNo": true
+	"Description": Throbbing
+}], [Tuple {
+	"Location": What type of HANDS pain?
+	"PainYesNo": true
+	"Description": Stabbing
+}], [Tuple {
+	"Location": What type of ABDOMEN pain?
+	"PainYesNo": true
+	"Description": Burning
+}], [Tuple {
+	"Location": What type of PELVIS pain?
+	"PainYesNo": true
+	"Description": Aching
+}]]
+	"PainIntensityAndInterference": [Tuple {
+	"Question": How intense was your pain at its worst?
+	"Response": Had no pain
+}, Tuple {
+	"Question": How intense was your average pain?
+	"Response": Mild
+}, Tuple {
+	"Question": What is your level of pain right now?
+	"Response": Moderate
+}, Tuple {
+	"Question": How much did pain interfere with your day to day activities?
+	"Response": Not at all
+}, Tuple {
+	"Question": How much did pain interfere with your work around the home?
+	"Response": A little bit
+}, Tuple {
+	"Question": How much did pain interfere with your ability to participate in social activities?
+	"Response": Somewhat
+}, Tuple {
+	"Question": How much did pain interfere with your household chores?
+	"Response": Quite a bit
+}]
+	"ResourcesProvidedInMyPAIN": [[Tuple {
+	"Resource": US Pain Foundation website
+	"ResourceUrl": https://uspainfoundation.org/living-with-pain/
+	"ViewedOn": DateTimeType[2020-10-21T13:52:02-06:00]
+}], [Tuple {
+	"Resource": ACPA four flat tires video
+	"ResourceUrl": https://www.youtube.com/embed/QWcr9J3MLfo
+	"ViewedOn": DateTimeType[2020-10-21T13:52:02-06:00]
+}]]
+}
+}
+elapsed: 7.066 seconds

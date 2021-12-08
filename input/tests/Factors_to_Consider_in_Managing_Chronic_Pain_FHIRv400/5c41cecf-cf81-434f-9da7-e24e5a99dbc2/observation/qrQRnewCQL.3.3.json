@@ -1,0 +1,54 @@
+{
+  "resourceType": "Observation",
+  "id": "qrQRnewCQL.3.3",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "3.3"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "https://loinc.org/61773-8/",
+        "code": "61773-8",
+        "display": "How much did pain interfere with your ability to participate in social activities?"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+    "display": "Brenda Jackson"
+  },
+  "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpq-1010",
+        "display": "Somewhat"
+      }
+    ]
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QRnewCQL"
+    }
+  ]
+}

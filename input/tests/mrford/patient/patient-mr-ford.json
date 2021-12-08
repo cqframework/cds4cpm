@@ -1,0 +1,30 @@
+{
+    "resource":{
+    "resourceType":"Patient",
+    "id": "d68463ce-3cad-4309-a271-e2860694ede7",
+    "name":[
+        {
+            "given":[
+                "Mr"
+            ],
+            "family": "Ford"
+        }
+    ],
+    "gender": "male",
+    "_birthDate": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "Today() - 42 years"
+                }
+            }
+        ]
+    }
+  },
+  "request": {
+    "method": "PUT",
+    "url": "Patient/d68463ce-3cad-4309-a271-e2860694ede7"
+  }
+}

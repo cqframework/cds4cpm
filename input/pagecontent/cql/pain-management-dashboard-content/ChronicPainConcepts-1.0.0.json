@@ -1,0 +1,118 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "ChronicPainConcepts",
+         "version" : "1.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Conditions associated with chronic pain",
+            "id" : "2.16.840.1.113762.1.4.1032.37",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Opioid Pain Medications",
+            "id" : "2.16.840.1.113762.1.4.1032.34",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Adjuvant Analgesic Medications",
+            "id" : "2.16.840.1.113762.1.4.1032.54",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Major Depression",
+            "id" : "2.16.840.1.113883.3.464.1003.105.12.1007",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Depression Diagnosis ICD9",
+            "id" : "2.16.840.1.113883.3.600.143",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Anxiety",
+            "id" : "2.16.840.1.113762.1.4.1032.52",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Anxiety Disorders ICD9",
+            "id" : "2.16.840.1.113883.3.1240.2017.3.2.1015",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Substance use disorder",
+            "id" : "2.16.840.1.113883.3.464.1003.106.12.1004",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Substance Abuse",
+            "id" : "2.16.840.1.113883.3.464.1003.106.11.1010",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Suicide Attempt",
+            "id" : "2.16.840.1.113762.1.4.1032.102",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Sleep-disordered breathing",
+            "id" : "2.16.840.1.113762.1.4.1032.53",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Kidney Failure",
+            "id" : "2.16.840.1.113883.3.464.1003.109.12.1028",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Chronic Liver Disease",
+            "id" : "2.16.840.1.113883.3.464.1003.199.12.1035",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Liver Disease",
+            "id" : "2.16.840.1.113762.1.4.1047.42",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Pregnancy",
+            "id" : "2.16.840.1.113883.3.526.3.378",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Pregnancy (New ICD10 codes published in 2018 or later)",
+            "id" : "2.16.840.1.113762.1.4.1032.80",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Non opioid pain medications",
+            "id" : "2.16.840.1.113762.1.4.1032.26",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Non pharmacologic treatments for chronic pain",
+            "id" : "2.16.840.1.113762.1.4.1032.36",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Risk assessments relevant to pain management",
+            "id" : "2.16.840.1.113762.1.4.1032.55",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Benzodiazepine medications",
+            "id" : "2.16.840.1.113762.1.4.1032.43",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Naloxone medications",
+            "id" : "2.16.840.1.113762.1.4.1032.42",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Urine drug screen for pain management",
+            "id" : "2.16.840.1.113762.1.4.1032.28",
+            "accessLevel" : "Public"
+         }, {
+            "name" : "Stool softeners and laxatives",
+            "id" : "2.16.840.1.113762.1.4.1032.44",
+            "accessLevel" : "Public"
+         } ]
+      }
+   }
+}
+

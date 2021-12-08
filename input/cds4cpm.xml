@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="cqf.fhir.cds4cpm" />
-  <url value="http://hl7.org/fhir/cqf/cds4cpm/ImplementationGuide/cqf.fhir.cds4cpm" />
+  <url value="http://fhir.org/guides/cqf/cds4cpm/ImplementationGuide/cqf.fhir.cds4cpm" />
   <version value="0.1.0" />
   <name value="CDS4CPM" />
   <title value="Clinical Decision Support for Chronic Pain Management and Shared Decision-Making IG" />
   <status value="draft" />
   <experimental value="false" />
   <publisher value="CQF" />
-  <description value="This is a test." />
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://fhir.org/guides/cqf/cds4cpm/ImplementationGuide/cqf.fhir.cds4cpm"/>
+    </telecom>
+  </contact>
+  <description value="This implementation guide provides conformance, guidance, and documentation in support of Clinical Decision Support for Chronic Pain Management and Shared-Decision Making using the MyPAIN and PainManager SMART-on-FHIR applications, based on the CDC's Opioid Prescribing Support guidelines" />
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
@@ -16,7 +22,27 @@
     </coding>
   </jurisdiction>
   <packageId value="cqf.fhir.cds4cpm" />
-  <fhirVersion value="3.0.2" />
+  <fhirVersion value="4.0.1" />
+  <dependsOn id="SDC">
+    <uri value="http://hl7.org/fhir/uv/sdc"/>
+    <packageId value="hl7.fhir.uv.sdc"/>
+    <version value="2.7.0"/>
+  </dependsOn>
+  <dependsOn id="USCore">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.0"/>
+  </dependsOn>
+  <dependsOn id="CPG">
+    <uri value="http://hl7.org/fhir/uv/cpg"/>
+    <packageId value="hl7.fhir.uv.cpg"/>
+    <version value="dev"/>
+  </dependsOn>
+  <dependsOn id="CDCOpioids">
+    <uri value="http://fhir.org/guides/cdc/opioid-cds/ImplementationGuide/fhir.cdc.opioid-cds-r4"/>
+    <packageId value="fhir.cdc.opioid-cds-r4"/>
+    <version value="dev"/>
+  </dependsOn>
   <definition>
     <page>
       <nameUrl value="toc.html" />
@@ -33,8 +59,68 @@
         <generation value="markdown" />
       </page>
       <page>
+        <nameUrl value="sdd.html" />
+        <title value="CDS4CPM System Design Document Page" />
+        <generation value="markdown" />
+      </page>
+      <page>
         <nameUrl value="qualifying-query.html" />
         <title value="Initial Qualifying Query Page" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="pm-opioid-logic-assessment.html" />
+        <title value="CDS Assessment" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="analytics.html" />
+        <title value="Analytics" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="scenarios.html" />
+        <title value="Operational Scenarios" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="glossary-and-acronyms.html" />
+        <title value="Glossary and Acronyms" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="data-elements.html" />
+        <title value="Data Elements" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="terminology.html" />
+        <title value="Terminology" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="logic.html" />
+        <title value="Logic"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="implementation.html" />
+        <title value="Implementation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="future-enhancements.html" />
+        <title value="Future Enhancements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="testing.html" />
+        <title value="Proposed Testing TOC" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="implementation-resources.html" />
+        <title value="Implementation Resources" />
         <generation value="markdown" />
       </page>
     </page>
@@ -88,22 +174,5 @@
       <code value="path-resource" />
       <value value="input/vocabulary/valueset"/>
     </parameter>
-    <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
-     <parameter>
-       <code value="excludexml"/>
-       <value value="true"/>
-     </parameter>
-     <parameter>
-       <code value="excludejson"/>
-       <value value="true"/>
-     </parameter>
-     <parameter>
-       <code value="excludettl"/>
-       <value value="true"/>
-     </parameter>
-     <parameter>
-       <code value="excludemap"/>
-       <value value="true"/>
-     </parameter>-->
   </definition>
 </ImplementationGuide>

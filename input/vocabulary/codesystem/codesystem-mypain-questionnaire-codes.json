@@ -1,0 +1,387 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "mypain-questionnaire-codes",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "executable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+  "name": "MyPAINQuestionnaireCodes",
+  "title": "MyPAIN Questionnaire Codes",
+  "status": "draft",
+  "experimental": false,
+  "date": "2020-06-16T13:21:03-06:00",
+  "publisher": "RTI",
+  "description": "Code system for questions from questionnaire used in MyPAIN and Pain Manager",
+  "caseSensitive": true,
+  "valueSet": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/mypain-questionnaire-codes",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "mpq-1000",
+      "display": "Please describe the location(s) of any pain you have had in the past 7 days (e.g., lower back and left hip)",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpq-1001",
+      "display": "In the  past 7 days - How intense was your pain at its worst?",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpq-1002",
+      "display": "In the  past 7 days - How intense was your average pain?",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpq-1003",
+      "display": "In the  past 7 days - What is your level of pain right now?",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpq-1004",
+      "display": "In the  past 7 days - How much did pain interfere with your day to day activities?",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpq-1005",
+      "display": "In the  past 7 days - How much did pain interfere with your work?",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpq-1006",
+      "display": "In the  past 7 days - How much did pain interfere with your ability to participate in social activities?",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpq-1007",
+      "display": "In the  past 7 days - How much did pain interfere with your household chores?",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpq-1008",
+      "display": "How often have Exercises at home (such as those assigned by a therapist) or outside (such as walking, jogging, swimming) you have tried in the past 6 months helped you with your pain?"
+    },
+    {
+      "code": "mpq-1009",
+      "display": "How often have Sleep positioners or devices (such as additional pillows, padding, etc.) you have tried in the past 6 months helped you with your pain?"
+    },
+    {
+      "code": "mpq-1010",
+      "display": "How often has Stretching you have tried in the past 6 months helped you with your pain?"
+    },
+    {
+      "code": "mpq-1011",
+      "display": "How often has Weight loss or changes in your diet you have tried in the past 6 months helped you with your pain?"
+    },
+    {
+      "code": "mpq-1012",
+      "display": "How often has Setting and reaching activity goals you have tried in the past 6 months helped you with your pain?"
+    },
+    {
+      "code": "mpq-1013",
+      "display": "How often has Ice or heat therapy you have tried in the past 6 months helped you with your pain?"
+    },
+    {
+      "code": "mpq-1014",
+      "display": "How often has Physical therapy you have tried in the past 6 months helped you with your pain?"
+    },
+    {
+      "code": "mpq-1015",
+      "display": "How often has Acupuncture you have tried in the past 6 months helped you with your pain?"
+    },
+    {
+      "code": "mpq-1016",
+      "display": "How often has Chiropractic treatment you have tried in the past 6 months helped you with your pain?"
+    },
+    {
+      "code": "mpq-1017",
+      "display": "How often have Pain relievers (such as Advil, Aleve, Aspirin, Ibuprofen, Motrin, Tylenol) you can buy without a prescription from your doctor that you have used in the last 6 months helped with your pain?"
+    },
+    {
+      "code": "mpq-1018",
+      "display": "How often have Herbal or nutritional pain relievers (such as ginseng or kava kava) that you have used in the last 6 months helped with your pain?"
+    },
+    {
+      "code": "mpq-1019",
+      "display": "How often have Cremes, lotions, gels or patches applied to the skin (for example Bengay, Tiger Balm or BioFreeze) that you have used in the last 6 months helped with your pain?"
+    },
+    {
+      "code": "mpq-1020",
+      "display": "How often have prescription Opioid medications (such as hydrocodone, oxycodone, codeine, morphine and fentanyl) helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1021",
+      "display": "How often have prescription Cortisone injections (a shot to relieve inflammation) helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1022",
+      "display": "How often have prescription Non-opioid medications as prescribed by a doctor (such as Celebrex, Cymbalta) helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1023",
+      "display": "How often has Yoga helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1024",
+      "display": "How often has Massage helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1025",
+      "display": "How often has Meditation helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1026",
+      "display": "How often has Relaxation or mindfulness-based training helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1027",
+      "display": "How often has Group or individual therapy for pain helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1028",
+      "display": "How often has Acceptance and commitment therapy helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1029",
+      "display": "How often has Sleep management (such as a sleep study or CPAP) helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1030",
+      "display": "How often has Aromatherapy helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1031",
+      "display": "How often have Crystals helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1032",
+      "display": "How often have Essential oils helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1033",
+      "display": "How often has Music therapy helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1034",
+      "display": "Have you tried any Other new treatments to help with your pain in the last 6 months? Please describe"
+    },
+    {
+      "code": "mpq-1035",
+      "display": "What are your most important activity goals? For example: I’d like to be able to walk without pain."
+    },
+    {
+      "code": "mpq-1036",
+      "display": "What are the biggest barriers to achieving your activity goals? For example: I have a lot of stress from work which makes my pain worse."
+    },
+    {
+      "code": "mpq-1037",
+      "display": "DEPRECATED",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpq-1038",
+      "display": "What type of HEAD pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1039",
+      "display": "What type of NECK pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1040",
+      "display": "What type of SHOULDERS pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1041",
+      "display": "What type of ARMS pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1042",
+      "display": "What type of UPPER BACK pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1043",
+      "display": "What type of LOWER BACK pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1044",
+      "display": "What type of HANDS pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1045",
+      "display": "What type of ABDOMEN pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1046",
+      "display": "What type of PELVIS pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1047",
+      "display": "What type of HIPS pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1048",
+      "display": "What type of UPPER LEGS pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1049",
+      "display": "What type of KNEES pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1050",
+      "display": "What type of LOWER LEGS pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1051",
+      "display": "What type of FEET pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1052",
+      "display": "What type of EVERYWHERE pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1053",
+      "display": "What OTHER pain have you had in the last 7 days? Please describe"
+    },
+    {
+      "code": "mpq-1054",
+      "display": "How often have Other strategies or methods you have tried in the last 6 months helped with your pain? Please describe"
+    },
+    {
+      "code": "mpq-1055",
+      "display": "Have you used any Other items you can buy without a prescription from your doctor to help with your pain in the last 6 months? Please describe"
+    },
+    {
+      "code": "mpq-1056",
+      "display": "How often has Medical marijuana helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1057",
+      "display": "Have you used any Other prescription medications to help with your pain in the last 6 months?: Please describe"
+    },
+    {
+      "code": "mpq-1058",
+      "display": "How often has Cognitive behavioral therapy helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1059",
+      "display": "Have you tried any Other mind-body techniques or therapies to help with your pain in the last 6 months? Please describe"
+    },
+    {
+      "code": "mpq-1060",
+      "display": "How often has CBD oil helped with your pain in the last 6 months?"
+    },
+    {
+      "code": "mpq-1061",
+      "display": "Did the patient view the 4 flat tires video"
+    },
+    {
+      "code": "mpq-1062",
+      "display": "Did the patient access the US Chronic Pain website"
+    },
+    {
+      "code": "mpq-1063",
+      "display": "Please indicate your level of agreement with the following statement: Using the MyPAIN tool has helped me begin preparing for a conversation with my provider about managing my pain."
+    },
+    {
+      "code": "mpq-1064",
+      "display": "Do you have any other feedback or thoughts to share on your use of MyPAIN?"
+    },
+    {
+      "code": "mpq-1065",
+      "display": "When did the patient submit their questionnaire response?"
+    },
+    {
+      "code": "pain-location",
+      "display": "Please describe the location(s) of any pain you have had in the past 7 days."
+    },
+    {
+      "code": "my-pain-intensity",
+      "display": "Thinking about your overall pain, in the past 7 days, please respond to the questions below:"
+    },
+    {
+      "code": "my-pain-interference",
+      "display": "Thinking about your overall pain, in the past 7 days, please respond to the questions below:"
+    },
+    {
+      "code": "about-my-treatments",
+      "display": "My Treatments Questionnaire Grouping Code"
+    },
+    {
+      "code": "about-my-goals",
+      "display": "We'd like to know more about you and your goals"
+    },
+    {
+      "code": "mypain-feedback",
+      "display": "Feedback on your use of MyPAIN"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "56e7d126-4242-4ec5-b1b5-00ab059cd60e",
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+  },
+  "status": "active",
+  "intent": "order",
+  "doNotPerform": false,
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "1049593",
+        "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+      }
+    ],
+    "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+  },
+  "authoredOn": "2019-01-15T16:02:00.000Z"
+}

@@ -1,0 +1,20 @@
+{
+    "resource":{
+    "resourceType" : "Practitioner",
+    "id": "6700aa20-fba5-4d7b-af6f-fbf72da16e6f",
+    "active" : true, 
+    "name":[
+        {
+            "given":[
+                "Dr"
+            ],
+            "family": "Abbott"
+        }
+    ],
+    "gender" : "female"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Practitioner/6700aa20-fba5-4d7b-af6f-fbf72da16e6f"
+    }
+  }

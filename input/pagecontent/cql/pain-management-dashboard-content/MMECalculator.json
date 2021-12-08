@@ -1,0 +1,1049 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "",
+         "type" : "CqlToElmInfo"
+      } ],
+      "identifier" : {
+         "id" : "MMECalculator",
+         "version" : "3.0.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1"
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.1"
+         }, {
+            "localIdentifier" : "OMTKLogic",
+            "path" : "OMTKLogic",
+            "version" : "3.0.0"
+         } ]
+      },
+      "parameters" : {
+         "def" : [ {
+            "name" : "ErrorLevel",
+            "accessLevel" : "Public",
+            "default" : {
+               "valueType" : "{urn:hl7-org:elm-types:r1}String",
+               "value" : "Warning",
+               "type" : "Literal"
+            },
+            "parameterTypeSpecifier" : {
+               "name" : "{urn:hl7-org:elm-types:r1}String",
+               "type" : "NamedTypeSpecifier"
+            }
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "name" : "ToFHIRRange",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "name" : "range",
+               "type" : "OperandRef"
+            },
+            "operand" : [ {
+               "name" : "range",
+               "operandTypeSpecifier" : {
+                  "name" : "{http://hl7.org/fhir}Range",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "ToFHIRQuantity",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "name" : "quantity",
+               "type" : "OperandRef"
+            },
+            "operand" : [ {
+               "name" : "quantity",
+               "operandTypeSpecifier" : {
+                  "name" : "{http://hl7.org/fhir}SimpleQuantity",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "ToFHIRCodeableConcept",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "name" : "codeableConcept",
+               "type" : "OperandRef"
+            },
+            "operand" : [ {
+               "name" : "codeableConcept",
+               "operandTypeSpecifier" : {
+                  "name" : "{http://hl7.org/fhir}CodeableConcept",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "ToQuantity",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Case",
+               "caseItem" : [ {
+                  "when" : {
+                     "type" : "IsNull",
+                     "operand" : {
+                        "name" : "quantity",
+                        "type" : "OperandRef"
+                     }
+                  },
+                  "then" : {
+                     "asType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                     "type" : "As",
+                     "operand" : {
+                        "type" : "Null"
+                     }
+                  }
+               }, {
+                  "when" : {
+                     "type" : "IsNull",
+                     "operand" : {
+                        "path" : "value",
+                        "type" : "Property",
+                        "source" : {
+                           "name" : "quantity",
+                           "type" : "OperandRef"
+                        }
+                     }
+                  },
+                  "then" : {
+                     "asType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                     "type" : "As",
+                     "operand" : {
+                        "type" : "Null"
+                     }
+                  }
+               }, {
+                  "when" : {
+                     "type" : "Or",
+                     "operand" : [ {
+                        "type" : "IsNull",
+                        "operand" : {
+                           "path" : "system",
+                           "type" : "Property",
+                           "source" : {
+                              "name" : "quantity",
+                              "type" : "OperandRef"
+                           }
+                        }
+                     }, {
+                        "type" : "Equal",
+                        "operand" : [ {
+                           "name" : "ToString",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "path" : "system",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "quantity",
+                                 "type" : "OperandRef"
+                              }
+                           } ]
+                        }, {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : "http://unitsofmeasure.org",
+                           "type" : "Literal"
+                        } ]
+                     } ]
+                  },
+                  "then" : {
+                     "classType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                     "type" : "Instance",
+                     "element" : [ {
+                        "name" : "value",
+                        "value" : {
+                           "path" : "value",
+                           "type" : "Property",
+                           "source" : {
+                              "path" : "value",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "quantity",
+                                 "type" : "OperandRef"
+                              }
+                           }
+                        }
+                     }, {
+                        "name" : "unit",
+                        "value" : {
+                           "path" : "value",
+                           "type" : "Property",
+                           "source" : {
+                              "path" : "code",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "quantity",
+                                 "type" : "OperandRef"
+                              }
+                           }
+                        }
+                     } ]
+                  }
+               } ],
+               "else" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}Quantity",
+                  "type" : "As",
+                  "operand" : {
+                     "type" : "Message",
+                     "source" : {
+                        "type" : "Null"
+                     },
+                     "condition" : {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                        "value" : "true",
+                        "type" : "Literal"
+                     },
+                     "code" : {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                        "value" : "MMECalculator.ToQuantity.InvalidFHIRQuantity",
+                        "type" : "Literal"
+                     },
+                     "severity" : {
+                        "name" : "ErrorLevel",
+                        "type" : "ParameterRef"
+                     },
+                     "message" : {
+                        "type" : "Concatenate",
+                        "operand" : [ {
+                           "type" : "Coalesce",
+                           "operand" : [ {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "Invalid FHIR Quantity code: ",
+                              "type" : "Literal"
+                           }, {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "",
+                              "type" : "Literal"
+                           } ]
+                        }, {
+                           "type" : "Coalesce",
+                           "operand" : [ {
+                              "path" : "value",
+                              "type" : "Property",
+                              "source" : {
+                                 "path" : "code",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "name" : "quantity",
+                                    "type" : "OperandRef"
+                                 }
+                              }
+                           }, {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "",
+                              "type" : "Literal"
+                           } ]
+                        } ]
+                     }
+                  }
+               }
+            },
+            "operand" : [ {
+               "name" : "quantity",
+               "operandTypeSpecifier" : {
+                  "name" : "{http://hl7.org/fhir}SimpleQuantity",
+                  "type" : "NamedTypeSpecifier"
+               }
+            } ]
+         }, {
+            "name" : "Prescriptions",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "O",
+                  "expression" : {
+                     "name" : "Orders",
+                     "type" : "OperandRef"
+                  }
+               } ],
+               "let" : [ {
+                  "identifier" : "rxNormCode",
+                  "expression" : {
+                     "name" : "GetMedicationCode",
+                     "libraryName" : "OMTKLogic",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "ToConcept",
+                        "libraryName" : "FHIRHelpers",
+                        "type" : "FunctionRef",
+                        "operand" : [ {
+                           "asType" : "{http://hl7.org/fhir}CodeableConcept",
+                           "type" : "As",
+                           "operand" : {
+                              "path" : "medication",
+                              "scope" : "O",
+                              "type" : "Property"
+                           }
+                        } ]
+                     } ]
+                  }
+               }, {
+                  "identifier" : "medicationName",
+                  "expression" : {
+                     "name" : "GetMedicationName",
+                     "libraryName" : "OMTKLogic",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "rxNormCode",
+                        "type" : "QueryLetRef"
+                     } ]
+                  }
+               }, {
+                  "identifier" : "dosageInstruction",
+                  "expression" : {
+                     "type" : "SingletonFrom",
+                     "operand" : {
+                        "path" : "dosageInstruction",
+                        "scope" : "O",
+                        "type" : "Property"
+                     }
+                  }
+               }, {
+                  "identifier" : "doseAndRate",
+                  "expression" : {
+                     "type" : "SingletonFrom",
+                     "operand" : {
+                        "path" : "doseAndRate",
+                        "type" : "Property",
+                        "source" : {
+                           "name" : "dosageInstruction",
+                           "type" : "QueryLetRef"
+                        }
+                     }
+                  }
+               }, {
+                  "identifier" : "repeat",
+                  "expression" : {
+                     "path" : "repeat",
+                     "type" : "Property",
+                     "source" : {
+                        "path" : "timing",
+                        "type" : "Property",
+                        "source" : {
+                           "name" : "dosageInstruction",
+                           "type" : "QueryLetRef"
+                        }
+                     }
+                  }
+               }, {
+                  "identifier" : "frequency",
+                  "expression" : {
+                     "type" : "Coalesce",
+                     "operand" : [ {
+                        "path" : "value",
+                        "type" : "Property",
+                        "source" : {
+                           "path" : "frequencyMax",
+                           "type" : "Property",
+                           "source" : {
+                              "name" : "repeat",
+                              "type" : "QueryLetRef"
+                           }
+                        }
+                     }, {
+                        "path" : "value",
+                        "type" : "Property",
+                        "source" : {
+                           "path" : "frequency",
+                           "type" : "Property",
+                           "source" : {
+                              "name" : "repeat",
+                              "type" : "QueryLetRef"
+                           }
+                        }
+                     } ]
+                  }
+               }, {
+                  "identifier" : "period",
+                  "expression" : {
+                     "name" : "Quantity",
+                     "libraryName" : "OMTKLogic",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "path" : "value",
+                        "type" : "Property",
+                        "source" : {
+                           "path" : "period",
+                           "type" : "Property",
+                           "source" : {
+                              "name" : "repeat",
+                              "type" : "QueryLetRef"
+                           }
+                        }
+                     }, {
+                        "path" : "value",
+                        "type" : "Property",
+                        "source" : {
+                           "path" : "periodUnit",
+                           "type" : "Property",
+                           "source" : {
+                              "name" : "repeat",
+                              "type" : "QueryLetRef"
+                           }
+                        }
+                     } ]
+                  }
+               }, {
+                  "identifier" : "doseRange",
+                  "expression" : {
+                     "name" : "ToFHIRRange",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "asType" : "{http://hl7.org/fhir}Range",
+                        "type" : "As",
+                        "operand" : {
+                           "path" : "dose",
+                           "type" : "Property",
+                           "source" : {
+                              "name" : "doseAndRate",
+                              "type" : "QueryLetRef"
+                           }
+                        }
+                     } ]
+                  }
+               }, {
+                  "identifier" : "doseQuantity",
+                  "expression" : {
+                     "name" : "ToFHIRQuantity",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "asType" : "{http://hl7.org/fhir}SimpleQuantity",
+                        "type" : "As",
+                        "operand" : {
+                           "path" : "dose",
+                           "type" : "Property",
+                           "source" : {
+                              "name" : "doseAndRate",
+                              "type" : "QueryLetRef"
+                           }
+                        }
+                     } ]
+                  }
+               }, {
+                  "identifier" : "timesPerDay",
+                  "expression" : {
+                     "type" : "Count",
+                     "source" : {
+                        "path" : "timeOfDay",
+                        "type" : "Property",
+                        "source" : {
+                           "name" : "repeat",
+                           "type" : "QueryLetRef"
+                        }
+                     }
+                  }
+               }, {
+                  "identifier" : "doseDescription",
+                  "expression" : {
+                     "type" : "Coalesce",
+                     "operand" : [ {
+                        "type" : "ToString",
+                        "operand" : {
+                           "name" : "ToQuantity",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "doseQuantity",
+                              "type" : "QueryLetRef"
+                           } ]
+                        }
+                     }, {
+                        "type" : "Concatenate",
+                        "operand" : [ {
+                           "type" : "Concatenate",
+                           "operand" : [ {
+                              "type" : "Concatenate",
+                              "operand" : [ {
+                                 "type" : "Concatenate",
+                                 "operand" : [ {
+                                    "type" : "ToString",
+                                    "operand" : {
+                                       "path" : "value",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "path" : "value",
+                                          "type" : "Property",
+                                          "source" : {
+                                             "path" : "low",
+                                             "type" : "Property",
+                                             "source" : {
+                                                "name" : "doseRange",
+                                                "type" : "QueryLetRef"
+                                             }
+                                          }
+                                       }
+                                    }
+                                 }, {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "-",
+                                    "type" : "Literal"
+                                 } ]
+                              }, {
+                                 "type" : "ToString",
+                                 "operand" : {
+                                    "path" : "value",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "path" : "value",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "path" : "high",
+                                          "type" : "Property",
+                                          "source" : {
+                                             "name" : "doseRange",
+                                             "type" : "QueryLetRef"
+                                          }
+                                       }
+                                    }
+                                 }
+                              } ]
+                           }, {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : " ",
+                              "type" : "Literal"
+                           } ]
+                        }, {
+                           "path" : "value",
+                           "type" : "Property",
+                           "source" : {
+                              "path" : "unit",
+                              "type" : "Property",
+                              "source" : {
+                                 "path" : "high",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "name" : "doseRange",
+                                    "type" : "QueryLetRef"
+                                 }
+                              }
+                           }
+                        } ]
+                     } ]
+                  }
+               }, {
+                  "identifier" : "frequencyDescription",
+                  "expression" : {
+                     "type" : "Concatenate",
+                     "operand" : [ {
+                        "type" : "ToString",
+                        "operand" : {
+                           "path" : "value",
+                           "type" : "Property",
+                           "source" : {
+                              "path" : "frequency",
+                              "type" : "Property",
+                              "source" : {
+                                 "path" : "repeat",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "path" : "timing",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "name" : "dosageInstruction",
+                                       "type" : "QueryLetRef"
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }, {
+                        "type" : "Coalesce",
+                        "operand" : [ {
+                           "type" : "Concatenate",
+                           "operand" : [ {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "-",
+                              "type" : "Literal"
+                           }, {
+                              "type" : "ToString",
+                              "operand" : {
+                                 "path" : "value",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "path" : "frequencyMax",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "path" : "repeat",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "path" : "timing",
+                                          "type" : "Property",
+                                          "source" : {
+                                             "name" : "dosageInstruction",
+                                             "type" : "QueryLetRef"
+                                          }
+                                       }
+                                    }
+                                 }
+                              }
+                           } ]
+                        }, {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : "",
+                           "type" : "Literal"
+                        } ]
+                     } ]
+                  }
+               } ],
+               "relationship" : [ ],
+               "return" : {
+                  "expression" : {
+                     "type" : "Tuple",
+                     "element" : [ {
+                        "name" : "rxNormCode",
+                        "value" : {
+                           "name" : "rxNormCode",
+                           "type" : "QueryLetRef"
+                        }
+                     }, {
+                        "name" : "isDraft",
+                        "value" : {
+                           "type" : "Equal",
+                           "operand" : [ {
+                              "path" : "value",
+                              "type" : "Property",
+                              "source" : {
+                                 "path" : "status",
+                                 "scope" : "O",
+                                 "type" : "Property"
+                              }
+                           }, {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "draft",
+                              "type" : "Literal"
+                           } ]
+                        }
+                     }, {
+                        "name" : "isPRN",
+                        "value" : {
+                           "path" : "asNeeded",
+                           "type" : "Property",
+                           "source" : {
+                              "name" : "dosageInstruction",
+                              "type" : "QueryLetRef"
+                           }
+                        }
+                     }, {
+                        "name" : "prescription",
+                        "value" : {
+                           "type" : "If",
+                           "condition" : {
+                              "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                              "type" : "As",
+                              "operand" : {
+                                 "type" : "Not",
+                                 "operand" : {
+                                    "type" : "IsNull",
+                                    "operand" : {
+                                       "path" : "text",
+                                       "type" : "Property",
+                                       "source" : {
+                                          "name" : "dosageInstruction",
+                                          "type" : "QueryLetRef"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "then" : {
+                              "type" : "Concatenate",
+                              "operand" : [ {
+                                 "type" : "Concatenate",
+                                 "operand" : [ {
+                                    "name" : "medicationName",
+                                    "type" : "QueryLetRef"
+                                 }, {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : " ",
+                                    "type" : "Literal"
+                                 } ]
+                              }, {
+                                 "path" : "value",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "path" : "text",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "name" : "dosageInstruction",
+                                       "type" : "QueryLetRef"
+                                    }
+                                 }
+                              } ]
+                           },
+                           "else" : {
+                              "type" : "Concatenate",
+                              "operand" : [ {
+                                 "type" : "Concatenate",
+                                 "operand" : [ {
+                                    "type" : "Concatenate",
+                                    "operand" : [ {
+                                       "type" : "Concatenate",
+                                       "operand" : [ {
+                                          "type" : "Concatenate",
+                                          "operand" : [ {
+                                             "name" : "medicationName",
+                                             "type" : "QueryLetRef"
+                                          }, {
+                                             "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                             "value" : " ",
+                                             "type" : "Literal"
+                                          } ]
+                                       }, {
+                                          "name" : "doseDescription",
+                                          "type" : "QueryLetRef"
+                                       } ]
+                                    }, {
+                                       "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                       "value" : " q",
+                                       "type" : "Literal"
+                                    } ]
+                                 }, {
+                                    "name" : "frequencyDescription",
+                                    "type" : "QueryLetRef"
+                                 } ]
+                              }, {
+                                 "type" : "If",
+                                 "condition" : {
+                                    "name" : "ToBoolean",
+                                    "libraryName" : "FHIRHelpers",
+                                    "type" : "FunctionRef",
+                                    "operand" : [ {
+                                       "asType" : "{http://hl7.org/fhir}boolean",
+                                       "type" : "As",
+                                       "operand" : {
+                                          "path" : "asNeeded",
+                                          "type" : "Property",
+                                          "source" : {
+                                             "name" : "dosageInstruction",
+                                             "type" : "QueryLetRef"
+                                          }
+                                       }
+                                    } ]
+                                 },
+                                 "then" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : " PRN",
+                                    "type" : "Literal"
+                                 },
+                                 "else" : {
+                                    "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                                    "value" : "",
+                                    "type" : "Literal"
+                                 }
+                              } ]
+                           }
+                        }
+                     }, {
+                        "name" : "dose",
+                        "value" : {
+                           "name" : "ToQuantity",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "type" : "Coalesce",
+                              "operand" : [ {
+                                 "name" : "doseQuantity",
+                                 "type" : "QueryLetRef"
+                              }, {
+                                 "path" : "high",
+                                 "type" : "Property",
+                                 "source" : {
+                                    "name" : "doseRange",
+                                    "type" : "QueryLetRef"
+                                 }
+                              } ]
+                           } ]
+                        }
+                     }, {
+                        "name" : "dosesPerDay",
+                        "value" : {
+                           "type" : "Coalesce",
+                           "operand" : [ {
+                              "name" : "ToDaily",
+                              "libraryName" : "OMTKLogic",
+                              "type" : "FunctionRef",
+                              "operand" : [ {
+                                 "name" : "frequency",
+                                 "type" : "QueryLetRef"
+                              }, {
+                                 "name" : "period",
+                                 "type" : "QueryLetRef"
+                              } ]
+                           }, {
+                              "type" : "ToDecimal",
+                              "operand" : {
+                                 "name" : "timesPerDay",
+                                 "type" : "QueryLetRef"
+                              }
+                           }, {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}Decimal",
+                              "value" : "1.0",
+                              "type" : "Literal"
+                           } ]
+                        }
+                     } ]
+                  }
+               }
+            },
+            "operand" : [ {
+               "name" : "Orders",
+               "operandTypeSpecifier" : {
+                  "type" : "ListTypeSpecifier",
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}MedicationRequest",
+                     "type" : "NamedTypeSpecifier"
+                  }
+               }
+            } ]
+         }, {
+            "name" : "MME",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "type" : "Query",
+               "source" : [ {
+                  "alias" : "P",
+                  "expression" : {
+                     "name" : "Prescriptions",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "name" : "prescriptions",
+                        "type" : "OperandRef"
+                     } ]
+                  }
+               } ],
+               "let" : [ {
+                  "identifier" : "mmePerIngredient",
+                  "expression" : {
+                     "name" : "CalculateMMEs",
+                     "libraryName" : "OMTKLogic",
+                     "type" : "FunctionRef",
+                     "operand" : [ {
+                        "type" : "List",
+                        "element" : [ {
+                           "type" : "Tuple",
+                           "element" : [ {
+                              "name" : "rxNormCode",
+                              "value" : {
+                                 "path" : "rxNormCode",
+                                 "scope" : "P",
+                                 "type" : "Property"
+                              }
+                           }, {
+                              "name" : "doseQuantity",
+                              "value" : {
+                                 "path" : "dose",
+                                 "scope" : "P",
+                                 "type" : "Property"
+                              }
+                           }, {
+                              "name" : "dosesPerDay",
+                              "value" : {
+                                 "path" : "dosesPerDay",
+                                 "scope" : "P",
+                                 "type" : "Property"
+                              }
+                           } ]
+                        } ]
+                     } ]
+                  }
+               } ],
+               "relationship" : [ ],
+               "return" : {
+                  "expression" : {
+                     "type" : "Tuple",
+                     "element" : [ {
+                        "name" : "rxNormCode",
+                        "value" : {
+                           "path" : "rxNormCode",
+                           "scope" : "P",
+                           "type" : "Property"
+                        }
+                     }, {
+                        "name" : "isDraft",
+                        "value" : {
+                           "path" : "isDraft",
+                           "scope" : "P",
+                           "type" : "Property"
+                        }
+                     }, {
+                        "name" : "isPRN",
+                        "value" : {
+                           "path" : "isPRN",
+                           "scope" : "P",
+                           "type" : "Property"
+                        }
+                     }, {
+                        "name" : "prescription",
+                        "value" : {
+                           "path" : "prescription",
+                           "scope" : "P",
+                           "type" : "Property"
+                        }
+                     }, {
+                        "name" : "dailyDose",
+                        "value" : {
+                           "type" : "Combine",
+                           "source" : {
+                              "type" : "Query",
+                              "source" : [ {
+                                 "alias" : "X",
+                                 "expression" : {
+                                    "name" : "mmePerIngredient",
+                                    "type" : "QueryLetRef"
+                                 }
+                              } ],
+                              "relationship" : [ ],
+                              "return" : {
+                                 "expression" : {
+                                    "path" : "dailyDoseDescription",
+                                    "scope" : "X",
+                                    "type" : "Property"
+                                 }
+                              }
+                           },
+                           "separator" : {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                              "value" : "\r\n",
+                              "type" : "Literal"
+                           }
+                        }
+                     }, {
+                        "name" : "mme",
+                        "value" : {
+                           "type" : "Sum",
+                           "source" : {
+                              "type" : "Query",
+                              "source" : [ {
+                                 "alias" : "X",
+                                 "expression" : {
+                                    "name" : "mmePerIngredient",
+                                    "type" : "QueryLetRef"
+                                 }
+                              } ],
+                              "relationship" : [ ],
+                              "return" : {
+                                 "expression" : {
+                                    "path" : "mme",
+                                    "scope" : "X",
+                                    "type" : "Property"
+                                 }
+                              }
+                           }
+                        }
+                     } ]
+                  }
+               }
+            },
+            "operand" : [ {
+               "name" : "prescriptions",
+               "operandTypeSpecifier" : {
+                  "type" : "ListTypeSpecifier",
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}MedicationRequest",
+                     "type" : "NamedTypeSpecifier"
+                  }
+               }
+            } ]
+         }, {
+            "name" : "TotalMME",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "expression" : {
+               "name" : "Quantity",
+               "libraryName" : "OMTKLogic",
+               "type" : "FunctionRef",
+               "operand" : [ {
+                  "type" : "Sum",
+                  "source" : {
+                     "type" : "Query",
+                     "source" : [ {
+                        "alias" : "M",
+                        "expression" : {
+                           "name" : "MME",
+                           "type" : "FunctionRef",
+                           "operand" : [ {
+                              "name" : "prescriptions",
+                              "type" : "OperandRef"
+                           } ]
+                        }
+                     } ],
+                     "relationship" : [ ],
+                     "return" : {
+                        "expression" : {
+                           "path" : "value",
+                           "type" : "Property",
+                           "source" : {
+                              "path" : "mme",
+                              "scope" : "M",
+                              "type" : "Property"
+                           }
+                        }
+                     }
+                  }
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                  "value" : "{MME}/d",
+                  "type" : "Literal"
+               } ]
+            },
+            "operand" : [ {
+               "name" : "prescriptions",
+               "operandTypeSpecifier" : {
+                  "type" : "ListTypeSpecifier",
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}MedicationRequest",
+                     "type" : "NamedTypeSpecifier"
+                  }
+               }
+            } ]
+         } ]
+      }
+   }
+}
+

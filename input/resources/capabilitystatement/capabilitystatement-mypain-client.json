@@ -1,0 +1,123 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "mypain-client",
+  "name": "MyPAINClient",
+  "title": "MyPAIN Client Capability Statement",
+  "status": "active",
+  "experimental": false,
+  "description": "Describes the capabilities a FHIR client will use to implement the functionality of the MyPAIN application",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [ "application/fhir+xml", "application/fhir+json" ],
+  "implementationGuide": [ "http://fhir.org/guides/cqf/cds4cpm/ImplementationGuide/cqf.fhir.cds4cpm" ],
+  "rest": [
+    {
+      "mode": "client",
+      "resource": [
+        {
+          "type": "Patient",
+          "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+          "interaction": [
+            {
+              "code": "read"
+            }
+          ]
+        },
+        {
+          "type": "Appointment",
+          "profile": "http://fhir.org/guides/argonaut-scheduling/StructureDefinition/argo-appt",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchInclude": [ "Practitioner" ],
+          "searchParam": [
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
+            {
+              "name": "date",
+              "type": "date"
+            },
+            {
+              "name": "practitioner",
+              "type": "reference"
+            }
+          ]
+        },
+        {
+          "type": "Practitioner",
+          "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+          "interaction": [
+            {
+              "code": "read"
+            }
+          ]
+        },
+        {
+          "type": "Questionnaire",
+          "profile": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "url",
+              "type": "uri"
+            },
+            {
+              "name": "version",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "QuestionnaireResponse",
+          "profile": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "patient",
+              "type": "reference"
+            },
+            {
+              "name": "questionnaire",
+              "type": "reference"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

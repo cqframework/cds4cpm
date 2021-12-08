@@ -1,0 +1,17 @@
+title MyPAIN Data Notification
+participant MyPAIN Trigger
+participant EHR Notification
+actor Provider
+participant PainManager
+
+MyPAIN Trigger->MyPAIN Trigger: Persistent\n link
+MyPAIN Trigger->MyPAIN Trigger: Execution of\n notification\n sequence
+MyPAIN Trigger->MyPAIN Trigger: Notification\n based\n on filters
+MyPAIN Trigger->EHR Notification: Mark patient record\n with MyPAIN data
+EHR Notification->EHR Notification: Provider inbox\n message
+EHR Notification->EHR Notification: Patient chart flag
+EHR Notification->EHR Notification: Snapshot silent BPA\n and/or CDS Hooks service
+EHR Notification->Provider: Access PainManager
+Provider->PainManager: Review MyPAIN Data
+PainManager->]: Shared Decision Making\n(SDM) Encounter
+end

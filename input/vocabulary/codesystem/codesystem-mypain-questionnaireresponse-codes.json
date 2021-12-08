@@ -1,0 +1,215 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "mypain-questionnaireresponse-codes",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "executable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+  "name": "MyPAINQuestionnaireResponseCodes",
+  "title": "MyPAIN Questionnaire Response Codes",
+  "status": "active",
+  "experimental": false,
+  "description": "Code system for responses from questionnaire used in MyPAIN and Pain Manager",
+  "caseSensitive": true,
+  "valueSet": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/mypain-questionnaireresponse-codes",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "mpqr-1000",
+      "display": "Never"
+    },
+    {
+      "code": "mpqr-1001",
+      "display": "Sometimes"
+    },
+    {
+      "code": "mpqr-1002",
+      "display": "Always"
+    },
+    {
+      "code": "mpqr-1003",
+      "display": "Had no pain",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpqr-1004",
+      "display": "Mild",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpqr-1005",
+      "display": "Moderate",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpqr-1006",
+      "display": "Severe",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpqr-1007",
+      "display": "Very Severe",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpqr-1008",
+      "display": "Not at all",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpqr-1009",
+      "display": "A little bit",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpqr-1010",
+      "display": "Somewhat",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpqr-1011",
+      "display": "Quite a bit",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+    {
+      "code": "mpqr-1012",
+      "display": "Very much",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+     {
+      "code": "mpqr-1013",
+      "display": "Stabbing",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+     {
+      "code": "mpqr-1014",
+      "display": "Burning",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+     {
+      "code": "mpqr-1015",
+      "display": "Aching",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+     {
+      "code": "mpqr-1016",
+      "display": "Tingling",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+     {
+      "code": "mpqr-1017",
+      "display": "Prickling",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    },
+     {
+      "code": "mpqr-1018",
+      "display": "Throbbing",
+      "property": [
+        {
+          "code": "http://hl7.org/fhir/concept-properties#status",
+          "valueCode": "retired"
+        }
+      ]
+    }
+  ]
+}

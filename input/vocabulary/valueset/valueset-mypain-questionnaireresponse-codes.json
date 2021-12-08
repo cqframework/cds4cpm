@@ -1,0 +1,266 @@
+{
+  "resourceType": "ValueSet",
+  "id": "mypain-questionnaireresponse-codes",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "executable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+      "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+    }
+  ],
+  "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/mypain-questionnaireresponse-codes",
+  "name": "MyPAINQuestionnaireResponseCodes",
+  "title": "MyPAIN QuestionnaireResponse Codes",
+  "status": "active",
+  "experimental": false,
+  "description": "Value set for Questionnaire Response Codes used in the MyPAIN Questionnaire",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes"
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2020-10-27T21:08:47-06:00",
+    "contains": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1000",
+        "display": "Never"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1001",
+        "display": "Sometimes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1002",
+        "display": "Always"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1003",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1004",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1005",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1006",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1007",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1008",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1009",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1010",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1011",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1012",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1013",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1014",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1015",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1016",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1017",
+        "display": "RETIRED"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+        "code": "mpqr-1018",
+        "display": "RETIRED"
+      }
+    ]
+  }
+}

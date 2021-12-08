@@ -1,0 +1,241 @@
+Running tests.
+Data path: D:\Projects\cds4cpm\input\tests\PainManager
+Terminology path: D:\Projects\cds4cpm\input\vocabulary\valueset
+Test 5c41cecf-cf81-434f-9da7-e24e5a99dbc2
+Thu Oct 22 2020 16:05:15 GMT-0600 (Mountain Daylight Time)
+Patient=org.hl7.fhir.r4.model.Patient@bfe51c3
+ActiveOpioidMedications=[org.hl7.fhir.r4.model.MedicationRequest@1e3e01b, org.hl7.fhir.r4.model.MedicationRequest@59a8891e, org.hl7.fhir.r4.model.MedicationRequest@51a94f7f, org.hl7.fhir.r4.model.MedicationRequest@591e1df7]
+CurrentMME=null
+ReportCurrentMME=[null]
+QuestionnaireObservations=[org.hl7.fhir.r4.model.Observation@6592f06, org.hl7.fhir.r4.model.Observation@c444506, org.hl7.fhir.r4.model.Observation@73985c99, org.hl7.fhir.r4.model.Observation@402cdf60, org.hl7.fhir.r4.model.Observation@4cecbf3e, org.hl7.fhir.r4.model.Observation@36a74c18, org.hl7.fhir.r4.model.Observation@49bf8d66, org.hl7.fhir.r4.model.Observation@57110a9d, org.hl7.fhir.r4.model.Observation@2b515b5c, org.hl7.fhir.r4.model.Observation@51430893, org.hl7.fhir.r4.model.Observation@68ac7598, org.hl7.fhir.r4.model.Observation@76425cc2, org.hl7.fhir.r4.model.Observation@28790ede, org.hl7.fhir.r4.model.Observation@642ef710, org.hl7.fhir.r4.model.Observation@4b3abc1, org.hl7.fhir.r4.model.Observation@4748a39a, org.hl7.fhir.r4.model.Observation@2483eb07, org.hl7.fhir.r4.model.Observation@56567e9b, org.hl7.fhir.r4.model.Observation@513e0c9a, org.hl7.fhir.r4.model.Observation@5fb65af5, org.hl7.fhir.r4.model.Observation@6a47f34c, org.hl7.fhir.r4.model.Observation@37d88e50, org.hl7.fhir.r4.model.Observation@6f2d77e9, org.hl7.fhir.r4.model.Observation@71109f13, org.hl7.fhir.r4.model.Observation@1e55ee99, org.hl7.fhir.r4.model.Observation@7b601e55, org.hl7.fhir.r4.model.Observation@7a72fc23, org.hl7.fhir.r4.model.Observation@12882698, org.hl7.fhir.r4.model.Observation@4c4da7ec, org.hl7.fhir.r4.model.Observation@768f9097, org.hl7.fhir.r4.model.Observation@1ecf9602, org.hl7.fhir.r4.model.Observation@307eaa06, org.hl7.fhir.r4.model.Observation@5dc5a622, org.hl7.fhir.r4.model.Observation@1dcaa052, org.hl7.fhir.r4.model.Observation@41ad5874, org.hl7.fhir.r4.model.Observation@4a83736a, org.hl7.fhir.r4.model.Observation@4cad5173, org.hl7.fhir.r4.model.Observation@4765e57, org.hl7.fhir.r4.model.Observation@395a5526, org.hl7.fhir.r4.model.Observation@463d48b2, org.hl7.fhir.r4.model.Observation@2a53d576, org.hl7.fhir.r4.model.Observation@1b6bb1bd, org.hl7.fhir.r4.model.Observation@21ed2052, org.hl7.fhir.r4.model.Observation@d86a616, org.hl7.fhir.r4.model.Observation@360fe828, org.hl7.fhir.r4.model.Observation@7d2fc711, org.hl7.fhir.r4.model.Observation@75b9bbab, org.hl7.fhir.r4.model.Observation@7fbb0f0f, org.hl7.fhir.r4.model.Observation@43fe325e, org.hl7.fhir.r4.model.Observation@a55ed01, org.hl7.fhir.r4.model.Observation@4ddeada6, org.hl7.fhir.r4.model.Observation@27e1c83, org.hl7.fhir.r4.model.Observation@27a9fe9e, org.hl7.fhir.r4.model.Observation@4a4cdeb0, org.hl7.fhir.r4.model.Observation@4f5f4f7a, org.hl7.fhir.r4.model.Observation@61140895, org.hl7.fhir.r4.model.Observation@4c9a3ae, org.hl7.fhir.r4.model.Observation@77d1e709, org.hl7.fhir.r4.model.Observation@141fc03a]
+ReportMyPAINSubmitDate=[null, DateTimeType[2020-10-21T13:52:02-06:00]]
+ReportActivityGoals=null
+ReportActivityBarriers=null
+ReportPainLocations=[[Tuple {
+	"Location": What type of HEAD pain?
+	"PainYesNo": true
+	"Description": Stabbing
+}], [Tuple {
+	"Location": What type of HIPS pain?
+	"PainYesNo": true
+	"Description": Tingling
+}], [Tuple {
+	"Location": What type of UPPER LEGS pain?
+	"PainYesNo": true
+	"Description": Prickling
+}], [Tuple {
+	"Location": What type of KNEES pain?
+	"PainYesNo": true
+	"Description": Throbbing
+}], [Tuple {
+	"Location": What type of LOWER LEGS pain?
+	"PainYesNo": true
+	"Description": Stabbing
+}], [Tuple {
+	"Location": What type of FEET pain?
+	"PainYesNo": true
+	"Description": Burning
+}], [Tuple {
+	"Location": What type of EVERYWHERE pain?
+	"PainYesNo": true
+	"Description": Aching
+}], [Tuple {
+	"Location": What type of NECK pain?
+	"PainYesNo": true
+	"Description": Burning
+}], [Tuple {
+	"Location": What type of SHOULDERS pain?
+	"PainYesNo": true
+	"Description": Aching
+}], [Tuple {
+	"Location": What type of ARMS pain?
+	"PainYesNo": true
+	"Description": Tingling
+}], [Tuple {
+	"Location": What type of UPPER BACK pain?
+	"PainYesNo": true
+	"Description": Prickling
+}], [Tuple {
+	"Location": What type of LOWER BACK pain?
+	"PainYesNo": true
+	"Description": Throbbing
+}], [Tuple {
+	"Location": What type of HANDS pain?
+	"PainYesNo": true
+	"Description": Stabbing
+}], [Tuple {
+	"Location": What type of ABDOMEN pain?
+	"PainYesNo": true
+	"Description": Burning
+}], [Tuple {
+	"Location": What type of PELVIS pain?
+	"PainYesNo": true
+	"Description": Aching
+}]]
+ReportPainIntensityAndInterference=[Tuple {
+	"Question": What type of HEAD pain?
+	"Response": Stabbing
+}, Tuple {
+	"Question": What type of HIPS pain?
+	"Response": Tingling
+}, Tuple {
+	"Question": What type of UPPER LEGS pain?
+	"Response": Prickling
+}, Tuple {
+	"Question": What type of KNEES pain?
+	"Response": Throbbing
+}, Tuple {
+	"Question": What type of LOWER LEGS pain?
+	"Response": Stabbing
+}, Tuple {
+	"Question": What type of FEET pain?
+	"Response": Burning
+}, Tuple {
+	"Question": What type of EVERYWHERE pain?
+	"Response": Aching
+}, Tuple {
+	"Question": What type of NECK pain?
+	"Response": Burning
+}, Tuple {
+	"Question": What type of SHOULDERS pain?
+	"Response": Aching
+}, Tuple {
+	"Question": What type of ARMS pain?
+	"Response": Tingling
+}, Tuple {
+	"Question": What type of UPPER BACK pain?
+	"Response": Prickling
+}, Tuple {
+	"Question": What type of LOWER BACK pain?
+	"Response": Throbbing
+}, Tuple {
+	"Question": What type of HANDS pain?
+	"Response": Stabbing
+}, Tuple {
+	"Question": What type of ABDOMEN pain?
+	"Response": Burning
+}, Tuple {
+	"Question": What type of PELVIS pain?
+	"Response": Aching
+}, Tuple {
+	"Question": How intense was your pain at its worst?
+	"Response": Had no pain
+}, Tuple {
+	"Question": How intense was your average pain?
+	"Response": Mild
+}, Tuple {
+	"Question": What is your level of pain right now?
+	"Response": Moderate
+}, Tuple {
+	"Question": How much did pain interfere with your day to day activities?
+	"Response": Not at all
+}, Tuple {
+	"Question": How much did pain interfere with your work around the home?
+	"Response": A little bit
+}, Tuple {
+	"Question": How much did pain interfere with your ability to participate in social activities?
+	"Response": Somewhat
+}, Tuple {
+	"Question": How much did pain interfere with your household chores?
+	"Response": Quite a bit
+}]
+ReportResourcesProvidedInMyPAIN=[Tuple {
+	"Resource": null
+	"ResourceUrl": null
+	"ViewedOn": null
+}]
+ReportSelfReportedTreatmentsFromMyPAIN=[[Tuple {
+	"Treatment": [[Exercises at home (such as those assigned by a therapist) or outside (such as walking, jogging, swimming)]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Sleep positioners or devices (such as additional pillows, padding, etc.)]]
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": [[Stretching]]
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": [[Weight loss or changes in your diet]]
+	"Effectiveness": Always
+}], [Tuple {
+	"Treatment": [[Setting and reaching activity goals]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Ice or Heat Therapy]]
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": [[Physical Therapy]]
+	"Effectiveness": Always
+}], [Tuple {
+	"Treatment": [[Acupuncture]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Chiropractic treatment]]
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": [[Pain relievers (such as Advil, Aleve, Aspirin, Ibuprofen, Motrin, Tylenol)]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Herbal or nutritional pain relievers (such as ginseng or kava kava)]]
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": [[Cremes, lotions, gels or patches applied to the skin (for example BENGAY�, TIGER BALM� or BiOFREEZE�)]]
+	"Effectiveness": Always
+}], [Tuple {
+	"Treatment": [[Opioid medications (such as hydrocodone, oxycodone, codeine, morphine and fentanyl)]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Procedure or Injection (such as a shot to relieve inflammation)]]
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": [[Non-opioid medications as prescribed by a doctor (such as Celebrex or Cymbalta)]]
+	"Effectiveness": Always
+}], [Tuple {
+	"Treatment": [[Medical marijuana]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Yoga]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Massage]]
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": [[Meditation]]
+	"Effectiveness": Always
+}], [Tuple {
+	"Treatment": [[Relaxation or mindfulness-based training]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Group or individual therapy for pain]]
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": [[Cognitive behavioral therapy]]
+	"Effectiveness": Always
+}], [Tuple {
+	"Treatment": [[Acceptance or commitment therapy]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Sleep management (such as a sleep study or CPAP)]]
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": [[Aromatherapy]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Crystals]]
+	"Effectiveness": Sometimes
+}], [Tuple {
+	"Treatment": [[Essential oils]]
+	"Effectiveness": Always
+}], [Tuple {
+	"Treatment": [[CBD oil]]
+	"Effectiveness": Never
+}], [Tuple {
+	"Treatment": [[Music therapy]]
+	"Effectiveness": Sometimes
+}]]
+ReportRecommendation3Text=Per CDC guidelines, before starting, and periodically during opioid therapy, clinicians should discuss with patients known risks and realistic benefits of opioid therapy and patient and clinician responsibilities for managing therapy (recommendation category: A, evidence type: 3).  [CDC Opioid Prescribing Guideline, Recommendation #3](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)
+ReportRecommendation5Text=null
+ReportRecommendation8Text=Per CDC guidelines, before starting, and periodically during continuation of opioid therapy, clinicians should evaluate risk factors for opioid-related harms. Clinicians should incorporate into the management plan strategies to mitigate risk, including considering offering naloxone when factors that increase risk for opioid overdose, such as history of overdose, history of substance use disorder, higher opioid dosages (greater than or equal to [?] 50 morphine milligram equivalents [MME]/day), or concurrent benzodiazepine use, are present (recommendation category: A, evidence type: 4). [CDC Opioid Prescribing Guideline, Recommendation #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)
+ReportRecommendation10Text=null
+ReportRecommendation11Text=null
+Summary=null
+elapsed: 7.139 seconds

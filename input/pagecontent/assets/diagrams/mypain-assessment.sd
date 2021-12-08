@@ -1,0 +1,26 @@
+title MyPAIN Assessment
+participant Patient Portal
+actor Patient
+participant MyPAIN
+participant FHIR Server
+participant OAuth Server
+participant Site-Specific Adapter
+
+Patient Portal->Patient: Patient receives\nemail notification
+Patient->Patient Portal: Patient logs in\nto review messages
+Patient->MyPAIN: Patient clicks on url\nto launch MyPAIN\n(FHIR endpoint +\n launch context)
+MyPAIN->FHIR Server: Requests \nCapabilityStatement
+FHIR Server->MyPAIN: Returns\n CapabilityStatement\n (w/ OAuth endpoint)
+MyPAIN->OAuth Server: Authorization Request
+OAuth Server->MyPAIN: Authorization token
+MyPAIN->FHIR Server: Request Questionnaire
+FHIR Server->Site-Specific Adapter: FHIR Server Forwards Request for Questionnaire
+Site-Specific Adapter->FHIR Server: Returns Questionnaire
+FHIR Server->MyPAIN: Returns Questionnaire
+MyPAIN->Patient: Present assessment
+Patient->MyPAIN: Patient completes\nquestionnaire
+MyPAIN->FHIR Server: Post QuestionnaireResponse
+FHIR Server->Site-Specific Adapter: FHIR Server Forwards QuestionnaireResponse
+Site-Specific Adapter->Clinical System: Process QuestionnaireResponse\n for persistence
+Clinical System->]: MyPAIN\n Data Notification
+end

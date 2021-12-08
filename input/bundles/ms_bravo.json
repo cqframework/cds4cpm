@@ -1,0 +1,313 @@
+{
+  "resourceType": "Bundle",
+  "id": "ms_bravo",
+  "type": "transaction",
+  "entry": [
+      {
+          "resource": {
+          "resourceType":"Patient",
+          "id": "a15102fb-db9e-475c-878f-f491b7b959a8",
+          "name":[
+              {
+                  "given":[
+                      "Ms"
+                  ],
+                  "family": "Bravo"
+              }
+          ],
+          "gender": "female",
+          "_birthDate": {
+              "extension": [
+                  {
+                      "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                      "valueExpression": {
+                          "language": "text/cql",
+                          "expression": "Today() - 8 years"
+                      }
+                  }
+              ]
+          }
+       },
+       "request": {
+         "method": "PUT",
+         "url": "Patient/a15102fb-db9e-475c-878f-f491b7b959a8"
+       }
+      },
+      {
+          "resource":{
+          "resourceType": "Condition",
+          "id": "f6c24a67-215b-4168-9f86-a62fba7345c8",
+          "meta": {
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+            ]
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ]
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+                }
+              ]
+            }
+          ],
+          "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                  "code": "M54.5",
+                  "display": "Chronic Hip Pain"
+                }
+              ],
+              "text": "Chronic Hip Pain"
+          },
+          "subject": {
+            "reference": "Patient/a15102fb-db9e-475c-878f-f491b7b959a8"
+              }
+       },
+          "request": {
+            "method": "PUT",
+            "url": "Condition/f6c24a67-215b-4168-9f86-a62fba7345c8"
+          }
+      },
+      {
+          "resource":{
+          "resourceType": "Encounter",
+          "id": "ba955438-7359-410f-bab3-4599f434d2a3",
+          "meta": {
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+            ]
+          },
+          "status": "finished",
+          "class": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "IMP",
+            "display": "inpatient encounter"
+          },
+          "type": [
+            {
+              "coding": [
+                  {
+                      "system": "http://www.ama-assn.org/go/cpt",
+                      "code": "99201",
+                      "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires these 3 key components: A problem focused history; A problem focused examination; Straightforward medical decision making. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are self limited or minor. Typically, 10 minutes are spent face-to-face with the patient and/or family."
+                  }
+              ]
+          }
+          ],
+          "subject": {
+            "reference": "Patient/a15102fb-db9e-475c-878f-f491b7b959a8"
+          }
+        },
+          "request": {
+            "method": "PUT",
+            "url": "Encounter/ba955438-7359-410f-bab3-4599f434d2a3"
+          }
+      },
+      {
+          "resource":{
+          "resourceType": "QuestionnaireResponse",
+          "id": "e177a229-e346-46d9-8a4b-24e95dcd45c5",
+          "reference": "Patient/a15102fb-db9e-475c-878f-f491b7b959a8",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-07-13T19:15:58.761+00:00",
+            "profile": [
+              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+            ],
+            "tag": [
+              {
+                "code": "lformsVersion: 23.0.0"
+              }
+            ]
+          },
+          "title": "MyPain Questionnaire",
+          "status": "completed",
+          "item": [
+            {
+              "linkId": "1",
+              "text": "Please describe the location(s) of any pain you have had in the past 7 days (e.g., lower back and left hip):",
+              "type": "text"
+            },
+            {
+              "linkId": "2",
+              "text": "In the  past 7 days -  How intense was your pain at its worst?",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://rti.com/fhir/rti/CodeSystem/mypain-questionnaireResponse",
+                    "code": "mpqr-1005",
+                    "display": "Moderate"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "3",
+              "text": "How intense was your average pain?",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://rti.com/fhir/rti/CodeSystem/mypain-questionnaireResponse",
+                    "code": "mpqr-1005",
+                    "display": "Moderate"
+                  }
+               }
+              ]
+            },
+            {
+              "linkId": "4",
+              "text": "What is your level of pain right now?",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://rti.com/fhir/rti/CodeSystem/mypain-questionnaireResponse",
+                    "code": "mpqr-1005",
+                    "display": "Moderate"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "5",
+              "prefix": "In the past 7 days:",
+              "text": "How much did pain interfere with your day to day activities?",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://rti.com/fhir/rti/CodeSystem/mypain-questionnaireResponse",
+                    "code": "mpqr-1011",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "6",
+              "prefix": "In the past 7 days:",
+              "text": "How much did pain interfere with your work?",
+              "type": "choice",
+              "answerOption": [
+                
+                {
+                  "valueCoding": {
+                    "system": "http://rti.com/fhir/rti/CodeSystem/mypain-questionnaireResponse",
+                    "code": "mpqr-1010",
+                    "display": "Somewhat"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "7",
+              "prefix": "In the past 7 days:",
+              "text": "How much did pain interfere with your ability to participate in social activities?",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://rti.com/fhir/rti/CodeSystem/mypain-questionnaireResponse",
+                    "code": "mpqr-1010",
+                    "display": "Somewhat"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "8",
+              "prefix": "In the past 7 days:",
+              "text": "How much did pain interfere with your household chores?",
+              "type": "choice",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://rti.com/fhir/rti/CodeSystem/mypain-questionnaireResponse",
+                    "code": "mpqr-1010",
+                    "display": "Somewhat"
+                  }
+                }
+              ]
+            }
+          ] 
+        },
+        "request": {
+          "method": "PUT",
+          "url": "QuestionnaireResponse/e177a229-e346-46d9-8a4b-24e95dcd45c5"
+        }
+      },
+      {
+          "resource":{
+          "resourceType": "MedicationRequest",
+          "id": "b2153ecb-5ce1-456a-b3cf-029c9226cd6f",
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "community"
+                }
+              ]
+            }
+          ],
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1010600",
+                "display": "increasing the dose of the non-opioid pain medication"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/a15102fb-db9e-475c-878f-f491b7b959a8"
+          },
+          "encounter": {
+            "reference": "Encounter/encounter-ms-bravo"
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "MedicationRequest/b2153ecb-5ce1-456a-b3cf-029c9226cd6f"
+        }
+      },
+      {
+          "resource":{
+          "resourceType" : "Practitioner",
+          "id": "67a1f5d3-316f-4229-86d7-b8134741620a",
+          "active" : true, 
+          "name":[
+              {
+                  "given":[
+                      "Dr"
+                  ],
+                  "family": "Stevens"
+              }
+          ],
+          "gender" : "male"
+          },
+          "request": {
+            "method": "PUT",
+            "url": "Practitioner/67a1f5d3-316f-4229-86d7-b8134741620a"
+          }
+       }
+  ]
+}

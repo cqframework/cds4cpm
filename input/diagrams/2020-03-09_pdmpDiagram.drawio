@@ -1,0 +1,121 @@
+<mxfile host="www.draw.io" modified="2020-03-09T22:59:47.383Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0" etag="Xjfq7svnXCP0qTC8FD7W" version="12.8.1" type="github">
+  <diagram id="FrGQxKCjhuF4aU_QnrsN" name="Page-1">
+    <mxGraphModel dx="1115" dy="676" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-1" value="PDMP Source" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="890" y="298" width="90" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-2" value="Clinician" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="321.5" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-3" value="&quot;EHR&quot;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="198" y="50" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-5" value="PainManager" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="188" y="305" width="90" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-6" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7fX_YuCGxYSSL--o8gRW-2" target="7fX_YuCGxYSSL--o8gRW-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="510" as="sourcePoint" />
+            <mxPoint x="460" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-7" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;strokeColor=#FF0000;" parent="1" source="u4QjWurlUNd13HA4_MeA-4" target="7fX_YuCGxYSSL--o8gRW-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="510" as="sourcePoint" />
+            <mxPoint x="460" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-8" value="(Logicoy) FHIR API" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="490" y="293" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-9" value="" style="endArrow=classic;html=1;entryX=0.25;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.989;exitY=0.191;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="7fX_YuCGxYSSL--o8gRW-5" target="7fX_YuCGxYSSL--o8gRW-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="326" as="sourcePoint" />
+            <mxPoint x="490" y="333" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-10" value="" style="endArrow=classic;html=1;exitX=0.88;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.074;entryY=0.233;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="7fX_YuCGxYSSL--o8gRW-8" target="7fX_YuCGxYSSL--o8gRW-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="518" as="sourcePoint" />
+            <mxPoint x="460" y="468" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-11" value="&lt;div&gt;2a. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Request&lt;/b&gt; PDMP Data for a patient using FHIR&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="290" y="293" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-13" value="&lt;div&gt;2b. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Request&lt;/b&gt; PDMP Data for a patient using FHIR&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="710" y="293" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-14" value="" style="endArrow=classic;html=1;exitX=0.019;exitY=0.756;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.96;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="7fX_YuCGxYSSL--o8gRW-1" target="7fX_YuCGxYSSL--o8gRW-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="530" as="sourcePoint" />
+            <mxPoint x="560" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-15" value="" style="endArrow=classic;html=1;exitX=0.019;exitY=0.756;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.991;entryY=0.685;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="7fX_YuCGxYSSL--o8gRW-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="509.71000000000026" y="379.99999999999994" as="sourcePoint" />
+            <mxPoint x="300.0000000000002" y="382.8400000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-16" value="&lt;div&gt;3a. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Receive &lt;/b&gt;PDMP Data for a patient using FHIR&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="710" y="340" width="140" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-17" value="&lt;div&gt;3b. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Receive &lt;/b&gt;PDMP Data for a patient using FHIR&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="290" y="346.5" width="140" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="7fX_YuCGxYSSL--o8gRW-18" value="1. &lt;br&gt;&lt;div&gt;&lt;b&gt;Launch&lt;/b&gt; PainManager in EHR&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="250" width="111" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-1" value="&lt;font color=&quot;#FF0000&quot;&gt;Clinician context?&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="62.5" y="408" width="105" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-2" value="&lt;font color=&quot;#FF0000&quot;&gt;Permissions?&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="230" width="105" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-3" value="&lt;font color=&quot;#FF0000&quot;&gt;What Epic system(s)?&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="140" width="105" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-5" value="&lt;font color=&quot;#FF0000&quot;&gt;FHIR Facade?&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="190" width="105" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-6" value="&lt;div&gt;PDMP separate from MedList data&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="450" width="87.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-7" value="" style="endArrow=classic;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="u4QjWurlUNd13HA4_MeA-6" target="7fX_YuCGxYSSL--o8gRW-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="191" y="470" as="sourcePoint" />
+            <mxPoint x="330" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-8" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1" target="u4QjWurlUNd13HA4_MeA-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="565" y="620" as="sourcePoint" />
+            <mxPoint x="530" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-9" value="David L: confirm withLogicoy that this approach is acceptable" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="510" y="480" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-10" value="David L: need timestamp for any PDMP data given that it&#39;s not real-time" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="62.5" y="508" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-11" value="&lt;div align=&quot;left&quot;&gt;Barry recommends displaying a direct feed from Logicoy&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;can PM pass Epic credentials to Logicoy? Jason: yes, in short. but Logicoy legal may not allow 3rd parties ACTION: Barry &amp;amp; Jason to ask Fred about legal restrictions for 3rd party access&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Jason: re: &#39;non-reconciled&#39; data, UCM disallowed non-reconciled data on a different project (in addition to 3-4 other projects)&lt;br&gt;&lt;/div&gt;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="440" y="100" width="500" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-4" value="" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;strokeColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="203" y="190" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="u4QjWurlUNd13HA4_MeA-17" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;strokeColor=#FF0000;" edge="1" parent="1" source="7fX_YuCGxYSSL--o8gRW-3" target="u4QjWurlUNd13HA4_MeA-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="233" y="130" as="sourcePoint" />
+            <mxPoint x="233" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

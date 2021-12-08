@@ -1,0 +1,27 @@
+title Shared Decision Making (SDM) Encounter
+actor Patient
+actor Provider
+participant Patient Record
+participant PainManager
+participant FHIR Server
+participant OAuth Server
+participant Site Specific Adapter(s)
+participant Clinical System
+
+Patient<->Provider: Encounter start
+Provider->Patient Record: Views Patient's Chart
+Patient Record->Provider: CDS Hooks\nSMART App\nLink card
+Provider->PainManager: Launch PainManager
+PainManager->FHIR Server: Request \nCapabilityStatement
+FHIR Server->PainManager: CapabilityStatement
+PainManager->OAuth Server: Authorization Request
+OAuth Server->PainManager: Authorization token
+PainManager->FHIR Server: Request assessment data\n(Observation & other data)
+FHIR Server<->Site Specific Adapter(s): Process requests and/or transforms
+FHIR Server->PainManager: Observation, MedicationRequest,\nCondition, MedicationDispense \n(if available)
+PainManager->Provider: Display Assessment information
+Provider->PainManager: Enter SDM results
+Patient<->Provider: Encounter end
+Provider<->Clinical System: Posts SDM results\n as clinical note
+Clinical System->]: Persists
+end

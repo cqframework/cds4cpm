@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "qrQRnewCQL.7.5",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "7.5"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1057",
+        "display": "Other, please describe"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+    "display": "Brenda Jackson"
+  },
+  "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+  "valueString": "prescription other",
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QRnewCQL"
+    }
+  ]
+}

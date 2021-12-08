@@ -1,0 +1,38 @@
+{
+    "resource":{
+    "resourceType": "MedicationRequest",
+    "id": "b2153ecb-5ce1-456a-b3cf-029c9226cd6f",
+    "status": "completed",
+    "intent": "order",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+            "code": "community",
+            "display": "community"
+          }
+        ]
+      }
+    ],
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1010600",
+          "display": "increasing the dose of the non-opioid pain medication"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/a15102fb-db9e-475c-878f-f491b7b959a8"
+    },
+    "encounter": {
+      "reference": "Encounter/encounter-ms-bravo"
+    }
+  },
+  "request": {
+    "method": "PUT",
+    "url": "MedicationRequest/b2153ecb-5ce1-456a-b3cf-029c9226cd6f"
+  }
+}

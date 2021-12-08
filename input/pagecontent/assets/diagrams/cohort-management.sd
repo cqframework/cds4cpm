@@ -1,0 +1,14 @@
+title Patient Cohort Management and Notification
+participant Phenotype Trigger
+participant MyPAIN Registry
+actor Provider
+participant Patient Portal
+Phenotype Trigger->Phenotype Trigger: Execution of\n phenotype query
+Phenotype Trigger->Phenotype Trigger: Cohort selection\n based on filters
+Phenotype Trigger->MyPAIN Registry: Mark patient as\n candidate for MyPAIN
+MyPAIN Registry->MyPAIN Registry: Notify patient as\n appointment date\n approaches\n (72 hours prior)
+opt Manual include/exclude
+Provider->MyPAIN Registry: Mark patient manually to\n include or exclude from\n MyPAIN
+MyPAIN Registry->Patient Portal: Invitation to MyPAIN sent to Patient Portal
+Patient Portal->]: MyPAIN\n Assessment
+end

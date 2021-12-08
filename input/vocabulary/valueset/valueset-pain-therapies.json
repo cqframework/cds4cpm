@@ -1,0 +1,132 @@
+{
+  "resourceType": "ValueSet",
+  "id": "pain-therapies",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "shareable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "computable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "publishable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "structured"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+    "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "executable"
+  } ],
+  "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-therapies",
+  "name": "PainTherapies",
+  "title": "Pain Therapies",
+  "status": "active",
+  "experimental": false,
+  "description": "Value set for Pain Therapy and Strategy Observations used in MyPAIN and Pain Manager",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-therapies" }]
+  },
+  "expansion": {
+    "timestamp": "2021-01-12T17:52:03-07:00",
+    "contains": [ {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "exercises",
+      "display": "Exercises at home or outside"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "sleep-positioners",
+      "display": "Sleep positioners or devices"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "stretching",
+      "display": "Stretching"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "diet-changes",
+      "display": "Weight loss or changes in your diet."
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "activity-goals",
+      "display": "Setting and reaching activity goals."
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "ice-therapy",
+      "display": "Ice therapy"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "heat-therapy",
+      "display": "Heat therapy"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "physical-therapy",
+      "display": "Physical therapy"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "acupuncture",
+      "display": "Acupuncture"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "chiropractic-treatment",
+      "display": "Chiropractic treatment"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "yoga",
+      "display": "Yoga"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "massage",
+      "display": "Massage"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "meditation",
+      "display": "Meditation"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "mindfulness-based-training",
+      "display": "Relaxation or mindfulness-based training."
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "pain-therapy",
+      "display": "Group or individual therapy for pain."
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "acceptance-commitment-therapy",
+      "display": "Acceptance and commitment therapy"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "sleep-management",
+      "display": "Sleep management (such as a sleep study or CPAP)"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "aromatherapy",
+      "display": "Aromatherapy"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "crystals",
+      "display": "Crystals"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "essential-oils",
+      "display": "Essential oils"
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "music-therapy",
+      "display": "Music therapy."
+    }, {
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/pain-assessments",
+      "code": "other",
+      "display": "Other non-traditional pain therapy."
+    } ]
+  }
+}

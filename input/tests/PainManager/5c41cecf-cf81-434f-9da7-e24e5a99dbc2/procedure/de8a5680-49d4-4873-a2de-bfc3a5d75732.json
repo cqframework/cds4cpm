@@ -1,0 +1,19 @@
+{
+  "resourceType": "Procedure",
+  "id": "de8a5680-49d4-4873-a2de-bfc3a5d75732",
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "308449000",
+        "display": "Referral to chiropractor (procedure)"
+      }
+    ],
+    "text": "Referral to chiropractor (procedure)"
+  },
+  "performedDateTime": "2018-10-15T16:00:00.000Z"
+}
