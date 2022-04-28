@@ -1,0 +1,357 @@
+{
+  "resourceType": "Bundle",
+  "id": "98a30dee-68c8-4cf8-872a-2879f47cf036",
+  "type": "transaction-response",
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://cloud.localhost/samplepath/r4/cqf-ruler/fhir"
+    }
+  ],
+  "entry": [
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Patient/sharondecision/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Condition/sdCond1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Condition/sdCond2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Condition/sdCond3/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Condition/sdCond4/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "MedicationRequest/sdMedReq1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "MedicationRequest/sdMedReq2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "MedicationRequest/sdMedReq3/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "MedicationRequest/sdMedReq4/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "MedicationRequest/sdMedReq5/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "MedicationRequest/sdMedReq6/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "MedicationRequest/sdMedReq7/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "MedicationRequest/sdMedReq8/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/sdObs1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/sdObs2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/sdObs3/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.12/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.14.1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.13/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.11/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.10/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.9.2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.9.1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.8.2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.8.1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.7.2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.5.2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.3.1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.3.2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.2.1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.2.2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.1.1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.1.2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.1.10/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.1.11/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.6.1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.6.2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Observation/qrQRnewCQL.7.1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Procedure/sdProc1/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Procedure/sdProc2/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Procedure/sdProc3/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Procedure/sdProc4/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Procedure/sdProc5/_history/1",
+        "etag": "1",
+        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      }
+    }
+  ]
+}
