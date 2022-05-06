@@ -1,356 +1,1943 @@
 {
   "resourceType": "Bundle",
-  "id": "98a30dee-68c8-4cf8-872a-2879f47cf036",
-  "type": "transaction-response",
-  "link": [
-    {
-      "relation": "self",
-      "url": "http://cloud.localhost/samplepath/r4/cqf-ruler/fhir"
-    }
-  ],
+  "id": "sharon_decision",
+  "type": "transaction",
   "entry": [
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Patient/sharondecision/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Patient",
+        "id": "sharondecision",
+        "name": [
+          {
+            "given": [
+              "Sharon"
+            ],
+            "family": "Decision"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1955-10-23"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/sharondecision"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Condition/sdCond1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCond1",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "203082005",
+              "display": "Fibromyalgia (disorder)"
+            }
+          ],
+          "text": "Fibromyalgia (disorder)"
+        },
+        "onsetDateTime": "2013-04-05T16:00:00.000Z",
+        "recordedDate": "2013-04-05T00:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCond1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Condition/sdCond2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCond2",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "832007",
+              "display": "Moderate major depression (disorder)"
+            }
+          ],
+          "text": "Moderate major depression (disorder)"
+        },
+        "onsetDateTime": "2016-12-02T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCond2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Condition/sdCond3/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCond3",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M54.5",
+              "display": "Low back pain"
+            }
+          ],
+          "text": "Low back pain"
+        },
+        "onsetDateTime": "2008-11-12T16:00:00.000Z",
+        "recordedDate": "2008-11-12T00:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCond3"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Condition/sdCond4/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCond4",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "202725007",
+              "display": "Lumbar post-laminectomy syndrome (disorder)"
+            }
+          ],
+          "text": "Lumbar post-laminectomy syndrome (disorder)"
+        },
+        "onsetDateTime": "2012-02-01T16:00:00.000Z",
+        "recordedDate": "2012-02-16T00:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCond4"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "MedicationRequest/sdMedReq1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq1",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197806",
+              "display": "Ibuprofen 600 MG Oral Tablet"
+            }
+          ],
+          "text": "Ibuprofen 600 MG Oral Tablet"
+        },
+        "authoredOn": "2021-03-25T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "MedicationRequest/sdMedReq2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq2",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "876193",
+              "display": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+            }
+          ],
+          "text": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+        },
+        "authoredOn": "2022-02-10T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "MedicationRequest/sdMedReq3/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq3",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049593",
+              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        },
+        "authoredOn": "2022-03-15T16:02:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq3"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "MedicationRequest/sdMedReq4/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq4",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049593",
+              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        },
+        "authoredOn": "2020-12-15T16:02:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq4"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "MedicationRequest/sdMedReq5/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq5",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049593",
+              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        },
+        "authoredOn": "2021-10-15T16:02:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq5"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "MedicationRequest/sdMedReq6/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq6",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049593",
+              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        },
+        "authoredOn": "2021-10-15T16:02:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq6"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "MedicationRequest/sdMedReq7/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq7",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "876193",
+              "display": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+            }
+          ],
+          "text": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+        },
+        "authoredOn": "2017-11-15T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq7"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "MedicationRequest/sdMedReq8/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq8",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "198440",
+              "display": "Acetaminophen 500 MG Oral Tablet"
+            }
+          ],
+          "text": "Acetaminophen 500 MG Oral Tablet"
+        },
+        "authoredOn": "2020-09-28T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq8"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/sdObs1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "sdObs1",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://cds.ahrq.gov/cdsconnect/pms",
+              "code": "MME",
+              "display": "Morphine Milligram Equivalent (MME)"
+            }
+          ],
+          "text": "Morphine Milligram Equivalent (MME)"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "therapy"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 220,
+          "unit": "{MME}/d",
+          "system": "http://unitsofmeasure.org",
+          "code": "{MME}/d"
+        },
+        "issued": "2022-01-09T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/sdObs1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/sdObs2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "sdObs2",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "19295-5",
+              "display": "Opiates [Presence] in Urine by Screen method"
+            }
+          ],
+          "text": "Opiates [Presence] in Urine by Screen method"
+        },
+        "valueQuantity": {
+          "value": 2500,
+          "unit": "ng/mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "ng/mL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "POS",
+                "display": "Positive"
+              }
+            ],
+            "text": "Positive"
+          }
+        ],
+        "issued": "2022-02-15T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/sdObs2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/sdObs3/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "sdObs3",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38221-8",
+              "display": "Pain severity Wong-Baker FACES Scale"
+            }
+          ],
+          "text": "Pain severity Wong-Baker FACES Scale"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 10
+        },
+        "interpretation": [
+          {
+            "text": "Hurts Worst"
+          }
+        ],
+        "issued": "2019-06-15T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/sdObs3"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.12/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.12",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "12"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueString": "ACPA four flat tires video",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.12"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.14.1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.14.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "14.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1064",
+              "display": "Using the MyPAIN tool has helped me begin preparing for a conversation with my provider about managing my pain."
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://loinc.org/LL1606-4/",
+              "code": "LA15238-1",
+              "display": "Disagree a lot"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.14.1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.13/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.13",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "13"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueString": "US Pain Foundation website",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.13"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.11/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.11",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "11"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1037",
+              "display": "What are the biggest barriers to achieving your activity goals? For example: I have a lot of stress from work which makes my pain worse."
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueString": "My barriers to a pain free life are 1.  It is impossible. 2. I am too lazy to exercise.  3. I am overweight.  4. I am too old to change now.",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.11"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.10/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.10",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1036",
+              "display": "We’d like to know more about you and your goals. What are your most important activity goals? For example: I’d like to be able to walk without pain."
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueString": "These are my goals for a pain-free environment.  Get up every morning and have a great day with no back spasms and no hip pain and no aches and pains throughout my whole body.",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.10"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.9.2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.9.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1031",
+              "display": "Did it work?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.9.2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.9.1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.9.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1030",
+              "display": "Did it work?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.9.1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.8.2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.8.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "8.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1024",
+              "display": "Did it work?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.8.2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.8.1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.8.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "8.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1023",
+              "display": "Did it work?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.8.1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.7.2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.7.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1021",
+              "display": "Did it work?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.7.2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.5.2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.5.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "5.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1009",
+              "display": "Did it work?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.5.2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.3.1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.3.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "3.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://loinc.org/61758-9/",
+              "code": "61758-9",
+              "display": "How much did pain interfere with your day to day activities?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpq-1008",
+              "display": "Not at all"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.3.1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.3.2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.3.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "3.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://loinc.org/61769-6/",
+              "code": "61769-6",
+              "display": "How much did pain interfere with your work around the home?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpq-1009",
+              "display": "A little bit"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.3.2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.2.1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.2.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "2.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://loinc.org/75262-6",
+              "code": "75262-6",
+              "display": "How intense was your pain at its worst?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1003",
+              "display": "Had no pain"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.2.1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.2.2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.2.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "2.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://loinc.org/75261-8/",
+              "code": "75261-8",
+              "display": "How intense was your average pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1004",
+              "display": "Mild"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.2.2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.1.1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.1.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1038",
+              "display": "What type of HEAD pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1013",
+              "display": "Stabbing"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.1.1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.1.2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.1.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1039",
+              "display": "What type of NECK pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1014",
+              "display": "Burning"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.1.2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.1.10/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.1.10",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.10"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1047",
+              "display": "What type of HIPS pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1016",
+              "display": "Tingling"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.1.10"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.1.11/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.1.11",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.11"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1048",
+              "display": "What type of UPPER LEGS pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1017",
+              "display": "Prickling"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.1.11"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.6.1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.6.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1017",
+              "display": "Did it work?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.6.1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.6.2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.6.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1018",
+              "display": "Did it work?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.6.2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Observation/qrQRnewCQL.7.1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrQRnewCQL.7.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1020",
+              "display": "Did it work?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-04-10T13:52:02-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QRnewCQL"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrQRnewCQL.7.1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Procedure/sdProc1/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "sdProc1",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "308449000",
+              "display": "Referral to chiropractor (procedure)"
+            }
+          ],
+          "text": "Referral to chiropractor (procedure)"
+        },
+        "performedDateTime": "2016-12-02T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/sdProc1"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Procedure/sdProc2/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "sdProc2",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "81294000",
+              "display": "Patient referral for psychotherapy (procedure)"
+            }
+          ],
+          "text": "Patient referral for psychotherapy (procedure)"
+        },
+        "performedDateTime": "2017-11-15T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/sdProc2"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Procedure/sdProc3/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "sdProc3",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "444831000124102",
+              "display": "Referral for physical therapy (procedure)"
+            }
+          ],
+          "text": "Referral for physical therapy (procedure)"
+        },
+        "performedDateTime": "2016-12-02T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/sdProc3"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Procedure/sdProc4/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "sdProc4",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "308449000",
+              "display": "Referral to chiropractor (procedure)"
+            }
+          ],
+          "text": "Referral to chiropractor (procedure)"
+        },
+        "performedDateTime": "2018-10-15T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/sdProc4"
       }
     },
     {
-      "response": {
-        "status": "201 Created",
-        "location": "Procedure/sdProc5/_history/1",
-        "etag": "1",
-        "lastModified": "2022-04-28T18:17:33.293+00:00"
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "sdProc5",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "444831000124102",
+              "display": "Referral for physical therapy (procedure)"
+            }
+          ],
+          "text": "Referral for physical therapy (procedure)"
+        },
+        "performedDateTime": "2020-10-10T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/sdProc5"
       }
     }
   ]
