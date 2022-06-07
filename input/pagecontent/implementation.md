@@ -74,41 +74,25 @@ site-specific nature of some of the adapter capabilities required in the FHIR Se
 implementing sites will need to host a FHIR Facade implementation directly in their environments.
 
 ##### Docker Usage
-Each of the sandbox components is constructed as a docker container and included in a docker compose for easily creating a complete instance of the sandbox. Source and detailed instructions for using and configuring this docker are included in the following repositories:
+Each of the sandbox components is constructed as a docker container and included in a docker compose for easily creating a complete instance of the sandbox. Source and detailed instructions for using and configuring this docker are included in the following repository:
 
-* [Develop Sandbox](https://github.com/DBCG/cds4cpm-sandbox/tree/develop)
-* [Staging Sandbox](https://github.com/DBCG/cds4cpm-sandbox)
+* [Sandbox](https://github.com/DBCG/cds4cpm-sandbox)
 
-##### Development Sandbox
+##### Sandbox
 
-The development sandbox is built based on the develop branches for all the components.
-
-* SMART App Launch URL
-  * Public: [http://launch.smarthealthit.org](http://launch.smarthealthit.org)  (NOTE: This will launch against the SMART Health IT server, not the FHIR Server in the sandbox environment.)
-  * Sandbox: [http://launcher-develop.sandbox.alphora.com/](http://launcher-develop.sandbox.alphora.com/)
-* MyPAIN
-    * Standalone application: [https://mypain-develop.rti.alphora.com](https://mypain-develop.rti.alphora.com)
-    * SMART launch URL: [https://mypain-develop.rti.alphora.com/launch.html](https://mypain-develop.rti.alphora.com/launch.html)
-* PainManager
-    * Standalone application: [https://painmanager-develop.rti.alphora.com](https://painmanager-develop.rti.alphora.com)
-    * SMART launch URL: [https://painmanager-develop.rti.alphora.com/launch.html](https://painmanager-develop.rti.alphora.com/launch.html)
-* FHIR Server Endpoint: [https://cds4cpm-develop.sandbox.alphora.com/cqf-ruler-r4/fhir](https://cds4cpm-develop.sandbox.alphora.com/cqf-ruler-r4/fhir)
-
-##### Staging Sandbox
-
-The staging sandbox will have the same components but are built off the master branches of each
+The sandbox components are built off the master branch of each
 of the relevant repositories. Features will be pushed from develop to master as they are completed.
 
 * SMART App Launch URL
     * Public: [http://launch.smarthealthit.org](http://launch.smarthealthit.org) (NOTE: This will launch against the SMART Health IT server, not the FHIR Server in the sandbox environment.)
-    * Sandbox: [http://launcher-staging.sandbox.alphora.com/](http://launcher-staging.sandbox.alphora.com/)
+  * Sandbox: [https://cloud.alphora.com/rti/smart-launcher](https://cloud.alphora.com/rti/smart-launcher)
 * MyPAIN
-    * Standalone application: [https://mypain-staging.rti.alphora.com](https://mypain-staging.rti.alphora.com)
-    * SMART launch URL: [https://mypain-staging.rti.alphora.com/launch.html](https://mypain-staging.rti.alphora.com/launch.html)
+  * Standalone application: [https://cloud.alphora.com/rti/my-pain](https://cloud.alphora.com/rti/my-pain)
+  * SMART launch URL: [https://cloud.alphora.com/rti/my-pain/launch.html](https://cloud.alphora.com/rti/my-pain/launch.html)
 * PainManager
-    * Standalone application: [https://painmanager-staging.rti.alphora.com](https://painmanager-staging.rti.alphora.com)
-    * SMART launch URL: [https://painmanager-staging.rti.alphora.com/launch.html](https://painmanager-staging.rti.alphora.com/launch.html)
-* FHIR Server Endpoint: [https://cds4cpm-staging.sandbox.alphora.com/cqf-ruler-r4/fhir](https://cds4cpm-staging.sandbox.alphora.com/cqf-ruler-r4/fhir)
+  * Standalone application: [https://cloud.alphora.com/rti/pain-manager](https://cloud.alphora.com/rti/pain-manager)
+  * SMART launch URL: [https://cloud.alphora.com/rti/pain-manager/launch.html](https://cloud.alphora.com/rti/pain-manager/launch.html)
+* FHIR Server Endpoint: [https://cloud.alphora.com/rti/r4/cqf-ruler/fhir](https://cloud.alphora.com/rti/r4/cqf-ruler/fhir)
 
 #### "Hello World" Scenarios
 
