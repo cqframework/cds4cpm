@@ -1,0 +1,3660 @@
+{
+  "resourceType": "Bundle",
+  "identifier": {
+    "value": "QuestionnaireResponse/SDQR5-27"
+  },
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "sharondecision",
+        "name": [
+          {
+            "given": [
+              "Sharon"
+            ],
+            "family": "Decision"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1955-10-23"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/sharondecision"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCond1",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "203082005",
+              "display": "Fibromyalgia (disorder)"
+            }
+          ],
+          "text": "Fibromyalgia (disorder)"
+        },
+        "onsetDateTime": "2013-04-05T16:00:00.000Z",
+        "recordedDate": "2013-04-05T00:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCond1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCond2",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "832007",
+              "display": "Moderate major depression (disorder)"
+            }
+          ],
+          "text": "Moderate major depression (disorder)"
+        },
+        "onsetDateTime": "2016-12-02T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCond2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCond3",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M54.5",
+              "display": "Low back pain"
+            }
+          ],
+          "text": "Low back pain"
+        },
+        "onsetDateTime": "2008-11-12T16:00:00.000Z",
+        "recordedDate": "2008-11-12T00:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCond3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCond4",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "202725007",
+              "display": "Lumbar post-laminectomy syndrome (disorder)"
+            }
+          ],
+          "text": "Lumbar post-laminectomy syndrome (disorder)"
+        },
+        "onsetDateTime": "2012-02-01T16:00:00.000Z",
+        "recordedDate": "2012-02-16T00:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCond4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq1",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197806",
+              "display": "Ibuprofen 600 MG Oral Tablet"
+            }
+          ],
+          "text": "Ibuprofen 600 MG Oral Tablet"
+        },
+        "authoredOn": "2021-03-25T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq2",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "876193",
+              "display": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+            }
+          ],
+          "text": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+        },
+        "authoredOn": "2022-02-10T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq3",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049593",
+              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        },
+        "authoredOn": "2022-03-15T16:02:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq4",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049593",
+              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        },
+        "authoredOn": "2020-12-15T16:02:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq5",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049593",
+              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        },
+        "authoredOn": "2021-10-15T16:02:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq6",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049593",
+              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        },
+        "authoredOn": "2021-10-15T16:02:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq7",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "876193",
+              "display": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+            }
+          ],
+          "text": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+        },
+        "authoredOn": "2017-11-15T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "sdObs1",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://cds.ahrq.gov/cdsconnect/pms",
+              "code": "MME",
+              "display": "Morphine Milligram Equivalent (MME)"
+            }
+          ],
+          "text": "Morphine Milligram Equivalent (MME)"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "therapy"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 220,
+          "unit": "{MME}/d",
+          "system": "http://unitsofmeasure.org",
+          "code": "{MME}/d"
+        },
+        "issued": "2022-01-09T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/sdObs1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "sdObs2",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "19295-5",
+              "display": "Opiates [Presence] in Urine by Screen method"
+            }
+          ],
+          "text": "Opiates [Presence] in Urine by Screen method"
+        },
+        "valueQuantity": {
+          "value": 2500,
+          "unit": "ng/mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "ng/mL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "POS",
+                "display": "Positive"
+              }
+            ],
+            "text": "Positive"
+          }
+        ],
+        "issued": "2022-02-15T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/sdObs2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReq8",
+        "subject": {
+          "reference": "Patient/sharondecision"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "198440",
+              "display": "Acetaminophen 500 MG Oral Tablet"
+            }
+          ],
+          "text": "Acetaminophen 500 MG Oral Tablet"
+        },
+        "authoredOn": "2020-09-28T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReq8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.1.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1038",
+              "display": "What type of HEAD pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "55145008",
+              "display": "Stabbing"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.1.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.1.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1039",
+              "display": "What type of NECK pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36349006",
+              "display": "Burning"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.1.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.1.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1040",
+              "display": "What type of SHOULDERS pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.1.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.1.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1041",
+              "display": "What type of ARMS pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "786837007",
+              "display": "Tingling"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.1.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.1.5",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.5"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1042",
+              "display": "What type of UPPER BACK pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "162506004",
+              "display": "Prickling"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.1.5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.1.6",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.6"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1043",
+              "display": "What type of LOWER BACK pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "29695002",
+              "display": "Throbbing"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.1.6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.1.7",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.7"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1044",
+              "display": "What type of HANDS pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "55145008",
+              "display": "Stabbing"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.1.7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.1.9",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.9"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1046",
+              "display": "What type of PELVIS pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "29695002",
+              "display": "Throbbing"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.1.9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.1.15",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.15"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1052",
+              "display": "What type of EVERYWHERE pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.1.15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.1.16",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.16"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1053",
+              "display": "What OTHER pain have you had in the last 7 days? Please describe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueString": "I hurt all the time",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.1.16"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.2.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "2.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "75262-6",
+              "display": "How intense was your pain at its worse in the past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13958-6",
+              "display": "Very Severe"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.2.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.2.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "2.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "75261-8",
+              "display": "How intense was your average pain in the past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA6750-9",
+              "display": "Severe"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.2.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.2.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "2.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "75260-0",
+              "display": "What is your level of pain right now"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA6750-9",
+              "display": "Severe"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.2.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.3.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "3.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61758-9",
+              "display": "How much did pain interfere with your day to day activities in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13914-9",
+              "display": "Very much"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.3.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.3.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "3.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61769-6",
+              "display": "How much did pain interfere with work around the home in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13914-9",
+              "display": "Very much"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.3.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.3.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "3.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61773-8",
+              "display": "How much did pain interfere with your ability to participate in social activities in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13914-9",
+              "display": "Very much"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.3.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.3.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "3.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61775-3",
+              "display": "How much did pain interfere with your household chores in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13914-9",
+              "display": "Very much"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.3.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.4.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "4.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61761-3",
+              "display": "How much did pain interfere with the things you usually do for fun in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13914-9",
+              "display": "Very much"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.4.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.4.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "4.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61777-9",
+              "display": "How much did pain interfere with your enjoyment of social activities in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13914-9",
+              "display": "Very much"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.4.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.4.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "4.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61794-4",
+              "display": "How much did pain interfere with your enjoyment of life in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13914-9",
+              "display": "Very much"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.4.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.4.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "4.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61762-1",
+              "display": "How much did pain interfere with your family life in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13914-9",
+              "display": "Very much"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.4.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.6.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1008",
+              "display": "How often have Exercises at home (such as those assigned by a therapist) or outside (such as walking, jogging, swimming) you have tried in the past 6 months helped you with your pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.6.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.6.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1009",
+              "display": "How often have Sleep positioners or devices (such as additional pillows, padding, etc.) you have tried in the past 6 months helped you with your pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.6.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.6.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1010",
+              "display": "How often has Stretching you have tried in the past 6 months helped you with your pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.6.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.6.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1011",
+              "display": "How often has Weight loss or changes in your diet you have tried in the past 6 months helped you with your pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.6.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.6.5",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.5"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1012",
+              "display": "How often has Setting and reaching activity goals you have tried in the past 6 months helped you with your pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.6.5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.6.6",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.6"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1013",
+              "display": "How often has Ice or heat therapy you have tried in the past 6 months helped you with your pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1002",
+              "display": "Always"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.6.6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.6.7",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.7"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1014",
+              "display": "How often has Physical therapy you have tried in the past 6 months helped you with your pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.6.7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.6.10",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.10"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1054",
+              "display": "How often have Other strategies or methods you have tried in the last 6 months helped with your pain? Please describe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueString": "Not sure, but I have tried everything.",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.6.10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.7.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1017",
+              "display": "How often have Pain relievers (such as Advil, Aleve, Aspirin, Ibuprofen, Motrin, Tylenol) you can buy without a prescription from your doctor that you have used in the last 6 months helped with your pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.7.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.7.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1018",
+              "display": "How often have Herbal or nutritional pain relievers (such as ginseng or kava kava) that you have used in the last 6 months helped with your pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.7.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.7.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1019",
+              "display": "How often have Cremes, lotions, gels or patches applied to the skin (for example Bengay, Tiger Balm or BioFreeze) that you have used in the last 6 months helped with your pain?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.7.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.7.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1055",
+              "display": "Have you used any Other items you can buy without a prescription from your doctor to help with your pain in the last 6 months? Please describe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueString": "nasal spray",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.7.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.8.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "8.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1020",
+              "display": "How often have prescription Opioid medications (such as hydrocodone, oxycodone, codeine, morphine and fentanyl) helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.8.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.8.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "8.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1021",
+              "display": "How often have prescription Cortisone injections (a shot to relieve inflammation) helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.8.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.8.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "8.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1022",
+              "display": "How often have prescription Non-opioid medications as prescribed by a doctor (such as Celebrex, Cymbalta) helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.8.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.8.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "8.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1056",
+              "display": "How often has Medical marijuana helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.8.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.8.5",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "8.5"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1057",
+              "display": "Have you used any Other prescription medications to help with your pain in the last 6 months?: Please describe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueString": "additional prescriptions did not work",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.8.5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.9.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1023",
+              "display": "How often has Yoga helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.9.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.9.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1024",
+              "display": "How often has Massage helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1001",
+              "display": "Sometimes"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.9.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.9.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1025",
+              "display": "How often has Meditation helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.9.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.9.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1026",
+              "display": "How often has Relaxation or mindfulness-based training helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.9.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.9.9",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.9"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1059",
+              "display": "Have you tried any Other mind-body techniques or therapies to help with your pain in the last 6 months? Please describe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueString": "Nothing seemed to work",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.9.9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.10.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1030",
+              "display": "How often has Aromatherapy helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.10.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.10.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1031",
+              "display": "How often have Crystals helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.10.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.10.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1032",
+              "display": "How often have Essential oils helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.10.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.10.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1060",
+              "display": "How often has CBD oil helped with your pain in the last 6 months?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1000",
+              "display": "Never"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.10.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.10.6",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10.6"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1034",
+              "display": "Have you tried any Other new treatments to help with your pain in the last 6 months? Please describe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueString": "New age treatments didn't help",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.10.6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.11",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "11"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1035",
+              "display": "We’d like to know more about you and your goals."
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueString": "These are my goals for a pain-free environment. Get up every morning and have a great day with no back spasms and no hip pain and no aches and pains throughout my whole body.",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.11"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.12",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "12"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1036",
+              "display": "We’d like to know more about you and your goals."
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueString": "My barriers to a pain free life are 1.  It is impossible. 2. I am too lazy to exercise.  3. I am overweight.  4. I am too old to change now.",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.12"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.13",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "13"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1061",
+              "display": "Did the patient view the 4 flat tires video"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26",
+        "valueString": "I don't have any questions about the video.",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.14",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "14"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1062",
+              "display": "Did the patient access the US Chronic Pain website"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueString": "I visited the site. No questions.",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.14"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.15.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "15.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1063",
+              "display": "Please indicate your level of agreement with the following statement: Using the MyPAIN tool has helped me begin preparing for a conversation with my provider about managing my pain."
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://loinc.org/LL1606-4/",
+              "code": "LA15241-5",
+              "display": "Agree a little"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.15.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qrSDQR5-27.16",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "16"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1064",
+              "display": "Do you have any other feedback or thoughts to share on your use of MyPAIN?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/sharondecision",
+          "display": "Sharon Decision"
+        },
+        "effectiveDateTime": "2022-05-26T13:35:17-06:00",
+        "valueString": "I did this because the nurse said the doctor wanted me to.",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/SDQR5-27"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qrSDQR5-27.16"
+      }
+    }
+  ]
+}
