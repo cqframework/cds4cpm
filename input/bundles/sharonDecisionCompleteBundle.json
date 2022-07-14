@@ -278,38 +278,45 @@
           ],
           "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
         },
-        "authoredOn": "2022-03-15T16:02:00.000Z"
+        "authoredOn": "2022-07-13T16:02:00.000Z",
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 3.0,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1.0,
+                  "unit": "tablet",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{tablet}"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2022-07-13",
+            "end": "2022-10-13"
+          },
+          "numberOfRepeatsAllowed": 3,
+          "expectedSupplyDuration": {
+            "value": 30.0,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
       },
       "request": {
         "method": "PUT",
         "url": "MedicationRequest/sdMedReq3"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationRequest",
-        "id": "sdMedReq4",
-        "subject": {
-          "reference": "Patient/sharondecision"
-        },
-        "status": "active",
-        "intent": "order",
-        "doNotPerform": false,
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "1049593",
-              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
-            }
-          ],
-          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
-        },
-        "authoredOn": "2020-12-15T16:02:00.000Z"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "MedicationRequest/sdMedReq4"
       }
     },
     {
@@ -332,38 +339,45 @@
           ],
           "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
         },
-        "authoredOn": "2021-10-15T16:02:00.000Z"
+        "authoredOn": "2021-10-15T16:02:00.000Z",
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 3.0,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1.0,
+                  "unit": "tablet",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{tablet}"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2021-10-15",
+            "end": "2022-01-13"
+          },
+          "numberOfRepeatsAllowed": 3,
+          "expectedSupplyDuration": {
+            "value": 30.0,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
       },
       "request": {
         "method": "PUT",
         "url": "MedicationRequest/sdMedReq5"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationRequest",
-        "id": "sdMedReq6",
-        "subject": {
-          "reference": "Patient/sharondecision"
-        },
-        "status": "active",
-        "intent": "order",
-        "doNotPerform": false,
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "1049593",
-              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
-            }
-          ],
-          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
-        },
-        "authoredOn": "2021-10-15T16:02:00.000Z"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "MedicationRequest/sdMedReq6"
       }
     },
     {
