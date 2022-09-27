@@ -4,8 +4,7 @@
 
 This repository contains the source for Clinical Decision Support for Chronic Pain Management Implementation Guide, and uses the [FHIR Implementation Guide publisher](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation) to produce a FHIR Implementation Guide.
 
-FHIR Implementation Guides contain
-content forming a platform specification that can be published as a website. More information on IGs can be found on the [Hl7 wiki](https://wiki.hl7.org/FHIR_Implementation_Guides). Examples of IGs can be found at the [FHIR IG Registry](https://registry.fhir.org/guides)
+FHIR Implementation Guides contain content forming a platform specification that can be published as a website. More information on IGs can be found on the [Hl7 wiki](https://wiki.hl7.org/FHIR_Implementation_Guides). Examples of IGs can be found at the [FHIR IG Registry](https://registry.fhir.org/guides)
 
 The continuous integration build for this IG is located here: http://build.fhir.org/ig/cqframework/cds4cpm
 
