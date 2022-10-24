@@ -326,7 +326,7 @@
         "subject": {
           "reference": "Patient/sharondecision"
         },
-        "status": "active",
+        "status": "completed",
         "intent": "order",
         "doNotPerform": false,
         "medicationCodeableConcept": {
