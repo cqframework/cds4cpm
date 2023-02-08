@@ -360,6 +360,90 @@
       "display": "When did the patient submit their questionnaire response?"
     },
     {
+      "code": "mpq-1066",
+      "display": "What type of BACK pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1067",
+      "display": "What type of HANDS/WRIST pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1068",
+      "display": "What type of ABDOMEN/PELVIS pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1069",
+      "display": "What type of FEET/ANKLES pain have you had in the last 7 days?"
+    },
+    {
+      "code": "mpq-1070",
+      "display": "Over-the-counter pain reliever (such as Advil, Aleve, Aspirin, Ibuprofen, Motrin, or Tylenol)"
+    },
+    {
+      "code": "mpq-1071",
+      "display": "Prescription nonsteroidal anti-inflammatory (such as Celebrex)"
+    },
+    {
+      "code": "mpq-1072",
+      "display": "Prescription nerve pain medication (such as Lyrica, Neurontin, or Cymbalta)"
+    },
+    {
+      "code": "mpq-1073",
+      "display": "Prescription muscle relaxant (such as Soma or Baclofen)"
+    },
+    {
+      "code": "mpq-1074",
+      "display": "Prescription opioid medication (such as Vicodin, hydrocodone, oxycodone, codeine, morphine, or tramadol)"
+    },
+    {
+      "code": "mpq-1075",
+      "display": "Other: describe other medications you've tried for pain"
+    },
+    {
+      "code": "mpq-1076",
+      "display": "I haven't tried any medications for pain."
+    },
+    {
+      "code": "mpq-1077",
+      "display": "I haven't seen any specialists for pain"
+    },
+    {
+      "code": "mpq-1078",
+      "display": "Dry needling or cupping"
+    },
+    {
+      "code": "mpq-1079",
+      "display": "Acupuncture"
+    },
+    {
+      "code": "mpq-1080",
+      "display": "I haven't tried any procedures or physical treatments for pain."
+    },
+    {
+      "code": "mpq-1081",
+      "display": "I haven't tried any topical treatments or devices for pain."
+    },
+    {
+      "code": "mpq-1082",
+      "display": "I haven't tried any lifestyle changes for pain."
+    },
+    {
+      "code": "mpq-1083",
+      "display": ""
+    },
+    {
+      "code": "mpq-1083",
+      "display": ""
+    },
+    {
+      "code": "mpq-1083",
+      "display": ""
+    },
+    {
+      "code": "mpq-1083",
+      "display": ""
+    },
+    {
       "code": "pain-location",
       "display": "Please describe the location(s) of any pain you have had in the past 7 days."
     },

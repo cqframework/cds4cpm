@@ -210,6 +210,22 @@
           "valueCode": "retired"
         }
       ]
+    },
+    {
+      "code": "mpqr-1019",
+      "display": "Not at all"
+    },
+    {
+      "code": "mpqr-1020",
+      "display": "Slightly"
+    },
+    {
+      "code": "mpqr-1021",
+      "display": "Moderately"
+    },
+    {
+      "code": "mpqr-1022",
+      "display": "Greatly"
     }
   ]
 }

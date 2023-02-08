@@ -143,6 +143,38 @@
         "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
         "valueBoolean": true
       }],
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+      "code": "mpqr-1019",
+      "display": "Not at all"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+      "code": "mpqr-1020",
+      "display": "Slightly"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+      "code": "mpqr-1021",
+      "display": "Moderately"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
+      "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+      "code": "mpqr-1022",
+      "display": "Greatly"
+    }, {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+        "valueBoolean": true
+      }],
       "system": "http://loinc.org",
       "code": "LA13879-4",
       "display": "Had no pain"
