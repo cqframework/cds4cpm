@@ -786,6 +786,567 @@
           }
         ],
         "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1066",
+        "display": "What type of BACK pain have you had in the last 7 days?"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1067",
+        "display": "What type of HANDS/WRIST pain have you had in the last 7 days?"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1068",
+        "display": "What type of ABDOMEN/PELVIS pain have you had in the last 7 days?"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1069",
+        "display": "What type of FEET/ANKLES pain have you had in the last 7 days?"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1070",
+        "display": "Over-the-counter pain reliever (such as Advil, Aleve, Aspirin, Ibuprofen, Motrin, or Tylenol)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1071",
+        "display": "Prescription nonsteroidal anti-inflammatory (such as Celebrex)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1072",
+        "display": "Prescription nerve pain medication (such as Lyrica, Neurontin, or Cymbalta)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1073",
+        "display": "Prescription muscle relaxant (such as Soma or Baclofen)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1074",
+        "display": "Prescription opioid medication (such as Vicodin, hydrocodone, oxycodone, codeine, morphine, or tramadol)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1075",
+        "display": "Other: describe other medications you've tried for pain"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1076",
+        "display": "I haven't tried any medications for pain."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1077",
+        "display": "I haven't seen any specialists for pain"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1078",
+        "display": "Dry needling or cupping"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1079",
+        "display": "Acupuncture"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1080",
+        "display": "I haven't tried any procedures or physical treatments for pain."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1081",
+        "display": "I haven't tried any topical treatments or devices for pain."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1082",
+        "display": "I haven't tried any lifestyle changes for pain."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1083",
+        "display": "What topical treatments or devices have you tried for pain?"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1084",
+        "display": "What alternative treatments have you tried for pain?"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1085",
+        "display": "I haven’t tried any alternative treatments for pain"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1086",
+        "display": "What specialists have you seen for pain?"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1087",
+        "display": "Chiropractor"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1088",
+        "display": "Physical therapist"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1089",
+        "display": "Pain management specialist"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1090",
+        "display": "Orthopedist"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1091",
+        "display": "Psychologist or counselor"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1092",
+        "display": "Integrative medicine specialist"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1093",
+        "display": "Other: describe other specialists you have seen for pain (such as neurologist, spine doctor rheumatologist, or physiatrist)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1094",
+        "display": "Surgery"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1095",
+        "display": "Injection (such as a shot to relieve inflammation)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1096",
+        "display": "Massage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1097",
+        "display": "Other: describe other procedures or physical treatments you've tried for pain"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1098",
+        "display": "What topical treatments or devices have you tried for pain?"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1099",
+        "display": "Heat and/or ice"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1100",
+        "display": "Topical medications (such as creams, lotions, gel, patches, Bengay, Tiger Balm, Salonpas, Biofreeze, or Lidoderm)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1101",
+        "display": "TENs unit"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1102",
+        "display": "Bracing"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1103",
+        "display": "Other: describe other topical treatments or devices you've tried for pain"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1104",
+        "display": "Exercises or stretching (such as walking, yoga, water aerobics)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1105",
+        "display": "Diet or hydration (such as an anti-inflammatory diet or drinking enough water)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1106",
+        "display": "Weight loss"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1107",
+        "display": "Stress reduction (such as relaxation, meditation, mindfulness, laughter)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1108",
+        "display": "Posture or ergonomics"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1109",
+        "display": "Other: describe other lifestyle changes you've tried for pain"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1110",
+        "display": "Herbal treatments or supplements (such as ginseng or kava kava)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1111",
+        "display": "Aromatherapy"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1112",
+        "display": "CBD oil"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1113",
+        "display": "Marijuana used for medical purposes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1114",
+        "display": "Other: describe other alternative treatments you've tried for pain"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1115",
+        "display": "Activity Goals: what goals do you have for your daily activities?"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1116",
+        "display": "\"Activity Goals: what are the biggest barriers to achieving your daily activity goals?"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
+            "valueBoolean": true
+          }
+        ],
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
         "code": "pain-location",
         "display": "Please describe the location(s) of any pain you have had in the past 7 days."
       },

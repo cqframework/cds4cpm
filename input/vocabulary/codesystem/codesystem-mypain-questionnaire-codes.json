@@ -429,19 +429,139 @@
     },
     {
       "code": "mpq-1083",
-      "display": ""
+      "display": "What topical treatments or devices have you tried for pain?"
     },
     {
-      "code": "mpq-1083",
-      "display": ""
+      "code": "mpq-1084",
+      "display": "What alternative treatments have you tried for pain?"
     },
     {
-      "code": "mpq-1083",
-      "display": ""
+      "code": "mpq-1085",
+      "display": "I haven’t tried any alternative treatments for pain"
     },
     {
-      "code": "mpq-1083",
-      "display": ""
+      "code": "mpq-1086",
+      "display": "What specialists have you seen for pain?"
+    },
+    {
+      "code": "mpq-1087",
+      "display": "Chiropractor"
+    },
+    {
+      "code": "mpq-1088",
+      "display": "Physical therapist"
+    },
+    {
+      "code": "mpq-1089",
+      "display": "Pain management specialist"
+    },
+    {
+      "code": "mpq-1090",
+      "display": "Orthopedist"
+    },
+    {
+      "code": "mpq-1091",
+      "display": "Psychologist or counselor"
+    },
+    {
+      "code": "mpq-1092",
+      "display": "Integrative medicine specialist"
+    },
+    {
+      "code": "mpq-1093",
+      "display": "Other: describe other specialists you have seen for pain (such as neurologist, spine doctor rheumatologist, or physiatrist)"
+    },
+    {
+      "code": "mpq-1094",
+      "display": "Surgery"
+    },
+    {
+      "code": "mpq-1095",
+      "display": "Injection (such as a shot to relieve inflammation)"
+    },
+    {
+      "code": "mpq-1096",
+      "display": "Massage"
+    },
+    {
+      "code": "mpq-1097",
+      "display": "Other: describe other procedures or physical treatments you've tried for pain"
+    },
+    {
+      "code": "mpq-1098",
+      "display": "What topical treatments or devices have you tried for pain?"
+    },
+    {
+      "code": "mpq-1099",
+      "display": "Heat and/or ice"
+    },
+    {
+      "code": "mpq-1100",
+      "display": "Topical medications (such as creams, lotions, gel, patches, Bengay, Tiger Balm, Salonpas, Biofreeze, or Lidoderm)"
+    },
+    {
+      "code": "mpq-1101",
+      "display": "TENs unit"
+    },
+    {
+      "code": "mpq-1102",
+      "display": "Bracing"
+    },
+    {
+      "code": "mpq-1103",
+      "display": "Other: describe other topical treatments or devices you've tried for pain"
+    },
+    {
+      "code": "mpq-1104",
+      "display": "Exercises or stretching (such as walking, yoga, water aerobics)"
+    },
+    {
+      "code": "mpq-1105",
+      "display": "Diet or hydration (such as an anti-inflammatory diet or drinking enough water)"
+    },
+    {
+      "code": "mpq-1106",
+      "display": "Weight loss"
+    },
+    {
+      "code": "mpq-1107",
+      "display": "Stress reduction (such as relaxation, meditation, mindfulness, laughter)"
+    },
+    {
+      "code": "mpq-1108",
+      "display": "Posture or ergonomics"
+    },
+    {
+      "code": "mpq-1109",
+      "display": "Other: describe other lifestyle changes you've tried for pain"
+    },
+    {
+      "code": "mpq-1110",
+      "display": "Herbal treatments or supplements (such as ginseng or kava kava)"
+    },
+    {
+      "code": "mpq-1111",
+      "display": "Aromatherapy"
+    },
+    {
+      "code": "mpq-1112",
+      "display": "CBD oil"
+    },
+    {
+      "code": "mpq-1113",
+      "display": "Marijuana used for medical purposes"
+    },
+    {
+      "code": "mpq-1114",
+      "display": "Other: describe other alternative treatments you've tried for pain"
+    },
+    {
+      "code": "mpq-1115",
+      "display": "Activity Goals: what goals do you have for your daily activities?"
+    },
+    {
+      "code": "mpq-1116",
+      "display": "\"Activity Goals: what are the biggest barriers to achieving your daily activity goals?"
     },
     {
       "code": "pain-location",
