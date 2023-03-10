@@ -40,6 +40,7 @@
     }
   ],
   "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/non-opioid-illicit-drug-urine-screening",
+  "version": "2020-07-16",
   "name": "valueset-non-opioid-illicit-drug-urine-screening",
   "title": "LOINC Non-opioid Drug Urine Test",
   "status": "active",

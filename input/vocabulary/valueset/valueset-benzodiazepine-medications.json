@@ -47,6 +47,7 @@
     }
   ],
   "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/benzodiazepine-medications",
+  "version": "2020-03-26",
   "name": "Benzodiazepine_Medications",
   "title": "ValueSet - Benzodiazepine Medications",
   "status": "active",

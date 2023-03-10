@@ -41,6 +41,7 @@
     }
   ],
   "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/drug-urine-screening",
+  "version": "2021-01-25",
   "name": "drug_urine_screening",
   "title": "Urine drug screening tests",
   "status": "active",

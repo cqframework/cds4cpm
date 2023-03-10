@@ -27,6 +27,7 @@
     "valueCode": "executable"
   } ],
   "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-therapies",
+  "version": "2021-01-12",
   "name": "PainTherapies",
   "title": "Pain Therapies",
   "status": "active",

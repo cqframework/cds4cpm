@@ -50,6 +50,7 @@
     }
   ],
   "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/naloxone-medications",
+  "version": "2020-03-26",
   "name": "Naloxone Medications",
   "title": "ValueSet - Naloxone Medications",
   "status": "active",

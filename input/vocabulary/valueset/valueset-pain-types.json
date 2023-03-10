@@ -44,6 +44,7 @@
     }
   ],
   "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-types",
+  "version": "2021-01-12",
   "name": "PainTypes",
   "title": "Pain Types",
   "status": "active",

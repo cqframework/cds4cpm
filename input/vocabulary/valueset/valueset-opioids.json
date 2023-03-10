@@ -24,6 +24,7 @@
   ],
   "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/opioids",
   "title": "ValueSet - Opioids",
+  "version": "2021-01-12",
   "name": "Opioids",
   "status": "active",
   "experimental": false,

@@ -35,6 +35,7 @@
     }
   ],
   "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/opioid-drug-urine-screening",
+  "version": "2020-03-26",
   "name": "Opioid_Drug_Urine_Screening",
   "title": "ValueSet - Opioid Drug Urine Screening",
   "status": "active",

@@ -29,6 +29,7 @@
     }
   ],
   "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/three-item-likert",
+  "version": "2021-01-12",
   "name": "ThreeItemLikert",
   "title": "Three Item Likert",
   "status": "active",

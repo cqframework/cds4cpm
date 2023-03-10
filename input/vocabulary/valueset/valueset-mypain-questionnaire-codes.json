@@ -36,6 +36,7 @@
     }
   ],
   "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/mypain-questionnaire-codes",
+  "version": "2020-10-27",
   "name": "MyPAINQuestionnaireCodes",
   "title": "MyPAIN Questionnaire Codes",
   "status": "active",
