@@ -224,7 +224,7 @@
           ],
           "text": "Ibuprofen 600 MG Oral Tablet"
         },
-        "authoredOn": "2021-03-25T16:00:00.000Z"
+        "authoredOn": "2023-01-25T16:00:00.000Z"
       },
       "request": {
         "method": "PUT",
@@ -3626,7 +3626,7 @@
           "coding": [
             {
               "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
-              "code": "mpq-1035",
+              "code": "about-my-treatments",
               "display": "Activity Goals: what goals do you have for your daily activities?"
             }
           ]
@@ -3678,7 +3678,7 @@
           "coding": [
             {
               "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
-              "code": "mpq-1036",
+              "code": "about-my-treatments",
               "display": "Activity Goals: what are the biggest barriers to achieving your daily activity goals?"
             }
           ]
@@ -3698,6 +3698,32 @@
       "request": {
         "method": "PUT",
         "url": "Observation/qr170.12"
+      }
+    },{
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "sdMedStateBen1",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "completed",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197805",
+              "display": "ibuprofen 400 MG Oral Tablet"
+            }
+          ],
+          "text": "Ibuprofen 400 MG Oral Tablet"
+        },
+        "authoredOn": "2022-06-25T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationStatement/sdMedStateBen1"
       }
     }
   ]
