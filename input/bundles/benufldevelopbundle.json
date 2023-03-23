@@ -3626,7 +3626,7 @@
           "coding": [
             {
               "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
-              "code": "about-my-treatments",
+              "code": "mpq-1036",
               "display": "Activity Goals: what goals do you have for your daily activities?"
             }
           ]
@@ -3678,7 +3678,7 @@
           "coding": [
             {
               "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
-              "code": "about-my-treatments",
+              "code": "mpq-1036",
               "display": "Activity Goals: what are the biggest barriers to achieving your daily activity goals?"
             }
           ]
