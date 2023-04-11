@@ -1,0 +1,312 @@
+{
+    "resourceType": "Bundle",
+    "identifier": {
+        "value": "zachbakerbundle"
+    },
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "zachbaker",
+                "name": [
+                    {
+                        "given": [
+                            "Zach"
+                        ],
+                        "family": "Baker"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1956-10-23"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/zachbaker"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "sdCondZachBaker2",
+                "subject": {
+                    "reference": "Patient/zachbaker"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "version": "2020-09",
+                            "code": "1376001",
+                            "display": "Obsessive compulsive personality disorder (disorder)"                        }
+                    ],
+                    "text": "Obsessive compulsive personality disorder (disorder)"
+                },
+                "onsetDateTime": "2013-04-05T16:00:00.000Z",
+                "recordedDate": "2013-04-05T00:00:00.000Z"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/sdCondNoUDS1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "sdCondZachBaker3",
+                "subject": {
+                    "reference": "Patient/zachbaker"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "M54.5",
+                            "display": "Low back pain"
+                        }
+                    ],
+                    "text": "Low back pain"
+                },
+                "onsetDateTime": "2008-11-12T16:00:00.000Z",
+                "recordedDate": "2008-11-12T00:00:00.000Z"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/sdCondZachBaker3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "sdCondZachBaker1",
+                "subject": {
+                    "reference": "Patient/zachbaker"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "version": "2020-09",
+                            "code": "18347007",
+                            "display": "Spinal stenosis of lumbar region (disorder)"                        }
+                    ],
+                    "text": "Spinal stenosis of lumbar region (disorder)"
+                },
+                "onsetDateTime": "2012-02-01T16:00:00.000Z",
+                "recordedDate": "2012-02-16T00:00:00.000Z"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/sdCondZachBaker1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "sdMedReqZachBaker1",
+                "subject": {
+                    "reference": "Patient/zachbaker"
+                },
+                "status": "active",
+                "intent": "order",
+                "doNotPerform": false,
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "1049611",
+                            "display": "Oxycodone Hydrochloride 15 MG Oral Tablet"
+                                              }
+                    ],
+                    "text": "Oxycodone Hydrochloride 15 MG Oral Tablet"
+                },
+                "authoredOn": "2022-10-07T16:02:00.000Z",
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 3.0,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1.0,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "{tablet}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2022-10-07",
+                        "end": "2023-10-07"
+                    },
+                    "numberOfRepeatsAllowed": 3,
+                    "expectedSupplyDuration": {
+                        "value": 30.0,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/sdMedReqZachBaker1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "extension": [
+                    {
+                        "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/dataDateRoller",
+                        "extension": [
+                            {
+                                "url": "dateLastUpdated",
+                                "valueDateTime": "2022-08-10"
+                            },
+                            {
+                                "url": "frequency",
+                                "valueDuration": {
+                                    "value": 30.0,
+                                    "unit": "days",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "d"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "id": "sdMedReqZachBakerBenzodiazepine",
+                "status": "active",
+                "intent": "order",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                            "code": "community"
+                        }
+                    ]
+                },
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "version": "02-Mar-2020",
+                            "code": "197528",
+                            "display": "Clonazepam 1 MG Oral Tablet"                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/zachbaker"
+                },
+                "authoredOn": "2023-02-01",
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 1,
+                                "period": 12.0,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1.0,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "{tablet}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2023-02-01",
+                        "end": "2023-05-01"
+                    },
+                    "numberOfRepeatsAllowed": 3,
+                    "expectedSupplyDuration": {
+                        "value": 30.0,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/sdMedReqZachBakerBenzodiazepine"
+            }
+        }
+    ]
+}
