@@ -28,7 +28,7 @@
         {
             "resource": {
                 "resourceType": "Condition",
-                "id": "sdCondBen1",
+                "id": "sdCond1noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -67,13 +67,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "Condition/sdCondBen1"
+                "url": "Condition/sdCond1noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "Condition",
-                "id": "sdCondBen2",
+                "id": "sdCond2noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -111,13 +111,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "Condition/sdCondBen2"
+                "url": "Condition/sdCond2noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "Condition",
-                "id": "sdCondBen3",
+                "id": "sdCond3noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -156,13 +156,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "Condition/sdCondBen3"
+                "url": "Condition/sdCond3noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "Condition",
-                "id": "sdCondBen4",
+                "id": "sdCond4noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -201,13 +201,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "Condition/sdCondBen4"
+                "url": "Condition/sdCond4noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "MedicationRequest",
-                "id": "sdMedReqBen1",
+                "id": "sdMedReq1noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -228,13 +228,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "MedicationRequest/sdMedReqBen1"
+                "url": "MedicationRequest/sdMedReq1noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "MedicationRequest",
-                "id": "sdMedReqBen2",
+                "id": "sdMedReq2noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -255,13 +255,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "MedicationRequest/sdMedReqBen2"
+                "url": "MedicationRequest/sdMedReq2noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "MedicationRequest",
-                "id": "sdMedReqBen3",
+                "id": "sdMedReq3noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -316,13 +316,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "MedicationRequest/sdMedReqBen3"
+                "url": "MedicationRequest/sdMedReq3noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "MedicationRequest",
-                "id": "sdMedReqBen5",
+                "id": "sdMedReq5noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -377,13 +377,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "MedicationRequest/sdMedReqBen5"
+                "url": "MedicationRequest/sdMedReq5noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "MedicationRequest",
-                "id": "sdMedReqBen7",
+                "id": "sdMedReq7noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -404,13 +404,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "MedicationRequest/sdMedReqBen7"
+                "url": "MedicationRequest/sdMedReq7noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "Observation",
-                "id": "sdObsBen2",
+                "id": "sdObs1noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -447,13 +447,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "Observation/sdObsBen2"
+                "url": "Observation/sdObs1noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "Observation",
-                "id": "sdObsBen3",
+                "id": "sdObs3noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -490,13 +490,13 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "Observation/sdObsBen3"
+                "url": "Observation/sdObs3noObs1"
             }
         },
         {
             "resource": {
                 "resourceType": "MedicationRequest",
-                "id": "sdMedReqBen8",
+                "id": "sdMedReq8noObs1",
                 "subject": {
                     "reference": "Patient/noObs1ufldevelop"
                 },
@@ -517,7 +517,7 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "MedicationRequest/sdMedReqBen8"
+                "url": "MedicationRequest/sdMedReq8noObs1"
             }
         },
         {
@@ -543,7 +543,7 @@
                         ]
                     }
                 ],
-                "id": "sdMedReqNaloxoneBen",
+                "id": "sdMedReqNaloxoneNoObs1",
                 "status": "active",
                 "intent": "order",
                 "category": {
@@ -604,7 +604,7 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "MedicationRequest/sdMedReqNaloxoneBen"
+                "url": "MedicationRequest/sdMedReqNaloxoneNoObs1"
             }
         },
         {
@@ -630,7 +630,7 @@
                         ]
                     }
                 ],
-                "id": "sdMedReqBenzodiazepineBen",
+                "id": "sdMedReqBenzodiazepinenoObs1",
                 "status": "active",
                 "intent": "order",
                 "category": {
@@ -691,33 +691,7 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "MedicationRequest/sdMedReqBenzodiazepineBen"
-            }
-        },{
-            "resource": {
-                "resourceType": "MedicationStatement",
-                "id": "sdMedStateBen1",
-                "subject": {
-                    "reference": "Patient/noObs1ufldevelop"
-                },
-                "status": "completed",
-                "intent": "order",
-                "doNotPerform": false,
-                "medicationCodeableConcept": {
-                    "coding": [
-                        {
-                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-                            "code": "197805",
-                            "display": "ibuprofen 400 MG Oral Tablet"
-                        }
-                    ],
-                    "text": "Ibuprofen 400 MG Oral Tablet"
-                },
-                "authoredOn": "2022-06-25T16:00:00.000Z"
-            },
-            "request": {
-                "method": "PUT",
-                "url": "MedicationStatement/sdMedStateBen1"
+                "url": "MedicationRequest/sdMedReqBenzodiazepinenoObs1"
             }
         }
     ]
