@@ -77,22 +77,57 @@ implementing sites will need to host a FHIR Facade implementation directly in th
 Each of the sandbox components is constructed as a docker container and included in a docker compose for easily creating a complete instance of the sandbox. Source and detailed instructions for using and configuring this docker are included in the following repository:
 
 * [Sandbox](https://github.com/DBCG/cds4cpm-sandbox)
+#### Docker-Hub
+The images for the applications reside in Docker Hub: [https://hub.docker.com/u/alphora](https://hub.docker.com/u/alphora)
+  * My-Pain
+    * RTI My-Pain: uses tag v0.1.* . It can be pulled by using
+
+        `docker pull alphora/my-pain:v0.1.<substitute latest version number>`
+    * UFL My-Pain: uses tag v0.5.* . It can be pulled by using
+
+        `docker pull alphora/my-pain:v0.5.<substitute latest version number>`
+  * Pain-Manager
+    * RTI Pain-Manager: uses tag latest . It can be pulled by using
+
+      `docker pull alphora/pain-manager:latest`
+    * UFL Pain-Manager: uses tag v0.10.* . It can be pulled by using
+    
+      `docker pull alphora/pain-manager:v0.10.<substitute latest version number>`
+  * CQF-Ruler
+    * cqf-ruler: Both sites use the same version, latest. It can be pulled by using
+    
+      `docker pull alphora/cqf-ruler:latest`
+  
+      and launched using
+
+          `docker run -p 8080:8080 alphora/cqf-ruler`
+    
+      This will enable the cqf-ruler to be available at http://localhost:8080'
+  * Smart-Launcher
+    * smart-launcher: Both sites use the same version, latest. It can be pulled by using
+    
+      `docker pull alphora/smart-launcher:latest`
 
 ##### Sandbox
 
 The sandbox components are built off the master branch of each
 of the relevant repositories. Features will be pushed from develop to master as they are completed.
 
-* SMART App Launch URL
-    * Public: [http://launch.smarthealthit.org](http://launch.smarthealthit.org) (NOTE: This will launch against the SMART Health IT server, not the FHIR Server in the sandbox environment.)
-  * Sandbox: [https://cloud.alphora.com/rti/smart-launcher](https://cloud.alphora.com/rti/smart-launcher)
+* SMART App Launch URL 
+  * Public: [http://launch.smarthealthit.org](http://launch.smarthealthit.org) (NOTE: This will launch against the SMART Health IT server, not the FHIR Server in the sandbox environment.)
+  * RTI Sandbox: [https://cloud.alphora.com/rti/smart-launcher](https://cloud.alphora.com/rti/smart-launcher)
+  * UFL Sandbox: [https://cloud.alphora.com/ufl/smart-launcher](https://cloud.alphora.com/rti/smart-launcher)
 * MyPAIN
   * Standalone application: [https://cloud.alphora.com/rti/my-pain](https://cloud.alphora.com/rti/my-pain)
-  * SMART launch URL: [https://cloud.alphora.com/rti/my-pain/launch.html](https://cloud.alphora.com/rti/my-pain/launch.html)
+  * RTI SMART launch URL: [https://cloud.alphora.com/rti/my-pain/launch.html](https://cloud.alphora.com/rti/my-pain/launch.html)
+  * UFL SMART launch URL: [https://cloud.alphora.com/ufl/my-pain/launch.html](https://cloud.alphora.com/rti/my-pain/launch.html)
 * PainManager
   * Standalone application: [https://cloud.alphora.com/rti/pain-manager](https://cloud.alphora.com/rti/pain-manager)
-  * SMART launch URL: [https://cloud.alphora.com/rti/pain-manager/launch.html](https://cloud.alphora.com/rti/pain-manager/launch.html)
-* FHIR Server Endpoint: [https://cloud.alphora.com/rti/r4/cqf-ruler/fhir](https://cloud.alphora.com/rti/r4/cqf-ruler/fhir)
+  * RTI SMART launch URL: [https://cloud.alphora.com/rti/pain-manager/launch.html](https://cloud.alphora.com/rti/pain-manager/launch.html)
+  * UFL SMART launch URL: [https://cloud.alphora.com/ufl/pain-manager/launch.html](https://cloud.alphora.com/rti/pain-manager/launch.html)
+* FHIR Server Endpoint
+  * RTI FHIR Server: [https://cloud.alphora.com/rti/r4/cqf-ruler/fhir](https://cloud.alphora.com/rti/r4/cqf-ruler/fhir)
+  * UFL FHIR Server: [https://cloud.alphora.com/ufl/r4/cqf-ruler/fhir](https://cloud.alphora.com/ufl/r4/cqf-ruler/fhir)
 
 #### "Hello World" Scenarios
 
