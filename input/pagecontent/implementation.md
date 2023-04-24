@@ -77,6 +77,8 @@ implementing sites will need to host a FHIR Facade implementation directly in th
 Each of the sandbox components is constructed as a docker container and included in a docker compose for easily creating a complete instance of the sandbox. Source and detailed instructions for using and configuring this docker are included in the following repository:
 
 * [Sandbox](https://github.com/DBCG/cds4cpm-sandbox)
+
+There are 2 files, [docker-compose.yml](https://github.com/DBCG/cds4cpm-sandbox/blob/4266233728eb692ac0dd3ea7bbd817f445077b16/docker/docker-compose.yml) and [docker-compose-ufl.yml](https://github.com/DBCG/cds4cpm-sandbox/blob/4266233728eb692ac0dd3ea7bbd817f445077b16/docker/docker-compose-ufl.yml). Each for their respective project.
 #### Docker-Hub
 The images for the applications reside in Docker Hub: [https://hub.docker.com/u/alphora](https://hub.docker.com/u/alphora)
   * My-Pain
@@ -100,7 +102,7 @@ The images for the applications reside in Docker Hub: [https://hub.docker.com/u/
   
       and launched using
 
-          `docker run -p 8080:8080 alphora/cqf-ruler`
+      `docker run -p 8080:8080 alphora/cqf-ruler`
     
       This will enable the cqf-ruler to be available at http://localhost:8080'
   * Smart-Launcher
