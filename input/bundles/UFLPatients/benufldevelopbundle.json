@@ -284,7 +284,7 @@
             "timing": {
               "repeat": {
                 "frequency": 2,
-                "period": 3.0,
+                "period": 1.0,
                 "periodUnit": "d"
               }
             },
@@ -297,7 +297,8 @@
                   "code": "{tablet}"
                 }
               }
-            ]
+            ],
+            "text": "Take 1 tablet twice a day as directed."
           }
         ],
         "dispenseRequest": {
@@ -713,7 +714,8 @@
                   "code": "{tablet}"
                 }
               }
-            ]
+            ],
+            "text":"Take 1 tablet every 12 hours as directed."
           }
         ],
         "dispenseRequest": {
