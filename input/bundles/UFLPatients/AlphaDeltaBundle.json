@@ -1,0 +1,696 @@
+{
+    "resourceType": "Bundle",
+    "identifier": {
+        "value": "alphadeltabundle"
+    },
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "alphadelta",
+                "name": [
+                    {
+                        "given": [
+                            "Alpha"
+                        ],
+                        "family": "Delta"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1980-02-23"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/alphadelta"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "sdCondAlphaDelta3",
+                "subject": {
+                    "reference": "Patient/alphadelta"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "M54.5",
+                            "display": "Low back pain"
+                        }
+                    ],
+                    "text": "Low back pain"
+                },
+                "onsetDateTime": "2008-11-12T16:00:00.000Z",
+                "recordedDate": "2008-11-12T00:00:00.000Z"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/sdCondAlphaDelta3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "sdMedReqAlpha1",
+                "subject": {
+                    "reference": "Patient/alphadelta"
+                },
+                "status": "active",
+                "intent": "order",
+                "doNotPerform": false,
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "1049593",
+                            "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+                        }
+                    ],
+                    "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+                },
+                "authoredOn": "2022-06-07T16:02:00.000Z",
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 3.0,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1.0,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "{tablet}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2022-06-07",
+                        "end": "2022-09-07"
+                    },
+                    "numberOfRepeatsAllowed": 3,
+                    "expectedSupplyDuration": {
+                        "value": 30.0,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/sdMedReqAlpha1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "sdMedReqAlpha2",
+                "subject": {
+                    "reference": "Patient/alphadelta"
+                },
+                "status": "completed",
+                "intent": "order",
+                "doNotPerform": false,
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "1049593",
+                            "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+                        }
+                    ],
+                    "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+                },
+                "authoredOn": "2023-03-07T16:02:00.000Z",
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 1,
+                                "period": 3.0,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1.0,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "{tablet}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2023-03-07",
+                        "end": "2023-09-07"
+                    },
+                    "numberOfRepeatsAllowed": 3,
+                    "expectedSupplyDuration": {
+                        "value": 30.0,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/sdMedReqAlpha2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "sdMedReqAlpha12",
+                "subject": {
+                    "reference": "Patient/alphadelta"
+                },
+                "status": "active",
+                "intent": "order",
+                "doNotPerform": false,
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "1049574",
+                            "display": "12 HR Oxycodone Hydrochloride 30 MG Extended Release Oral Tablet"
+                        }
+                    ],
+                    "text": "12 HR Oxycodone Hydrochloride 30 MG Extended Release Oral Tablet"
+                },
+                "authoredOn": "2023-04-07T16:02:00.000Z",
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 1,
+                                "period": 3.0,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1.0,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "{tablet}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2023-04-07",
+                        "end": "2023-10-07"
+                    },
+                    "numberOfRepeatsAllowed": 3,
+                    "expectedSupplyDuration": {
+                        "value": 30.0,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/sdMedReqAlpha12"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "extension": [
+                    {
+                        "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/dataDateRoller",
+                        "extension": [
+                            {
+                                "url": "dateLastUpdated",
+                                "valueDateTime": "2022-08-10"
+                            },
+                            {
+                                "url": "frequency",
+                                "valueDuration": {
+                                    "value": 30.0,
+                                    "unit": "days",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "d"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "id": "sdMedReqBenzodiazepineAlpha",
+                "status": "active",
+                "intent": "order",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                            "code": "community"
+                        }
+                    ]
+                },
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "104693",
+                            "display": "Temazepam 20 MG Oral Tablet"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/alphadelta"
+                },
+                "authoredOn": "2023-03-07",
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 1,
+                                "period": 12.0,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1.0,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "{tablet}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2023-03-07",
+                        "end": "2023-06-07"
+                    },
+                    "numberOfRepeatsAllowed": 3,
+                    "expectedSupplyDuration": {
+                        "value": 30.0,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/sdMedReqBenzodiazepineAlpha"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrAlphaDelta.11",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "11"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1035",
+                            "display": "Activity Goals: what goals do you have for your daily activities?"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/alphadelta",
+                    "display": "Alpha Delta"
+                },
+                "effectiveDateTime": "2023-05-01T12:06:59-07:00",
+                "valueString": "Cut back on medication treatment and explore other options",
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRAlphaDelta"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrAlphaDelta.11"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrAlphaDelta.8.2",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "8.2"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1100",
+                            "display": "Topical medications (such as creams, lotions, gel, patches, Bengay, Tiger Balm, Salonpas, Biofreeze, or Lidoderm)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/alphadelta",
+                    "display": "Alpha Delta"
+                },
+                "effectiveDateTime": "2023-05-01T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+                            "code": "mpqr-1020",
+                            "display": "Slightly"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QrAlphaDelta"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrAlphaDelta.8.2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrAlphaDelta.9.4",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "9.4"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1107",
+                            "display": "Stress reduction (such as relaxation, meditation, mindfulness, laughter)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/alphadelta",
+                    "display": "Alpha Delta"
+                },
+                "effectiveDateTime": "2023-05-01T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+                            "code": "mpqr-1020",
+                            "display": "Slightly"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QrAlphaDelta"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrAlphaDelta.9.4"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrAlphaDelta.9.1",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "9.1"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1104",
+                            "display": "Exercises or stretching (such as walking, yoga, water aerobics)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/alphadelta",
+                    "display": "Alpha Delta"
+                },
+                "effectiveDateTime": "2023-05-01T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+                            "code": "mpqr-1020",
+                            "display": "Slightly"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QrAlphaDelta"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrAlphaDelta.9.1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrAlphaDelta.5.5",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "5.5"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1074",
+                            "display": "Prescription opioid medication (such as Vicodin, hydrocodone, oxycodone, codeine, morphine, or tramadol)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/alphadelta",
+                    "display": "Alpha Delta"
+                },
+                "effectiveDateTime": "2023-05-01T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+                            "code": "mpqr-1021",
+                            "display": "Moderately"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QrAlphaDelta"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrAlphaDelta.5.5"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrAlphaDelta.5.3",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "5.3"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1072",
+                            "display": "Prescription nerve pain medication (such as Lyrica, Neurontin, or Cymbalta)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/alphadelta",
+                    "display": "Alpha Delta"
+                },
+                "effectiveDateTime": "2023-05-01T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+                            "code": "mpqr-1021",
+                            "display": "Moderately"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QrAlphaDelta"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrAlphaDelta.5.3"
+            }
+        }
+    ]
+}

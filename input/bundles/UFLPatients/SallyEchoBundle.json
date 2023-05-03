@@ -1,0 +1,483 @@
+{
+    "resourceType": "Bundle",
+    "identifier": {
+        "value": "sallyechobundle"
+    },
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "sallyecho",
+                "name": [
+                    {
+                        "given": [
+                            "Sally"
+                        ],
+                        "family": "Echo"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1958-10-23"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/sallyecho"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "sdCondSally1",
+                "subject": {
+                    "reference": "Patient/sallyecho"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "version": "2021",
+                            "code": "M25.56",
+                            "display": "Pain in knee"
+                        }
+                    ],
+                    "text": "Pain in knee"
+                },
+                "onsetDateTime": "2020-04-05T16:00:00.000Z",
+                "recordedDate": "2020-04-05T00:00:00.000Z"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/sdCondSally1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "sdCondSally2",
+                "subject": {
+                    "reference": "Patient/sallyecho"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "version": "2021",
+                            "code": "M25.55",
+                            "display": "Pain in hip"
+                        }
+                    ],
+                    "text": "Pain in hip"
+                },
+                "onsetDateTime": "2022-12-02T16:00:00.000Z"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/sdCondSally2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "sdMedReqSally1",
+                "subject": {
+                    "reference": "Patient/sallyecho"
+                },
+                "status": "active",
+                "intent": "order",
+                "doNotPerform": false,
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "1049593",
+                            "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+                        }
+                    ],
+                    "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+                },
+                "authoredOn": "2023-01-27T16:02:00.000Z",
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 3.0,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1.0,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "{tablet}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2023-01-27",
+                        "end": "2023-06-27"
+                    },
+                    "numberOfRepeatsAllowed": 3,
+                    "expectedSupplyDuration": {
+                        "value": 30.0,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/sdMedReqSally1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "sdMedReqSally2",
+                "subject": {
+                    "reference": "Patient/sallyecho"
+                },
+                "status": "active",
+                "intent": "order",
+                "doNotPerform": false,
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "1049574",
+                            "display": "12 HR Oxycodone Hydrochloride 30 MG Extended Release Oral Tablet"
+                        }
+                    ],
+                    "text": "12 HR Oxycodone Hydrochloride 30 MG Extended Release Oral Tablet"
+                },
+                "authoredOn": "2023-02-15T16:02:00.000Z",
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 1,
+                                "period": 3.0,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1.0,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "{tablet}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2023-02-15",
+                        "end": "2023-08-15"
+                    },
+                    "numberOfRepeatsAllowed": 3,
+                    "expectedSupplyDuration": {
+                        "value": 30.0,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/sdMedReqSally2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "sdMedReqSally3",
+                "subject": {
+                    "reference": "Patient/sallyecho"
+                },
+                "status": "active",
+                "intent": "order",
+                "doNotPerform": false,
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "1049502",
+                            "display": "12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet"
+                        }
+                    ],
+                    "text": "12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet"
+                },
+                "authoredOn": "2023-03-01T16:02:00.000Z",
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "frequency": 1,
+                                "period": 3.0,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1.0,
+                                    "unit": "tablet",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "{tablet}"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2023-03-01",
+                        "end": "2023-09-01"
+                    },
+                    "numberOfRepeatsAllowed": 3,
+                    "expectedSupplyDuration": {
+                        "value": 30.0,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/sdMedReqSally3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.3.1",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "3.1"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "61758-9",
+                            "display": "How much did pain interfere with your day to day activities in past 7 days"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-05-03T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LA13902-4",
+                            "display": "Quite a bit"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.3.1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.6.2",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "6.2"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1088",
+                            "display": "Physical therapist"
+                                                }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-05-03T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+                            "code": "mpqr-1020",
+                            "display": "Slightly"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.6.2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.6.4",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "6.4"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1090",
+                            "display": "Orthopedist"
+                                    }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-05-03T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+                            "code": "mpqr-1020",
+                            "display": "Slightly"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.6.4"
+            }
+        }
+    ]
+}
