@@ -391,7 +391,7 @@
                             "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
                             "code": "mpq-1088",
                             "display": "Physical therapist"
-                                                }
+                        }
                     ]
                 },
                 "subject": {
@@ -451,7 +451,7 @@
                             "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
                             "code": "mpq-1090",
                             "display": "Orthopedist"
-                                    }
+                        }
                     ]
                 },
                 "subject": {
@@ -477,6 +477,491 @@
             "request": {
                 "method": "PUT",
                 "url": "Observation/qrSallyEcho.6.4"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.1.9",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "1.9"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1049",
+                            "display": "What type of KNEES pain have you had in the last 7 days?"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "55145008",
+                            "display": "Stabbing"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.1.9"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.1.8",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "1.8"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1047",
+                            "display": "What type of HIPS pain have you had in the last 7 days?"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "36349006",
+                            "display": "Burning"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "29695002",
+                            "display": "Throbbing"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.1.8"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.2.1",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "2.1"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "75262-6",
+                            "display": "How intense was your pain at its worse in the past 7 days"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LA13958-6",
+                            "display": "Very Severe"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.2.1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.2.3",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "2.3"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "75260-0",
+                            "display": "What is your level of pain right now"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LA6751-7",
+                            "display": "Moderate"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.2.3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.2.2",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "2.2"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "75261-8",
+                            "display": "How intense was your average pain in the past 7 days"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LA6750-9",
+                            "display": "Severe"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.2.2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.3.2",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "3.2"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "61769-6",
+                            "display": "How much did pain interfere with work around the home in past 7 days"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LA13902-4",
+                            "display": "Quite a bit"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.3.2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.3.3",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "3.3"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "61773-8",
+                            "display": "How much did pain interfere with your ability to participate in social activities in past 7 days"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LA13914-9",
+                            "display": "Very much"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.3.3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrSallyEcho.3.4",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "3.4"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "61775-3",
+                            "display": "How much did pain interfere with your household chores in past 7 days"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/sallyecho",
+                    "display": "Sally Echo"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LA13902-4",
+                            "display": "Quite a bit"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRSallyEcho"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrSallyEcho.3.4"
             }
         }
     ]
