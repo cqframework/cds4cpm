@@ -1,6 +1,7 @@
 {
    "library" : {
       "annotation" : [ {
+         "translatorVersion" : "2.7.0-SNAPSHOT",
          "translatorOptions" : "",
          "type" : "CqlToElmInfo"
       } ],

@@ -1,6 +1,7 @@
 {
    "library" : {
       "annotation" : [ {
+         "translatorVersion" : "2.7.0-SNAPSHOT",
          "translatorOptions" : "",
          "type" : "CqlToElmInfo"
       } ],
@@ -672,19 +673,15 @@
                         "value" : {
                            "type" : "If",
                            "condition" : {
-                              "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                              "type" : "As",
+                              "type" : "Not",
                               "operand" : {
-                                 "type" : "Not",
+                                 "type" : "IsNull",
                                  "operand" : {
-                                    "type" : "IsNull",
-                                    "operand" : {
-                                       "path" : "text",
-                                       "type" : "Property",
-                                       "source" : {
-                                          "name" : "dosageInstruction",
-                                          "type" : "QueryLetRef"
-                                       }
+                                    "path" : "text",
+                                    "type" : "Property",
+                                    "source" : {
+                                       "name" : "dosageInstruction",
+                                       "type" : "QueryLetRef"
                                     }
                                  }
                               }

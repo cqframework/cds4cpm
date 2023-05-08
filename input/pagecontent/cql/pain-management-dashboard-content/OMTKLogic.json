@@ -1,6 +1,7 @@
 {
    "library" : {
       "annotation" : [ {
+         "translatorVersion" : "2.7.0-SNAPSHOT",
          "translatorOptions" : "",
          "type" : "CqlToElmInfo"
       } ],
@@ -251,14 +252,10 @@
                         "value" : {
                            "type" : "If",
                            "condition" : {
-                              "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                              "type" : "As",
+                              "type" : "IsNull",
                               "operand" : {
-                                 "type" : "IsNull",
-                                 "operand" : {
-                                    "name" : "result",
-                                    "type" : "QueryLetRef"
-                                 }
+                                 "name" : "result",
+                                 "type" : "QueryLetRef"
                               }
                            },
                            "then" : {
@@ -306,19 +303,19 @@
                                  "type" : "TupleTypeSpecifier",
                                  "element" : [ {
                                     "name" : "code",
-                                    "type" : {
+                                    "elementType" : {
                                        "name" : "{urn:hl7-org:elm-types:r1}String",
                                        "type" : "NamedTypeSpecifier"
                                     }
                                  }, {
                                     "name" : "errorLevel",
-                                    "type" : {
+                                    "elementType" : {
                                        "name" : "{urn:hl7-org:elm-types:r1}String",
                                        "type" : "NamedTypeSpecifier"
                                     }
                                  }, {
                                     "name" : "message",
-                                    "type" : {
+                                    "elementType" : {
                                        "name" : "{urn:hl7-org:elm-types:r1}String",
                                        "type" : "NamedTypeSpecifier"
                                     }
@@ -1366,14 +1363,10 @@
                         "value" : {
                            "type" : "If",
                            "condition" : {
-                              "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                              "type" : "As",
+                              "type" : "IsNull",
                               "operand" : {
-                                 "type" : "IsNull",
-                                 "operand" : {
-                                    "name" : "result",
-                                    "type" : "QueryLetRef"
-                                 }
+                                 "name" : "result",
+                                 "type" : "QueryLetRef"
                               }
                            },
                            "then" : {
@@ -1425,19 +1418,19 @@
                                  "type" : "TupleTypeSpecifier",
                                  "element" : [ {
                                     "name" : "code",
-                                    "type" : {
+                                    "elementType" : {
                                        "name" : "{urn:hl7-org:elm-types:r1}String",
                                        "type" : "NamedTypeSpecifier"
                                     }
                                  }, {
                                     "name" : "errorLevel",
-                                    "type" : {
+                                    "elementType" : {
                                        "name" : "{urn:hl7-org:elm-types:r1}String",
                                        "type" : "NamedTypeSpecifier"
                                     }
                                  }, {
                                     "name" : "message",
-                                    "type" : {
+                                    "elementType" : {
                                        "name" : "{urn:hl7-org:elm-types:r1}String",
                                        "type" : "NamedTypeSpecifier"
                                     }
@@ -1758,17 +1751,13 @@
             "expression" : {
                "type" : "If",
                "condition" : {
-                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                  "type" : "As",
+                  "type" : "IsNull",
                   "operand" : {
-                     "type" : "IsNull",
-                     "operand" : {
-                        "path" : "display",
-                        "type" : "Property",
-                        "source" : {
-                           "name" : "rxNormCode",
-                           "type" : "OperandRef"
-                        }
+                     "path" : "display",
+                     "type" : "Property",
+                     "source" : {
+                        "name" : "rxNormCode",
+                        "type" : "OperandRef"
                      }
                   }
                },
@@ -1836,17 +1825,13 @@
             "expression" : {
                "type" : "If",
                "condition" : {
-                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                  "type" : "As",
+                  "type" : "IsNull",
                   "operand" : {
-                     "type" : "IsNull",
-                     "operand" : {
-                        "path" : "display",
-                        "type" : "Property",
-                        "source" : {
-                           "name" : "concept",
-                           "type" : "OperandRef"
-                        }
+                     "path" : "display",
+                     "type" : "Property",
+                     "source" : {
+                        "name" : "concept",
+                        "type" : "OperandRef"
                      }
                   }
                },
@@ -1914,17 +1899,13 @@
             "expression" : {
                "type" : "If",
                "condition" : {
-                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                  "type" : "As",
+                  "type" : "IsNull",
                   "operand" : {
-                     "type" : "IsNull",
-                     "operand" : {
-                        "path" : "display",
-                        "type" : "Property",
-                        "source" : {
-                           "name" : "ingredientCode",
-                           "type" : "OperandRef"
-                        }
+                     "path" : "display",
+                     "type" : "Property",
+                     "source" : {
+                        "name" : "ingredientCode",
+                        "type" : "OperandRef"
                      }
                   }
                },
@@ -1992,17 +1973,13 @@
             "expression" : {
                "type" : "If",
                "condition" : {
-                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                  "type" : "As",
+                  "type" : "IsNull",
                   "operand" : {
-                     "type" : "IsNull",
-                     "operand" : {
-                        "path" : "display",
-                        "type" : "Property",
-                        "source" : {
-                           "name" : "doseFormCode",
-                           "type" : "OperandRef"
-                        }
+                     "path" : "display",
+                     "type" : "Property",
+                     "source" : {
+                        "name" : "doseFormCode",
+                        "type" : "OperandRef"
                      }
                   }
                },
@@ -2105,19 +2082,15 @@
                   "expression" : {
                      "type" : "If",
                      "condition" : {
-                        "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                        "type" : "As",
-                        "operand" : {
-                           "type" : "Greater",
-                           "operand" : [ {
-                              "name" : "splitCount",
-                              "type" : "QueryLetRef"
-                           }, {
-                              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
-                              "value" : "1",
-                              "type" : "Literal"
-                           } ]
-                        }
+                        "type" : "Greater",
+                        "operand" : [ {
+                           "name" : "splitCount",
+                           "type" : "QueryLetRef"
+                        }, {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "1",
+                           "type" : "Literal"
+                        } ]
                      },
                      "then" : {
                         "type" : "Substring",
@@ -2286,33 +2259,29 @@
                   "then" : {
                      "type" : "If",
                      "condition" : {
-                        "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                        "type" : "As",
-                        "operand" : {
-                           "type" : "In",
-                           "operand" : [ {
-                              "type" : "ToInteger",
-                              "operand" : {
-                                 "path" : "code",
-                                 "type" : "Property",
-                                 "source" : {
-                                    "name" : "ingredientCode",
-                                    "type" : "OperandRef"
-                                 }
+                        "type" : "In",
+                        "operand" : [ {
+                           "type" : "ToInteger",
+                           "operand" : {
+                              "path" : "code",
+                              "type" : "Property",
+                              "source" : {
+                                 "name" : "ingredientCode",
+                                 "type" : "OperandRef"
                               }
+                           }
+                        }, {
+                           "type" : "List",
+                           "element" : [ {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "value" : "1819",
+                              "type" : "Literal"
                            }, {
-                              "type" : "List",
-                              "element" : [ {
-                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
-                                 "value" : "1819",
-                                 "type" : "Literal"
-                              }, {
-                                 "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
-                                 "value" : "4337",
-                                 "type" : "Literal"
-                              } ]
+                              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "value" : "4337",
+                              "type" : "Literal"
                            } ]
-                        }
+                        } ]
                      },
                      "then" : {
                         "type" : "Query",
@@ -3225,16 +3194,12 @@
             "expression" : {
                "type" : "If",
                "condition" : {
-                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                  "type" : "As",
+                  "type" : "Not",
                   "operand" : {
-                     "type" : "Not",
+                     "type" : "IsNull",
                      "operand" : {
-                        "type" : "IsNull",
-                        "operand" : {
-                           "name" : "value",
-                           "type" : "OperandRef"
-                        }
+                        "name" : "value",
+                        "type" : "OperandRef"
                      }
                   }
                },

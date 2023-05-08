@@ -1086,7 +1086,7 @@ define ReportOpioidMedicationRequests:
     Name:  ConceptText(O.medication as FHIR.CodeableConcept),
     Start: DateTimeText(O.authoredOn),
 End: null as String, // MedicationRequest end date not supported in R4,
-    MME: MMEText(MMECalculator.TotalMME(List{O})),
+    MME: if "Use MMECalculator" then MMEText(MMECalculator.TotalMME(List{O})) else null,
     Sig: (singleton from (O.dosageInstruction)).text,
     Status: O.status.value
   }
@@ -1106,10 +1106,16 @@ End:   DateTimeText((S.effective as FHIR.Period)."end"),
   sort by Start desc, End desc
 
 define ReportOpioidMedications:
+    if "Add Naloxone to Opioid Medications" then
   (ReportOpioidMedicationRequests
    union ReportOpioidMedicationStatements
    union ReportNaloxoneMedications) M
   sort by Start desc, End desc
+    else
+      (ReportOpioidMedicationRequests
+       union ReportOpioidMedicationStatements) M
+      sort by Start desc, End desc
+
 
 // Non-opioid medication orders and statements with dates (lookback 2 years)
 
@@ -1158,10 +1164,15 @@ define ReportNonOpioidMedicationStatements:
   sort by Start desc, End desc
 
 define ReportNonOpioidMedications:
+    if "Add Benzodiazepine to NonOpioid Medications" then
   (ReportNonOpioidMedicationRequests
     union ReportNonOpioidMedicationStatements
     union ReportBenzodiazepineMedications) M
   sort by Start desc, End desc
+    else
+      (ReportNonOpioidMedicationRequests
+        union ReportNonOpioidMedicationStatements) M
+      sort by Start desc, End desc
 
 // Non-pharmacologic treatments, orders, and referrals with dates (lookback 2 years)
 
@@ -1362,7 +1373,7 @@ define ReportNaloxoneMedicationRequests:
     Name:  ConceptText(O.medication as FHIR.CodeableConcept),
     Start: DateTimeText(O.authoredOn),
     End:   null as String, // MedicationRequest end date not supported in R4,
-    MME: MMEText(MMECalculator.TotalMME(List{O})),
+    MME: if "Use MMECalculator" then MMEText(MMECalculator.TotalMME(List{O})) else null,
     Sig: (singleton from (O.dosageInstruction)).text,
     Status: O.status.value
   }
@@ -1478,7 +1489,7 @@ define TestActiveOpioidMedications2:
 */
 
 define CurrentMME:
-  MMECalculator.TotalMME(ActiveOpioidMedications)
+  if "Use MMECalculator" then MMECalculator.TotalMME(ActiveOpioidMedications) else null
 
 define ReportCurrentMME:
 ({
@@ -1586,7 +1597,12 @@ define function GetSimpleText(qrOb FHIR.Observation):
     when qrOb.code ~ enjoySocial then 'Enjoyment of social activities'
     when qrOb.code ~ enjoyLife then 'Enjoyment of life'
     when qrOb.code ~ enjoyFamily then 'Family life'
-
+    when qrOb.code ~ noMedicationsTried then 'Medications'
+    when qrOb.code ~ noSpecialistsSeen then 'Specialists'
+    when qrOb.code ~ noTreatmentsTried then 'Procedures or physical treatments'
+    when qrOb.code ~ noTopicalTxTried then 'Topical treatments or devices'
+    when qrOb.code ~ noLifestyleChanges then 'Lifestyle changes'
+    when qrOb.code ~ noALternativeTxTried then 'Alternative treatments'
     else ''
   end
 
@@ -1753,10 +1769,9 @@ define ReportNotTriedTx:
       or (qrOb.code ~ noTopicalTxTried and qrOb.value = true)
       or (qrOb.code ~ noLifestyleChanges and qrOb.value = true)
       or (qrOb.code~ noALternativeTxTried and qrOb.value = true))
-//      (qrOb.code is CodeableConcept and (qrOb.code as CodeableConcept) ~ noMedicationsTried)
-//(qrOb.code is CodeableConcept and ((qrOb.code as CodeableConcept) ~ "noMedicationsTried"  )
       return{
-        Treatment: QuestionTextByLinkId(qrOb)[0].value[0]
+        Treatment: QuestionTextByLinkId(qrOb)[0].value[0],
+        SimpleText: GetSimpleText(qrOb)
       }
 
 define ReportGreatlyEffectiveTx:
@@ -1807,14 +1822,24 @@ define ReportOtherTx:
 /*
 # Recommendation #3
 In Active Prescriptions|Opioids, provide the following text as an info flyover:
-"Per CDC guidelines, before starting, and periodically during opioid therapy,
+
+For 2016 CDC Guidelines:
+'Per CDC guidelines, before starting, and periodically during opioid therapy,
 clinicians should discuss with patients known risks and realistic benefits of
 opioid therapy and patient and clinician responsibilities for managing therapy
 (recommendation category: A, evidence type: 3).
-[CDC Opioid Prescribing Guideline, Recommendation #3](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)"
+[CDC Opioid Prescribing Guideline, Recommendation #3](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)'
+
+For 2022 CDC Guidelines:
+'Per CDC guidelines, when starting opioid therapy for acute, subacute, or chronic pain, clinicians should prescribe
+immediate-release opioids instead of extended-release and long-acting (ER/LA) opioids
+(<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down">recommendation category: A; evidence type: 4</a>).'
 */
 define ReportRecommendation3Text:
-  'Per CDC guidelines, before starting, and periodically during opioid therapy, clinicians should discuss with patients known risks and realistic benefits of opioid therapy and patient and clinician responsibilities for managing therapy (recommendation category: A, evidence type: 3).  [CDC Opioid Prescribing Guideline, Recommendation #3](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)'
+    if "Use 2022 CDC Guidelines" then
+        'Per CDC guidelines, when starting opioid therapy for acute, subacute, or chronic pain, clinicians should prescribe immediate-release opioids instead of extended-release and long-acting (ER/LA) opioids (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down" target="_blank" rel="noopener noreferrer">recommendation category: A; evidence type: 4</a>).'
+    else
+        'Per CDC guidelines, before starting, and periodically during opioid therapy, clinicians should discuss with patients known risks and realistic benefits of opioid therapy and patient and clinician responsibilities for managing therapy (recommendation category: A, evidence type: 3).  [CDC Opioid Prescribing Guideline, Recommendation #3](<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm#Recommendation3" rel="noopener noreferrer"/>)'
 
 /*
 # Recommendation #5
@@ -1833,13 +1858,18 @@ plan strategies to mitigate risk, including considering offering naloxone
 */
 define ReportRecommendation5Text:
   if CurrentMME >= 50 '{MME}/d' then
-    'Per CDC guidelines, when opioids are started, clinicians should prescribe the lowest effective dosage. Clinicians should use caution when prescribing opioids at any dosage, should carefully reassess evidence of individual benefits and risks when considering increasing dosage to ≥50 morphine milligram equivalents (MME)/day, and should avoid increasing dosage to ≥90 MME/day or carefully justify a decision to titrate dosage to ≥90 MME/day (recommendation category: A, evidence type: 3).\n\nFor MME/day of ≥ 50, CDC guidelines recommend incorporating into the management plan strategies to mitigate risk, including considering offering naloxone (recommendation category: A, evidence type: 4). [CDC Opioid Prescribing Guideline, Recommendation #5 and #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)'
+    if "Use 2022 CDC Guidelines" then
+        'Per CDC guidelines, When opioids are initiated for opioid-naïve patients with acute, subacute, or chronic pain, clinicians should prescribe the lowest effective dosage. If opioids are continued for subacute or chronic pain, clinicians should use caution when prescribing opioids at any dosage, should carefully evaluate individual benefits and risks when considering increasing dosage, and should avoid increasing dosage above levels likely to yield diminishing returns in benefits relative to risks to patients (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down" target="_blank" rel="noopener noreferrer">recommendation category: A; evidence type: 3</a>)<br/><br/><br/>For patients already receiving opioid therapy, clinicians should carefully weigh benefits and risks and exercise care when changing opioid dosage. If benefits outweigh risks of continued opioid therapy, clinicians should work closely with patients to optimize nonopioid therapies while continuing opioid therapy. If benefits do not outweigh risks of continued opioid therapy, clinicians should optimize other therapies and work closely with patients to gradually taper to lower dosages or, if warranted based on the individual circumstances of the patient, appropriately taper and discontinue opioids. Unless there are indications of a life-threatening issue such as warning signs of impending overdose (e.g., confusion, sedation, or slurred speech), opioid therapy should not be discontinued abruptly, and clinicians should not rapidly reduce opioid dosages from higher dosages (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down" target="_blank" rel="noopener noreferrer">recommendation category: B; evidence type: 4</a>)'
+    else
+        'Per CDC guidelines, when opioids are started, clinicians should prescribe the lowest effective dosage. Clinicians should use caution when prescribing opioids at any dosage, should carefully reassess evidence of individual benefits and risks when considering increasing dosage to ≥50 morphine milligram equivalents (MME)/day, and should avoid increasing dosage to ≥90 MME/day or carefully justify a decision to titrate dosage to ≥90 MME/day (recommendation category: A, evidence type: 3).\n\nFor MME/day of ≥ 50, CDC guidelines recommend incorporating into the management plan strategies to mitigate risk, including considering offering naloxone (recommendation category: A, evidence type: 4). [CDC Opioid Prescribing Guideline, Recommendation #5 and #8](<a href="https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm" target="_blank" rel="noopener noreferrer"/>)'
   else
     null
 
 /*
 # Recommendation #8
 In Pertinent Conditions|Co-Morbid Conditions Increasing Risk When Using Opioids, provide the following text as an info flyover:
+
+For 2016 CDC Guidelines:
 "Per CDC guidelines, before starting, and periodically during continuation of
 opioid therapy, clinicians should evaluate risk factors for opioid-related harms.
 Clinicians should incorporate into the management plan strategies to mitigate risk,
@@ -1848,37 +1878,68 @@ overdose, such as history of overdose, history of substance use disorder,
 higher opioid dosages (greater than or equal to [≥] 50 morphine milligram equivalents [MME]/day),
 or concurrent benzodiazepine use, are present (recommendation category: A, evidence type: 4).
 [CDC Opioid Prescribing Guideline, Recommendation #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)"
-*/
+
+For 2022 CDC Guidelines:
+'Per CDC guidelines, before starting, and periodically during continuation of opioid therapy, clinicians
+should evaluate risk factors for opioid-related harms. Clinicians should incorporate into the management
+plan strategies to mitigate risk, including considering offering naloxone when factors that increase risk
+for opioid overdose, such as history of overdose, history of substance use disorder, higher opioid dosages
+(greater than or equal to [≥] 50 morphine milligram equivalents [MME]/day), or concurrent benzodiazepine use,
+are present (recommendation category: A, evidence type: 4). [CDC Opioid Prescribing Guideline, Recommendation #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)'*/
 define ReportRecommendation8Text:
+      if "Use 2022 CDC Guidelines" then
+        'Per CDC guidelines, before starting and periodically during continuation of opioid therapy, clinicians should evaluate risk for opioid-related harms and discuss risk with patients. Clinicians should work with patients to incorporate into the management plan strategies to mitigate risk, including offering naloxone (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down" target="_blank" rel="noopener noreferrer">recommendation category: A; evidence type: 4</a>)'
+      else
   'Per CDC guidelines, before starting, and periodically during continuation of opioid therapy, clinicians should evaluate risk factors for opioid-related harms. Clinicians should incorporate into the management plan strategies to mitigate risk, including considering offering naloxone when factors that increase risk for opioid overdose, such as history of overdose, history of substance use disorder, higher opioid dosages (greater than or equal to [≥] 50 morphine milligram equivalents [MME]/day), or concurrent benzodiazepine use, are present (recommendation category: A, evidence type: 4). [CDC Opioid Prescribing Guideline, Recommendation #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)'
 
 /*
 # Recommendation #10
 In Urine Drug Screening, provide the following text with an Exclamation icon when no Uring drug screen is present in the past year:
 "No urine drug screen within the past year
-
+For 2016 CDC Guidelines:
 Patient’s active medications include an opioid. Per CDC guidelines, when prescribing
 opioids for chronic pain, clinicians should use urine drug testing before starting
 opioid therapy and consider urine drug testing at least annually to assess for prescribed
 medications as well as other controlled prescription drugs and illicit drugs
 (recommendation category: B, evidence type: 4)
 [CDC Opioid Prescribing Guideline, Recommendation #10](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)."
+
+For 2022 CDC Guidelines:
+'Patient’s active medications include an opioid. Per CDC guidelines, when prescribing opioids for subacute or chronic pain,
+clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other
+prescribed and nonprescribed controlled substances (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down">
+recommendation category: B; evidence type: 4</a>)'
 */
 define ReportRecommendation10Text:
   if not exists ReportUrineDrugScreens then
+     if "Use 2022 CDC Guidelines" then
+        '**No urine drug screen within the past year**\n\nPatient’s active medications include an opioid. Per CDC guidelines, When prescribing opioids for subacute or chronic pain, clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other prescribed and nonprescribed controlled substances (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down" target="_blank" rel="noopener noreferrer">recommendation category: B; evidence type: 4</a>).'
+     else
     '**No urine drug screen within the past year**\n\nPatient’s active medications include an opioid. Per CDC guidelines, when prescribing opioids for chronic pain, clinicians should use urine drug testing before starting opioid therapy and consider urine drug testing at least annually to assess for prescribed medications as well as other controlled prescription drugs and illicit drugs (recommendation category: B, evidence type: 4) [CDC Opioid Prescribing Guideline, Recommendation #10](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm).'
   else
-    null
-
+     if "Use 2022 CDC Guidelines" then
+        'Patient’s active medications include an opioid. Per CDC guidelines, when prescribing opioids for subacute or chronic pain, clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other prescribed and nonprescribed controlled substances (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down" target="_blank" rel="noopener noreferrer">recommendation category: B; evidence type: 4</a>)'
+     else
+        'Patient’s active medications include an opioid. Per CDC guidelines, when prescribing opioids for chronic pain, clinicians should use urine drug testing before starting opioid therapy and consider urine drug testing at least annually to assess for prescribed medications as well as other controlled prescription drugs and illicit drugs (recommendation category: B, evidence type: 4) [CDC Opioid Prescribing Guideline, Recommendation #10](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm).'
 /*
 # Recommendation #11
 In Active Prescriptions|Non-Opioids, provide the following text as an Exclamation flyover when Benzodiazepines and Opioids are present:
+
+For 2016 CDC Guidelines:
 "Per CDC guidelines, avoid prescribing opioid pain medication and benzodiazepines
 concurrently whenever possible (recommendation category: A, evidence type: 3)
 [CDC Opioid Prescribing Guideline, Recommendation #11](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)"
+
+For 2022 CDC Guidelines:
+'Per CDC guidelines, clinicians should use particular caution when prescribing opioid pain medication and benzodiazepines concurrently and
+consider whether benefits outweigh risks of concurrent prescribing of opioids and other central nervous system depressants
+(<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down">recommendation category: B; evidence type: 3</a>)'
 */
 define ReportRecommendation11Text:
   if exists (ReportOpioidMedications) and exists (ReportBenzodiazepineMedications) then
+      if "Use 2022 CDC Guidelines" then
+            'Per CDC guidelines, clinicians should use particular caution when prescribing opioid pain medication and benzodiazepines concurrently and consider whether benefits outweigh risks of concurrent prescribing of opioids and other central nervous system depressants (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down" target="_blank" rel="noopener noreferrer">recommendation category: B; evidence type: 3</a>)'
+          else
     'Per CDC guidelines, avoid prescribing opioid pain medication and benzodiazepines concurrently whenever possible (recommendation category: A, evidence type: 3) [CDC Opioid Prescribing Guideline, Recommendation #11](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)'
   else
     null
@@ -1944,6 +2005,15 @@ define "Only Active Medications":
 define "Use MMECalculator":
     true
 
+define "Add Benzodiazepine to NonOpioid Medications":
+    false
+
+define "Add Naloxone to Opioid Medications":
+    false
+
+define "Use 2022 CDC Guidelines":
+    true
+
 // Return results for use in application
 define Summary: {
    Patient: {
@@ -1967,6 +2037,7 @@ define Summary: {
     SelfReportedTreatmentsFromMyPAIN: ReportSelfReportedTreatmentsFromMyPAIN,
     Recommendation3Text: ReportRecommendation3Text,
     Recommendation5Text: ReportRecommendation5Text,
+    Recommendation8Text: ReportRecommendation8Text,
     Recommendation11Text: ReportRecommendation11Text
   },
   TreatmentEffectiveness: {

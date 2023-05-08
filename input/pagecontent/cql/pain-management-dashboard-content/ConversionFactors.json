@@ -1,6 +1,7 @@
 {
    "library" : {
       "annotation" : [ {
+         "translatorVersion" : "2.7.0-SNAPSHOT",
          "translatorOptions" : "",
          "type" : "CqlToElmInfo"
       } ],
@@ -214,19 +215,15 @@
             "expression" : {
                "type" : "If",
                "condition" : {
-                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                  "type" : "As",
-                  "operand" : {
-                     "type" : "Equal",
-                     "operand" : [ {
-                        "name" : "value",
-                        "type" : "OperandRef"
-                     }, {
-                        "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                        "value" : "*",
-                        "type" : "Literal"
-                     } ]
-                  }
+                  "type" : "Equal",
+                  "operand" : [ {
+                     "name" : "value",
+                     "type" : "OperandRef"
+                  }, {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "*",
+                     "type" : "Literal"
+                  } ]
                },
                "then" : {
                   "asType" : "{urn:hl7-org:elm-types:r1}Decimal",
@@ -522,31 +519,27 @@
             "expression" : {
                "type" : "If",
                "condition" : {
-                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
-                  "type" : "As",
-                  "operand" : {
-                     "type" : "Greater",
-                     "operand" : [ {
-                        "type" : "PositionOf",
-                        "pattern" : {
-                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                           "value" : "@",
-                           "type" : "Literal"
-                        },
-                        "string" : {
-                           "path" : "value",
-                           "type" : "Property",
-                           "source" : {
-                              "name" : "propertyValue",
-                              "type" : "OperandRef"
-                           }
-                        }
-                     }, {
-                        "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
-                        "value" : "0",
+                  "type" : "Greater",
+                  "operand" : [ {
+                     "type" : "PositionOf",
+                     "pattern" : {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                        "value" : "@",
                         "type" : "Literal"
-                     } ]
-                  }
+                     },
+                     "string" : {
+                        "path" : "value",
+                        "type" : "Property",
+                        "source" : {
+                           "name" : "propertyValue",
+                           "type" : "OperandRef"
+                        }
+                     }
+                  }, {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal"
+                  } ]
                },
                "then" : {
                   "name" : "ToDoseFormDosesPerDayConversionFactor",
