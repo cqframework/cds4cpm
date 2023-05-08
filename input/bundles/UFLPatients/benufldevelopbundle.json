@@ -1,0 +1,3732 @@
+{
+  "resourceType": "Bundle",
+  "identifier": {
+    "value": "benufldevelopbundle"
+  },
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "benufldevelop",
+        "name": [
+          {
+            "given": [
+              "Ben UFL"
+            ],
+            "family": "Develop"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1955-10-23"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/benufldevelop"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCondBen1",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "203082005",
+              "display": "Fibromyalgia (disorder)"
+            }
+          ],
+          "text": "Fibromyalgia (disorder)"
+        },
+        "onsetDateTime": "2013-04-05T16:00:00.000Z",
+        "recordedDate": "2013-04-05T00:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCondBen1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCondBen2",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "832007",
+              "display": "Moderate major depression (disorder)"
+            }
+          ],
+          "text": "Moderate major depression (disorder)"
+        },
+        "onsetDateTime": "2016-12-02T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCondBen2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCondBen3",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M54.5",
+              "display": "Low back pain"
+            }
+          ],
+          "text": "Low back pain"
+        },
+        "onsetDateTime": "2008-11-12T16:00:00.000Z",
+        "recordedDate": "2008-11-12T00:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCondBen3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "sdCondBen4",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "202725007",
+              "display": "Lumbar post-laminectomy syndrome (disorder)"
+            }
+          ],
+          "text": "Lumbar post-laminectomy syndrome (disorder)"
+        },
+        "onsetDateTime": "2012-02-01T16:00:00.000Z",
+        "recordedDate": "2012-02-16T00:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/sdCondBen4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReqBen1",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197806",
+              "display": "Ibuprofen 600 MG Oral Tablet"
+            }
+          ],
+          "text": "Ibuprofen 600 MG Oral Tablet"
+        },
+        "authoredOn": "2023-01-25T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReqBen1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReqBen2",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "876193",
+              "display": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+            }
+          ],
+          "text": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+        },
+        "authoredOn": "2023-02-10T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReqBen2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReqBen3",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049593",
+              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        },
+        "authoredOn": "2023-03-07T16:02:00.000Z",
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1.0,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1.0,
+                  "unit": "tablet",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{tablet}"
+                }
+              }
+            ],
+            "text": "Take 1 tablet twice a day as directed."
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-03-07",
+            "end": "2023-06-07"
+          },
+          "numberOfRepeatsAllowed": 3,
+          "expectedSupplyDuration": {
+            "value": 30.0,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReqBen3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReqBen5",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "completed",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049593",
+              "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        },
+        "authoredOn": "2021-10-15T16:02:00.000Z",
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 3.0,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1.0,
+                  "unit": "tablet",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{tablet}"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2021-10-15",
+            "end": "2022-01-13"
+          },
+          "numberOfRepeatsAllowed": 3,
+          "expectedSupplyDuration": {
+            "value": 30.0,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReqBen5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReqBen7",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "876193",
+              "display": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+            }
+          ],
+          "text": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+        },
+        "authoredOn": "2017-11-15T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReqBen7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "sdObsBen1",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://cds.ahrq.gov/cdsconnect/pms",
+              "code": "MME",
+              "display": "Morphine Milligram Equivalent (MME)"
+            }
+          ],
+          "text": "Morphine Milligram Equivalent (MME)"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "therapy"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "value": 220,
+          "unit": "{MME}/d",
+          "system": "http://unitsofmeasure.org",
+          "code": "{MME}/d"
+        },
+        "issued": "2023-01-09T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/sdObsBen1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "sdObsBen2",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "19346-6",
+              "display": "Amphetamine (U) [Mass/Vol]"
+            }
+          ],
+          "text": "Amphetamine [Presence] in Urine by Screen method"
+        },
+        "valueQuantity": {
+          "value": 2501,
+          "unit": "ng/mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "ng/mL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "POS",
+                "display": "Positive"
+              }
+            ],
+            "text": "Positive"
+          }
+        ],
+        "issued": "2023-02-15T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/sdObsBen2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "sdObsBen3",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "19295-5",
+              "display": "Opiates [Presence] in Urine by Screen method"
+            }
+          ],
+          "text": "Opiates [Presence] in Urine by Screen method"
+        },
+        "valueQuantity": {
+          "value": 2500,
+          "unit": "ng/mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "ng/mL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0078",
+                "code": "POS",
+                "display": "Positive"
+              }
+            ],
+            "text": "Positive"
+          }
+        ],
+        "issued": "2023-02-15T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/sdObsBen3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "sdMedReqBen8",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "active",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "198440",
+              "display": "Acetaminophen 500 MG Oral Tablet"
+            }
+          ],
+          "text": "Acetaminophen 500 MG Oral Tablet"
+        },
+        "authoredOn": "2020-09-28T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReqBen8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/dataDateRoller",
+            "extension": [
+              {
+                "url": "dateLastUpdated",
+                "valueDateTime": "2022-08-10"
+              },
+              {
+                "url": "frequency",
+                "valueDuration": {
+                  "value": 30.0,
+                  "unit": "days",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "d"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sdMedReqNaloxoneBen",
+        "status": "active",
+        "intent": "order",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+              "code": "community"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1191212",
+              "display": "Naloxone Hydrochloride 0.02 MG/ML Injectable Solution"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "authoredOn": "2023-02-27",
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 10.0,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 4.0,
+                  "unit": "patch",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{patch}"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-02-27",
+            "end": "2023-05-27"
+          },
+          "numberOfRepeatsAllowed": 3,
+          "expectedSupplyDuration": {
+            "value": 30.0,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReqNaloxoneBen"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "extension": [
+          {
+            "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/dataDateRoller",
+            "extension": [
+              {
+                "url": "dateLastUpdated",
+                "valueDateTime": "2022-08-10"
+              },
+              {
+                "url": "frequency",
+                "valueDuration": {
+                  "value": 30.0,
+                  "unit": "days",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "d"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "sdMedReqBenzodiazepineBen",
+        "status": "active",
+        "intent": "order",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+              "code": "community"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "104693",
+              "display": "Temazepam 20 MG Oral Tablet"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "authoredOn": "2023-03-01",
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 12.0,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1.0,
+                  "unit": "tablet",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{tablet}"
+                }
+              }
+            ],
+            "text":"Take 1 tablet every 12 hours as directed."
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2023-03-01",
+            "end": "2023-06-01"
+          },
+          "numberOfRepeatsAllowed": 3,
+          "expectedSupplyDuration": {
+            "value": 30.0,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/sdMedReqBenzodiazepineBen"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.1.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1038",
+              "display": "What type of HEAD pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.1.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.1.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1039",
+              "display": "What type of NECK pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36349006",
+              "display": "Burning"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.1.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.1.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1040",
+              "display": "What type of SHOULDERS pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36349006",
+              "display": "Burning"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "279093005",
+              "display": "Cramping"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.1.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.1.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1041",
+              "display": "What type of ARMS pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36349006",
+              "display": "Burning"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "279093005",
+              "display": "Cramping"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "279093005",
+              "display": "Crushing"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.1.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.1.6",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.6"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1066",
+              "display": "What type of BACK pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36349006",
+              "display": "Burning"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "279093005",
+              "display": "Cramping"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "279093005",
+              "display": "Crushing"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "55145008",
+              "display": "Stabbing"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.1.6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.1.5",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.5"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1067",
+              "display": "What type of HANDS/WRIST pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36349006",
+              "display": "Burning"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "279093005",
+              "display": "Cramping"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "279093005",
+              "display": "Crushing"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "55145008",
+              "display": "Stabbing"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "29695002",
+              "display": "Throbbing"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.1.5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.1.9",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.9"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1049",
+              "display": "What type of KNEES pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36349006",
+              "display": "Burning"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.1.9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.1.10",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.10"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1069",
+              "display": "What type of FEET/ANKLES pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36349006",
+              "display": "Burning"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "279093005",
+              "display": "Cramping"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.1.10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.1.11",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.11"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1052",
+              "display": "What type of EVERYWHERE pain have you had in the last 7 days?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27635008",
+              "display": "Aching"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36349006",
+              "display": "Burning"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "279093005",
+              "display": "Cramping"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "279093005",
+              "display": "Crushing"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.1.11"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.1.12",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "1.12"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1053",
+              "display": "What OTHER pain have you had in the last 7 days? Please describe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueString": "New test of cql",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.1.12"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.2.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "2.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "75262-6",
+              "display": "How intense was your pain at its worse in the past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13958-6",
+              "display": "Very Severe"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.2.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.2.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "2.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "75261-8",
+              "display": "How intense was your average pain in the past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA6750-9",
+              "display": "Severe"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.2.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.2.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "2.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "75260-0",
+              "display": "What is your level of pain right now"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA6751-7",
+              "display": "Moderate"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.2.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.3.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "3.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61758-9",
+              "display": "How much did pain interfere with your day to day activities in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA6568-5",
+              "display": "Not at all"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.3.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.3.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "3.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61769-6",
+              "display": "How much did pain interfere with work around the home in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13863-8",
+              "display": "A little bit"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.3.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.3.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "3.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61773-8",
+              "display": "How much did pain interfere with your ability to participate in social activities in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13909-9",
+              "display": "Somewhat"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.3.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.3.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "3.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61775-3",
+              "display": "How much did pain interfere with your household chores in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13902-4",
+              "display": "Quite a bit"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.3.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.4.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "4.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61761-3",
+              "display": "How much did pain interfere with the things you usually do for fun in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13914-9",
+              "display": "Very much"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.4.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.4.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "4.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61777-9",
+              "display": "How much did pain interfere with your enjoyment of social activities in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13902-4",
+              "display": "Quite a bit"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.4.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.4.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "4.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61794-4",
+              "display": "How much did pain interfere with your enjoyment of life in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13909-9",
+              "display": "Somewhat"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.4.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.4.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "4.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "61762-1",
+              "display": "How much did pain interfere with your family life in past 7 days"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA13863-8",
+              "display": "A little bit"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.4.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.5.7",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "5.7"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1076",
+              "display": "I haven't tried any medications for pain."
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueBoolean": true,
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.5.7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.6.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1087",
+              "display": "Chiropractor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1019",
+              "display": "Not at all"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.6.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.6.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1088",
+              "display": "Physical therapist"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1020",
+              "display": "Slightly"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.6.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.6.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1089",
+              "display": "Pain management specialist"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1021",
+              "display": "Moderately"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.6.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.6.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1090",
+              "display": "Orthopedist"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1022",
+              "display": "Greatly"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.6.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.6.5",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.5"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1091",
+              "display": "Psychologist or counselor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1019",
+              "display": "Not at all"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.6.5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.6.6",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.6"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1092",
+              "display": "Integrative medicine specialist"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1020",
+              "display": "Slightly"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.6.6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.6.7",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "6.7"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1093",
+              "display": "Other: describe other specialists you have seen for pain (such as neurologist, spine doctor rheumatologist, or physiatrist)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueString": "new cql test for other",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.6.7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.7.7",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.7"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1080",
+              "display": "I haven't tried any procedures or physical treatments for pain."
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueBoolean": true,
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.7.7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.7.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1094",
+              "display": "Surgery"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1019",
+              "display": "Not at all"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.7.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.7.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1095",
+              "display": "Injection (such as a shot to relieve inflammation)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1020",
+              "display": "Slightly"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.7.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.7.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1096",
+              "display": "Massage"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1021",
+              "display": "Moderately"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.7.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.7.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1078",
+              "display": "Dry needling or cupping"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1022",
+              "display": "Greatly"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.7.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.7.5",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.5"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1079",
+              "display": "Acupuncture"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1019",
+              "display": "Not at all"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.7.5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.7.6",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "7.6"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1097",
+              "display": "Other: describe other procedures or physical treatments you've tried for pain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueString": "test for both none tried and answers",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.7.6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.8.6",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "8.6"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1081",
+              "display": "I haven't tried any topical treatments or devices for pain."
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueBoolean": true,
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.8.6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.9.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1104",
+              "display": "Exercises or stretching (such as walking, yoga, water aerobics)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1019",
+              "display": "Not at all"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.9.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.9.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1105",
+              "display": "Diet or hydration (such as an anti-inflammatory diet or drinking enough water)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1020",
+              "display": "Slightly"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.9.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.9.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1107",
+              "display": "Stress reduction (such as relaxation, meditation, mindfulness, laughter)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1021",
+              "display": "Moderately"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.9.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.9.5",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.5"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1108",
+              "display": "Posture or ergonomics"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1022",
+              "display": "Greatly"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.9.5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.9.6",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "9.6"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1109",
+              "display": "Other: describe other lifestyle changes you've tried for pain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueString": "other life style changes",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.9.6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.10.2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10.2"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1111",
+              "display": "Aromatherapy"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1019",
+              "display": "Not at all"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.10.2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.10.3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10.3"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1112",
+              "display": "CBD oil"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1020",
+              "display": "Slightly"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.10.3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.10.1",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10.1"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1110",
+              "display": "Herbal treatments or supplements (such as ginseng or kava kava)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1021",
+              "display": "Moderately"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.10.1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.10.4",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10.4"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1113",
+              "display": "Marijuana used for medical purposes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+              "code": "mpqr-1022",
+              "display": "Greatly"
+            }
+          ]
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.10.4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.10.5",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "10.5"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1114",
+              "display": "Other: describe other alternative treatments you've tried for pain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueString": "alternative tx other box",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.10.5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.11",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "11"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1035",
+              "display": "Activity Goals: what goals do you have for your daily activities?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueString": "activity goal - run a marathon",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.11"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "qr170.12",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+            "extension": [
+              {
+                "url": "text",
+                "valueString": "12"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1036",
+              "display": "Activity Goals: what are the biggest barriers to achieving your daily activity goals?"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/benufldevelop",
+          "display": "Ben UFL Develop"
+        },
+        "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+        "valueString": "biggest barrier - laziness",
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/QR10"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/qr170.12"
+      }
+    },{
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "sdMedStateBen1",
+        "subject": {
+          "reference": "Patient/benufldevelop"
+        },
+        "status": "completed",
+        "intent": "order",
+        "doNotPerform": false,
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197805",
+              "display": "ibuprofen 400 MG Oral Tablet"
+            }
+          ],
+          "text": "Ibuprofen 400 MG Oral Tablet"
+        },
+        "authoredOn": "2022-06-25T16:00:00.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationStatement/sdMedStateBen1"
+      }
+    }
+  ]
+}
