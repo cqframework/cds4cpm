@@ -18,3 +18,6 @@ define "Add Naloxone to Opioid Medications":
 
 define "Use 2022 CDC Guidelines":
     true
+
+define "Use Inclusion Criteria":
+    false

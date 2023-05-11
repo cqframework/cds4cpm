@@ -691,12 +691,15 @@ define HasRecentAdjuvantAnalgesicMedication:
 //   - OR Opioid pain medication
 //   - OR Adjuvant analgesic medication
 define MeetsInclusionCriteria:
+    if "Use Inclusion Criteria"
+        then
   Is18orOlder
   and (
     HasConditionAssociatedWithChronicPain
     or HasRecentOpioidPainMedication
-    or HasRecentAdjuvantAnalgesicMedication
-  )
+            or HasRecentAdjuvantAnalgesicMedication)
+        else
+            true
 
 // EXCLUSIONS
 
@@ -2013,6 +2016,9 @@ define "Add Naloxone to Opioid Medications":
 
 define "Use 2022 CDC Guidelines":
     true
+
+define "Use Inclusion Criteria":
+    false
 
 // Return results for use in application
 define Summary: {

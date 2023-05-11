@@ -82,12 +82,17 @@ As this overview illustrates, the basic capabilities of the system are:
 
 ## Pilot Experience
 
-This system has been implemented in primary care clinics via a pilot project in collaboration with UChicago Medicine, Vanderbilt University Medical Center, and RTI International. After discussing with subject matter experts and pain experts at each of the sites, this pilot implementation focused on patients with four common conditions:
+This system has been implemented in primary care clinics via 2 pilot projects.
+After discussing with subject-matter experts and pain experts at each of the sites, the pilot implementation focused on certain patients.
+The collaboration with UChicago Medicine, Vanderbilt University Medical Center, and RTI International focused on patients with four common conditions: 
 
 - Chronic low back pain
 - Osteoarthritis of the hip
 - Osteoarthritis of the knee
 - Fibromyalgia
+
+The second pilot project in collaboration with the University of Florida focused on patients with 
+
 
 Focusing on these four conditions helped to create automated query and triggering mechanisms at each site that sent MyPAIN invitations to patients eligible to receive the intervention while also allowing the project to accumulate a reasonable number of patients and clinicians for evaluation.
 

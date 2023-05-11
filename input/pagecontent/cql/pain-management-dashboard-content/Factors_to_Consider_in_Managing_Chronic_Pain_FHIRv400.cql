@@ -509,12 +509,16 @@ define HasRecentAdjuvantAnalgesicMedication:
 //   - OR Opioid pain medication
 //   - OR Adjuvant analgesic medication
 define MeetsInclusionCriteria:
+    if Config."Use Inclusion Criteria"
+        then
   Is18orOlder
   and (
     HasConditionAssociatedWithChronicPain
     or HasRecentOpioidPainMedication
     or HasRecentAdjuvantAnalgesicMedication
   )
+        else
+            true
 
 // EXCLUSIONS
 
