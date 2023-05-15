@@ -438,6 +438,6 @@ The focus of this version of the Testing Plan is the core standards-based artifa
 **Appendix A.	
 : Full Project Timeline and GANTT Chart**
 
-[![Appendix A](assets/images/Full_schedule_pt1.png)](assets/images/Full_schedule_pt1.png
+[![Appendix A](assets/images/Full_schedule_pt1.png 'Full Schedule Part 1')](assets/images/Full_schedule_pt1.png)
 
-[![Appendix A](assets/images/Full_schedule_pt2.png)](assets/images/Full_schedule_pt2.png
+[![Appendix A](assets/images/Full_schedule_pt2.png 'Full Schedule Part 2')](assets/images/Full_schedule_pt2.png)
