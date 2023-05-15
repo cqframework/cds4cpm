@@ -1,6 +1,6 @@
 ### Introduction
 
-The initial qualifying query defines a set of patients who qualify for chronic pain management with the following 
+If used the initial qualifying query defines a set of patients who qualify for chronic pain management with the following 
 **diagnoses/problems** during a specified **time frame**:
 
 - Fibromyalgia
@@ -21,13 +21,9 @@ The patient must have an **Office Visit** during the **time frame**.
 The patient must have an active **Problem** in the problem list **OR** a visit **Diagnosis** during the **time frame**.
 
 ### Functional Diagram
-
-<div style="height: 600px;">
-  ![](img/iqq-diagram.png "Initial Qualifying Query Functional Diagram")
+<div>
+    <img src="img/iqq-diagram.png" alt="Initial Qualifying Functional Diagram"/>
 </div>
-
 ### CQL Logic
 
-<div>
 {% highlight sql %}{% include_relative cql/initial-qualifying-query-stu3.cql %}{% endhighlight %}
-</div>
