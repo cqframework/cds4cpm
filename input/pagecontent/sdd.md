@@ -179,7 +179,7 @@ Wherever possible, this system used capabilities that fall into the first catego
 
 #### 3.1.1 Safety Requirements
 
-This system Fmust conform to the safety requirements of any site in which it is implemented. The system requires site-based implementation for operation and is designed in such a way that implementation will be executed fully within a site firewall. For any safety concerns related to clinical logic, please refer to the details of PainManager and the underlying rules developed and implemented based on CDC guidelines (detailed in Chapter 5).
+This system must conform to the safety requirements of any site in which it is implemented. The system requires site-based implementation for operation and is designed in such a way that implementation will be executed fully within a site firewall. For any safety concerns related to clinical logic, please refer to the details of PainManager and the underlying rules developed and implemented based on CDC guidelines (detailed in Chapter 5).
 
 ### 3.2 Development Methods and Contingencies
 
