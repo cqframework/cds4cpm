@@ -1,6 +1,6 @@
 ### Introduction
 
-In order to measure the effectiveness and usage of the MyPAIN and PainManager Summary during the CDS4CPM pilot site implementation, an analytical component was added to each of the applications. Two complicating factors of add this component were: a) some sites did not want to opt into data collection because of concerns about compromising protected health information (PHI), and b) adding this functionality while minimizing the impact to the development timeline. 
+In order to measure the effectiveness and usage of the MyPAIN and PainManager Summary during the CDS4CPM pilot site implementation, an analytical component was added to each of the applications. Two complicating factors of adding this component were: a) some sites did not want to opt into data collection because of concerns about compromising protected health information (PHI), and b) adding this functionality while minimizing the impact to the development timeline. 
 
 ### PainManager Dashboard Built-in Analytics 
 
