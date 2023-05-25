@@ -20,7 +20,7 @@ replaces the "Conditions associated with chronic pain" value set from F2C (2.16.
 valueset "Conditions associated with chronic pain": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.95'
 ```
 
-[Opioids](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-opioids.html)
+[Opioids](http://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-opioid-analgesics-with-ambulatory-misuse-potential.html)
 Replaces the "Opioid Pain Medications" value set from F2C (2.16.840.1.113762.1.4.1032.34)
 
 ```
