@@ -1,0 +1,54 @@
+{
+  "resourceType": "Observation",
+  "id": "qrAlphaDelta.3.2",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "3.2"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "61769-6",
+        "display": "How much did pain interfere with work around the home in past 7 days"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/alphadelta",
+    "display": "Alpha Delta"
+  },
+  "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA13902-4",
+        "display": "Quite a bit"
+      }
+    ]
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QRTommyJones"
+    }
+  ]
+}

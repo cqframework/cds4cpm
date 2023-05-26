@@ -1,0 +1,14 @@
+{
+  "resourceType": "Practitioner",
+  "id": "c9d1d373-b2b3-43da-acfe-1df63bdaac11",
+  "active": true,
+  "name": [
+    {
+      "given": [
+        "Dr"
+      ],
+      "family": "Charlie"
+    }
+  ],
+  "gender": "male"
+}

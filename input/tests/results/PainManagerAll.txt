@@ -1,0 +1,60 @@
+Executing CQL...
+CQL path: /Users/dimitribarker/Documents/uof/cds4cpm/input/pagecontent/cql/pain-management-dashboard-content
+Data path: /Users/dimitribarker/Documents/uof/cds4cpm/input/tests/measure/PainManagerAll
+Terminology path: /Users/dimitribarker/Documents/uof/cds4cpm/input/vocabulary/valueset
+
+Evaluation logs:
+14:59:49.243 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+14:59:49.253 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - Searching for ini file in file:///Users/dimitribarker/Documents/uof/cds4cpm/input/pagecontent/cql
+14:59:49.253 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - Attempting to read ini from path file:///Users/dimitribarker/Documents/uof/cds4cpm/input/pagecontent/ig.ini
+14:59:49.255 [pool-2-thread-1] WARN  org.opencds.cqf.cql.ls.core.ContentService - error opening stream for: file:///Users/dimitribarker/Documents/uof/cds4cpm/input/pagecontent/ig.ini
+java.io.FileNotFoundException: /Users/dimitribarker/Documents/uof/cds4cpm/input/pagecontent/ig.ini (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
+	at java.base/java.net.URL.openStream(URL.java:1161)
+	at org.opencds.cqf.cql.ls.core.ContentService.read(ContentService.java:43)
+	at org.opencds.cqf.cql.ls.server.service.FederatedContentService.read(FederatedContentService.java:41)
+	at org.opencds.cqf.cql.ls.server.manager.IgContextManager.findIgContext(IgContextManager.java:85)
+	at org.opencds.cqf.cql.ls.server.manager.IgContextManager.readContext(IgContextManager.java:48)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at org.opencds.cqf.cql.ls.server.manager.IgContextManager.getContext(IgContextManager.java:39)
+	at org.opencds.cqf.cql.ls.server.command.CqlCommand.call(CqlCommand.java:123)
+	at org.opencds.cqf.cql.ls.server.command.CqlCommand.call(CqlCommand.java:38)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.opencds.cqf.cql.ls.server.command.DebugCqlCommandContribution.executeCql(DebugCqlCommandContribution.java:45)
+	at org.opencds.cqf.cql.ls.server.command.DebugCqlCommandContribution.executeCommand(DebugCqlCommandContribution.java:76)
+	at org.opencds.cqf.cql.ls.server.service.CqlWorkspaceService.executeCommandFromContributions(CqlWorkspaceService.java:165)
+	at org.opencds.cqf.cql.ls.server.service.CqlWorkspaceService.executeCommand(CqlWorkspaceService.java:110)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+14:59:49.255 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - Attempting to read ini from path file:///Users/dimitribarker/Documents/uof/cds4cpm/input/ig.ini
+14:59:49.255 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - Initializing ig from ini...
+14:59:49.264 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - Exceptions occurred loading IG path: /Users/dimitribarker/Documents/uof/cds4cpm/input/input/cds4cpm.xml
+14:59:49.264 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - Exceptions occurred initializing refresh from ini file '///Users/dimitribarker/Documents/uof/cds4cpm/input/ig.ini':Exceptions occurred loading IG path: /Users/dimitribarker/Documents/uof/cds4cpm/input/input/cds4cpm.xml
+Exceptions occurred initializing refresh from ini file '///Users/dimitribarker/Documents/uof/cds4cpm/input/ig.ini':Exceptions occurred loading IG path: /Users/dimitribarker/Documents/uof/cds4cpm/input/input/cds4cpm.xml
+elapsed: 0.05 seconds
+
