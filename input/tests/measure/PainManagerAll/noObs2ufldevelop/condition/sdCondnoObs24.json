@@ -1,0 +1,39 @@
+{
+  "resourceType": "Condition",
+  "id": "sdCondnoObs24",
+  "subject": {
+      "reference": "Patient/noObs2ufldevelop"
+  },
+  "clinicalStatus": {
+      "coding": [
+          {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+          }
+      ],
+      "text": "Active"
+  },
+  "verificationStatus": {
+      "coding": [
+          {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+          }
+      ],
+      "text": "Confirmed"
+  },
+  "code": {
+      "coding": [
+          {
+              "system": "http://snomed.info/sct",
+              "code": "202725007",
+              "display": "Lumbar post-laminectomy syndrome (disorder)"
+          }
+      ],
+      "text": "Lumbar post-laminectomy syndrome (disorder)"
+  },
+  "onsetDateTime": "2012-02-01T16:00:00.000Z",
+  "recordedDate": "2012-02-16T00:00:00.000Z"
+}

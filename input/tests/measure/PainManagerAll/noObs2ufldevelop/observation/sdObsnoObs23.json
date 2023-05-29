@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "sdObsnoObs23",
+  "subject": {
+      "reference": "Patient/noObs2ufldevelop"
+  },
+  "status": "final",
+  "code": {
+      "coding": [
+          {
+              "system": "http://loinc.org",
+              "code": "19295-5",
+              "display": "Opiates [Presence] in Urine by Screen method"
+          }
+      ],
+      "text": "Opiates [Presence] in Urine by Screen method"
+  },
+  "valueQuantity": {
+      "value": 2500,
+      "unit": "ng/mL",
+      "system": "http://unitsofmeasure.org",
+      "code": "ng/mL"
+  },
+  "interpretation": [
+      {
+          "coding": [
+              {
+                  "system": "http://hl7.org/fhir/v2/0078",
+                  "code": "POS",
+                  "display": "Positive"
+              }
+          ],
+          "text": "Positive"
+      }
+  ],
+  "issued": "2023-02-15T16:00:00.000Z"
+}
