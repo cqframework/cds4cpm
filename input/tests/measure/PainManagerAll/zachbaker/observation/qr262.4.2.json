@@ -1,0 +1,54 @@
+{
+  "resourceType": "Observation",
+  "id": "qr262.4.2",
+  "extension": [
+      {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+          "extension": [
+              {
+                  "url": "text",
+                  "valueString": "4.2"
+              }
+          ]
+      }
+  ],
+  "status": "final",
+  "category": [
+      {
+          "coding": [
+              {
+                  "system": "http://hl7.org/fhir/observation-category",
+                  "code": "survey"
+              }
+          ]
+      }
+  ],
+  "code": {
+      "coding": [
+          {
+              "system": "http://loinc.org",
+              "code": "61777-9",
+              "display": "How much did pain interfere with your enjoyment of social activities in past 7 days"
+          }
+      ]
+  },
+  "subject": {
+      "reference": "Patient/zachbaker",
+      "display": "Zach Baker"
+  },
+  "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+  "valueCodeableConcept": {
+      "coding": [
+          {
+              "system": "http://loinc.org",
+              "code": "LA13902-4",
+              "display": "Quite a bit"
+          }
+      ]
+  },
+  "derivedFrom": [
+      {
+          "reference": "QuestionnaireResponse/QR262"
+      }
+  ]
+}

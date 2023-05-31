@@ -1,0 +1,21 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "sdMedStatenoObs31",
+  "subject": {
+      "reference": "Patient/noObs3ufldevelop"
+  },
+  "status": "completed",
+  "intent": "order",
+  "doNotPerform": false,
+  "medicationCodeableConcept": {
+      "coding": [
+          {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197805",
+              "display": "ibuprofen 400 MG Oral Tablet"
+          }
+      ],
+      "text": "Ibuprofen 400 MG Oral Tablet"
+  },
+  "authoredOn": "2022-06-25T16:00:00.000Z"
+}

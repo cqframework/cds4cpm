@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "sdObsnoObs32",
+  "subject": {
+      "reference": "Patient/noObs3ufldevelop"
+  },
+  "status": "final",
+  "code": {
+      "coding": [
+          {
+              "system": "http://loinc.org",
+              "code": "19346-6",
+              "display": "Amphetamine (U) [Mass/Vol]"
+          }
+      ],
+      "text": "Amphetamine [Presence] in Urine by Screen method"
+  },
+  "valueQuantity": {
+      "value": 2501,
+      "unit": "ng/mL",
+      "system": "http://unitsofmeasure.org",
+      "code": "ng/mL"
+  },
+  "interpretation": [
+      {
+          "coding": [
+              {
+                  "system": "http://hl7.org/fhir/v2/0078",
+                  "code": "POS",
+                  "display": "Positive"
+              }
+          ],
+          "text": "Positive"
+      }
+  ],
+  "issued": "2023-02-15T16:00:00.000Z"
+}

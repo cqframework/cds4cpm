@@ -1,0 +1,21 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "sdMedReqnoObs32",
+  "subject": {
+      "reference": "Patient/noObs3ufldevelop"
+  },
+  "status": "active",
+  "intent": "order",
+  "doNotPerform": false,
+  "medicationCodeableConcept": {
+      "coding": [
+          {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "876193",
+              "display": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+          }
+      ],
+      "text": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+  },
+  "authoredOn": "2023-02-10T16:00:00.000Z"
+}
