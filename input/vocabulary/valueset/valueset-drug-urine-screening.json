@@ -65,7 +65,12 @@
     "include": [
       {
         "valueSet": [
-          "http://fhir.org/guides/cdc/opioid-cds/ValueSet/non-opioid-illicit-drug-urine-screening"
+          "http://fhir.org/guides/cdc/opioid-cds/ValueSet/non-opioid-drug-urine-screening"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-drug-urine-screening"
         ]
       }
     ]

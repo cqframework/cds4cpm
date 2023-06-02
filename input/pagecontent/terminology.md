@@ -24,7 +24,7 @@ valueset "Conditions associated with chronic pain": 'http://cts.nlm.nih.gov/fhir
 Replaces the "Opioid Pain Medications" value set from F2C (2.16.840.1.113762.1.4.1032.34)
 
 ```
-valueset "Opioid Pain Medications": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioids'
+valueset "Opioid Pain Medications": 'https://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-conditions-documenting-substance-misuse.html'
 ```
 
 Empty
@@ -64,10 +64,10 @@ Replaces the "Substance use disorder" value set from F2C (2.16.840.1.113883.3.46
 valueset "Substance use disorder": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/empty'
 ```
 
-[Substance Abuse](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-substance-abuse.html)
+[Substance Abuse](https://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-conditions-documenting-substance-misuse.html)
 Replaces the "Substance Abuse" value set from F2C (2.16.840.1.113883.3.464.1003.106.11.1010)
 ```
-valueset "Substance Abuse": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/substance-abuse'
+valueset "Substance Abuse": 'https://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-conditions-documenting-substance-misuse.html'
 ```
 
 Empty
@@ -145,12 +145,11 @@ valueset "Naloxone medications": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet
 [Drug Urine Screening](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-drug-urine-screening.html)
 Replaces the "Urine drug screen for pain management" value set from F2C ('2.16.840.1.113762.1.4.1032.28')
 NOTE: This valueset is defined as a compose of these two value sets, and is not available yet at the Opioid Prescribing Support  IG site
-[Non-opioid Illicit Drug Urine Screening](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-non-opioid-illicit-drug-urine-screening.html)
+[Non-opioid Illicit Drug Urine Screening](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-non-opioid-drug-urine-screening.html)
 [Opioid Drug Urine Screening](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-opioid-drug-urine-screening.html)
-NOTE: Concept is still called "Urine drug screen for pain management", is that okay, or does this need refactoring at the F2C level?
 
 ```
-valueset "Urine drug screen for pain management": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/drug-urine-screening'
+valueset "Urine drug screen for pain management": http://fhir.org/guides/cqf/cds4cpm/ValueSet/drug-urine-screening'
 ```
 
 Empty
