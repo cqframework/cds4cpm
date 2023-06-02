@@ -1,6 +1,6 @@
 #!/bin/bash
 #DO NOT EDIT WITH WINDOWS
-tooling_jar=tooling-1.3.1-jar-with-dependencies.jar
+tooling_jar=tooling-cli-2.4.0.jar
 input_cache_path=./input-cache
 ig_ini_path=$PWD/ig.ini
 
@@ -11,7 +11,6 @@ wget -q --spider tx.fhir.org
 if [ $? -eq 0 ]; then
 	echo "Online"
 	fsoption=""
-	#"-fs http://cds-sandbox.alphora.com/cqf-ruler-dstu3/fhir/"
 else
 	echo "Offline"
 	fsoption=""
@@ -20,7 +19,6 @@ fi
 echo "$fsoption"
 
 tooling=$input_cache_path/$tooling_jar
-
 if test -f "$tooling"; then
 	java -jar $tooling -RefreshIG -ini="$ig_ini_path" -d -p -t $fsoption
 else
@@ -32,5 +30,3 @@ else
 		echo IG Refresh NOT FOUND in input-cache or parent folder.  Please run _updateCQFTooling.  Aborting...
 	fi
 fi
-
-sh input/pagecontent/quick-start-bundles/_refreshQuickStart.sh
