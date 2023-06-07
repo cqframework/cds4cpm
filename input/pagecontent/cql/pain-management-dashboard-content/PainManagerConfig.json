@@ -76,6 +76,15 @@
                "value" : "true",
                "type" : "Literal"
             }
+         }, {
+            "name" : "Use Inclusion Criteria",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+               "value" : "false",
+               "type" : "Literal"
+            }
          } ]
       }
    }

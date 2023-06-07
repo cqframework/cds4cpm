@@ -79,11 +79,11 @@
       "valueSets" : {
          "def" : [ {
             "name" : "Conditions associated with chronic pain",
-            "id" : "http://fhir.org/guides/cqf/cds4cpm/ValueSet/2.16.840.1.113762.1.4.1021.95",
+            "id" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.95",
             "accessLevel" : "Public"
          }, {
             "name" : "Opioid Pain Medications",
-            "id" : "http://fhir.org/guides/cqf/cds4cpm/ValueSet/opioids",
+            "id" : "http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-analgesics-with-ambulatory-misuse-potential",
             "accessLevel" : "Public"
          }, {
             "name" : "Adjuvant Analgesic Medications",
@@ -111,7 +111,7 @@
             "accessLevel" : "Public"
          }, {
             "name" : "Substance Abuse",
-            "id" : "http://fhir.org/guides/cdc/opioid-cds/ValueSet/substance-abuse",
+            "id" : "http://fhir.org/guides/cdc/opioid-cds/ValueSet/conditions-documenting-substance-misuse",
             "accessLevel" : "Public"
          }, {
             "name" : "Suicide Attempt",
@@ -155,15 +155,15 @@
             "accessLevel" : "Public"
          }, {
             "name" : "Benzodiazepine medications",
-            "id" : "http://fhir.org/guides/cqf/cds4cpm/ValueSet/benzodiazepine-medications",
+            "id" : "http://fhir.org/guides/cdc/opioid-cds/ValueSet/benzodiazepine-medications",
             "accessLevel" : "Public"
          }, {
             "name" : "Naloxone medications",
-            "id" : "http://fhir.org/guides/cqf/cds4cpm/ValueSet/naloxone-medications",
+            "id" : "http://fhir.org/guides/cdc/opioid-cds/ValueSet/naloxone-medications",
             "accessLevel" : "Public"
          }, {
             "name" : "Urine drug screen for pain management",
-            "id" : "http://fhir.org/guides/cqf/cds4cpm/ValueSet/non-opioid-illicit-drug-urine-screening",
+            "id" : "http://fhir.org/guides/cdc/opioid-cds/ValueSet/non-opioid-drug-urine-screening",
             "accessLevel" : "Public"
          }, {
             "name" : "Stool softeners and laxatives",
@@ -3589,30 +3589,51 @@
                } ]
             }
          }, {
+            "name" : "Use Inclusion Criteria",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "expression" : {
+               "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+               "value" : "false",
+               "type" : "Literal"
+            }
+         }, {
             "name" : "MeetsInclusionCriteria",
             "context" : "Patient",
             "accessLevel" : "Public",
             "expression" : {
-               "type" : "And",
-               "operand" : [ {
-                  "name" : "Is18orOlder",
+               "type" : "If",
+               "condition" : {
+                  "name" : "Use Inclusion Criteria",
                   "type" : "ExpressionRef"
-               }, {
-                  "type" : "Or",
+               },
+               "then" : {
+                  "type" : "And",
                   "operand" : [ {
+                     "name" : "Is18orOlder",
+                     "type" : "ExpressionRef"
+                  }, {
                      "type" : "Or",
                      "operand" : [ {
-                        "name" : "HasConditionAssociatedWithChronicPain",
-                        "type" : "ExpressionRef"
+                        "type" : "Or",
+                        "operand" : [ {
+                           "name" : "HasConditionAssociatedWithChronicPain",
+                           "type" : "ExpressionRef"
+                        }, {
+                           "name" : "HasRecentOpioidPainMedication",
+                           "type" : "ExpressionRef"
+                        } ]
                      }, {
-                        "name" : "HasRecentOpioidPainMedication",
+                        "name" : "HasRecentAdjuvantAnalgesicMedication",
                         "type" : "ExpressionRef"
                      } ]
-                  }, {
-                     "name" : "HasRecentAdjuvantAnalgesicMedication",
-                     "type" : "ExpressionRef"
                   } ]
-               } ]
+               },
+               "else" : {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "value" : "true",
+                  "type" : "Literal"
+               }
             }
          }, {
             "name" : "UniqueConditionReports",
@@ -11287,9 +11308,8 @@
                      "codeComparator" : "in",
                      "type" : "Retrieve",
                      "codes" : {
-                        "name" : "MyPAIN All Questionnaire Codes",
-                        "preserve" : true,
-                        "type" : "ValueSetRef"
+                        "name" : "MyPAIN Questionnaire Codes",
+                        "type" : "CodeSystemRef"
                      }
                   }, {
                      "value" : 1,
@@ -12185,7 +12205,7 @@
                   },
                   "then" : {
                      "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                     "value" : "Average Pain (past 7 days",
+                     "value" : "Average Pain (past 7 days)",
                      "type" : "Literal"
                   }
                }, {

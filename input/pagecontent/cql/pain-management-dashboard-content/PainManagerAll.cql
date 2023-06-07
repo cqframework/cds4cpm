@@ -44,9 +44,7 @@ codesystem "LOCAL": 'http://cds.ahrq.gov/cdsconnect/pms'
 
 // [Conditions associated with chronic pain](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.95/expansion)
 // replaces F2C valueset Conditions associated with chronic pain: 2.16.840.1.113762.1.4.1032.37
-    // In cds4cpm valueset input/vocabulary/valueset/valueset-2.16.840.1.113762.1.4.1021.95.json has had its url change
-// valueset "Conditions associated with chronic pain": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.95'
-   valueset "Conditions associated with chronic pain": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/2.16.840.1.113762.1.4.1021.95'
+valueset "Conditions associated with chronic pain": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.95'
 
 // [Opioids](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-opioids.html)
 // Replaces the "Opioid Pain Medications" value set from F2C (2.16.840.1.113762.1.4.1032.34)
@@ -127,13 +125,11 @@ valueset "Risk assessments relevant to pain management": 'http://fhir.org/guides
 
 // [Benzodiazepine medications](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-benzodiazepine-medications.html)
 // Replaces the "Benzodiazepine medications" value set from F2C (2.16.840.1.113762.1.4.1032.43)
-//valueset "Benzodiazepine medications": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/benzodiazepine-medications'
-valueset "Benzodiazepine medications": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/benzodiazepine-medications'
+valueset "Benzodiazepine medications": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/benzodiazepine-medications'
 
 // [Naloxone medications](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-naloxone-medications.html)
 // Replaces the "Naloxone medications" value set from F2C (2.16.840.1.113762.1.4.1032.42)
-//valueset "Naloxone medications": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/naloxone-medications'
-valueset "Naloxone medications": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/naloxone-medications'
+valueset "Naloxone medications": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/naloxone-medications'
 
 // [Drug Urine Screening](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-drug-urine-screening.html)
 // Replaces the "Urine drug screen for pain management" value set from F2C ('2.16.840.1.113762.1.4.1032.28')
@@ -142,7 +138,8 @@ valueset "Naloxone medications": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/na
 // [Opioid Drug Urine Screening](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-opioid-drug-urine-screening.html)
 // NOTE: Concept is still called "Urine drug screen for pain management", is that okay, or does this need refactoring at the F2C level?
 //valueset "Urine drug screen for pain management": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/drug-urine-screening'
-valueset "Urine drug screen for pain management": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/non-opioid-illicit-drug-urine-screening'
+//valueset "Urine drug screen for pain management": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/non-opioid-illicit-drug-urine-screening'
+valueset "Urine drug screen for pain management": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/non-opioid-drug-urine-screening'
 
 // Empty
 // Replaces the "Stool softeners and laxatives": '2.16.840.1.113762.1.4.1032.44' from F2C
@@ -1528,7 +1525,7 @@ define function GetLinkId(Obs FHIR.Observation):
     else Obs.extension[0].extension[0].value.value
 
 define QuestionnaireObservations:
-  C3F.Verified(C3F.ObservationLookBack([Observation: "MyPAIN All Questionnaire Codes"], 1 year))
+  C3F.Verified(C3F.ObservationLookBack([Observation: "MyPAIN Questionnaire Codes"], 1 year))
 //  C3F.Verified(C3F.ObservationLookBack([Observation], 1 year))
 
 /* define ReportQuestionnaireObservations:
@@ -1590,7 +1587,7 @@ define function GetSimpleText(qrOb FHIR.Observation):
     when qrOb.code ~ painLocationAbdomenPelvis then 'Abdoment/Pelvis'
     when qrOb.code ~ painLocationFeetAnkles then 'Feet/Ankles'
     when qrOb.code ~ worstPain then 'At its worst (past 7 days)'
-    when qrOb.code ~ averagePain then 'Average Pain (past 7 days'
+    when qrOb.code ~ averagePain then 'Average Pain (past 7 days)'
     when qrOb.code ~ painRightNow then 'Current Pain'
     when qrOb.code ~ dayToDay then 'Day to day activities'
     when qrOb.code ~ homeWork then 'Work around the home'

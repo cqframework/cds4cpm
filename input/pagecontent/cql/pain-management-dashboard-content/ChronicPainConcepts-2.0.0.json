@@ -26,7 +26,7 @@
             "accessLevel" : "Public"
          }, {
             "name" : "Opioid Pain Medications",
-            "id" : "http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioids",
+            "id" : "http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-analgesics-with-ambulatory-misuse-potential",
             "accessLevel" : "Public"
          }, {
             "name" : "Adjuvant Analgesic Medications",
@@ -54,7 +54,7 @@
             "accessLevel" : "Public"
          }, {
             "name" : "Substance Abuse",
-            "id" : "http://fhir.org/guides/cdc/opioid-cds/ValueSet/substance-abuse",
+            "id" : "http://fhir.org/guides/cdc/opioid-cds/ValueSet/conditions-documenting-substance-misuse",
             "accessLevel" : "Public"
          }, {
             "name" : "Suicide Attempt",
