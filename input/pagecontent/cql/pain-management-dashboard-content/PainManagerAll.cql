@@ -1526,15 +1526,6 @@ define function GetLinkId(Obs FHIR.Observation):
 
 define QuestionnaireObservations:
   C3F.Verified(C3F.ObservationLookBack([Observation: "MyPAIN Questionnaire Codes"], 1 year))
-//  C3F.Verified(C3F.ObservationLookBack([Observation], 1 year))
-
-/* define ReportQuestionnaireObservations:
-  QuestionnaireObservations qo
-    return {
-      Answer: ObservationValue(qo),
-      DateText: ObservationDate(qo),
-      LinkId: qo.extension[0].extension[0].value.value
-    } */
 
 //TODO - eventually this needs to walk thru nested items beyond 2
 define function QuestionTextByLinkId(Obs FHIR.Observation):
@@ -1555,10 +1546,18 @@ ResourcesProvidedInMyPAIN: ReportResourcesProvidedInMyPAIN
 // NOTE: This should NOT use the QuestionnaireResponse, it should use the MyPAINSubmitDate Observation
 define ReportMyPAINSubmitDate:
 (QuestionnaireObservations) qrOb
-  return DateTimeText(qrOb.effective as FHIR.dateTime)
+    return ObservationDate(qrOb) sort desc
+
+define function DateMatchesMyPainDate(Obs FHIR.Observation):
+if ReportMyPAINSubmitDate[0] ~ Obs.effective.value.toString()
+    then
+        true
+    else
+        false
+
 
 define ReportActivityGoals:
-  (QuestionnaireObservations) qrOb where qrOb.code.coding[0].code.value = 'mpq-1035'
+  (QuestionnaireObservations) qrOb where qrOb.code.coding[0].code.value = 'mpq-1035' and DateMatchesMyPainDate(qrOb)
     return qrOb.value
 
 define ReportActivityBarriers:
@@ -1628,7 +1627,7 @@ define ReportPainLocations:
         or qrOb.code ~ painLocationHandsWrist
         or qrOb.code ~ painLocationAbdomenPelvis
         or qrOb.code ~ painLocationFeetAnkles
-        )
+        )and(DateMatchesMyPainDate(qrOb))
     return
       {
         Location: qrOb.code.coding[0].display.value,
@@ -1651,6 +1650,7 @@ define ReportPainIntensityAndInterference:
         or qrOb.code ~ enjoySocial
         or qrOb.code ~ enjoyLife
         or qrOb.code ~ enjoyFamily)
+        and(DateMatchesMyPainDate(qrOb))
   return
   {
     Question: qrOb.code.coding[0].display.value,
@@ -1662,6 +1662,7 @@ define ReportPainIntensity:
         (qrOb.code ~ worstPain
         or qrOb.code ~ averagePain
         or qrOb.code ~ painRightNow)
+        and(DateMatchesMyPainDate(qrOb))
     return
     {
         Question: qrOb.code.coding[0].display.value,
@@ -1696,6 +1697,7 @@ define ReportResourcesProvidedInMyPAIN:
 (QuestionnaireObservations) qrOb where
     qrOb.code ~ flatTiresVideo
     or qrOb.code ~ cdcLink
+    and(DateMatchesMyPainDate(qrOb))
   return
   {
       Resource: qrOb.value.value,
@@ -1741,6 +1743,7 @@ define ReportSelfReportedTreatmentsFromMyPAIN:
         or qrOb.code ~ cbdOil
         or qrOb.code ~ musicTherapy
         or qrOb.code ~ otherNewTreatments)
+        and(DateMatchesMyPainDate(qrOb))
     return
     {
         Treatment: QuestionTextByLinkId(qrOb)[0].value[0],
@@ -1753,7 +1756,7 @@ define ReportSelfReportedTreatmentsFromMyPAIN:
 define TreatmentObservationsFromMyPain:
   (QuestionnaireObservations) qrOb where
         (qrOb.code ~ otcMedications
-        )
+        )and(DateMatchesMyPainDate(qrOb))
   return{
         Treatment: QuestionTextByLinkId(qrOb)[0].value[0],
         Effectiveness: ObservationValue(qrOb)
@@ -1768,7 +1771,8 @@ define ReportNotTriedTx:
       or (qrOb.code ~ noTreatmentsTried and qrOb.value = true)
       or (qrOb.code ~ noTopicalTxTried and qrOb.value = true)
       or (qrOb.code ~ noLifestyleChanges and qrOb.value = true)
-      or (qrOb.code~ noALternativeTxTried and qrOb.value = true))
+      or (qrOb.code~ noALternativeTxTried and qrOb.value = true)
+      and(DateMatchesMyPainDate(qrOb)))
       return{
         Treatment: QuestionTextByLinkId(qrOb)[0].value[0],
         SimpleText: GetSimpleText(qrOb)
@@ -1776,27 +1780,31 @@ define ReportNotTriedTx:
 
 define ReportGreatlyEffectiveTx:
     (QuestionnaireObservations) qrOb where
-    ((qrOb.value as CodeableConcept) ~ greatlyEffective)
+    ((qrOb.value as CodeableConcept) ~ greatlyEffective
+    and(DateMatchesMyPainDate(qrOb)))
       return{
         Treatment: QuestionTextByLinkId(qrOb)[0].value[0]
       }
 
 define ReportModeratelyEffectiveTx:
     (QuestionnaireObservations) qrOb where
-    ((qrOb.value as CodeableConcept) ~ moderatelyEffective)
+    ((qrOb.value as CodeableConcept) ~ moderatelyEffective
+    and(DateMatchesMyPainDate(qrOb)))
       return{
         Treatment: QuestionTextByLinkId(qrOb)[0].value[0]
       }
 
 define ReportSlightlyEffectiveTx:
     (QuestionnaireObservations) qrOb where
-    ((qrOb.value as CodeableConcept) ~ slightlyEffective)
+    ((qrOb.value as CodeableConcept) ~ slightlyEffective
+    and(DateMatchesMyPainDate(qrOb)))
       return{
         Treatment: QuestionTextByLinkId(qrOb)[0].value[0]
       }
 define ReportNotEffectiveTx:
     (QuestionnaireObservations) qrOb where
-      ((qrOb.value as CodeableConcept) ~ notAtAllEffective)
+      ((qrOb.value as CodeableConcept) ~ notAtAllEffective
+      and(DateMatchesMyPainDate(qrOb)))
       return{
         Treatment: QuestionTextByLinkId(qrOb)[0].value[0]
       }
@@ -1811,7 +1819,8 @@ define ReportOtherTx:
       or qrOb.code ~ otherAlternativeTx
       or qrOb.code ~ otherOTC
       or qrOb.code ~ otherNewTreatments
-      or qrOb.code ~ newTreatmentOther)
+      or qrOb.code ~ newTreatmentOther
+      and(DateMatchesMyPainDate(qrOb)))
       return{
         Response: ObservationValue(qrOb)
       }
