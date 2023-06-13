@@ -157,7 +157,7 @@ code "cbdOilTx": 'mpq-1112' from "MyPAIN Questionnaire Codes" display 'CBD oil'
 code "marijuana": 'mpq-1113' from "MyPAIN Questionnaire Codes" display 'Marijuana used for medical purposes'
 code "otherAlternativeTx": 'mpq-1114' from "MyPAIN Questionnaire Codes" display 'Other: describe other alternative treatments youve tried for pain'
 code "activityGoals": 'mpq-1115' from "MyPAIN Questionnaire Codes" display 'Activity Goals: what goals do you have for your daily activities?'
-code "barriersActivityGoals": 'mpq-1116' from "MyPAIN Questionnaire Codes" display 'Activity Goals: what are the biggest barriers to achieving your daily activity goals?'
+code "barriersActivityGoals": 'mpq-1116' from "MyPAIN Questionnaire Codes" display 'Activity Barriers: what are the biggest barriers to achieving your daily activity goals?'
 
 code "physicalTreatmentsOther": 'mpq-1054' from "MyPAIN Questionnaire Codes" display 'Other physical treatment'
 code "prescriptionOther": 'mpq-1057' from "MyPAIN Questionnaire Codes" display 'Other prescription treatment'

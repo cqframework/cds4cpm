@@ -3681,7 +3681,7 @@
             {
               "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
               "code": "mpq-1036",
-              "display": "Activity Goals: what are the biggest barriers to achieving your daily activity goals?"
+              "display": "Activity Barriers: what are the biggest barriers to achieving your daily activity goals?"
             }
           ]
         },
