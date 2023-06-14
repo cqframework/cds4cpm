@@ -3835,7 +3835,7 @@
         }
       ],
       "prefix": "About My Goals",
-      "text": "<strong>Activity Goals</strong>: what are the biggest barriers to achieving your daily activity goals?<br/><br/>Example: <em>I have a lot of stress from work that makes my pain worse.</em>",
+      "text": "<strong>Activity Barriers</strong>: what are the biggest barriers to achieving your daily activity goals?<br/><br/>Example: <em>I have a lot of stress from work that makes my pain worse.</em>",
       "type": "text",
       "required": false
     }
