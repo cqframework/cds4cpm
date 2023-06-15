@@ -1864,6 +1864,19 @@ For MME/day of ≥ 50, CDC guidelines recommend incorporating into the managemen
 plan strategies to mitigate risk, including considering offering naloxone
 (recommendation category: A, evidence type: 4).
 [CDC Opioid Prescribing Guideline, Recommendation #5 and #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)"
+
+
+CDC 2022 Guidelines (Recommendation 4 and 5 combined:
+4. When opioids are initiated for opioid-naïve patients with acute, subacute, or chronic pain, clinicians should prescribe the lowest effective dosage. If opioids are continued
+for subacute or chronic pain, clinicians should use caution when prescribing opioids at any dosage, should carefully evaluate individual benefits and risks when considering
+increasing dosage, and should avoid increasing dosage above levels likely to yield diminishing returns in benefits relative to risks to patients
+(recommendation category: A; evidence type: 3).
+5. For patients already receiving opioid therapy, clinicians should carefully weigh benefits and risks and exercise care when changing opioid dosage. If benefits outweigh risks
+of continued opioid therapy, clinicians should work closely with patients to optimize nonopioid therapies while continuing opioid therapy. If benefits do not outweigh risks of
+continued opioid therapy, clinicians should optimize other therapies and work closely with patients to gradually taper to lower dosages or, if warranted based on the individual
+circumstances of the patient, appropriately taper and discontinue opioids. Unless there are indications of a life-threatening issue such as warning signs of impending overdose
+(e.g., confusion, sedation, or slurred speech), opioid therapy should not be discontinued abruptly, and clinicians should not rapidly reduce opioid dosages from higher dosages
+(recommendation category: B; evidence type: 4).
 */
 define ReportRecommendation5Text:
   if CurrentMME >= 50 '{MME}/d' then
@@ -1889,12 +1902,10 @@ or concurrent benzodiazepine use, are present (recommendation category: A, evide
 [CDC Opioid Prescribing Guideline, Recommendation #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)"
 
 For 2022 CDC Guidelines:
-'Per CDC guidelines, before starting, and periodically during continuation of opioid therapy, clinicians
-should evaluate risk factors for opioid-related harms. Clinicians should incorporate into the management
-plan strategies to mitigate risk, including considering offering naloxone when factors that increase risk
-for opioid overdose, such as history of overdose, history of substance use disorder, higher opioid dosages
-(greater than or equal to [≥] 50 morphine milligram equivalents [MME]/day), or concurrent benzodiazepine use,
-are present (recommendation category: A, evidence type: 4). [CDC Opioid Prescribing Guideline, Recommendation #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)'*/
+Before starting and periodically during continuation of opioid therapy, clinicians should evaluate risk for opioid-related harms
+and discuss risk with patients. Clinicians should work with patients to incorporate into the management plan strategies to mitigate
+risk, including offering naloxone (recommendation category: A; evidence type: 4).
+*/
 define ReportRecommendation8Text:
       if "Use 2022 CDC Guidelines" then
         'Per CDC guidelines, before starting and periodically during continuation of opioid therapy, clinicians should evaluate risk for opioid-related harms and discuss risk with patients. Clinicians should work with patients to incorporate into the management plan strategies to mitigate risk, including offering naloxone (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down" target="_blank" rel="noopener noreferrer">recommendation category: A; evidence type: 4</a>)'
@@ -1914,10 +1925,8 @@ medications as well as other controlled prescription drugs and illicit drugs
 [CDC Opioid Prescribing Guideline, Recommendation #10](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)."
 
 For 2022 CDC Guidelines:
-'Patient’s active medications include an opioid. Per CDC guidelines, when prescribing opioids for subacute or chronic pain,
-clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other
-prescribed and nonprescribed controlled substances (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down">
-recommendation category: B; evidence type: 4</a>)'
+When prescribing opioids for subacute or chronic pain, clinicians should consider the benefits and risks of toxicology testing to assess for
+prescribed medications as well as other prescribed and nonprescribed controlled substances (recommendation category: B; evidence type: 4).
 */
 define ReportRecommendation10Text:
   if not exists ReportUrineDrugScreens then
