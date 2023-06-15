@@ -9,7 +9,19 @@ ChronicPainConcepts-2.0.0.cql
 This flattens all retrieve access into a single file to avoid the need to trace
 retrieves into different libraries.
 */
+/*
+    Change List
+    6/2023 Updated CDC Recommendations to reflect 2022 content instead of 2016 logic. Also added a flag (Config."Use 2022 CDC Guidelines") to allow use of either 2016 or 2022 guidelines.
+    6/2023 Added flags to alternate uses of
+        "Only Active Medications"
+        "Use MMECalculator"
+        "Add Benzodiazepine to NonOpioid Medications"
+        "Add Naloxone to Opioid Medications"
+        "Use 2022 CDC Guidelines"
+        "Use Inclusion Criteria"
+    6/2023 Added logic to use only the latest QuestionnaireResponse Observations
 
+*/
 // # Data model #
 
 // The FHIR R4 model is used for testing purposes only. It has not been piloted.
