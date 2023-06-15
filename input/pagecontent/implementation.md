@@ -28,7 +28,14 @@ TBD: The PainManager application may be configured to support integration with a
 site through the ONC Medications implementation guide, as described in the system
 design document.
 
-Pain Manager will support all major modern web browsers (Chrome, Firefox, Safari, Edge) as well as Internet Explorer 11 (IE11). It will also support mobile browsers.
+PainManager will support all major modern web browsers (Chrome, Firefox, Safari, Edge) as well as Internet Explorer 11 (IE11). It will also support mobile browsers.
+
+PainManager requires questionnaire responses from MyPain to be extracted from the QuestionnaireResponse and stored on the FHIR server as Observations. An example of the extraction method can be seen in [CQF-Ruler](https://github.com/cqframework/cqf-ruler/blob/1bf9c414a68b43f067ee09bf98af8096ba9c7ddc/plugin/sdc/src/main/java/org/opencds/cqf/ruler/sdc/r4/ExtractProvider.java).
+Use the method extractObservationFromQuestionnaireResponse with the call being similar to 
+
+`POST http://localhost:8080/cqf-ruler-r4/fhir/QuestionnaireResponse/$extract`
+
+with the QuestionnaireResponse as the body of the POST.
 
 ##### SMART App Launch
 
@@ -191,3 +198,23 @@ minimum capabilities:
 * GET MedicationRequest?patient&status
 * GET Condition?patient&category
 * GET Encounter?patient&status
+
+### Pilot Differences
+
+#### Questionnaire
+##### Original questionnaire 
+The original questionnaire [MyPain Questionnaire](https://github.com/cqframework/cds4cpm/blob/04579f913fac49d35f3ba2a9f1ecdba61f47ee41/input/resources/questionnaire/mypain-questionnaire.json) was used with RTI at Vanderbilt and Chicago.
+A new questionnaire [MyPain Questionnaire UFL](https://github.com/cqframework/cds4cpm/blob/04579f913fac49d35f3ba2a9f1ecdba61f47ee41/input/resources/questionnaire/mypain-questionnaire-ufl.json) was used with UFL. This required changes to questions, answers, code sets, and value sets. The code sets and value sets from the original pilot were modified to include the new changes.
+
+#### MyPain
+The changes for the MyPain application from the [RTI pilot](https://github.com/cqframework/AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY/tree/master) to the [UF pilot](https://github.com/cqframework/cds4cpm-mypain/tree/v0.5.0) included branding changes, questionnaire questions, and answers. It added multiple selection choices for how pain feels to the patient. 
+
+#### PainManager 
+The UI from the [RTI pilot](https://github.com/cqframework/cds4cpm-mypain/tree/master) to the [UF pilot](https://github.com/cqframework/AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY/tree/v0.10.0)  was changed significantly, including a change from a mostly horizontal layout to a vertical one. Warning displays were also changed. A significant change was to use 2022 CDC recommendations instead of the 2016 recommendations. This was reflected in the logic used in PainManagerAll.cql. Additionally, flags were added to turn on or off certain criteria and how items were displayed. 
+
+* "Only Active Medications"
+* "Use MMECalculator"
+* "Add Benzodiazepine to NonOpioid Medications"
+* "Add Naloxone to Opioid Medications"
+* "Use 2022 CDC Guidelines"
+* "Use Inclusion Criteria"`

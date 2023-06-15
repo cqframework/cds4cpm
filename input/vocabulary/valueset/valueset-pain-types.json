@@ -1,140 +1,146 @@
 {
-  "resourceType": "ValueSet",
-  "id": "pain-types",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset",
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset",
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset",
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset"
-    ]
-  },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
-      "valueCode": "shareable"
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
-      "valueCode": "computable"
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
-      "valueCode": "publishable"
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
-      "valueCode": "structured"
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
-      "valueCode": "executable"
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
-      "valueCode": "executable"
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
-      "valueCode": "publishable"
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
-      "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
-    }
-  ],
-  "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-types",
-  "version": "2021-01-12",
-  "name": "PainTypes",
-  "title": "Pain Types",
-  "status": "active",
-  "experimental": false,
-  "description": "Value set for Pain Types used in MyPAIN and Pain Manager",
-  "immutable": true,
-  "compose": {
-    "include": [
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "27635008",
-            "display": "Aching"
-          },
-          {
-            "code": "36349006",
-            "display": "Burning"
-          },
-          {
-            "code": "55145008",
-            "display": "Stabbing"
-          },
-          {
-            "code": "29695002",
-            "display": "Throbbing"
-          },
-          {
-            "code": "162506004",
-            "display": "Prickling"
-          },
-          {
-            "code": "786837007",
-            "display": "Tingling"
-          },
-          {
-            "code": "279093005",
-            "display": "Cramping"
-          },
-          {
-            "code": "279093005",
-            "display": "Crushing"
-          }
+    "resourceType": "ValueSet",
+    "id": "pain-types",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset",
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset",
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset",
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset"
         ]
-      }
-    ]
-  },
-  "expansion": {
-    "timestamp": "2021-01-12T17:52:03-07:00",
-    "contains": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "27635008",
-        "display": "Aching"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "36349006",
-        "display": "Burning"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "55145008",
-        "display": "Stabbing"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "29695002",
-        "display": "Throbbing"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "162506004",
-        "display": "Prickling"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "786837007",
-        "display": "Tingling"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "279093005",
-        "display": "Cramping"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "279093005",
-        "display": "Crushing"
-      }
-    ]
-  }
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "shareable"
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "computable"
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "publishable"
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+            "valueCode": "structured"
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "executable"
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+            "valueCode": "executable"
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "publishable"
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+            "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+        }
+    ],
+    "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-types",
+    "version": "2021-01-12",
+    "name": "PainTypes",
+    "title": "Pain Types",
+    "status": "active",
+    "experimental": false,
+    "description": "Value set for Pain Types used in MyPAIN and Pain Manager",
+    "immutable": true,
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "27635008",
+                        "display": "Aching"
+                    },
+                    {
+                        "code": "36349006",
+                        "display": "Burning"
+                    },
+                    {
+                        "code": "55145008",
+                        "display": "Stabbing"
+                    },
+                    {
+                        "code": "29695002",
+                        "display": "Throbbing"
+                    },
+                    {
+                        "code": "162506004",
+                        "display": "Prickling"
+                    },
+                    {
+                        "code": "786837007",
+                        "display": "Tingling"
+                    },
+                    {
+                        "code": "279093005",
+                        "display": "Cramping"
+                    },
+                    {
+                        "code": "279093005",
+                        "display": "Crushing"
+                    }
+                ]
+            }
+        ]
+    },
+    "expansion": {
+        "timestamp": "2023-06-02T09:36:03-06:00",
+        "parameter": [
+            {
+                "name": "naive",
+                "valueBoolean": true
+            }
+        ],
+        "contains": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "27635008",
+                "display": "Aching"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "36349006",
+                "display": "Burning"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "55145008",
+                "display": "Stabbing"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "29695002",
+                "display": "Throbbing"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "162506004",
+                "display": "Prickling"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "786837007",
+                "display": "Tingling"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "279093005",
+                "display": "Cramping"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "279093005",
+                "display": "Crushing"
+            }
+        ]
+    }
 }

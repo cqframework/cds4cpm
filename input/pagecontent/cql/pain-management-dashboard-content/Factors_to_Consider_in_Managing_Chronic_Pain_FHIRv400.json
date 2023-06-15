@@ -2515,26 +2515,39 @@
             "context" : "Patient",
             "accessLevel" : "Public",
             "expression" : {
-               "type" : "And",
-               "operand" : [ {
-                  "name" : "Is18orOlder",
+               "type" : "If",
+               "condition" : {
+                  "name" : "Use Inclusion Criteria",
+                  "libraryName" : "Config",
                   "type" : "ExpressionRef"
-               }, {
-                  "type" : "Or",
+               },
+               "then" : {
+                  "type" : "And",
                   "operand" : [ {
+                     "name" : "Is18orOlder",
+                     "type" : "ExpressionRef"
+                  }, {
                      "type" : "Or",
                      "operand" : [ {
-                        "name" : "HasConditionAssociatedWithChronicPain",
-                        "type" : "ExpressionRef"
+                        "type" : "Or",
+                        "operand" : [ {
+                           "name" : "HasConditionAssociatedWithChronicPain",
+                           "type" : "ExpressionRef"
+                        }, {
+                           "name" : "HasRecentOpioidPainMedication",
+                           "type" : "ExpressionRef"
+                        } ]
                      }, {
-                        "name" : "HasRecentOpioidPainMedication",
+                        "name" : "HasRecentAdjuvantAnalgesicMedication",
                         "type" : "ExpressionRef"
                      } ]
-                  }, {
-                     "name" : "HasRecentAdjuvantAnalgesicMedication",
-                     "type" : "ExpressionRef"
                   } ]
-               } ]
+               },
+               "else" : {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "value" : "true",
+                  "type" : "Literal"
+               }
             }
          }, {
             "name" : "UniqueConditionReports",

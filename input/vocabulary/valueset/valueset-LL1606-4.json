@@ -1,85 +1,116 @@
 {
-  "resourceType": "ValueSet",
-  "id": "LL1606-4",
-  "meta": {
-    "versionId": "2",
-    "lastUpdated": "2020-06-30T02:57:51.274+00:00",
-    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
-  },
-  "extension": [ {
-    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
-    "valueCode": "executable"
-  }, {
-    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
-    "valueCode": "executable"
-  },     {
-    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
-    "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
-  }],
-  "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/LL1606-4",
-  "identifier": [ {
-    "system": "urn:ietf:rfc:3986",
-    "value": "urn:oid:1.3.6.1.4.1.12009.10.1.777"
-  }
-  ],
-  "version": "Loinc_2.68",
-  "name": "PhenX15_07",
-  "title": "ValueSet - Survey Agreement Answers",
-  "status": "active",
-  "experimental": false,
-  "description": "Survey agreement answers valueset.",
-  "publisher": "Regenstrief Institute, Inc.",
-  "contact": [ {
-    "name": "Regenstrief Institute, Inc.",
-    "telecom": [ {
-      "system": "url",
-      "value": "https://loinc.org"
-    } ]
-  } ],
-  "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at https://loinc.org/license/",
-  "compose": {
-    "include": [ {
-      "system": "http://loinc.org",
-      "concept": [ {
-        "code": "LA15238-1",
-        "display": "Disagree a lot"
-      }, {
-        "code": "LA15239-9",
-        "display": "Disagree a little"
-      }, {
-        "code": "LA15240-7",
-        "display": "Neither agree nor disagree"
-      }, {
-        "code": "LA15241-5",
-        "display": "Agree a little"
-      }, {
-        "code": "LA15242-3",
-        "display": "Agree a lot"
-      } ]
-    } ]
-  },
-  "expansion": {
-    "timestamp": "2021-01-12T17:52:02-07:00",
-    "contains": [ {
-      "system": "http://loinc.org",
-      "code": "LA15238-1",
-      "display": "Disagree a lot"
-    }, {
-      "system": "http://loinc.org",
-      "code": "LA15239-9",
-      "display": "Disagree a little"
-    }, {
-      "system": "http://loinc.org",
-      "code": "LA15240-7",
-      "display": "Neither agree nor disagree"
-    }, {
-      "system": "http://loinc.org",
-      "code": "LA15241-5",
-      "display": "Agree a little"
-    }, {
-      "system": "http://loinc.org",
-      "code": "LA15242-3",
-      "display": "Agree a lot"
-    } ]
-  }
+    "resourceType": "ValueSet",
+    "id": "LL1606-4",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2020-06-30T02:57:51.274+00:00",
+        "profile": [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "executable"
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+            "valueCode": "executable"
+        },
+        {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+            "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+        }
+    ],
+    "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/LL1606-4",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.3.6.1.4.1.12009.10.1.777"
+        }
+    ],
+    "version": "Loinc_2.68",
+    "name": "PhenX15_07",
+    "title": "ValueSet - Survey Agreement Answers",
+    "status": "active",
+    "experimental": false,
+    "publisher": "Regenstrief Institute, Inc.",
+    "contact": [
+        {
+            "name": "Regenstrief Institute, Inc.",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://loinc.org"
+                }
+            ]
+        }
+    ],
+    "description": "Survey agreement answers valueset.",
+    "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at https://loinc.org/license/",
+    "compose": {
+        "include": [
+            {
+                "system": "http://loinc.org",
+                "concept": [
+                    {
+                        "code": "LA15238-1",
+                        "display": "Disagree a lot"
+                    },
+                    {
+                        "code": "LA15239-9",
+                        "display": "Disagree a little"
+                    },
+                    {
+                        "code": "LA15240-7",
+                        "display": "Neither agree nor disagree"
+                    },
+                    {
+                        "code": "LA15241-5",
+                        "display": "Agree a little"
+                    },
+                    {
+                        "code": "LA15242-3",
+                        "display": "Agree a lot"
+                    }
+                ]
+            }
+        ]
+    },
+    "expansion": {
+        "timestamp": "2023-06-02T09:36:03-06:00",
+        "parameter": [
+            {
+                "name": "naive",
+                "valueBoolean": true
+            }
+        ],
+        "contains": [
+            {
+                "system": "http://loinc.org",
+                "code": "LA15238-1",
+                "display": "Disagree a lot"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "LA15239-9",
+                "display": "Disagree a little"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "LA15240-7",
+                "display": "Neither agree nor disagree"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "LA15241-5",
+                "display": "Agree a little"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "LA15242-3",
+                "display": "Agree a lot"
+            }
+        ]
+    }
 }

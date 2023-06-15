@@ -2,603 +2,308 @@
   "resourceType": "ValueSet",
   "id": "naloxone-medications",
   "meta": {
-    "profile": [
-      "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset",
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset",
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset",
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"
-    ]
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 77 concepts</p><p>All codes from system <code>http://www.nlm.nih.gov/research/umls/rxnorm</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1495293\"> </a>1495293</td><td>0.4 ML Naloxone Hydrochloride 1 MG/ML Auto-Injector</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1495298\"> </a>1495298</td><td>0.4 ML Naloxone Hydrochloride 1 MG/ML Auto-Injector [Evzio]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1855730\"> </a>1855730</td><td>0.4 ML Naloxone Hydrochloride 5 MG/ML Auto-Injector</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1855732\"> </a>1855732</td><td>0.4 ML Naloxone Hydrochloride 5 MG/ML Auto-Injector [Evzio]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1191234\"> </a>1191234</td><td>1 ML Naloxone Hydrochloride 0.4 MG/ML Cartridge</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1659929\"> </a>1659929</td><td>1 ML Naloxone Hydrochloride 0.4 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1545903\"> </a>1545903</td><td>12 HR Naloxone Hydrochloride 10 MG / Oxycodone Hydrochloride 20 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-2268081\"> </a>2268081</td><td>12 HR Naloxone Hydrochloride 10 MG / Oxycodone Hydrochloride 20 MG Extended Release Oral Tablet [Targiniq]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1545907\"> </a>1545907</td><td>12 HR Naloxone Hydrochloride 20 MG / Oxycodone Hydrochloride 40 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-2268085\"> </a>2268085</td><td>12 HR Naloxone Hydrochloride 20 MG / Oxycodone Hydrochloride 40 MG Extended Release Oral Tablet [Targiniq]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1545910\"> </a>1545910</td><td>12 HR Naloxone Hydrochloride 5 MG / Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1546089\"> </a>1546089</td><td>12 HR Naloxone Hydrochloride 5 MG / Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Targiniq]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1191245\"> </a>1191245</td><td>2 ML Naloxone Hydrochloride 0.4 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1191250\"> </a>1191250</td><td>2 ML Naloxone Hydrochloride 1 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1864412\"> </a>1864412</td><td>Buprenorphine 0.7 MG / Naloxone 0.18 MG Sublingual Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1864414\"> </a>1864414</td><td>Buprenorphine 0.7 MG / Naloxone 0.18 MG Sublingual Tablet [Zubsolv]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1431076\"> </a>1431076</td><td>Buprenorphine 1.4 MG / Naloxone 0.36 MG Sublingual Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1431083\"> </a>1431083</td><td>Buprenorphine 1.4 MG / Naloxone 0.36 MG Sublingual Tablet [Zubsolv]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1597568\"> </a>1597568</td><td>Buprenorphine 11.4 MG / Naloxone 2.9 MG Sublingual Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1597570\"> </a>1597570</td><td>Buprenorphine 11.4 MG / Naloxone 2.9 MG Sublingual Tablet [Zubsolv]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1307061\"> </a>1307061</td><td>Buprenorphine 12 MG / Naloxone 3 MG Sublingual Film</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1307063\"> </a>1307063</td><td>Buprenorphine 12 MG / Naloxone 3 MG Sublingual Film [Suboxone]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-2058257\"> </a>2058257</td><td>Buprenorphine 16 MG / Naloxone 4 MG Sublingual Film</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-2106368\"> </a>2106368</td><td>Buprenorphine 16 MG / Naloxone 4 MG Sublingual Film [Cassipa]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1010600\"> </a>1010600</td><td>Buprenorphine 2 MG / Naloxone 0.5 MG Sublingual Film</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1010603\"> </a>1010603</td><td>Buprenorphine 2 MG / Naloxone 0.5 MG Sublingual Film [Suboxone]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-351266\"> </a>351266</td><td>Buprenorphine 2 MG / Naloxone 0.5 MG Sublingual Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1010608\"> </a>1010608</td><td>Buprenorphine 2 MG / Naloxone 0.5 MG Sublingual Tablet [Suboxone]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1542390\"> </a>1542390</td><td>Buprenorphine 2.1 MG / Naloxone 0.3 MG Buccal Film</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1542396\"> </a>1542396</td><td>Buprenorphine 2.1 MG / Naloxone 0.3 MG Buccal Film [Bunavail]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1666338\"> </a>1666338</td><td>Buprenorphine 2.9 MG / Naloxone 0.71 MG Sublingual Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1666385\"> </a>1666385</td><td>Buprenorphine 2.9 MG / Naloxone 0.71 MG Sublingual Tablet [Zubsolv]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1307056\"> </a>1307056</td><td>Buprenorphine 4 MG / Naloxone 1 MG Sublingual Film</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1307058\"> </a>1307058</td><td>Buprenorphine 4 MG / Naloxone 1 MG Sublingual Film [Suboxone]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1544851\"> </a>1544851</td><td>Buprenorphine 4.2 MG / Naloxone 0.7 MG Buccal Film</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1544853\"> </a>1544853</td><td>Buprenorphine 4.2 MG / Naloxone 0.7 MG Buccal Film [Bunavail]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1431102\"> </a>1431102</td><td>Buprenorphine 5.7 MG / Naloxone 1.4 MG Sublingual Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1431104\"> </a>1431104</td><td>Buprenorphine 5.7 MG / Naloxone 1.4 MG Sublingual Tablet [Zubsolv]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1544854\"> </a>1544854</td><td>Buprenorphine 6.3 MG / Naloxone 1 MG Buccal Film</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1544856\"> </a>1544856</td><td>Buprenorphine 6.3 MG / Naloxone 1 MG Buccal Film [Bunavail]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1010604\"> </a>1010604</td><td>Buprenorphine 8 MG / Naloxone 2 MG Sublingual Film</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1010606\"> </a>1010606</td><td>Buprenorphine 8 MG / Naloxone 2 MG Sublingual Film [Suboxone]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-351267\"> </a>351267</td><td>Buprenorphine 8 MG / Naloxone 2 MG Sublingual Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1010609\"> </a>1010609</td><td>Buprenorphine 8 MG / Naloxone 2 MG Sublingual Tablet [Suboxone]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1597573\"> </a>1597573</td><td>Buprenorphine 8.6 MG / Naloxone 2.1 MG Sublingual Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1597575\"> </a>1597575</td><td>Buprenorphine 8.6 MG / Naloxone 2.1 MG Sublingual Tablet [Zubsolv]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-312289\"> </a>312289</td><td>Naloxone 0.5 MG / Pentazocine 50 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-207017\"> </a>207017</td><td>Naloxone 0.5 MG / Pentazocine 50 MG Oral Tablet [Talwin NX]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-431679\"> </a>431679</td><td>Naloxone 12 MG / Tilidine 150 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-431678\"> </a>431678</td><td>Naloxone 4 MG / Tilidine 50 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-411499\"> </a>411499</td><td>Naloxone 4 MG / Tilidine 50 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-431676\"> </a>431676</td><td>Naloxone 8 MG / Tilidine 100 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1191254\"> </a>1191254</td><td>Naloxone Hydrochloride 0.004 MG/ML Injectable Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1191212\"> </a>1191212</td><td>Naloxone Hydrochloride 0.02 MG/ML Injectable Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1191214\"> </a>1191214</td><td>Naloxone Hydrochloride 0.02 MG/ML Injectable Solution [Narcan]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1659915\"> </a>1659915</td><td>Naloxone Hydrochloride 0.4 MG/ML Cartridge</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1191222\"> </a>1191222</td><td>Naloxone Hydrochloride 0.4 MG/ML Injectable Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1191224\"> </a>1191224</td><td>Naloxone Hydrochloride 0.4 MG/ML Injectable Solution [Narcan]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1659930\"> </a>1659930</td><td>Naloxone Hydrochloride 0.4 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1360135\"> </a>1360135</td><td>Naloxone Hydrochloride 0.4 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1659892\"> </a>1659892</td><td>Naloxone Hydrochloride 1 MG/ML Auto-Injector</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1495299\"> </a>1495299</td><td>Naloxone Hydrochloride 1 MG/ML Auto-Injector [Evzio]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1191228\"> </a>1191228</td><td>Naloxone Hydrochloride 1 MG/ML Injectable Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1191230\"> </a>1191230</td><td>Naloxone Hydrochloride 1 MG/ML Injectable Solution [Narcan]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1359946\"> </a>1359946</td><td>Naloxone Hydrochloride 1 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1545904\"> </a>1545904</td><td>Naloxone Hydrochloride 10 MG / Oxycodone Hydrochloride 20 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-2268082\"> </a>2268082</td><td>Naloxone Hydrochloride 10 MG / Oxycodone Hydrochloride 20 MG Extended Release Oral Tablet [Targiniq]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1545908\"> </a>1545908</td><td>Naloxone Hydrochloride 20 MG / Oxycodone Hydrochloride 40 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-2268086\"> </a>2268086</td><td>Naloxone Hydrochloride 20 MG / Oxycodone Hydrochloride 40 MG Extended Release Oral Tablet [Targiniq]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1870933\"> </a>1870933</td><td>Naloxone Hydrochloride 20 MG/ML Nasal Spray</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1870935\"> </a>1870935</td><td>Naloxone Hydrochloride 20 MG/ML Nasal Spray [Narcan]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1725059\"> </a>1725059</td><td>Naloxone Hydrochloride 40 MG/ML Nasal Spray</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1725064\"> </a>1725064</td><td>Naloxone Hydrochloride 40 MG/ML Nasal Spray [Narcan]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1545911\"> </a>1545911</td><td>Naloxone Hydrochloride 5 MG / Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1546090\"> </a>1546090</td><td>Naloxone Hydrochloride 5 MG / Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Targiniq]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1855733\"> </a>1855733</td><td>Naloxone Hydrochloride 5 MG/ML Auto-Injector</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1855734\"> </a>1855734</td><td>Naloxone Hydrochloride 5 MG/ML Auto-Injector [Evzio]</td></tr></table></div>"
-  },
-  "extension": [
-    {
-      "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-clinical-focus",
-      "valueString": "All naloxone medications"
-    },
-    {
-      "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-dataelement-scope",
-      "valueString": "Medication"
-    },
-    {
-      "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion-criteria",
-      "valueString": "All naloxone medications"
-    },
-    {
-      "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion-criteria",
-      "valueString": "None"
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
-      "valueCode": "publishable"
-    },    {
-      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
-      "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
-    },    {
-      "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
-      "valueContactDetail": {
-        "name": "MD Partners, Inc.",
-        "telecom": [
-          {
-            "system": "email",
-            "value": "info@mdpartners.com"
-          }
-        ]
-      }
+  "extension": [ {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-clinical-focus",
+    "valueString": "All naloxone medications"
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-dataelement-scope",
+    "valueString": "Medication"
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion-criteria",
+    "valueString": "All naloxone medications"
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion-criteria",
+    "valueString": "None"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "MD Partners, Inc.",
+      "telecom": [ {
+        "system": "email",
+        "value": "info@mdpartners.com"
+      } ]
     }
-  ],
-  "url": "http://fhir.org/guides/cqf/cds4cpm/ValueSet/naloxone-medications",
-  "version": "2020-03-26",
-  "name": "Naloxone Medications",
-  "title": "ValueSet - Naloxone Medications",
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "computable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+    "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-rules-text",
+    "valueMarkdown": "https://mor.nlm.nih.gov/RxMix/ \r\nScript:\r\nStep 1 \r\nCreate Batch text input file (Naloxone.txt) with following RxNorm identifier for the ingredient (TTY=IN) as the only concept within the file: \r\n7242       \r\n\r\nStep 2\r\nSubmit batch job using the above Naloxone.txt as the input file to following workflow by uploading a workflow file (naloxone-wf.config) with the following text in the file:  <WFE><filteredOutputs>RXCUI|name|term_type</filteredOutputs><input>NOINPUT</input><FS><service>NOINPUT</service><function>getRelatedByType</function><level>0</level><paramSize>2</paramSize><param order ='0'>?</param><param order ='1'>BPCK,GPCK,SBD,SCD</param></FS></WFE>"
+  } ],
+  "url": "http://fhir.org/guides/cdc/opioid-cds/ValueSet/naloxone-medications",
+  "name": "NALOXONE_MEDICATIONS",
+  "title": "Naloxone medications",
   "status": "active",
   "experimental": true,
-  "date": "2020-03-26T17:39:10-06:00",
+  "date": "2023-05-25T18:08:12-06:00",
   "publisher": "Centers for Disease Control and Prevention (CDC)",
+  "contact": [ {
+    "name": "Centers for Disease Control and Prevention (CDC)",
+    "telecom": [ {
+      "system": "url",
+      "value": "https://www.cdc.gov"
+    } ]
+  } ],
   "description": "All naloxone medications",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
-        }
-      ]
-    }
-  ],
+  "jurisdiction": [ {
+    "coding": [ {
+      "system": "urn:iso:std:iso:3166",
+      "code": "US"
+    } ]
+  } ],
   "purpose": "Naloxone medications for opioid management",
   "copyright": "© CDC 2016+.",
-  "compose": {
-    "include": [
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "filter": [
-          {
-            "property": "display",
-            "op": "regex",
-            "value": ".*(?i)naloxone.*"
-          },
-          {
-            "property": "tty",
-            "op": "=",
-            "value": "SCD"
-          }
-        ]
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "filter": [
-          {
-            "property": "display",
-            "op": "regex",
-            "value": ".*(?i)naloxone.*"
-          },
-          {
-            "property": "tty",
-            "op": "=",
-            "value": "SBD"
-          }
-        ]
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "filter": [
-          {
-            "property": "display",
-            "op": "regex",
-            "value": ".*(?i)naloxone.*"
-          },
-          {
-            "property": "tty",
-            "op": "=",
-            "value": "GPCK"
-          }
-        ]
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "filter": [
-          {
-            "property": "display",
-            "op": "regex",
-            "value": ".*(?i)naloxone.*"
-          },
-          {
-            "property": "tty",
-            "op": "=",
-            "value": "BPCK"
-          }
-        ]
-      }
-    ]
-  },
   "expansion": {
-    "timestamp": "2020-03-26T17:39:10-06:00",
-    "contains": [
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1495293",
-        "display": "0.4 ML Naloxone Hydrochloride 1 MG/ML Auto-Injector"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1495298",
-        "display": "0.4 ML Naloxone Hydrochloride 1 MG/ML Auto-Injector [Evzio]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1855730",
-        "display": "0.4 ML Naloxone Hydrochloride 5 MG/ML Auto-Injector"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1855732",
-        "display": "0.4 ML Naloxone Hydrochloride 5 MG/ML Auto-Injector [Evzio]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1191234",
-        "display": "1 ML Naloxone Hydrochloride 0.4 MG/ML Cartridge"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1659929",
-        "display": "1 ML Naloxone Hydrochloride 0.4 MG/ML Injection"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1545903",
-        "display": "12 HR Naloxone Hydrochloride 10 MG / Oxycodone Hydrochloride 20 MG Extended Release Oral Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "2268081",
-        "display": "12 HR Naloxone Hydrochloride 10 MG / Oxycodone Hydrochloride 20 MG Extended Release Oral Tablet [Targiniq]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1545907",
-        "display": "12 HR Naloxone Hydrochloride 20 MG / Oxycodone Hydrochloride 40 MG Extended Release Oral Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "2268085",
-        "display": "12 HR Naloxone Hydrochloride 20 MG / Oxycodone Hydrochloride 40 MG Extended Release Oral Tablet [Targiniq]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1545910",
-        "display": "12 HR Naloxone Hydrochloride 5 MG / Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1546089",
-        "display": "12 HR Naloxone Hydrochloride 5 MG / Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Targiniq]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1191245",
-        "display": "2 ML Naloxone Hydrochloride 0.4 MG/ML Prefilled Syringe"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1191250",
-        "display": "2 ML Naloxone Hydrochloride 1 MG/ML Prefilled Syringe"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1864412",
-        "display": "Buprenorphine 0.7 MG / Naloxone 0.18 MG Sublingual Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1864414",
-        "display": "Buprenorphine 0.7 MG / Naloxone 0.18 MG Sublingual Tablet [Zubsolv]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1431076",
-        "display": "Buprenorphine 1.4 MG / Naloxone 0.36 MG Sublingual Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1431083",
-        "display": "Buprenorphine 1.4 MG / Naloxone 0.36 MG Sublingual Tablet [Zubsolv]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1597568",
-        "display": "Buprenorphine 11.4 MG / Naloxone 2.9 MG Sublingual Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1597570",
-        "display": "Buprenorphine 11.4 MG / Naloxone 2.9 MG Sublingual Tablet [Zubsolv]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1307061",
-        "display": "Buprenorphine 12 MG / Naloxone 3 MG Sublingual Film"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1307063",
-        "display": "Buprenorphine 12 MG / Naloxone 3 MG Sublingual Film [Suboxone]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "2058257",
-        "display": "Buprenorphine 16 MG / Naloxone 4 MG Sublingual Film"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "2106368",
-        "display": "Buprenorphine 16 MG / Naloxone 4 MG Sublingual Film [Cassipa]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1010600",
-        "display": "Buprenorphine 2 MG / Naloxone 0.5 MG Sublingual Film"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1010603",
-        "display": "Buprenorphine 2 MG / Naloxone 0.5 MG Sublingual Film [Suboxone]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "351266",
-        "display": "Buprenorphine 2 MG / Naloxone 0.5 MG Sublingual Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1010608",
-        "display": "Buprenorphine 2 MG / Naloxone 0.5 MG Sublingual Tablet [Suboxone]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1542390",
-        "display": "Buprenorphine 2.1 MG / Naloxone 0.3 MG Buccal Film"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1542396",
-        "display": "Buprenorphine 2.1 MG / Naloxone 0.3 MG Buccal Film [Bunavail]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1666338",
-        "display": "Buprenorphine 2.9 MG / Naloxone 0.71 MG Sublingual Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1666385",
-        "display": "Buprenorphine 2.9 MG / Naloxone 0.71 MG Sublingual Tablet [Zubsolv]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1307056",
-        "display": "Buprenorphine 4 MG / Naloxone 1 MG Sublingual Film"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1307058",
-        "display": "Buprenorphine 4 MG / Naloxone 1 MG Sublingual Film [Suboxone]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1544851",
-        "display": "Buprenorphine 4.2 MG / Naloxone 0.7 MG Buccal Film"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1544853",
-        "display": "Buprenorphine 4.2 MG / Naloxone 0.7 MG Buccal Film [Bunavail]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1431102",
-        "display": "Buprenorphine 5.7 MG / Naloxone 1.4 MG Sublingual Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1431104",
-        "display": "Buprenorphine 5.7 MG / Naloxone 1.4 MG Sublingual Tablet [Zubsolv]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1544854",
-        "display": "Buprenorphine 6.3 MG / Naloxone 1 MG Buccal Film"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1544856",
-        "display": "Buprenorphine 6.3 MG / Naloxone 1 MG Buccal Film [Bunavail]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1010604",
-        "display": "Buprenorphine 8 MG / Naloxone 2 MG Sublingual Film"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1010606",
-        "display": "Buprenorphine 8 MG / Naloxone 2 MG Sublingual Film [Suboxone]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "351267",
-        "display": "Buprenorphine 8 MG / Naloxone 2 MG Sublingual Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1010609",
-        "display": "Buprenorphine 8 MG / Naloxone 2 MG Sublingual Tablet [Suboxone]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1597573",
-        "display": "Buprenorphine 8.6 MG / Naloxone 2.1 MG Sublingual Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1597575",
-        "display": "Buprenorphine 8.6 MG / Naloxone 2.1 MG Sublingual Tablet [Zubsolv]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "312289",
-        "display": "Naloxone 0.5 MG / Pentazocine 50 MG Oral Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "207017",
-        "display": "Naloxone 0.5 MG / Pentazocine 50 MG Oral Tablet [Talwin NX]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "431679",
-        "display": "Naloxone 12 MG / Tilidine 150 MG Extended Release Oral Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "431678",
-        "display": "Naloxone 4 MG / Tilidine 50 MG Extended Release Oral Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "411499",
-        "display": "Naloxone 4 MG / Tilidine 50 MG Oral Capsule"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "431676",
-        "display": "Naloxone 8 MG / Tilidine 100 MG Extended Release Oral Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1191254",
-        "display": "Naloxone Hydrochloride 0.004 MG/ML Injectable Solution"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1191212",
-        "display": "Naloxone Hydrochloride 0.02 MG/ML Injectable Solution"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1191214",
-        "display": "Naloxone Hydrochloride 0.02 MG/ML Injectable Solution [Narcan]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1659915",
-        "display": "Naloxone Hydrochloride 0.4 MG/ML Cartridge"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1191222",
-        "display": "Naloxone Hydrochloride 0.4 MG/ML Injectable Solution"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1191224",
-        "display": "Naloxone Hydrochloride 0.4 MG/ML Injectable Solution [Narcan]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1659930",
-        "display": "Naloxone Hydrochloride 0.4 MG/ML Injection"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1360135",
-        "display": "Naloxone Hydrochloride 0.4 MG/ML Prefilled Syringe"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1659892",
-        "display": "Naloxone Hydrochloride 1 MG/ML Auto-Injector"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1495299",
-        "display": "Naloxone Hydrochloride 1 MG/ML Auto-Injector [Evzio]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1191228",
-        "display": "Naloxone Hydrochloride 1 MG/ML Injectable Solution"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1191230",
-        "display": "Naloxone Hydrochloride 1 MG/ML Injectable Solution [Narcan]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1359946",
-        "display": "Naloxone Hydrochloride 1 MG/ML Prefilled Syringe"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1545904",
-        "display": "Naloxone Hydrochloride 10 MG / Oxycodone Hydrochloride 20 MG Extended Release Oral Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "2268082",
-        "display": "Naloxone Hydrochloride 10 MG / Oxycodone Hydrochloride 20 MG Extended Release Oral Tablet [Targiniq]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1545908",
-        "display": "Naloxone Hydrochloride 20 MG / Oxycodone Hydrochloride 40 MG Extended Release Oral Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "2268086",
-        "display": "Naloxone Hydrochloride 20 MG / Oxycodone Hydrochloride 40 MG Extended Release Oral Tablet [Targiniq]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1870933",
-        "display": "Naloxone Hydrochloride 20 MG/ML Nasal Spray"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1870935",
-        "display": "Naloxone Hydrochloride 20 MG/ML Nasal Spray [Narcan]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1725059",
-        "display": "Naloxone Hydrochloride 40 MG/ML Nasal Spray"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1725064",
-        "display": "Naloxone Hydrochloride 40 MG/ML Nasal Spray [Narcan]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1545911",
-        "display": "Naloxone Hydrochloride 5 MG / Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1546090",
-        "display": "Naloxone Hydrochloride 5 MG / Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Targiniq]"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1855733",
-        "display": "Naloxone Hydrochloride 5 MG/ML Auto-Injector"
-      },
-      {
-        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "version": "02-Mar-2020",
-        "code": "1855734",
-        "display": "Naloxone Hydrochloride 5 MG/ML Auto-Injector [Evzio]"
-      }
-    ]
+    "identifier": "11ddb779-585d-4527-8634-9d46fb1069d0",
+    "timestamp": "2023-05-25T18:08:12-06:00",
+    "total": 47,
+    "parameter": [ {
+      "name": "version",
+      "valueString": "2023-03"
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1855732",
+      "display": "0.4 ML naloxone hydrochloride 5 MG/ML Auto-Injector [Evzio]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "2589618",
+      "display": "0.5 ML naloxone hydrochloride 10 MG/ML Prefilled Syringe [Zimhi]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1864414",
+      "display": "buprenorphine 0.7 MG / naloxone 0.18 MG Sublingual Tablet [Zubsolv]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1431083",
+      "display": "buprenorphine 1.4 MG / naloxone 0.36 MG Sublingual Tablet [Zubsolv]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1597570",
+      "display": "buprenorphine 11.4 MG / naloxone 2.9 MG Sublingual Tablet [Zubsolv]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1307063",
+      "display": "buprenorphine 12 MG / naloxone 3 MG Sublingual Film [Suboxone]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1010603",
+      "display": "buprenorphine 2 MG / naloxone 0.5 MG Sublingual Film [Suboxone]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1542396",
+      "display": "buprenorphine 2.1 MG / naloxone 0.3 MG Buccal Film [Bunavail]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1666385",
+      "display": "buprenorphine 2.9 MG / naloxone 0.71 MG Sublingual Tablet [Zubsolv]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1307058",
+      "display": "buprenorphine 4 MG / naloxone 1 MG Sublingual Film [Suboxone]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1544853",
+      "display": "buprenorphine 4.2 MG / naloxone 0.7 MG Buccal Film [Bunavail]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1431104",
+      "display": "buprenorphine 5.7 MG / naloxone 1.4 MG Sublingual Tablet [Zubsolv]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1544856",
+      "display": "buprenorphine 6.3 MG / naloxone 1 MG Buccal Film [Bunavail]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1010606",
+      "display": "buprenorphine 8 MG / naloxone 2 MG Sublingual Film [Suboxone]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1597575",
+      "display": "buprenorphine 8.6 MG / naloxone 2.1 MG Sublingual Tablet [Zubsolv]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1870935",
+      "display": "naloxone hydrochloride 20 MG/ML Nasal Spray [Narcan]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1725064",
+      "display": "naloxone hydrochloride 40 MG/ML Nasal Spray [Narcan]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "2540709",
+      "display": "naloxone hydrochloride 80 MG/ML Nasal Spray [Kloxxado]"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1495293",
+      "display": "0.4 ML naloxone hydrochloride 1 MG/ML Auto-Injector"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "2596175",
+      "display": "0.4 ML naloxone hydrochloride 25 MG/ML Auto-Injector"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1855730",
+      "display": "0.4 ML naloxone hydrochloride 5 MG/ML Auto-Injector"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "2589612",
+      "display": "0.5 ML naloxone hydrochloride 10 MG/ML Prefilled Syringe"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1191234",
+      "display": "1 ML naloxone hydrochloride 0.4 MG/ML Cartridge"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1659929",
+      "display": "1 ML naloxone hydrochloride 0.4 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1191250",
+      "display": "2 ML naloxone hydrochloride 1 MG/ML Prefilled Syringe"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1864412",
+      "display": "buprenorphine 0.7 MG / naloxone 0.18 MG Sublingual Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1431076",
+      "display": "buprenorphine 1.4 MG / naloxone 0.36 MG Sublingual Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1597568",
+      "display": "buprenorphine 11.4 MG / naloxone 2.9 MG Sublingual Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1307061",
+      "display": "buprenorphine 12 MG / naloxone 3 MG Sublingual Film"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1010600",
+      "display": "buprenorphine 2 MG / naloxone 0.5 MG Sublingual Film"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "351266",
+      "display": "buprenorphine 2 MG / naloxone 0.5 MG Sublingual Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1542390",
+      "display": "buprenorphine 2.1 MG / naloxone 0.3 MG Buccal Film"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1666338",
+      "display": "buprenorphine 2.9 MG / naloxone 0.71 MG Sublingual Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1307056",
+      "display": "buprenorphine 4 MG / naloxone 1 MG Sublingual Film"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1544851",
+      "display": "buprenorphine 4.2 MG / naloxone 0.7 MG Buccal Film"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1431102",
+      "display": "buprenorphine 5.7 MG / naloxone 1.4 MG Sublingual Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1544854",
+      "display": "buprenorphine 6.3 MG / naloxone 1 MG Buccal Film"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1010604",
+      "display": "buprenorphine 8 MG / naloxone 2 MG Sublingual Film"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "351267",
+      "display": "buprenorphine 8 MG / naloxone 2 MG Sublingual Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1597573",
+      "display": "buprenorphine 8.6 MG / naloxone 2.1 MG Sublingual Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "312289",
+      "display": "naloxone 0.5 MG / pentazocine 50 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1191212",
+      "display": "naloxone hydrochloride 0.02 MG/ML Injectable Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1191222",
+      "display": "naloxone hydrochloride 0.4 MG/ML Injectable Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1191228",
+      "display": "naloxone hydrochloride 1 MG/ML Injectable Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1870933",
+      "display": "naloxone hydrochloride 20 MG/ML Nasal Spray"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "1725059",
+      "display": "naloxone hydrochloride 40 MG/ML Nasal Spray"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2023-03",
+      "code": "2540703",
+      "display": "naloxone hydrochloride 80 MG/ML Nasal Spray"
+    } ]
   }
 }

@@ -8,23 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input-cache/schemas/R5/fhir-single.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/input-cache/schemas/R5/fhir-single.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input-cache/txcache/http___unstats.un.org_unsd_methods_m49_m49.htm.cache" beforeDir="false" afterPath="$PROJECT_DIR$/input-cache/txcache/http___unstats.un.org_unsd_methods_m49_m49.htm.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-cache/txcache/version.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/input-cache/txcache/version.ctl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/pagecontent/cql/pain-management-dashboard-content/PainManagerAll.cql" beforeDir="false" afterPath="$PROJECT_DIR$/input/pagecontent/cql/pain-management-dashboard-content/PainManagerAll.cql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-benzodiazepine-medications.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-benzodiazepine-medications.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-drug-urine-screening.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-drug-urine-screening.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-empty.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-empty.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-all-questionnaire-codes.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-all-questionnaire-codes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-all-questionnaireresponse-codes.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-all-questionnaireresponse-codes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-questionnaire-codes.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-questionnaire-codes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-questionnaireresponse-codes.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-questionnaireresponse-codes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-naloxone-medications.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-naloxone-medications.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-non-opioid-illicit-drug-urine-screening.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-non-opioid-illicit-drug-urine-screening.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-opioid-drug-urine-screening.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-opioid-drug-urine-screening.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-opioids.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-opioids.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-pain-therapies.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-pain-therapies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-pain-types.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-pain-types.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-substance-abuse.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-substance-abuse.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-three-item-likert.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-three-item-likert.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,28 +172,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/bryantaustin/Projects/All-cds4cpm/cds4cpm/input/resources/questionnaire",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "show.migrate.to.gradle.popup": "false",
-    "two.files.diff.last.used.file": "/Users/bryantaustin/Projects/All-cds4cpm/AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY/src/cql/r4/PainManagerAll.cql",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bryantaustin/Projects/All-cds4cpm/cds4cpm/input/resources/questionnaire&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;/Users/bryantaustin/Projects/All-cds4cpm/AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY/src/cql/r4/PainManagerAll.cql&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/input/resources/questionnaire" />
