@@ -3831,11 +3831,11 @@
         {
           "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
           "code": "mpq-1036",
-          "display": "Activity Barriers: What are the biggest barriers to achieving your activity goals? For example: I have a lot of stress from work which makes my pain worse."
+          "display": "What are the biggest barriers to achieving your activity goals? For example: I have a lot of stress from work which makes my pain worse."
         }
       ],
       "prefix": "About My Goals",
-      "text": "<strong>Activity Barriers</strong>: what are the biggest barriers to achieving your daily activity goals?<br/><br/>Example: <em>I have a lot of stress from work that makes my pain worse.</em>",
+      "text": "<strong>Activity Goals</strong>: what are the biggest barriers to achieving your daily activity goals?<br/><br/>Example: <em>I have a lot of stress from work that makes my pain worse.</em>",
       "type": "text",
       "required": false
     }
