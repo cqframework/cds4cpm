@@ -1,0 +1,54 @@
+{
+  "resourceType": "Observation",
+  "id": "qrMsEllis.4.4",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "4.4"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "61762-1",
+        "display": "How much did pain interfere with your family life in past 7 days"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/msellis",
+    "display": "Ms Ellis"
+  },
+  "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA13863-8",
+        "display": "A little bit"
+      }
+    ]
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QRMrEllis"
+    }
+  ]
+}

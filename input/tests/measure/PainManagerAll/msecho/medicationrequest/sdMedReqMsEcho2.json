@@ -1,0 +1,55 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "sdMedReqMsEcho2",
+  "subject": {
+    "reference": "Patient/msecho"
+  },
+  "status": "active",
+  "intent": "order",
+  "doNotPerform": false,
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "1049574",
+        "display": "12 HR Oxycodone Hydrochloride 30 MG Extended Release Oral Tablet"
+      }
+    ],
+    "text": "12 HR Oxycodone Hydrochloride 30 MG Extended Release Oral Tablet"
+  },
+  "authoredOn": "2023-02-15T16:02:00.000Z",
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 3.0,
+          "periodUnit": "d"
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1.0,
+            "unit": "tablet",
+            "system": "http://unitsofmeasure.org",
+            "code": "{tablet}"
+          }
+        }
+      ]
+    }
+  ],
+  "dispenseRequest": {
+    "validityPeriod": {
+      "start": "2023-02-15",
+      "end": "2023-08-15"
+    },
+    "numberOfRepeatsAllowed": 3,
+    "expectedSupplyDuration": {
+      "value": 30.0,
+      "unit": "days",
+      "system": "http://unitsofmeasure.org",
+      "code": "d"
+    }
+  }
+}
