@@ -5,10 +5,177 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cdb0adf-aebc-404a-9b2f-e064ab26314d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-cache/schemas/R5/fhir-single.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/input-cache/schemas/R5/fhir-single.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-cache/txcache/http___unstats.un.org_unsd_methods_m49_m49.htm.cache" beforeDir="false" afterPath="$PROJECT_DIR$/input-cache/txcache/http___unstats.un.org_unsd_methods_m49_m49.htm.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-questionnaire-codes.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-questionnaire-codes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/pagecontent/cql/pain-management-dashboard-content/PainManagerAll.cql" beforeDir="false" afterPath="$PROJECT_DIR$/input/pagecontent/cql/pain-management-dashboard-content/PainManagerAll.cql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionaphladelta/sdCondAlphaDelta3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionbenufldevelop/sdCondBen1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionbenufldevelop/sdCondBen2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionbenufldevelop/sdCondBen3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionbenufldevelop/sdCondBen4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionmrdelta/sdCondMrDelta1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionmrford/sdCondMrFord1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionmsbravo/sdCondMsBravo1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionmsecho/sdCondMsEcho1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionmsecho/sdCondMsEcho2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionmsellis/sdCondMsEllis1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionsallyecho/sdCondSally1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionsallyecho/sdCondSally2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditiontommyjones/sdCondTommy1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditiontommyjones/sdCondTommy2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionzachbaker/sdCondZachBaker1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionzachbaker/sdCondZachBaker2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/HOLD/Conditions/conditionzachbaker/sdCondZachBaker3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/donniemarks/patient/patient-donnie-marks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/medicationrequest/sdMedReqAlpha1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/medicationrequest/sdMedReqAlpha12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/medicationrequest/sdMedReqAlpha2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/medicationrequest/sdMedReqBenzodiazepineAlpha.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.1.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.2.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.2.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.2.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.3.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.3.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.3.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.3.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.5.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.5.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.8.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.9.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/observation/qrAlphaDelta.9.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/alphadelta/patient/alphadelta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/donniemarks/patient/donniemarks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.2.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.2.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.2.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.3.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.3.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.3.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.3.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.4.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.4.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.4.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.4.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/observation/qrMrDelta.5.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrdelta/patient/mrdelta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.2.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.2.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.2.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.3.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.3.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.3.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.3.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.4.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.4.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.4.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.4.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/observation/qrMrFord.5.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/mrford/patient/mrford.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/medicationrequest/sdMedReqMsBravo1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.2.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.2.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.2.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.3.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.3.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.3.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.3.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.4.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.4.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.4.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.4.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.5.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/observation/qrMsBravo.8.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msbravo/patient/msbravo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/medicationrequest/sdMedReqMsEcho1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/medicationrequest/sdMedReqMsEcho2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.1.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.1.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.2.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.2.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.2.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.3.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.3.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.3.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.3.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.6.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/observation/qrMsEcho.6.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msecho/patient/msecho.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/medicationrequest/sdMedReqMsEllis1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/medicationrequest/sdMedReqMsEllis2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.1.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.1.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.1.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.1.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.1.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.1.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.2.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.2.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.2.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.3.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.3.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.3.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.3.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.4.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.4.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.4.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.4.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/observation/qrMsEllis.5.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/msellis/patient/msellis.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/medicationrequest/sdMedReqSally1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/medicationrequest/sdMedReqSally2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/medicationrequest/sdMedReqSally3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.1.8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.1.9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.2.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.2.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.2.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.3.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.3.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.3.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.3.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.6.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/observation/qrSallyEcho.6.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/sallyecho/patient/sallyecho.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/medicationrequest/sdMedReqTommy1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/medicationrequest/sdMedReqTommy2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/medicationrequest/sdMedReqTommy3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/observation/qrTommyJones.1.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/observation/qrTommyJones.1.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/observation/qrTommyJones.2.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/observation/qrTommyJones.3.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/observation/qrTommyJones.5.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/observation/qrTommyJones.5.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/observation/qrTommyJones.5.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/observation/qrTommyJones.7.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/observation/qrTommyJones.8.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/observation/qrTommyJones.8.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/tommyjones/patient/tommyjones.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/medicationrequest/sdMedReqZachBaker1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/medicationrequest/sdMedReqZachBakerBenzodiazepine.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.1.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.10.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.2.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.2.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.2.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.3.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.3.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.3.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.3.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.4.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.4.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.4.3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.4.4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.5.5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.5.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.6.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.6.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.7.7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.8.6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.9.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/observation/qr262.9.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/tests/measure/PainManagerAll/zachbaker/patient/zachbaker.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +194,11 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test-ufl-refactor-changes" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -172,28 +344,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bryantaustin/Projects/All-cds4cpm/cds4cpm/input/resources/questionnaire&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;/Users/bryantaustin/Projects/All-cds4cpm/AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY/src/cql/r4/PainManagerAll.cql&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/bryantaustin/Projects/All-cds4cpm/cds4cpm/input/resources/questionnaire",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "show.migrate.to.gradle.popup": "false",
+    "two.files.diff.last.used.file": "/Users/bryantaustin/Projects/All-cds4cpm/cds4cpm-branches/uflRefactor/input/pagecontent/cql/pain-management-dashboard-content/PainManagerAll.cql",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JSON&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/input/resources/questionnaire" />
