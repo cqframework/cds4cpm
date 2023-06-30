@@ -1,0 +1,54 @@
+{
+  "resourceType": "Observation",
+  "id": "qrMsEllis.2.3",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "2.3"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "75260-0",
+        "display": "What is your level of pain right now"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/msellis",
+    "display": "Ms Ellis"
+  },
+  "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA6751-7",
+        "display": "Moderate"
+      }
+    ]
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QRMsEllis"
+    }
+  ]
+}

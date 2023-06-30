@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "qr262.12",
+  "extension": [
+      {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+          "extension": [
+              {
+                  "url": "text",
+                  "valueString": "12"
+              }
+          ]
+      }
+  ],
+  "status": "final",
+  "category": [
+      {
+          "coding": [
+              {
+                  "system": "http://hl7.org/fhir/observation-category",
+                  "code": "survey"
+              }
+          ]
+      }
+  ],
+  "code": {
+      "coding": [
+          {
+              "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+              "code": "mpq-1036",
+              "display": "What are the biggest barriers to achieving your activity goals? For example: I have a lot of stress from work which makes my pain worse."
+          }
+      ]
+  },
+  "subject": {
+      "reference": "Patient/zachbaker",
+      "display": "Zach Baker"
+  },
+  "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+  "valueString": "I don’t want to make the pain worse.",
+  "derivedFrom": [
+      {
+          "reference": "QuestionnaireResponse/QR262"
+      }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "resourcetype": "Observation",
+  "id": "qrMrDelta.2.1",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "2.1"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "75262-6",
+        "display": "How intense was your pain at its worse in the past 7 days"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mrdelta",
+    "display": "Mr Delta"
+  },
+  "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA13958-6",
+        "display": "Very Severe"
+      }
+    ]
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QRMrDelta"
+    }
+  ]
+}
