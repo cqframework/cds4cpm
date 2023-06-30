@@ -1537,7 +1537,7 @@ define function GetLinkId(Obs FHIR.Observation):
     else Obs.extension[0].extension[0].value.value
 
 define QuestionnaireObservations:
-  C3F.Verified(C3F.ObservationLookBack([Observation: "MyPAIN Questionnaire Codes"], 1 year))
+  C3F.Verified(C3F.ObservationLookBack([Observation: "MyPAIN All Questionnaire Codes"], 1 year))
 
 //TODO - eventually this needs to walk thru nested items beyond 2
 define function QuestionTextByLinkId(Obs FHIR.Observation):
@@ -1545,15 +1545,6 @@ define function QuestionTextByLinkId(Obs FHIR.Observation):
 return (Coalesce(singleQ.item.item, singleQ.item)) QItem
     where QItem.linkId = Obs.extension[0].extension[0].value as FHIR.string
       return QItem.prefix
-
-/*
-MyPAINSubmitDate: ReportMyPAINSubmitDate,
-ActivityGoals: ReportActivityGoals,
-ActivityBarriers: ReportActivityBarriers,
-PainLocations: ReportPainLocations,
-PainIntensityAndInterference: ReportPainIntensityAndInterference,
-ResourcesProvidedInMyPAIN: ReportResourcesProvidedInMyPAIN
-*/
 
 // NOTE: This should NOT use the QuestionnaireResponse, it should use the MyPAINSubmitDate Observation
 define ReportMyPAINSubmitDate:
@@ -1567,13 +1558,12 @@ if ReportMyPAINSubmitDate[0] ~ Obs.effective.value.toString()
     else
         false
 
-
 define ReportActivityGoals:
   (QuestionnaireObservations) qrOb where qrOb.code.coding[0].code.value = 'mpq-1035' and DateMatchesMyPainDate(qrOb)
     return qrOb.value
 
 define ReportActivityBarriers:
-(QuestionnaireObservations) qrOb where qrOb.code.coding[0].code.value = 'mpq-1036'
+(QuestionnaireObservations) qrOb where qrOb.code.coding[0].code.value = 'mpq-1036' and DateMatchesMyPainDate(qrOb)
   return qrOb.value
 
 define function GetSimpleText(qrOb FHIR.Observation):
@@ -1597,6 +1587,7 @@ define function GetSimpleText(qrOb FHIR.Observation):
     when qrOb.code ~ painLocationHandsWrist then 'Hands/Wrist'
     when qrOb.code ~ painLocationAbdomenPelvis then 'Abdoment/Pelvis'
     when qrOb.code ~ painLocationFeetAnkles then 'Feet/Ankles'
+    when qrOb.code ~ painLocationOther then 'Other'
     when qrOb.code ~ worstPain then 'At its worst (past 7 days)'
     when qrOb.code ~ averagePain then 'Average Pain (past 7 days)'
     when qrOb.code ~ painRightNow then 'Current Pain'
@@ -1639,14 +1630,17 @@ define ReportPainLocations:
         or qrOb.code ~ painLocationHandsWrist
         or qrOb.code ~ painLocationAbdomenPelvis
         or qrOb.code ~ painLocationFeetAnkles
+        or qrOb.code ~ painLocationOther
         )and(DateMatchesMyPainDate(qrOb))
     return
       {
         Location: qrOb.code.coding[0].display.value,
         SimpleLocation: GetSimpleText(qrOb),
         PainYesNo: true,
-        Description: Combine(qrOb.value.coding.display, ', ')
-      }
+                Description: if qrOb.code ~ painLocationOther then qrOb.value.value
+                             else
+                             Combine(qrOb.value.coding.display, ', ')
+          }
 
 // Data from the most recent PainIntensityAndInteference Observations
 define ReportPainIntensityAndInterference:
@@ -1692,6 +1686,7 @@ define ReportPainIntensity:
         or qrOb.code ~ enjoySocial
         or qrOb.code ~ enjoyLife
         or qrOb.code ~ enjoyFamily)
+        and(DateMatchesMyPainDate(qrOb))
   return
   {
     Question: qrOb.code.coding[0].display.value,
@@ -1783,8 +1778,8 @@ define ReportNotTriedTx:
       or (qrOb.code ~ noTreatmentsTried and qrOb.value = true)
       or (qrOb.code ~ noTopicalTxTried and qrOb.value = true)
       or (qrOb.code ~ noLifestyleChanges and qrOb.value = true)
-      or (qrOb.code~ noALternativeTxTried and qrOb.value = true)
-      and(DateMatchesMyPainDate(qrOb)))
+      or (qrOb.code~ noALternativeTxTried and qrOb.value = true))
+      and(DateMatchesMyPainDate(qrOb))
       return{
         Treatment: QuestionTextByLinkId(qrOb)[0].value[0],
         SimpleText: GetSimpleText(qrOb)
@@ -1831,8 +1826,8 @@ define ReportOtherTx:
       or qrOb.code ~ otherAlternativeTx
       or qrOb.code ~ otherOTC
       or qrOb.code ~ otherNewTreatments
-      or qrOb.code ~ newTreatmentOther
-      and(DateMatchesMyPainDate(qrOb)))
+      or qrOb.code ~ newTreatmentOther)
+      and(DateMatchesMyPainDate(qrOb))
       return{
         Response: ObservationValue(qrOb)
       }
@@ -1914,10 +1909,12 @@ or concurrent benzodiazepine use, are present (recommendation category: A, evide
 [CDC Opioid Prescribing Guideline, Recommendation #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)"
 
 For 2022 CDC Guidelines:
-Before starting and periodically during continuation of opioid therapy, clinicians should evaluate risk for opioid-related harms
-and discuss risk with patients. Clinicians should work with patients to incorporate into the management plan strategies to mitigate
-risk, including offering naloxone (recommendation category: A; evidence type: 4).
-*/
+'Per CDC guidelines, before starting, and periodically during continuation of opioid therapy, clinicians
+should evaluate risk factors for opioid-related harms. Clinicians should incorporate into the management
+plan strategies to mitigate risk, including considering offering naloxone when factors that increase risk
+for opioid overdose, such as history of overdose, history of substance use disorder, higher opioid dosages
+(greater than or equal to [≥] 50 morphine milligram equivalents [MME]/day), or concurrent benzodiazepine use,
+are present (recommendation category: A, evidence type: 4). [CDC Opioid Prescribing Guideline, Recommendation #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)'*/
 define ReportRecommendation8Text:
       if "Use 2022 CDC Guidelines" then
         'Per CDC guidelines, before starting and periodically during continuation of opioid therapy, clinicians should evaluate risk for opioid-related harms and discuss risk with patients. Clinicians should work with patients to incorporate into the management plan strategies to mitigate risk, including offering naloxone (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down" target="_blank" rel="noopener noreferrer">recommendation category: A; evidence type: 4</a>)'
@@ -1937,8 +1934,10 @@ medications as well as other controlled prescription drugs and illicit drugs
 [CDC Opioid Prescribing Guideline, Recommendation #10](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)."
 
 For 2022 CDC Guidelines:
-When prescribing opioids for subacute or chronic pain, clinicians should consider the benefits and risks of toxicology testing to assess for
-prescribed medications as well as other prescribed and nonprescribed controlled substances (recommendation category: B; evidence type: 4).
+'Patient’s active medications include an opioid. Per CDC guidelines, when prescribing opioids for subacute or chronic pain,
+clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other
+prescribed and nonprescribed controlled substances (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down">
+recommendation category: B; evidence type: 4</a>)'
 */
 define ReportRecommendation10Text:
   if not exists ReportUrineDrugScreens then
