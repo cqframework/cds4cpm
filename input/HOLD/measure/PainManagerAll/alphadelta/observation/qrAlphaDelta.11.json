@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "qrAlphaDelta.11",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "11"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1035",
+        "display": "Activity Goals: what goals do you have for your daily activities?"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/alphadelta",
+    "display": "Alpha Delta"
+  },
+  "effectiveDateTime": "2023-05-01T12:06:59-07:00",
+  "valueString": "Cut back on medication treatment and explore other options",
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QRAlphaDelta"
+    }
+  ]
+}

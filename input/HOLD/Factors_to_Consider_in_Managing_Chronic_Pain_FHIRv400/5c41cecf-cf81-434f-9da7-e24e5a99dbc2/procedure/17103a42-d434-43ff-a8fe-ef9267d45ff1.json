@@ -1,0 +1,19 @@
+{
+  "resourceType": "Procedure",
+  "id": "17103a42-d434-43ff-a8fe-ef9267d45ff1",
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "81294000",
+        "display": "Patient referral for psychotherapy (procedure)"
+      }
+    ],
+    "text": "Patient referral for psychotherapy (procedure)"
+  },
+  "performedDateTime": "2017-11-15T16:00:00.000Z"
+}

@@ -124,8 +124,8 @@ valueset "Pregnancy (New ICD10 codes published in 2018 or later)": 'http://cts.n
 
 // [Non opioid pain medications](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1021.73/expansion)
 // replaces F2C valueset Non opioid pain medications: 2.16.840.1.113762.1.4.1032.26
-//valueset "Non opioid pain medications": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.73'
-valueset "Non opioid pain medications": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/2.16.840.1.113762.1.4.1021.73'
+valueset "Non opioid pain medications": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.73' // added back in for 2022 value sets
+//valueset "Non opioid pain medications": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/2.16.840.1.113762.1.4.1021.73'
 
 // Empty
 // Replaces the "Non pharmacologic treatments for chronic pain": '2.16.840.1.113762.1.4.1032.36' from F2C
@@ -870,7 +870,7 @@ define function GetEncounterDiagnosesRiskFactorsForOpioidRelatedHarms(enc Encoun
       DateRecorded: null as String,
       Abatement: null as String,
       Visit:     PeriodObject(enc.period),
-      Date: enc.period."start".value
+      Date: ToString(enc.period."start".value)
     }
 
 define ReportEncounterRiskFactorsForOpioidRelatedHarms:
@@ -912,7 +912,7 @@ define ReportOlderThan65:
     DateRecorded: null as String,
     Abatement: null as String,
     Visit: null as Tuple { Start String, End String },
-    Date: ToDateTime(Patient.birthDate + 65 years)
+    Date: ToString(Patient.birthDate + 65 years)
   }
 }) C
   where Is65orOlder

@@ -1,0 +1,54 @@
+{
+  "resourceType": "Observation",
+  "id": "qrSallyEcho.3.1",
+  "extension": [
+      {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+          "extension": [
+              {
+                  "url": "text",
+                  "valueString": "3.1"
+              }
+          ]
+      }
+  ],
+  "status": "final",
+  "category": [
+      {
+          "coding": [
+              {
+                  "system": "http://hl7.org/fhir/observation-category",
+                  "code": "survey"
+              }
+          ]
+      }
+  ],
+  "code": {
+      "coding": [
+          {
+              "system": "http://loinc.org",
+              "code": "61758-9",
+              "display": "How much did pain interfere with your day to day activities in past 7 days"
+          }
+      ]
+  },
+  "subject": {
+      "reference": "Patient/sallyecho",
+      "display": "Sally Echo"
+  },
+  "effectiveDateTime": "2023-05-03T12:06:59-07:00",
+  "valueCodeableConcept": {
+      "coding": [
+          {
+              "system": "http://loinc.org",
+              "code": "LA13902-4",
+              "display": "Quite a bit"
+          }
+      ]
+  },
+  "derivedFrom": [
+      {
+          "reference": "QuestionnaireResponse/QRSallyEcho"
+      }
+  ]
+}

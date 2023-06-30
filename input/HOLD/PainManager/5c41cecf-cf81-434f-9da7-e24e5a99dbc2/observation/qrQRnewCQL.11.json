@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "qrQRnewCQL.11",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "11"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1037",
+        "display": "What are the biggest barriers to achieving your activity goals? For example: I have a lot of stress from work which makes my pain worse."
+      }
+    ]
+  }, "subject": {
+  "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+  "display": "Brenda Jackson"
+},
+  "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+  "valueString": "My barriers to a pain free life are 1.  It is impossible. 2. I am too lazy to exercise.  3. I am overweight.  4. I am too old to change now.",
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QRnewCQL"
+    }
+  ]
+}

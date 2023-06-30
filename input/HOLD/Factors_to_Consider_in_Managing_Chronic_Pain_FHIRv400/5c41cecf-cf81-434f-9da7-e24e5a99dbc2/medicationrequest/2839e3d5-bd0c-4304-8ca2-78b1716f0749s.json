@@ -1,0 +1,21 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "2839e3d5-bd0c-4304-8ca2-78b1716f0749",
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+  },
+  "status": "active",
+  "intent": "order",
+  "doNotPerform": false,
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "197806",
+        "display": "Ibuprofen 600 MG Oral Tablet"
+      }
+    ],
+    "text": "Ibuprofen 600 MG Oral Tablet"
+  },
+  "authoredOn": "2020-09-25T16:00:00.000Z"
+}

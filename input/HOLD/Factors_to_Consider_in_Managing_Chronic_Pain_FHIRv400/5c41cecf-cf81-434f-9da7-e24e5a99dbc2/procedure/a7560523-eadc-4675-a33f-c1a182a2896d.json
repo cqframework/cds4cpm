@@ -1,0 +1,19 @@
+{
+  "resourceType": "Procedure",
+  "id": "a7560523-eadc-4675-a33f-c1a182a2896d",
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "444831000124102",
+        "display": "Referral for physical therapy (procedure)"
+      }
+    ],
+    "text": "Referral for physical therapy (procedure)"
+  },
+  "performedDateTime": "2016-12-02T16:00:00.000Z"
+}

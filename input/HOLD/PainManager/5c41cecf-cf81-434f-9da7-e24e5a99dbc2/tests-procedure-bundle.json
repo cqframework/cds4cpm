@@ -1,0 +1,116 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-procedure-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "f8c25cc3-8e37-4237-9cbe-74df7b87d5fc",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "444831000124102",
+          "display": "Referral for physical therapy (procedure)"
+        } ],
+        "text": "Referral for physical therapy (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "performedDateTime": "2020-10-10T16:00:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/f8c25cc3-8e37-4237-9cbe-74df7b87d5fc"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "17103a42-d434-43ff-a8fe-ef9267d45ff1",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "81294000",
+          "display": "Patient referral for psychotherapy (procedure)"
+        } ],
+        "text": "Patient referral for psychotherapy (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "performedDateTime": "2017-11-15T16:00:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/17103a42-d434-43ff-a8fe-ef9267d45ff1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "a7560523-eadc-4675-a33f-c1a182a2896d",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "444831000124102",
+          "display": "Referral for physical therapy (procedure)"
+        } ],
+        "text": "Referral for physical therapy (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "performedDateTime": "2016-12-02T16:00:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/a7560523-eadc-4675-a33f-c1a182a2896d"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "7e7026ae-637f-49e5-831d-1c72f1b7375b",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "308449000",
+          "display": "Referral to chiropractor (procedure)"
+        } ],
+        "text": "Referral to chiropractor (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "performedDateTime": "2016-12-02T16:00:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/7e7026ae-637f-49e5-831d-1c72f1b7375b"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "de8a5680-49d4-4873-a2de-bfc3a5d75732",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "308449000",
+          "display": "Referral to chiropractor (procedure)"
+        } ],
+        "text": "Referral to chiropractor (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "performedDateTime": "2018-10-15T16:00:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/de8a5680-49d4-4873-a2de-bfc3a5d75732"
+    }
+  } ]
+}

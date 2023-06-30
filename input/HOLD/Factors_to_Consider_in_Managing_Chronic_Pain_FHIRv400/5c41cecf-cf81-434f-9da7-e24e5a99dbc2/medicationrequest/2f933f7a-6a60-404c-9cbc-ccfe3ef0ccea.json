@@ -1,0 +1,21 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "2f933f7a-6a60-404c-9cbc-ccfe3ef0ccea",
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+  },
+  "status": "active",
+  "intent": "order",
+  "doNotPerform": false,
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "198440",
+        "display": "Acetaminophen 500 MG Oral Tablet"
+      }
+    ],
+    "text": "Acetaminophen 500 MG Oral Tablet"
+  },
+  "authoredOn": "2020-09-28T16:00:00.000Z"
+}

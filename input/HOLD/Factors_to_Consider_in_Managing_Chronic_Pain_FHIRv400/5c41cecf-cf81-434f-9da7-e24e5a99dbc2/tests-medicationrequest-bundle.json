@@ -1,0 +1,198 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-medicationrequest-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "MedicationRequest",
+      "id": "5b0f4d96-9384-4322-bca0-74da98709c2e",
+      "status": "active",
+      "intent": "order",
+      "doNotPerform": false,
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "876193",
+          "display": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+        } ],
+        "text": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "authoredOn": "2017-11-15T16:00:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "MedicationRequest/5b0f4d96-9384-4322-bca0-74da98709c2e"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationRequest",
+      "id": "984a3670-6b1e-4e25-a35b-ada0ad34b0fc",
+      "status": "active",
+      "intent": "order",
+      "doNotPerform": false,
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "876193",
+          "display": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+        } ],
+        "text": "POLYETHYLENE GLYCOL 3350 17000 MG Powder for Oral Solution"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "authoredOn": "2020-10-10T16:00:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "MedicationRequest/984a3670-6b1e-4e25-a35b-ada0ad34b0fc"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationRequest",
+      "id": "2839e3d5-bd0c-4304-8ca2-78b1716f0749",
+      "status": "active",
+      "intent": "order",
+      "doNotPerform": false,
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197806",
+          "display": "Ibuprofen 600 MG Oral Tablet"
+        } ],
+        "text": "Ibuprofen 600 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "authoredOn": "2020-09-25T16:00:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "MedicationRequest/2839e3d5-bd0c-4304-8ca2-78b1716f0749"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationRequest",
+      "id": "246c61e8-4846-4b9f-b10c-6dfe9d596558",
+      "status": "active",
+      "intent": "order",
+      "doNotPerform": false,
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1049593",
+          "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        } ],
+        "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "authoredOn": "2018-07-15T16:02:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "MedicationRequest/246c61e8-4846-4b9f-b10c-6dfe9d596558"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationRequest",
+      "id": "47bc1d05-1041-4691-9039-2a6e258d2185",
+      "status": "active",
+      "intent": "order",
+      "doNotPerform": false,
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1049593",
+          "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        } ],
+        "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "authoredOn": "2018-10-15T16:02:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "MedicationRequest/47bc1d05-1041-4691-9039-2a6e258d2185"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationRequest",
+      "id": "47ad6f27-a5cf-4f82-8e9e-5c63b2b33325",
+      "status": "active",
+      "intent": "order",
+      "doNotPerform": false,
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1049593",
+          "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        } ],
+        "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "authoredOn": "2020-10-15T16:02:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "MedicationRequest/47ad6f27-a5cf-4f82-8e9e-5c63b2b33325"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationRequest",
+      "id": "2f933f7a-6a60-404c-9cbc-ccfe3ef0ccea",
+      "status": "active",
+      "intent": "order",
+      "doNotPerform": false,
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "198440",
+          "display": "Acetaminophen 500 MG Oral Tablet"
+        } ],
+        "text": "Acetaminophen 500 MG Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "authoredOn": "2020-09-28T16:00:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "MedicationRequest/2f933f7a-6a60-404c-9cbc-ccfe3ef0ccea"
+    }
+  }, {
+    "resource": {
+      "resourceType": "MedicationRequest",
+      "id": "56e7d126-4242-4ec5-b1b5-00ab059cd60e",
+      "status": "active",
+      "intent": "order",
+      "doNotPerform": false,
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1049593",
+          "display": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+        } ],
+        "text": "12 HR Oxycodone Hydrochloride 60 MG Extended Release Oral Tablet"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "authoredOn": "2019-01-15T16:02:00.000Z"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "MedicationRequest/56e7d126-4242-4ec5-b1b5-00ab059cd60e"
+    }
+  } ]
+}

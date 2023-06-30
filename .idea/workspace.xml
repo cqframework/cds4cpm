@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6cdb0adf-aebc-404a-9b2f-e064ab26314d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-cache/schemas/R5/fhir-single.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/input-cache/schemas/R5/fhir-single.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input-cache/txcache/http___unstats.un.org_unsd_methods_m49_m49.htm.cache" beforeDir="false" afterPath="$PROJECT_DIR$/input-cache/txcache/http___unstats.un.org_unsd_methods_m49_m49.htm.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-questionnaire-codes.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/vocabulary/valueset/valueset-mypain-questionnaire-codes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ig.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/ignoreWarnings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/ignoreWarnings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/pagecontent/cql/pain-management-dashboard-content/PainManagerAll.cql" beforeDir="false" afterPath="$PROJECT_DIR$/input/pagecontent/cql/pain-management-dashboard-content/PainManagerAll.cql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

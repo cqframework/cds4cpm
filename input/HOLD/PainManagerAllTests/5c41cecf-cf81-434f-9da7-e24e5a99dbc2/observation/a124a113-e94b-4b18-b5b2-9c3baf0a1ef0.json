@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "a124a113-e94b-4b18-b5b2-9c3baf0a1ef0",
+  "subject": {
+    "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://cds.ahrq.gov/cdsconnect/pms",
+        "code": "MME",
+        "display": "Morphine Milligram Equivalent (MME)"
+      }
+    ],
+    "text": "Morphine Milligram Equivalent (MME)"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "therapy"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "value": 220,
+    "unit": "{MME}/d",
+    "system": "http://unitsofmeasure.org",
+    "code": "{MME}/d"
+  },
+  "issued": "2020-10-09T16:00:00.000Z"
+}

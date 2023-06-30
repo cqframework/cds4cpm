@@ -1,0 +1,57 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "sdMedReqTommy1",
+  "subject": {
+      "reference": "Patient/tommyjones"
+  },
+  "status": "active",
+  "intent": "order",
+  "doNotPerform": false,
+  "medicationCodeableConcept": {
+      "coding": [
+          {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "version": "2020-12",
+              "code": "828348",
+              "display": "cyclobenzaprine hydrochloride 10 MG Oral Tablet"
+          }
+      ],
+      "text": "cyclobenzaprine hydrochloride 10 MG Oral Tablet"
+  },
+  "authoredOn": "2023-03-20T16:02:00.000Z",
+  "dosageInstruction": [
+      {
+          "timing": {
+              "repeat": {
+                  "frequency": 3,
+                  "period": 3.0,
+                  "periodUnit": "d"
+              }
+          },
+          "doseAndRate": [
+              {
+                  "doseQuantity": {
+                      "value": 1.0,
+                      "unit": "tablet",
+                      "system": "http://unitsofmeasure.org",
+                      "code": "{tablet}"
+                  }
+              }
+          ],
+          "text": "1 tablet 3 times a day as directed."
+      }
+  ],
+  "dispenseRequest": {
+      "validityPeriod": {
+          "start": "2023-03-20",
+          "end": "2023-06-07"
+      },
+      "numberOfRepeatsAllowed": 3,
+      "expectedSupplyDuration": {
+          "value": 30.0,
+          "unit": "days",
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+      }
+  }
+}

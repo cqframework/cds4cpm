@@ -1,0 +1,54 @@
+{
+  "resourceType": "Observation",
+  "id": "qrMsBravo.2.2",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "2.2"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "75261-8",
+        "display": "How intense was your average pain in the past 7 days"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/msbravo",
+    "display": "Ms Bravo"
+  },
+  "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA6750-9",
+        "display": "Severe"
+      }
+    ]
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QRMsBravo"
+    }
+  ]
+}

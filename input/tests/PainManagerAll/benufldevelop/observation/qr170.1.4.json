@@ -1,0 +1,69 @@
+{
+  "resourceType": "Observation",
+  "id": "qr170.1.4",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+      "extension": [
+        {
+          "url": "text",
+          "valueString": "1.4"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1041",
+        "display": "What type of ARMS pain have you had in the last 7 days?"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/benufldevelop",
+    "display": "Ben UFL Develop"
+  },
+  "effectiveDateTime": "2023-03-07T12:06:59-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "27635008",
+        "display": "Aching"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "36349006",
+        "display": "Burning"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "279093005",
+        "display": "Cramping"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "279093005",
+        "display": "Crushing"
+      }
+    ]
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QR10"
+    }
+  ]
+}

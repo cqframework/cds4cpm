@@ -1,0 +1,21 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-patient-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+      "name": [ {
+        "family": "Jackson",
+        "given": [ "Brenda" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1956-10-14"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+    }
+  } ]
+}

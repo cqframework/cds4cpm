@@ -1,0 +1,2786 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-observation-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.3.1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "3.1"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "https://loinc.org/61758-9/",
+          "code": "61758-9",
+          "display": "How much did pain interfere with your day to day activities?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpq-1008",
+          "display": "Not at all"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.3.1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.6.2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "6.2"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1018",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.6.2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.10",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "10"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1036",
+          "display": "We’d like to know more about you and your goals. What are your most important activity goals? For example: I’d like to be able to walk without pain."
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueString": "These are my goals for a pain-free environment.  Get up every morning and have a great day with no back spasms and no hip pain and no aches and pains throughout my whole body.",
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.5.7",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "5.7"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1014",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1002",
+          "display": "Always"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.5.7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.8.3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "8.3"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1025",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1002",
+          "display": "Always"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.8.3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.16",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.16"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1053",
+          "display": "Other, please describe"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueString": "pain location other",
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.16"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.9.6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "9.6"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1034"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueString": "aromatherapy other",
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.9.6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.8.2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "8.2"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1024",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.8.2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.1"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1038",
+          "display": "What type of HEAD pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1013",
+          "display": "Stabbing"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.5.6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "5.6"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1013",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.5.6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.11",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "11"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1037",
+          "display": "What are the biggest barriers to achieving your activity goals? For example: I have a lot of stress from work which makes my pain worse."
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueString": "My barriers to a pain free life are 1.  It is impossible. 2. I am too lazy to exercise.  3. I am overweight.  4. I am too old to change now.",
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.6.3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "6.3"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1019",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1002",
+          "display": "Always"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.6.3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.2.3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "2.3"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "https://loinc.org/75260-0/",
+          "code": "75260-0",
+          "display": "What is your level of pain right now?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1005",
+          "display": "Moderate"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.2.3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.5.1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "5.1"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1008",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.5.1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.6"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1043",
+          "display": "What type of LOWER BACK pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1018",
+          "display": "Throbbing"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.8.5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "8.5"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1027",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.8.5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "a124a113-e94b-4b18-b5b2-9c3baf0a1ef0",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "therapy"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://cds.ahrq.gov/cdsconnect/pms",
+          "code": "MME",
+          "display": "Morphine Milligram Equivalent (MME)"
+        } ],
+        "text": "Morphine Milligram Equivalent (MME)"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "issued": "2020-10-09T16:00:00.000Z",
+      "valueQuantity": {
+        "value": 220,
+        "unit": "{MME}/d",
+        "system": "http://unitsofmeasure.org",
+        "code": "{MME}/d"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/a124a113-e94b-4b18-b5b2-9c3baf0a1ef0"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.10",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.10"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1047",
+          "display": "What type of HIPS pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1016",
+          "display": "Tingling"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.9.1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "9.1"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1030",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.9.1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.8.9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "8.9"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1059",
+          "display": "Other, please describe"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueString": "other yoga",
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.8.9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.8.8",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "8.8"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1029",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.8.8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "6e8a6ba0-2082-4d95-b56e-9e4d4dfe6296",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "19295-5",
+          "display": "Opiates [Presence] in Urine by Screen method"
+        } ],
+        "text": "Opiates [Presence] in Urine by Screen method"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "issued": "2020-10-15T16:00:00.000Z",
+      "valueQuantity": {
+        "value": 2500,
+        "unit": "ng/mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "ng/mL"
+      },
+      "interpretation": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/v2/0078",
+          "code": "POS",
+          "display": "Positive"
+        } ],
+        "text": "Positive"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/6e8a6ba0-2082-4d95-b56e-9e4d4dfe6296"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.11",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.11"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1048",
+          "display": "What type of UPPER LEGS pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1017",
+          "display": "Prickling"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.14.1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "14.1"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1064",
+          "display": "Using the MyPAIN tool has helped me begin preparing for a conversation with my provider about managing my pain."
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "https://loinc.org/LL1606-4/",
+          "code": "LA15238-1",
+          "display": "Disagree a lot"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.14.1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.7",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.7"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1044",
+          "display": "What type of HANDS pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1013",
+          "display": "Stabbing"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.8.4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "8.4"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1026",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.8.4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.2.2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "2.2"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "https://loinc.org/75261-8/",
+          "code": "75261-8",
+          "display": "How intense was your average pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1004",
+          "display": "Mild"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.2.2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.12",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "12"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueString": "ACPA four flat tires video",
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.7.1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "7.1"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1020",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.7.1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.9.3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "9.3"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1032",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1002",
+          "display": "Always"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.9.3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.12",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.12"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1049",
+          "display": "What type of KNEES pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1018",
+          "display": "Throbbing"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.8.7",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "8.7"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1028",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.8.7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.4"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1041",
+          "display": "What type of ARMS pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1016",
+          "display": "Tingling"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.5.10",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "5.10"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1054",
+          "display": "Other, please describe"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueString": "other tx exercise other",
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.5.10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.5.3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "5.3"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1010",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.5.3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.2.1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "2.1"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "https://loinc.org/75262-6",
+          "code": "75262-6",
+          "display": "How intense was your pain at its worst?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1003",
+          "display": "Had no pain"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.2.1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.7.2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "7.2"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1021",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.7.2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.8",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.8"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1045",
+          "display": "What type of ABDOMEN pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1014",
+          "display": "Burning"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.9"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1046",
+          "display": "What type of PELVIS pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1015",
+          "display": "Aching"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.7.3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "7.3"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1022",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1002",
+          "display": "Always"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.7.3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.3.4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "3.4"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "https://loinc.org/61775-3/",
+          "code": "61775-3",
+          "display": "How much did pain interfere with your household chores?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpq-1011",
+          "display": "Quite a bit"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.3.4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.5.2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "5.2"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1009",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.5.2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.8.6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "8.6"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1058",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1002",
+          "display": "Always"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.8.6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.5"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1042",
+          "display": "What type of UPPER BACK pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1017",
+          "display": "Prickling"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.13",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.13"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1050",
+          "display": "What type of LOWER LEGS pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1013",
+          "display": "Stabbing"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.9.2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "9.2"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1031",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.9.2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "4c7ccb54-b4cb-4392-a3cb-e9f6c16908f4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "38221-8",
+          "display": "Pain severity Wong-Baker FACES Scale"
+        } ],
+        "text": "Pain severity Wong-Baker FACES Scale"
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2"
+      },
+      "issued": "2019-06-15T16:00:00.000Z",
+      "valueQuantity": {
+        "value": 10
+      },
+      "interpretation": [ {
+        "text": "Hurts Worst"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/4c7ccb54-b4cb-4392-a3cb-e9f6c16908f4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.5.9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "5.9"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1016",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.5.9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.9.5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "9.5"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1033",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1001",
+          "display": "Sometimes"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.9.5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.14",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.14"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1051",
+          "display": "What type of FEET pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1014",
+          "display": "Burning"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.14"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.2"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1039",
+          "display": "What type of NECK pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1014",
+          "display": "Burning"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.8.1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "8.1"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1023",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.8.1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.5.5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "5.5"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1012",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.5.5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.3.3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "3.3"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "https://loinc.org/61773-8/",
+          "code": "61773-8",
+          "display": "How much did pain interfere with your ability to participate in social activities?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpq-1010",
+          "display": "Somewhat"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.3.3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.7.4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "7.4"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1056",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.7.4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.7.5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "7.5"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1057",
+          "display": "Other, please describe"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueString": "prescription other",
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.7.5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.3.2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "3.2"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "https://loinc.org/61769-6/",
+          "code": "61769-6",
+          "display": "How much did pain interfere with your work around the home?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpq-1009",
+          "display": "A little bit"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.3.2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.6.1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "6.1"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1017",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.6.1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.13",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "13"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueString": "US Pain Foundation website",
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.5.4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "5.4"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1011",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1002",
+          "display": "Always"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.5.4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.3"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1040",
+          "display": "What type of SHOULDERS pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1015",
+          "display": "Aching"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.1.15",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "1.15"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1052",
+          "display": "What type of EVERYWHERE pain?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1015",
+          "display": "Aching"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.1.15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.9.4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "9.4"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1060",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.9.4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "qrQRnewCQL.5.8",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+        "extension": [ {
+          "url": "text",
+          "valueString": "5.8"
+        } ]
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+          "code": "mpq-1015",
+          "display": "Did it work?"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/5c41cecf-cf81-434f-9da7-e24e5a99dbc2",
+        "display": "Brenda Jackson"
+      },
+      "effectiveDateTime": "2020-10-21T13:52:02-06:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaireresponse-codes",
+          "code": "mpqr-1000",
+          "display": "Never"
+        } ]
+      },
+      "derivedFrom": [ {
+        "reference": "QuestionnaireResponse/QRnewCQL"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/qrQRnewCQL.5.8"
+    }
+  } ]
+}
