@@ -31116,6 +31116,210 @@
         "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes"
       },
       {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1072"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1073"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1074"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1075"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1076"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1077"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1078"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1079"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1080"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1081"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1082"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1083"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1084"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1085"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1086"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1087"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1088"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1089"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1090"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1091"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1092"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1093"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1094"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1095"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1096"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1097"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1098"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1099"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1100"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1101"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1102"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1103"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1104"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1105"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1106"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1107"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1108"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1109"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1110"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1111"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1112"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1113"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1114"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1115"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mpq-1116"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "pain-location"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "my-pain-intensity"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "my-pain-interference"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "about-my-treatments"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "about-my-goals"
+      },
+      {
+        "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+        "code": "mypain-feedback"
+      },
+      {
         "code": "75262-6",
         "system": "http://loinc.org"
       },
