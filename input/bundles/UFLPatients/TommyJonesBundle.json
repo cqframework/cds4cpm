@@ -815,7 +815,7 @@
                             "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
                             "code": "mpq-1100",
                             "display": "Topical medications (such as creams, lotions, gel, patches, Bengay, Tiger Balm, Salonpas, Biofreeze, or Lidoderm)"
-                                      }
+                        }
                     ]
                 },
                 "subject": {
@@ -845,55 +845,324 @@
         },
         {
             "resource": {
-              "resourceType": "Observation",
-              "id": "qrTommyJones.7.7",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
-                  "extension": [
+                "resourceType": "Observation",
+                "id": "qrTommyJones.7.7",
+                "extension": [
                     {
-                      "url": "text",
-                      "valueString": "7.7"
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "7.7"
+                            }
+                        ]
                     }
-                  ]
-                }
-              ],
-              "status": "final",
-              "category": [
-                {
-                  "coding": [
+                ],
+                "status": "final",
+                "category": [
                     {
-                      "system": "http://hl7.org/fhir/observation-category",
-                      "code": "survey"
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
                     }
-                  ]
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
-                    "code": "mpq-1080",
-                    "display": "I haven't tried any procedures or physical treatments for pain."
-                  }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1080",
+                            "display": "I haven't tried any procedures or physical treatments for pain."
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/tommyjones",
+                    "display": "Tommy Jones"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueBoolean": true,
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRTommyJones"
+                    }
                 ]
-              },
-              "subject": {
-                "reference": "Patient/tommyjones",
-                "display": "Tommy Jones"
-              },
-              "effectiveDateTime": "2023-04-29T12:06:59-07:00",
-              "valueBoolean": true,
-              "derivedFrom": [
-                {
-                  "reference": "QuestionnaireResponse/QRTommyJones"
-                }
-              ]
             },
             "request": {
-              "method": "PUT",
-              "url": "Observation/qrTommyJones.7.7"
+                "method": "PUT",
+                "url": "Observation/qrTommyJones.7.7"
             }
-          }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrTommyJones.12",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "12"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1036",
+                            "display": "Activity Barriers: what are the biggest barriers to achieving your daily activity goals?"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/tommyjones",
+                    "display": "Tommy Jones"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueString": "After a couple of throws, I am in an overwhelming amount of pain",
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRTommyJones"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrTommyJones.12"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrTommyJones.11",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "11"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1035",
+                            "display": "Activity Goals: what goals do you have for your daily activities?"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/tommyjones",
+                    "display": "Tommy Jones"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueString": "I want to be able to play with my grandkids, specifically play catch with my grandson.",
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRTommyJones"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrTommyJones.11"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrTommyJones.4.3",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "4.3"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "61794-4",
+                            "display": "How much did pain interfere with your enjoyment of life in past 7 days"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/tommyjones",
+                    "display": "Tommy Jones"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LA13902-4",
+                            "display": "Quite a bit"
+                        }
+                    ]
+                },
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRTommyJones"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrTommyJones.4.3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrTommyJones.10.6",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "10.6"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1085",
+                            "display": "I haven't tried any alternative treatments for pain"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/tommyjones",
+                    "display": "Tommy Jones"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueBoolean": true,
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRTommyJones"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrTommyJones.10.6"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "qrTommyJones.9.7",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/derivedFromLinkId",
+                        "extension": [
+                            {
+                                "url": "text",
+                                "valueString": "9.7"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes",
+                            "code": "mpq-1082",
+                            "display": "I haven't tried any lifestyle changes for pain."
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/tommyjones",
+                    "display": "Tommy Jones"
+                },
+                "effectiveDateTime": "2023-04-29T12:06:59-07:00",
+                "valueBoolean": true,
+                "derivedFrom": [
+                    {
+                        "reference": "QuestionnaireResponse/QRTommyJones"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/qrTommyJones.9.7"
+            }
+        }
+
     ]
 }
