@@ -1,6 +1,6 @@
 # Scenarios
 
-This folder contains user testing scenarios for the MyPAIN and PainManager applications.
+User testing scenarios for the MyPAIN and PainManager applications.
 
 https://cds.ahrq.gov/collaboration/pages/viewpage.action?pageId=83132464
 

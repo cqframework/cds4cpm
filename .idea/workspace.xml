@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6cdb0adf-aebc-404a-9b2f-e064ab26314d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ig.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/ignoreWarnings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/ignoreWarnings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/pagecontent/cql/pain-management-dashboard-content/PainManagerAll.cql" beforeDir="false" afterPath="$PROJECT_DIR$/input/pagecontent/cql/pain-management-dashboard-content/PainManagerAll.cql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ig.ini" beforeDir="false" afterPath="$PROJECT_DIR$/ig.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/pagecontent/scenarios.md" beforeDir="false" afterPath="$PROJECT_DIR$/input/pagecontent/scenarios.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,11 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
