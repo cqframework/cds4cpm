@@ -84,6 +84,11 @@
         <generation value="markdown" />
       </page>
       <page>
+        <nameUrl value="smokescreen-testing.html" />
+        <title value="Smoke Screen Testing" />
+        <generation value="markdown" />
+      </page>
+      <page>
         <nameUrl value="glossary-and-acronyms.html" />
         <title value="Glossary and Acronyms" />
         <generation value="markdown" />
