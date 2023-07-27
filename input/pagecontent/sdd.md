@@ -1,17 +1,14 @@
 # System Design Document
 
-[TOC]
-
-
-## 1. Introduction
+## Introduction
 
 This System Design Document (SDD) documents both the high-level system design and the low-level detailed design specifications. In addition, this SDD describes design goals and considerations, specifications, and an overview of the system architecture. It also describes the information architecture and data structures associated with the system, in addition to human-machine interface and operational scenarios. The high-level system design is further decomposed into low-level detailed design specifications for each system component. Design documents are incrementally and iteratively produced during the system development life cycle, based on the circumstances of the information technology (IT) project and the system development methodology used for developing the system. This document is intended for technical stakeholders involved in the implementation of this system including developers, project managers, users, testers, and documentation writers. Some portions of this document, such as the user interface (UI), may be useful to share with the client/user and other stakeholders whose input/approval into the UI is needed.
 
-## 2. General Overview and Design Guidelines
+## General Overview and Design Guidelines
 
 This section describes the principles and strategies to be used as guidelines when designing and implementing the system.
 
-### 2.1 Background
+### Background
 
 This work follows the development of key concepts on patient-centered and patient-facing clinical decision support and related initiatives originating in the Patient-Centered Clinical Decision Support Learning Network ([PCCDS-LN](https://pccds-ln.org/)) and extends the work of the [CDS Connect PainManagement Summary Dashboard (CCPMD)](https://cds.ahrq.gov/cdsconnect/artifact/factors-consider-managing-chronic-pain-pain-management-summary). The PCCDS-LN was an AHRQ-supported effort that brought together diverse stakeholders to promote a sustainable community around developing, disseminating, and applying evidence-enabled, patient-centered CDS. Three working groups convened by the PCCDS-LN—the opioid action plan working group, the technical framework working group, and the patient-facing CDS application development working group—developed key findings on addressing the opioid crisis with CDS solutions, including both the complementary role of patient-facing solutions and the technical barriers and facilitators to successful interventions.
 
@@ -43,14 +40,14 @@ The PMD as it currently exists lacks a specific interface or related service to 
 
 Other extensions of the PMD will include the ability to incorporate demographics, SDOH, PDMP data wherever possible, and calculate a daily medication-level MEDD and compiled MME/day from existing medication information and related contextual (patient-specific) information from an EHR. If not contained in the EHR, these data must come from a related system or environment (e.g., state-level PDMP interface) to be displayed in PainManager. Alternatively, a site can elect to not display or not include configurable aspects of PainManager.
 
-### 2.2 General Overview
+### General Overview
 
 MyPAIN and PainManager are intended to work together to provide end-to-end support for SDM around chronic pain management. Key functions of this system include allowing patients to complete self-report measures and education materials, provide contextual information from the patient’s medical record accessed via that medical record’s patient portal, notify a provider when this information is completed, and present results of this information along with PDMP information wherever available in a dashboard to support an SDM encounter for chronic pain at the time of the patient visit. MyPAIN and PainManager are intended to be implemented together rather than standalone applications.
 
 To summarize, within this system are the following:
 
-1. a patient-facing application that collects patient-reported data and preferences, delivers patient-specific educational materials about chronic pain and opioids, and prepares patients for SDM with providers via a SMART on FHIR integration with a patient portal; and
-2. a clinician-facing CDS application that gives primary care physicians visually satisfying patient-specific data for chronic pain and opioids, access to PDMP data (optional), information supporting SDM during primary care visits, and an ability to record the results. The clinician-facing application is an enhanced version of CDS Connect’s SMART on FHIR–based PMD.
+1. A patient-facing application that collects patient-reported data and preferences, delivers patient-specific educational materials about chronic pain and opioids, and prepares patients for SDM with providers via a SMART on FHIR integration with a patient portal.
+2. A clinician-facing CDS application that gives primary care physicians visually satisfying patient-specific data for chronic pain and opioids, access to PDMP data (optional), information supporting SDM during primary care visits, and an ability to record the results. The clinician-facing application is an enhanced version of CDS Connect’s SMART on FHIR–based PMD.
 
 The applications above are designed to comprise a standalone system that can be integrated into EHRs and into clinical workflows. MyPAIN is expected to be invoked via a patient portal, and PainManager is expected to be accessed via an ambulatory EHR. The system will support interactions between patients and clinicians.
 
@@ -63,20 +60,20 @@ In addition to MyPAIN and PainManager, the high-level system architecture consis
 
 [![Diagram 1](assets/diagrams/architectural-overview.svg)](https://app.diagrams.net/#HDBCG%2Fcds4cpm%2Fmaster%2Finput%2Fpagecontent%2Fassets%2Fdiagrams%2Farchitectural-overview.svg)
 
-#### 2.1.1 CDS4CPM Containers
+#### CDS4CPM Containers
 
 * A: **Phenotype/Trigger** - A periodic or triggered process that identifies candidate patients for invitation to the MyPAIN application
 * B: **MyPAIN** - A SMART-on-FHIR application that collects information from and provides information to patients
 * C: **PainManager** - A SMART on FHIR application that displays patient-reported and EHR-provided data that enables SDM at a clinic visit
 * D: **Decision Support** - A feature that provides decision support related to chronic pain
 
-#### 2.1.2 Implementation Site Containers
+#### Implementation Site Containers
 
 * X: **Patient Portal** - A patient portal that is an existing feature of the ambulatory medical records system
 * Y: **Clinical System** - An ambulatory medical records system that supports standard interfaces for securely accessing patient information
 * Z: **PDMP** - Prescription Drug Monitoring Program, accessed through standard interfaces
 
-#### 2.1.3 Interactions
+#### Interactions
 
 1.	Phenotype/Trigger to Clinical System
 2.	Phenotype/Trigger initiates patient invitation in the Patient Portal
@@ -89,9 +86,9 @@ In addition to MyPAIN and PainManager, the high-level system architecture consis
 
 Each of these containers and their interactions will be discussed in more detail in Chapters 3 and 4.
 
-#### 2.1.4 Assumptions Constraints Risks
+#### Assumptions Constraints Risks
 
-##### 2.1.4.1 Assumptions
+##### Assumptions
 
 <!-- Instructions: Describe any assumptions or dependencies regarding the system, software and its use. These may concern such issues as: related software or hardware, operating systems, end-user characteristics, and possible and/or probable changes in functionality. -->
 
@@ -105,7 +102,7 @@ Each of these containers and their interactions will be discussed in more detail
 *	The sites will employ a system architecture in which the system’s hardware, software, and data reside within each site’s own firewall
 *	The assessment and educational content that are offered in MyPAIN and PainManager are allowable for use with in the clinical setting using MyPAIN and PainManager
 
-##### 2.1.4.2 Constraints
+##### Constraints
 
 <!-- Instructions: Describe any global limitations or constraints that have a significant impact on the design of the system’s hardware, software and/or communications, and describe the associated impact. Such constraints may be imposed by any of the following (the list is not exhaustive):
     • Hardware or software environment
@@ -143,12 +140,12 @@ Note that although this project is implemented using the 3rd Standard for Trial-
 *	CDC Opioid Prescribing Support, v2.0.0 (in progress) (cqframework, 2020)
 
 
-##### 2.1.4.3 Dependencies
+##### Dependencies
 
 *	Each site’s governance dictates the approval processes for integrating MyPAIN and PainManager into its EHR environments.
 *	Some sites may choose to use the CDS4CPM system without using PDMP data access and integration in PainManager because of logistical hurdles implementing the PDMP at the state level.
 
-##### 2.1.4.4 Risks
+##### Risks
 
 <!-- Instructions: Describe any risks associated with the system design and proposed mitigation strategies.  -->
 
@@ -156,7 +153,7 @@ Note that although this project is implemented using the 3rd Standard for Trial-
 *	The approval process for EHR integration varies with each vendor-specific EHR environment.
 *	Similarly, each site has different challenges and dependencies regarding PDMP data access and integration.
 
-#### 2.1.5 Aligning to the Enterprise Architecture
+#### Aligning to the Enterprise Architecture
 
 <!-- Instructions: Describe alignment with EA.  -->
 
@@ -169,19 +166,19 @@ CDS4CPM supports standards-based integrations while balancing practical implemen
 Wherever possible, this system used capabilities that fall into the first category. For the second category, this IG will identify the published implementation guide being used and facilitate site-specific implementation of FHIR services that implement the published capabilities. For the third category, this project has provided the documentation to fully describe the capabilities and facilitate site-specific implementation of FHIR services in this IG. One technical approach to the third category involves the creation of site-specific **FHIR facades**, or FHIR APIs that behave according to the specified standard, but are implemented using site-specific services. These services are adapters on top of existing proprietary customization and integration functionality made available by the existing clinical systems. For example, an EHR system may support a particular functionality in a nonstandard way through an existing Interconnect Web Service, and an implementation site would need to wrap that functionality in a FHIR service to make it available for use. 
 
 
-## 3. Design Considerations
+## Design Considerations
 
 <!-- Instructions: Describe issues which need to be addressed or resolved before attempting to devise a complete design solution. -->
 
-### 3.1 Goals and Guidelines
+### Goals and Guidelines
 
 <!-- Instructions: Describe any goals, guidelines, principles, or priorities which dominate or embody the design of the system and its software. Examples of such goals might be: an emphasis on speed versus memory use; or working, looking, or “feeling” like an existing product. Guidelines include coding guidelines and conventions. For each such goal or guideline, describe the reason for its desirability unless it is implicitly obvious. Describe any design policies and/or tactics that do not have sweeping architectural implications (meaning they would not significantly affect the overall organization of the system and its high-level structures), but which nonetheless affect the details of the interface and/or implementation of various aspects of the system (e.g., choice of which specific product to use).  -->
 
-#### 3.1.1 Safety Requirements
+#### Safety Requirements
 
 This system must conform to the safety requirements of any site in which it is implemented. The system requires site-based implementation for operation and is designed in such a way that implementation will be executed fully within a site firewall. For any safety concerns related to clinical logic, please refer to the details of PainManager and the underlying rules developed and implemented based on CDC guidelines (detailed in Chapter 5).
 
-### 3.2 Development Methods and Contingencies
+### Development Methods and Contingencies
 
 <!-- Instructions: Briefly describe the method or approach used for the system and software design (e.g., structured, object-oriented, prototyping, J2EE, UML, XML, etc.). If one or more formal/ published methods were adopted or adapted, then include a reference to a more detailed description of these methods. If several methods were seriously considered, then each such method should be mentioned, along with a brief explanation of why all or part of it was used or not used. Describe any contingencies that might arise in the design of the system and software that may change the development direction. Possibilities include lack of interface agreements with outside agencies or unstable architectures at the time the SDD is prepared. Address any possible workarounds or alternative plans.  -->
 
@@ -195,9 +192,9 @@ This project also used a “Continuous Delivery” pipeline to support project d
 - Deployment risks by using incremental rollout and instantaneous rollback
 - Versioning risks by using microservices and volatility decomposition
 
-Overall project-related risks by implementing both a high-level overview (e.g., Waterfall) executed in Agile development cycles
+Overall project-related risks were reduced by implementing a high-level overview (e.g., Waterfall) executed in Agile development cycles
 
-### 3.3 Architectural Strategies
+### Architectural Strategies
 
 <!-- Instructions: Describe any design decisions and/or strategies that affect the overall organization of the system and its higher-level structures. These strategies should provide insight into the key abstractions and mechanisms used in the system architecture. Describe the reasoning employed for each decision and/or strategy (possibly referring to previously stated design goals and principles) and how any design goals or priorities were balanced or traded-off.
 Describe compliance with standards. Specifically identify any deviations that were made from the standards, and provide rationale to support the deviation(s). When describing a design decision, discuss any other significant alternatives that were considered, and the reasons for rejecting them (as well as the reasons for accepting the alternative finally chosen). Sometimes it may be most effective to employ the “pattern format” for describing a strategy.
@@ -225,7 +222,7 @@ This project will also use industry standard, open source, and widely available 
 * [Java 11 (Adopt Open JDK and OpenJ9)](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=openj9)
 * [Github](http://github.com)
 
-#### 3.3.1 Standards Compliance
+#### Standards Compliance
 
 As described in the design Constraints section (above), this project’s approach is to choose standards-based approaches, whenever possible, between the MyPAIN and PainManager applications and the clinical systems with which they interact. However, when building functionality for the project, there are two considerations that the project must address:
 
@@ -239,7 +236,7 @@ Balancing these two considerations has caused our team to select FHIR version ST
 
 Our project will continue using C4 to inform and develop architectural strategies that balance the needs for standards-based solutions with site-specific needs.
 
-### 3.4 Performance Engineering
+### Performance Engineering
 
 <!-- Instructions:
 Using the Performance Requirements defined in the Requirements Document, provide a detailed explanation that describes how the Performance Requirements were incorporated into the system’s design. Please refer to any contractual reference to defining Performance Requirements.
@@ -251,14 +248,14 @@ Performance requirements, such as the defined scalability or responsiveness expe
 
 Extending the architectural diagram for the CDS4CPM system (see Exhibit 2), below we outline the logical view, EHR system view and component diagram, and system views for MyPAIN and PainManager.
 
-### 3.5 Logical View
+### Logical View
 
 Exhibit 2 provides the context of the proposed CDS4CPM system in the site-specific environment(s) in which it is intended to function. The two user types, a clinician and a patient, are shown interacting with the system through PainManager and MyPAIN respectively, and these components or software systems are interfacing with the local clinical systems or EHRs. The PDMP connection is shown here as an external system, and the information could be passed either directly from that system or through the EHR to PainManager.
 
 **Exhibit 2.	Context Diagram for CDS4CPM**
 [![Diagram 1](assets/diagrams/context.svg)](https://app.diagrams.net/#HDBCG%2Fcds4cpm%2Fmaster%2Finput%2Fpagecontent%2Fassets%2Fdiagrams%2Fcontext.svg)
 
-#### 3.5.1 EMR System View
+#### EMR System View
 
 The next diagram shows a closer look at the EHR system, its containers, and their interactions with each other:
 
@@ -274,7 +271,7 @@ Exhibit 4 drills further into the EHR, showing how the Phenotype component suppo
 
 [![Diagram 3](assets/diagrams/component-emr.svg)](https://app.diagrams.net/#HDBCG%2Fcds4cpm%2Fmaster%2Finput%2Fpagecontent%2Fassets%2Fdiagrams%2Fcomponent-emr.svg)
 
-#### 3.5.2 MyPAIN System View
+#### MyPAIN System View
 
 Exhibit 5 focuses on the major containers for the MyPAIN application:
 
@@ -284,7 +281,7 @@ Exhibit 5 focuses on the major containers for the MyPAIN application:
 
 As shown in the diagram, a patient is invited to MyPAIN via the EHR System’s Patient Portal to provide assessment information and view educational materials prior to an encounter with the clinician. The MyPAIN application is implemented as a SMART on FHIR application, launched via the smart-app-launch patient launch protocol from the EHR System’s Patient Portal, resulting in a secure and authorized connection to the EHR System. The MyPAIN application runs within a browser and is hosted either as part of the EHR System’s or the implementing site’s existing application hosting infrastructure. The MyPAIN application supports the collection of assessment data from the patient, provides the patient the opportunity to view web-accessible educational materials then posts the result of the assessment to the EHR System.
 
-#### 3.5.3 PainManager System View
+#### PainManager System View
 
 Exhibit 6 illustrates the same level of detail for the PainManager system.
 
@@ -294,7 +291,7 @@ Exhibit 6 illustrates the same level of detail for the PainManager system.
 
 As shown in the diagram, a clinician uses the PainManager application to facilitate a shared decision-making session with the patient. The PainManager application is implemented as a SMART on FHIR application, launched via the smart-app-launch provider launch protocol from the EHR system, resulting in a secure, authorized connection to the EHR System. Optionally, sites can configure a CDS Hooks patient-view trigger to support displaying a recommendation to the clinician to launch the PainManager application when a patient is enrolled in the MyPAIN application or has MyPAIN assessment data available for review. The PainManager displays a summary of the patient’s information related to chronic pain management and provides recommendations based on CDC’s Opioid Prescribing Support Guidelines. Any available assessment data provided by the patient through the MyPAIN application are made available for review through the PainManager. In addition, sites can configure the PainManager to support accessing PDMP data and calculation and display of MME values for the set of medications in use by the patient. And finally, the PainManager application provides the clinician the ability to capture the results of the SDM session and post that back to the EHR System in the form of a clinical note. This clinical note can be incorporated into a visit summary as needed.
 
-### 3.6 Software Architecture
+### Software Architecture
 
 <!-- Instructions: Describe the system architecture, how the application interacts with other applications. Not necessarily how the application itself works but, how the appropriate data is correctly passed between applications. Provide an overview of how the functionality and responsibilities of the system were partitioned and then assigned to subsystems or components. Don’t go into too much detail about the individual components themselves in this section. A subsequent section of the SDD will provide the detailed component descriptions. The main purpose here is to gain a general understanding of how and why the system was decomposed, and how the individual parts work together to provide the desired functionality.
 At the top-most level, describe the major responsibilities that the software must undertake and the various roles that the system (or portion of the system) must play. Describe how the system was broken down into its components/subsystems (identifying each top-level component/subsystem and the roles/responsibilities assigned to it). Describe how the higher-level components collaborate with each other in order to achieve the required results. Provide some sort of rationale for choosing this particular decomposition of the system (perhaps discussing other proposed decompositions and why they were rejected).
@@ -302,14 +299,14 @@ Make use of design patterns whenever possible, either in describing parts of the
 
 As previously described in the overall system architecture diagram above, the system consists of the following _containers_ and primary _interactions_:
 
-#### 3.6.1 Phenotype Trigger
+#### Phenotype Trigger
 
 Software for this container consists of:
 
 1.	Conceptual, standards-based, site-independent description of the Phenotype characteristics.
 2.	Concrete, site-specific implementation of the Phenotype, including queries in relevant languages appropriate to the sites, integration software or scripting to support periodic or triggered application of the resulting population, and invitation of candidate patients to the MyPAIN application through the EHR patient portal.
 
-#### 3.6.2 MyPAIN
+#### MyPAIN
 
 Software for this container consists of a JavaScript-based web application, developed with the [REACT framework](https://reactjs.org/) as a SMART on FHIR application. The application will be configured such that it can be securely launched from an invitation within the Patient Portal, using the SMART on FHIR patient-portal launch protocol.
 
@@ -321,7 +318,7 @@ To communicate with the Clinical System, the application will use the FHIR API n
 
 [![Diagram 1](assets/diagrams/mypain-ui-diagram.svg)](https://github.com/DBCG/cds4cpm/blob/master/input/pagecontent/assets/diagrams/mypain-ui-diagram.drawio)
 
-#### 3.6.3 PainManager
+#### PainManager
 
 Software for this application consists of a JavaScript-based web application, developed with the REACT framework as a SMART on FHIR application. The application will be configured such that it can be securely launched from within the Clinical System, using the SMART on FHIR provider-facing launch protocol.
 
@@ -348,15 +345,15 @@ Note that PDMP capabilities may not be available in any given environment, so th
 
 To communicate with the Decision Support functionality, the application will either evaluate Clinical Quality Language (CQL) content internally using the JavaScript-based CQL engine (the approach currently taken by the Pain Management Dashboard) or will use CDS Hooks to call out to a service configured to run the required decision support content.
 
-#### 3.6.4 Decision Support
+#### Decision Support
 
 This container is described as separate from PainManager to enable more flexible use of available content. Decision support logic in the current Pain Management Dashboard is embedded directly within the application and will remain functionally similar. By considering this capability separately, the implementation has the option to isolate this functionality from the PainManager application.
 
-The software for this Container consists of existing CQL content within the current Pain Management Dashboard and the decision support content available as part of the [Opioid Prescribing Support implementation guide](https://build.fhir.org/ig/cqframework/opioid-cds/). Whether this software is run as internally evaluated CQL content or by communicating with a CDS Hooks service will depend on environment and other factors. In addition, specific updates to the embedded CQL are still to be determined but the overall scope will remain as established for the Pain Management Dashboard. environment and other factors. In addition, specific updates to the embedded CQL are still to be determined but the overall scope will remain as established for the Pain Management Dashboard.
+The software for this Container consists of existing CQL content within the current Pain Management Dashboard and the decision support content available as part of the [Opioid Prescribing Support implementation guide](https://build.fhir.org/ig/cqframework/opioid-cds-r4/). Whether this software is run as internally evaluated CQL content or by communicating with a CDS Hooks service will depend on environment and other factors. In addition, specific updates to the embedded CQL are still to be determined but the overall scope will remain as established for the Pain Management Dashboard. environment and other factors. In addition, specific updates to the embedded CQL are still to be determined but the overall scope will remain as established for the Pain Management Dashboard.
 
 Currently, much of the existing decision support for the pain management dashboard artifact is hard coded into the Javascript of the application. This development choice limits the ability to update and reuse this content in both this artifact and related work moving forward. To address this limitation, we are planning to develop this content as something like a chronic pain (and opioid) common implementation guide. This artifact was called by PainManager to supply the needed references to current content. This process will be further detailed moving forward and details on implementation will be provided in the CDS4CPM Implementation Guide. For CQL development purposes, the team is using Atom with the language-CQL package (Atom, 2015), Open CQF and the FHIR publication toolchain.
 
-### 3.7 Information Architecture
+### Information Architecture
 
 Within the Phenotype/Trigger system, implementation sites will be identifying and enrolling MyPAIN candidates as part of a selection process that involves review of personally identifiable information (PII) and personal health information (PHI) for candidate patients. Enrollment in and subsequent invitation to MyPAIN will involve the use of this same PII and potentially aspects of PHI.
 
@@ -366,7 +363,7 @@ The PainManager application will display PII and PHI retrieved from the EHR Syst
 
 Both the MyPAIN and PainManager applications are constructed to request the minimum necessary content from the EHR System to support the business requirements.
 
-#### 3.7.1 Data
+#### Data
 
 ##### Phenotype Trigger
 
@@ -380,17 +377,17 @@ Within MyPAIN, data are collected as a QuestionnaireResponse FHIR resource. Spec
 
 Within PainManager, input data may consist of the results of the SDM encounter, captured as a clinical note and posted to the EHR’s FHIR Server. The sites will be responsible for storing the resulting clinical note, either as a native capability of the EHR’s existing FHIR server or as additional functionality exposed as a FHIR API through the Site-Specific Adapter.
 
-### 3.8 Performance
+### Performance
 
 Preliminary considerations of system performance include total time to complete a session with MyPAIN (for patients) with an upper limit of 15 minutes and total time to review material in PainManager (for clinicians) at an average of 5 minutes. Considerations for the population and presentation of PainManager summary are expected to reflect standards for this service (likely ~3 seconds maximum). 
 
-### 3.9 Section 508 Compliance
+### Section 508 Compliance
 
 System components will be in keeping with the United States Access Board’s Functional Performance Criteria (Section 302) to enable access to those with limited or no sight, hearing, speech, movement, or cognitive abilities. Please see Appendix C for a list of the criteria.
 
-## 4. System Detailed Design
+## System Detailed Design
 
-### 4.1 User Interfaces
+### User Interfaces
 
 #### User Classes and Characteristics
 
@@ -401,11 +398,11 @@ Our two central classes are (1) patients and their families/caregivers and (2) c
 - **CDS Developers, Standards Organizations, and Informaticists** seeking to use this PCCDS system for SDM around chronic pain management; contribute PCCDS artifacts of their own making; or want to make use of well-developed structured logic and CQL in their own work 
 - **Organizations or Individuals** interested in developing their own PCCDS artifacts may find this system design document helpful as a resource for the process by which clinical guidelines are translated into CQL artifacts and SMART on FHIR services
 
-### 4.2 User Interface Design
+### User Interface Design
 
 For MyPAIN, the UI is new and is detailed further below using wireframes and a sequence diagram. The UI for PainManager reused and extended the CDS Connect PMD and is also detailed further below using wireframes.
 
-#### 4.2.1 MyPAIN User Interface
+#### MyPAIN User Interface
 
 The UI for MyPAIN will center around the delivery of educational materials and pain assessments. The selection criteria for the education and assessment materials revolved around authoritativeness, user engagement, accessibility, and timeliness (all materials can be reviewed and acted upon in 15 minutes or less). Exhibit 8 provides an overview of the basic steps in the block flow of the MyPAIN interface.
 
@@ -432,23 +429,23 @@ The committee of SMEs have agreed on two educational materials. The first item i
 
 The second item is the website from the U.S. Pain Foundation, specifically the “About Pain” section which features content in six sections that provide an array of patient-directed materials. The SMEs chose this material because of its authority (U.S. Pain Foundation, 2017), topic areas, and engaging materials. The material is also publicly available.
 
-Following the presentation of educational materials, MyPAIN will prompt users to confirm a summary of the responses provided with the option to change individual items as needed. Following confirmation, they will be thanked for taking the time to complete MyPAIN and presented with options to copy responses to their patient portal or return directly to patient portal.
+Following the presentation of educational materials, the RTI pilot implementation of  MyPAIN will prompt users to confirm a summary of the responses provided with the option to change individual items as needed. Following confirmation, they will be thanked for taking the time to complete MyPAIN and presented with options to copy responses to their patient portal or return directly to the patient portal.
 
 <!-- **Exhibit 11.	MyPAIN Flow Diagram, Step 4: Chronic Pain Education** -->
 
-#### 4.2.2 PainManager User Interface
+#### PainManager User Interface
 
-The basic UI of the existing PMD artifact will be preserved for PainManager. The plan is to expand the available elements in the dashboard to accommodate including some additional demographic or SDOH information, much of the same relevant chart or medical information, an MME/day calculation (see Integrating a Calculator to Provide MME/day), PDMP data (where applicable) and SDM-related self-assessment information and to report on educational access and use generated through MyPAIN. An example of this report is shown in Exhibit 12 and the full wireframes for PainManager are provided in Appendix B:
+The basic UI of the existing PMD artifact will be preserved for PainManager. The plan is to expand the available elements in the dashboard to accommodate including some additional demographic or SDOH information, much of the same relevant chart or medical information, an MME/day calculation (see Integrating a Calculator to Provide MME/day, just below), PDMP data (where applicable) and SDM-related self-assessment information and to report on educational access and use generated through MyPAIN. <!-- An example of this report is shown in Exhibit 12 and the full wireframes for PainManager are provided in Appendix B: -->
 
 <!-- **Exhibit 12.	Sample User Interface for PainManager Based on the PMD** -->
 
 **Integrating a Calculator to Provide MME/day.** While both sites have some access to a medication-level MEDD (morphine equivalent daily dose, an EHR-specific calculation and concept), there is limited ability to surface and pass this data to PainManager. Moreover, this would not adequately represent a standards-based solution. As a result, CDS4CPM will incorporate the existing CDS Connect artifact based on CDC guideline #5, an MME/day calculator into PainManager. Some details about how this calculator will be finally configured and how it calculates and what it calculates are still to be determined but the wireframes do provide an example of how this information will be integrated into PainManager. One additional consideration is to determine how best to handle the sig (written directions given with a prescription), which is often only available as free text. There is some sample code available to do that parsing which would need additional testing and validation.
 
-### 4.3 Detailed Requirements
+### Detailed Requirements
 
 The requirements for MyPAIN and PainManager are outlined below.
 
-#### 4.3.1 MyPain Requirements
+#### MyPain Requirements
 
 | **Component** | **ID** | **Requirement**                                              | **Function**                                  | **Priority** | **Resource**                                                 |
 | ------------- | ------ | ------------------------------------------------------------ | --------------------------------------------- | ------------ | ------------------------------------------------------------ |
@@ -461,7 +458,7 @@ The requirements for MyPAIN and PainManager are outlined below.
 | MyPAIN        | 1.4.1  | Patient is presented with chronic  pain education materials  | Patient Education - Living with  Chronic pain | Core         | US Pain Foundation website: https://uspainfoundation.org/living-with-pain/—chronic pain and treatment options |
 | MyPAIN        | 1.6.1  | Patient  is presented with SDM education materials           | Patient  Education - Chronic pain             | Desired      | American  Chronic Pain Association ‘Car with four flat tires’ video: https://www.theacpa.org/acpa-car-with-four-flat-tires/—chronic pain  management |
 
-#### 4.3.2 PainManager Requirements
+#### PainManager Requirements
 
 | **Component** | **ID** | **Requirement**                                              | **Function**                                                 | **Priority** | **Resource**                                |
 | ------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------ | ------------------------------------------- |
@@ -503,13 +500,13 @@ The requirements for MyPAIN and PainManager are outlined below.
 | PainManager   | 2.18.5 | Physician  reviews Current and Historical Pain Treatments - Stool Softeners and  Laxatives | PainManager  displays data from the relevant value set via NLM VSAC | Core         | NLM  VSAC                                   |
 
 
-## 5. Implementation
+## Implementation
 
 <!-- Instructions: Detail the site-specific aspects of the implementation of CDS4CPM at a high level -->
 
 Principally, the CDS4CPM applications will interact with the EHR environment at implementing sites through standards-based FHIR APIs conforming to specific implementation guidance already available, or that will be made available as part of the CDS4CPM implementation guidance.
 
-### 5.1. Phenotype Trigger
+### Phenotype Trigger
 
 Although the implementation of this component is largely site-specific, implementation guidance will provide a conceptual description of the intended Phenotype and characterization of that Phenotype to the extent possible in terms of standard terminologies and logic. Indication of enrollment in MyPAIN, invitation of enrolled patients through the patient portal, and management of the status of invitations must be provided by implementing sites, since no standard approach exists that can support these capabilities.
 
@@ -533,7 +530,7 @@ Below is a sequence diagram for the Phenotype and trigger process.
 | Phenotype     | 3.1.8  | A custom Phenotype (TBD)  specification is used to identify the patient to access MyPAIN | Custom Phenotype + trigger  | Core         | Target practice sites                                   |
 
 
-### 5.2. MyPAIN
+### MyPAIN
 
 The MyPAIN application will interact with the EHR through a FHIR API conforming to the Structured Data Capture implementation guide (HL7FHIR, 2018c) and specifically the Form Filler role defined within the implementation guide.
 
@@ -546,7 +543,7 @@ Below is a sequence diagram for the MyPAIN assessment.
 **Exhibit 11.	Sequence Diagram for the MyPAIN Assessment**
 [![Diagram 14](assets/diagrams/mypain-assessment.svg)](https://app.diagrams.net/#HDBCG%2Fcds4cpm%2Fmaster%2Finput%2Fpagecontent%2Fassets%2Fdiagrams%2Fmypain-assessment.svg)
 
-### 5.3. PainManager
+### PainManager
 
 The PainManager application will interact with the EHR through a FHIR API conforming to the US Core Profiles, as described in the system design and data design sections of this document.
 
@@ -561,11 +558,11 @@ Below is a sequence diagram for the shared decision making encounter supported b
 **Exhibit 12.	Sequence Diagram of the SDM Encounter Supported by PainManager**
 [![Diagram 15](assets/diagrams/painmanager-sdm-encounter.svg)](https://app.diagrams.net/#HDBCG%2Fcds4cpm%2Fmaster%2Finput%2Fpagecontent%2Fassets%2Fdiagrams%2Fpainmanager-sdm-encounter.svg)
 
-### 5.4 FHIR Facade
+### FHIR Facade
 
 Throughout this SDD, reference has been made to a Site-specific Adapter and a related FHIR Façade. This container is conceptual and requires components to be built on both sides of the system—the standards based artifact side builds standards-based requests or posts which get handed off to either FHIR servers or to appropriate site-specific adapters to fulfill these requests or posts. This means that the core artifact development work goes as far as the standards allow and the sites must develop solutions that can handle such requests. During the implementation phase, much more detail about what this interface looks like and how it is constructed will be specified.
 
-## 6. References
+## References
 
 Agency for Healthcare Research and Quality. (2018, August). The SHARE approach. Agency for Healthcare Research and Quality. Retrieved from <https://www.ahrq.gov/health-literacy/curriculum-tools/shareddecisionmaking/index.html>
 
