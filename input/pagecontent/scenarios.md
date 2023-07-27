@@ -2,7 +2,7 @@
 
 User testing scenarios for the MyPAIN and PainManager applications.
 
-https://cds.ahrq.gov/collaboration/pages/viewpage.action?pageId=83132464
+<!-- https://cds.ahrq.gov/collaboration/pages/viewpage.action?pageId=83132464 --><!-- this link is a bad URL. What is it and where should it go? -->
 
 ### RTI, Chicago, and Vanderbilt implementation
 #### Chronic Lower Back Pain;No Recent Opioid Use
