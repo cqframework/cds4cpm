@@ -125,15 +125,15 @@ of the relevant repositories. Features will be pushed from develop to master as 
 * SMART App Launch URL 
   * Public: [http://launch.smarthealthit.org](http://launch.smarthealthit.org) (NOTE: This will launch against the SMART Health IT server, not the FHIR Server in the sandbox environment.)
   * RTI Sandbox: [https://cloud.alphora.com/rti/smart-launcher](https://cloud.alphora.com/rti/smart-launcher)
-  * UFL Sandbox: [https://cloud.alphora.com/ufl/smart-launcher](https://cloud.alphora.com/rti/smart-launcher)
+  * UFL Sandbox: [https://cloud.alphora.com/ufl/smart-launcher](https://cloud.alphora.com/ufl/smart-launcher)
 * MyPAIN
   * Standalone application: [https://cloud.alphora.com/rti/my-pain](https://cloud.alphora.com/rti/my-pain)
   * RTI SMART launch URL: [https://cloud.alphora.com/rti/my-pain/launch.html](https://cloud.alphora.com/rti/my-pain/launch.html)
-  * UFL SMART launch URL: [https://cloud.alphora.com/ufl/my-pain/launch.html](https://cloud.alphora.com/rti/my-pain/launch.html)
+  * UFL SMART launch URL: [https://cloud.alphora.com/ufl/my-pain/launch.html](https://cloud.alphora.com/ufl/my-pain/launch.html)
 * PainManager
   * Standalone application: [https://cloud.alphora.com/rti/pain-manager](https://cloud.alphora.com/rti/pain-manager)
   * RTI SMART launch URL: [https://cloud.alphora.com/rti/pain-manager/launch.html](https://cloud.alphora.com/rti/pain-manager/launch.html)
-  * UFL SMART launch URL: [https://cloud.alphora.com/ufl/pain-manager/launch.html](https://cloud.alphora.com/rti/pain-manager/launch.html)
+  * UFL SMART launch URL: [https://cloud.alphora.com/ufl/pain-manager/launch.html](https://cloud.alphora.com/ufl/pain-manager/launch.html)
 * FHIR Server Endpoint
   * RTI FHIR Server: [https://cloud.alphora.com/rti/r4/cqf-ruler/fhir](https://cloud.alphora.com/rti/r4/cqf-ruler/fhir)
   * UFL FHIR Server: [https://cloud.alphora.com/ufl/r4/cqf-ruler/fhir](https://cloud.alphora.com/ufl/r4/cqf-ruler/fhir)
@@ -152,7 +152,7 @@ of the environment:
 2. The MyPAIN application authorizes and receives launch context.
 3. The user enters questionnaire responses.
 4. The MyPAIN application posts a QuestionnaireResponse to the FHIR Server.
-5. The FHIR Server decomposes the questionnaire responses into Observations and stores them associated with the patient.
+5. The FHIR Server extracts Observations from the patient’s QuestionnaireResponse into an Observation for each response
 
 ##### Practitioner "Hello World" Scenario
 

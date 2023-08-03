@@ -6,7 +6,7 @@ and the [Opioid Prescribing Support Implementation Guide](https://github.com/cqf
 
 ### Opioid Prescribing Support Implementation Guide
 
-The Opioid Prescribing Support Implementation Guide is a joint effort by the Centers for Disease Control and Prevention (CDC) and the Office of the National Coordinator for Health IT (ONC) focused on improving processes for the development of standardized, shareable, computable decision support artifacts using the [CDC Opioid Prescribing Guideline](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fmmwr%2Fvolumes%2F65%2Frr%2Frr6501e1er.htm) as a model case.
+The Opioid Prescribing Support Implementation Guide is a joint effort by the Centers for Disease Control and Prevention (CDC) and the Office of the National Coordinator for Health IT (ONC) focused on improving processes for the development of standardized, shareable, computable decision support artifacts using the [CDC Opioid Prescribing Guideline](https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w) as a model case.
 
 The guide currently includes artifacts to support all 12 recommendations contained in the CDC Opioid Guideline. However, only recommendations 3, 8, 10, and 11 are used for this review.
 
@@ -71,14 +71,11 @@ Determining whether a patient is being prescribed opioids for chronic pain is di
 
 ```
 "Opioid analgesics with ambulatory misuse potential": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-analgesics-with-ambulatory-misuse-potential'
-"Community": 'community' from http://hl7.org/fhir/medication-request-category
+"Community": 'community' from http://hl7.org/fhir/medicationrequest.html
 ```
 
 #### Recommendation 3
-Before starting and periodically during opioid therapy, clinicians should
-discuss with patients known risks and realistic benefits of opioid therapy
-and patient and clinician responsibilities for managing therapy
-(recommendation category: A, evidence type: 3).
+Per CDC guidelines, when starting opioid therapy for acute, subacute, or chronic pain, clinicians should prescribe immediate-release opioids instead of extended-release and long-acting (ER/LA) opioids (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down" target="_blank" rel="noopener noreferrer">recommendation category: A; evidence type: 4</a>).
 
 Active Subroutines:
 - [Chronic Pain](#chronic-pain)
@@ -94,11 +91,16 @@ Active Subroutines:
 **Terminology Elements**
 
 ```
-"Opioid counseling procedure": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-counseling-procedure'
+"Opioid counseling procedure": 'https://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-opioid-counseling-procedure.html'
 ```
 
 #### Recommendation 8
-Before starting and periodically during continuation of opioid therapy, clinicians should evaluate risk factors for opioid-related harms. Clinicians should incorporate into the management plan strategies to mitigate risk, including considering offering naloxone when factors that increase risk for opioid overdose, such as history of overdose, history of substance use disorder, higher opioid dosages (≥50 MME/day), or concurrent benzodiazepine use, are present (recommendation category: A, evidence type: 4).
+Per CDC guidelines, before starting, and periodically during continuation of opioid therapy, clinicians
+should evaluate risk factors for opioid-related harms. Clinicians should incorporate into the management
+plan strategies to mitigate risk, including considering offering naloxone when factors that increase risk
+for opioid overdose, such as history of overdose, history of substance use disorder, higher opioid dosages
+(greater than or equal to [≥] 50 morphine milligram equivalents [MME]/day), or concurrent benzodiazepine use,
+are present (recommendation category: A, evidence type: 4). [CDC Opioid Prescribing Guideline, Recommendation #8](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)
 
 Active Subroutines:
 - [Chronic Pain](#chronic-pain)
@@ -122,7 +124,10 @@ Active Subroutines:
 ```
 
 #### Recommendation 10
-When prescribing opioids for chronic pain, providers should use urine drug testing before starting opioid therapy and consider urine drug testing at least annually to assess for prescribed medications as well as other controlled prescription drugs and illicit drugs (recommendation category: B, evidence type: 4).
+Patient’s active medications include an opioid. Per CDC guidelines, when prescribing opioids for subacute or chronic pain,
+clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other
+prescribed and nonprescribed controlled substances (<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down">
+recommendation category: B; evidence type: 4</a>)
 
 Active Subroutines:
 - [Chronic Pain](#chronic-pain)
@@ -137,12 +142,14 @@ Active Subroutines:
 **Terminology Elements**
 
 ```
-"Non-opioid illicit drug urine screening": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/non-opioid-illicit-drug-urine-screening'
-"Opioid drug urine screening": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-drug-urine-screening'
+"Non-opioid drug urine screening": 'https://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-non-opioid-drug-urine-screening.html'
+"Opioid drug urine screening": 'https://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-opioid-drug-urine-screening.html'
 ```
 
 #### Recommendation 11
-Clinicians should avoid prescribing opioid pain medication and benzodiazepines concurrently whenever possible (recommendation category: A, evidence type: 3).
+Per CDC guidelines, clinicians should use particular caution when prescribing opioid pain medication and benzodiazepines concurrently and
+consider whether benefits outweigh risks of concurrent prescribing of opioids and other central nervous system depressants
+(<a href="https://www.cdc.gov/mmwr/volumes/71/rr/rr7103a1.htm?s_cid=rr7103a1.htm_w#B3_down">recommendation category: B; evidence type: 3</a>)
 
 Active Subroutine:
 - [Opioid Review Useful](#opioid-review-useful)
