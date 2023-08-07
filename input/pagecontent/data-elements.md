@@ -56,24 +56,35 @@ Questionnaire search:
 
 These data elements represent the information and responses to the questionnaire that the patient fills out.  These data are submitted at the end of the questionnaire to a designated location and later used in the Pain Manager Dashboard.    
 
-|    Element    |    FHIR Resource    | Observation Code |    FHIR Profile    |    Terminology    |
-|-----------|-----------|-----------|-----------|-----------|
-| pain location | Observation.value | `mpq-1000` | TextAssessmentObservation | Captured as text |
-| pain intensity at worst | Observation.value | `mpq-1001` | CodeableAssessmentObservation profile | [PainAssessmentsIntensity](http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-assessments-intensity) |
-| average pain intensity | Observation.value | `mpq-1002` | CodeableAssessmentObservation profile | [PainAssessmentsIntensity](http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-assessments-intensity) |
-| current pain level | Observation.value | `mpq-1003` | CodeableAssessmentObservation | [PainAssessmentsIntensity](http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-assessments-intensity) |
-| daily activities pain interference | Observation.value | `mpq-1004` | CodeableAssessmentObservation profile | [PainAssessmentsInterference](http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-assessments-interference) |
-| work pain interference | Observation.value | `mpq-1005` | CodeableAssessmentObservation profile | [PainAssessmentsInterference](http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-assessments-interference) |
-| social pain interference | Observation.value | `mpq-1006` | CodeableAssessmentObservation profile | [PainAssessmentsInterference](http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-assessments-interference) |
-| household chore pain interference | Observation.value | `mpq-1007` | CodeableAssessmentObservation profile | [PainAssessmentsInterference](http://fhir.org/guides/cqf/cds4cpm/ValueSet/pain-assessments-interference) |
-| methods to help with pain non-pharmacological | Observation.value | `mpq-1008` - `mpq-1016` | CodeableAssessmentObservation profile | PainTherapies |
-| OTC pain treatments | Observation.value | `mpq-1017` - `mpq-1019` | CodeableAssessmentObservation profile | PainTherapies |
-| prescription pain treatments | Observation.value | `mpq-1020` - `mpq-1022` | CodeableAssessmentObservation profile | PainTherapies |
-| mind-body pain treatments | Observation.value | `mpq-1023` - `mpq-1029` | CodeableAssessmentObservation profile | PainTherapies |
-| non-traditional pain treatments | Observation.value | `mpq-1030` - `mpq-1034` | CodeableAssessmentObservation profile | PainTherapies |
-| activity goals | Observation.value | `mpq-1035` | TextAssessmentObservation profile | Captured as text |
-| goal barriers | Observation.value | `mpq-1036` | TextAssessmentObservation profile |  Captured as text |
-| completed questionnaire | QuestionnaireResponse | NA | [http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse](http://hl7.org/fhir/uv/sdc/2019May/sdc-questionnaireresponse.html) | |
+| Element                             | FHIR Resource         | Observation Code                                                          | FHIR Profile                                                                                                                                  | Terminology             |
+|-------------------------------------|-----------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| pain locations                      | Observation.value     | `mpq-1038` - `mpq-1052`, `mpq-1066` - `mpq-1069`                          | CodeableAssessmentObservation profile                                                                                                         | PainAssessmentsLocation |
+| other pain locations description    | Observation.value     | `mpq-1053`                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| otc pain treatments                 | Observation.value     | `mpq-1017` - `mpq-1019`, `mpq-1070`                                       | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other otc treatments                | Observation.value     | `mpq-1055`                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| pain strategies non-pharmacological | Observation.value     | `mpq-1008` - `mpq-1016`                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other strategies                    | Observation.value     | `mpq-1054`                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| prescription pain treatments        | Observation.value     | `mpq-1020` - `mpq-1022`, `mpq-1071` - `mpq-1074`                          | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other prescription medications      | Observation.value     | `mpq-1057`, `mpq-1075`                                                    | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| mind-body pain treatments           | Observation.value     | `mpq-1023` - `mpq-1029`, `mpq-1058`                                       | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other mind-body treatments          | Observation.value     | `mpq-1059`                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| non-traditional treatments          | Observation.value     | `mpq-1030` - `mpq-1034`, `mpq-1056`, `mpq-1060`, `mpq-1110` -  `mpq-1113` | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other non-traditional treatments    | Observation.value     | `mpq-1114`                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| not tried                           | Observation.value     | `mpq-1076` - `mpq-1077`, `mpq-1080` - `mpq-1082`, `mpq-1085`              | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| alternative treatments              | Observation.value     | `mpq-1078` - `mpq-1079`                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| specialists seen                    | Observation.value     | `mpq-1086` - `mpq-1092`                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other specialists seen              | Observation.value     | `mpq-1093`                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| physical treatments                 | Observation.value     | `mpq-1094` - `mpq-1096`                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other physical treatments           | Observation.value     | `mpq-1097`                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| topical treatments                  | Observation.value     | `mpq-1098` - `mpq-1102`                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other topical treatments            | Observation.value     | `mpq-1103`                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| lifestyle changes                   | Observation.value     | `mpq-1104` - `mpq-1108`                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other lifestyle changes             | Observation.value     | `mpq-1109`                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| goals                               | Observation.value     | `mpq-1035` -`mpq-1036`, `mpq-1115` -`mpq-1116`                            | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| external information accessed       | Observation.value     | `mpq-1061` - `mpq-1062`                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| mypain feedback                     | Observation.value     | `mpq-1063` - `mpq-1064`                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| questionnaireresponse date-time     | Observation.value     | `mpq-1065`                                                                | CodeableAssessmentObservation profile                                                                                                         | Captured as text        |
+| completed questionnaire             | QuestionnaireResponse | NA                                                                        | [http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse](http://hl7.org/fhir/uv/sdc/2019May/sdc-questionnaireresponse.html) |                         |
 
 #### QuestionnaireResponse
 Implementations SHALL support the creation of a QuestionnaireResponse, conforming to the SDC [form filler](http://hl7.org/fhir/uv/sdc/2019May/sdc-form-filler.html), containing patient answers to questions in the MyPAIN questionnaire:
@@ -106,28 +117,39 @@ PainManager:
 
 ### Input Data
 
-|    Element    |    FHIR Resource    |    FHIR Profile    |    Terminology    |
-|-----------|-----------|-----------|-----------|
-| patient    |    Patient    | [http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient](https://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)	   |       |
-| pain location | Observation.valueString | `mpq-1000` | TextAssessment |
-| pain intensity at worst | Observation.valueCodeableConcept | `mpq-1001` | CodeableAssessment |
-| average pain intensity | Observation.valueCodeableConcept | `mpq-1002` | CodeableAssessment |
-| current pain level | Observation.valueCodeableConcept | `mpq-1003` | CodeableAssessment |
-| daily activities pain interference | Observation.valueCodeableConcept | `mpq-1004` | CodeableAssessment |
-| work pain interference | Observation.valueCodeableConcept | `mpq-1005` | CodeableAssessment |
-| social pain interference | Observation.valueCodeableConcept | `mpq-1006` | CodeableAssessment |
-| household chore pain interference | Observation.valueCodeableConcept | `mpq-1007` | CodeableAssessment |
-| methods to help with pain non-pharmacological | Observation.valueCodeableConcept | `mpq-1008` - `mpq-1016` | CodeableAssessment |
-| OTC pain treatments | Observation.valueCodeableConcept | `mpq-1017` - `mpq-1019` | CodeableAssessment |
-| prescription pain treatments | Observation.valueCodeableConcept | `mpq-1020` - `mpq-1022` | CodeableAssessment |
-| mind-body pain treatments | Observation.valueCodeableConcept | `mpq-1023` - `mpq-1029` | CodeableAssessment |
-| non-traditional pain treatments | Observation.valueCodeableConcept | `mpq-1030` - `mpq-1034` | CodeableAssessment |
-| activity goals | Observation.valueString | `mpq-1035` | TextAssessment |
-| goal barriers |Observation.value | `mpq-1036` | TextAssessment |
-| completed questionnaire | QuestionnaireResponse | N/A | [http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse](http://hl7.org/fhir/uv/sdc/2019May/sdc-questionnaireresponse.html) |
-| other pain assessments | Observation | AssessmentObservation | PROMIS coding |
-| pertinent medical history conditions | Condition | [US Core Condition](https://hl7.org/fhir/us/core/StructureDefinition-us-core-condition.html) | (condition terminologies) |
-| encounters with relevant diagnoses | Encounter | [US Core Encounter](https://hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html) | (encounter diagnosis terminologies) |
+| Element                              | FHIR Resource         | FHIR Profile                                                                                                                              | Terminology                                                                                                                                   |
+|--------------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| patient                              | Patient               | [http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient](https://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)	 |                                                                                                                                               |
+| pain locations                       | Observation.value     | `mpq-1038` - `mpq-1052`, `mpq-1066` - `mpq-1069`                                                                                          | CodeableAssessmentObservation profile                                                                                                         | PainAssessmentsLocation |
+| other pain locations description     | Observation.value     | `mpq-1053`                                                                                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| otc pain treatments                  | Observation.value     | `mpq-1017` - `mpq-1019`, `mpq-1070`                                                                                                       | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other otc treatments                 | Observation.value     | `mpq-1055`                                                                                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| pain strategies non-pharmacological  | Observation.value     | `mpq-1008` - `mpq-1016`                                                                                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other strategies                     | Observation.value     | `mpq-1054`                                                                                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| prescription pain treatments         | Observation.value     | `mpq-1020` - `mpq-1022`, `mpq-1071` - `mpq-1074`                                                                                          | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other prescription medications       | Observation.value     | `mpq-1057`, `mpq-1075`                                                                                                                    | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| mind-body pain treatments            | Observation.value     | `mpq-1023` - `mpq-1029`, `mpq-1058`                                                                                                       | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other mind-body treatments           | Observation.value     | `mpq-1059`                                                                                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| non-traditional treatments           | Observation.value     | `mpq-1030` - `mpq-1034`, `mpq-1056`, `mpq-1060`, `mpq-1110` -  `mpq-1113`                                                                 | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other non-traditional treatments     | Observation.value     | `mpq-1114`                                                                                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| not tried                            | Observation.value     | `mpq-1076` - `mpq-1077`, `mpq-1080` - `mpq-1082`, `mpq-1085`                                                                              | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| alternative treatments               | Observation.value     | `mpq-1078` - `mpq-1079`                                                                                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| specialists seen                     | Observation.value     | `mpq-1086` - `mpq-1092`                                                                                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other specialists seen               | Observation.value     | `mpq-1093`                                                                                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| physical treatments                  | Observation.value     | `mpq-1094` - `mpq-1096`                                                                                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other physical treatments            | Observation.value     | `mpq-1097`                                                                                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| topical treatments                   | Observation.value     | `mpq-1098` - `mpq-1102`                                                                                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other topical treatments             | Observation.value     | `mpq-1103`                                                                                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| lifestyle changes                    | Observation.value     | `mpq-1104` - `mpq-1108`                                                                                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| other lifestyle changes              | Observation.value     | `mpq-1109`                                                                                                                                | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| goals                                | Observation.value     | `mpq-1035` -`mpq-1036`, `mpq-1115` -`mpq-1116`                                                                                            | TextAssessmentObservation profile                                                                                                             | Captured as text        |
+| external information accessed        | Observation.value     | `mpq-1061` - `mpq-1062`                                                                                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| mypain feedback                      | Observation.value     | `mpq-1063` - `mpq-1064`                                                                                                                   | CodeableAssessmentObservation profile                                                                                                         | PainTherapies           |
+| questionnaireresponse date-time      | Observation.value     | `mpq-1065`                                                                                                                                | CodeableAssessmentObservation profile                                                                                                         | Captured as text        |
+| completed questionnaire              | QuestionnaireResponse | N/A                                                                                                                                       | [http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse](http://hl7.org/fhir/uv/sdc/2019May/sdc-questionnaireresponse.html) |
+| other pain assessments               | Observation           | AssessmentObservation                                                                                                                     | PROMIS coding                                                                                                                                 |
+| pertinent medical history conditions | Condition             | [US Core Condition](https://hl7.org/fhir/us/core/StructureDefinition-us-core-condition.html)                                              | (condition terminologies)                                                                                                                     |
+| encounters with relevant diagnoses   | Encounter             | [US Core Encounter](https://hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html)                                              | (encounter diagnosis terminologies)                                                                                                           |
 
 #### Observations
 
@@ -145,11 +167,14 @@ Implementations SHALL support searching for Observation by patient and code:
 
 The PainManager application will then use Observations with the following terminologies:
 
-**Recommendation 10**
+**[Recommendation 10](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-10-order-sign.html){:target="_blank"}**
+
+
+When prescribing opioids for subacute or chronic pain, clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other prescribed and nonprescribed controlled substances (recommendation category: B; evidence type: 4).
 
 ```
-"Non-opioid illicit drug urine screening": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/non-opioid-illicit-drug-urine-screening'
-"Opioid drug urine screening": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-drug-urine-screening'
+"Urine drug screen for pain management": 'http://fhir.org/guides/cdc/opioid-cds-r4/ValueSet/non-opioid-drug-urine-screening'
+"Urine drug screen for pain management": 'http://fhir.org/guides/cdc/opioid-cds-r4/ValueSet/drug-urine-screening'
 ```
 
 **Pain Assessments**
@@ -189,19 +214,23 @@ The PainManager application will then use MedicationRequest information for medi
 
 **Chronic Pain (Recommendations 3, 8, and 10)**
 
-```
-"Opioid analgesics with ambulatory misuse potential": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-analgesics-with-ambulatory-misuse-potential'
-```
 
-**Recommendation 8**
+***[Recommendation 3](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-03-order-sign.html){:target="_blank"}***
 
+When starting opioid therapy for acute, subacute, or chronic pain, clinicians should prescribe immediate-release opioids instead of extended-release and long-acting (ER/LA) opioids (recommendation category: A; evidence type: 4).
+
+***[Recommendation 8](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-08.html){:target="_blank"}***
+
+Before starting and periodically during continuation of opioid therapy, clinicians should evaluate risk for opioid-related harms and discuss risk with patients. Clinicians should work with patients to incorporate into the management plan strategies to mitigate risk, including offering naloxone (recommendation category: A; evidence type: 4).
 ```
 "Opioid analgesics with ambulatory misuse potential": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-analgesics-with-ambulatory-misuse-potential'
 "Benzodiazepine medications": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/benzodiazepine-medications'
 "Naloxone medications": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/naloxone-medications'
 ```
 
-**Recommendation 11**
+***[Recommendation 11](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-11-order-select.html){:target="_blank"}***
+
+When prescribing opioids for subacute or chronic pain, clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other prescribed and nonprescribed controlled substances (recommendation category: B; evidence type: 4).
 
 ```
 "Opioid analgesics with ambulatory misuse potential": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-analgesics-with-ambulatory-misuse-potential'
@@ -244,12 +273,46 @@ The PainManager application will then use Conditions with `code` values in the f
 
 **Opioid Review Useful (Recommendations 3, 8, 10, and 11)**
 
+
+[Recommendation 3:](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-03-order-sign.html){:target="_blank"} 
+
+When starting opioid therapy for acute, subacute, or chronic pain, clinicians should prescribe immediate-release opioids instead of extended-release and long-acting (ER/LA) opioids (recommendation category: A; evidence type: 4).
+
+[Recommendation 8:](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-08.html){:target="_blank"} 
+
+Before starting and periodically during continuation of opioid therapy, clinicians should evaluate risk for opioid-related harms and discuss risk with patients. Clinicians should work with patients to incorporate into the management plan strategies to mitigate risk, including offering naloxone (recommendation category: A; evidence type: 4).
+
+[Recommendation 10:](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-10-order-sign.html){:target="_blank"} 
+
+When prescribing opioids for subacute or chronic pain, clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other prescribed and nonprescribed controlled substances (recommendation category: B; evidence type: 4).
+
+[Recommendation 11:](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-11-order-select.html){:target="_blank"} 
+
+When prescribing opioids for subacute or chronic pain, clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other prescribed and nonprescribed controlled substances (recommendation category: B; evidence type: 4).
+
 ```
 "Limited life expectancy conditions": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/limited-life-expectancy-conditions-enum'
 "Conditions likely terminal for opioid prescribing": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/conditions-likely-terminal-for-opioid-prescribing-enum'
 ```
 
 **Active Cancer Treatment (Recommendations 3, 8, 10, and 11)**
+
+
+[Recommendation 3:](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-03-order-sign.html){:target="_blank"} 
+
+When starting opioid therapy for acute, subacute, or chronic pain, clinicians should prescribe immediate-release opioids instead of extended-release and long-acting (ER/LA) opioids (recommendation category: A; evidence type: 4).
+
+[Recommendation 8:](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-08.html){:target="_blank"} 
+
+Before starting and periodically during continuation of opioid therapy, clinicians should evaluate risk for opioid-related harms and discuss risk with patients. Clinicians should work with patients to incorporate into the management plan strategies to mitigate risk, including offering naloxone (recommendation category: A; evidence type: 4).
+
+[Recommendation 10:](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-10-order-sign.html){:target="_blank"}
+
+When prescribing opioids for subacute or chronic pain, clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other prescribed and nonprescribed controlled substances (recommendation category: B; evidence type: 4).
+
+[Recommendation 11:](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-11-order-select.html){:target="_blank"} 
+
+When prescribing opioids for subacute or chronic pain, clinicians should consider the benefits and risks of toxicology testing to assess for prescribed medications as well as other prescribed and nonprescribed controlled substances (recommendation category: B; evidence type: 4).
 
 ```
 "CDC malignant cancer conditions": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/cdc-malignant-cancer-conditions-enum'
@@ -312,7 +375,9 @@ Implementations SHOULD support searching for Procedures by Patient and code, ret
 
 `GET [base]/Procedure?patient=123&code=http://snomed.info/sct|35637008`
 
-**Recommendation 3**
+***[Recommendation 3:](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-03-order-sign.html){:target="_blank"}*** 
+
+When starting opioid therapy for acute, subacute, or chronic pain, clinicians should prescribe immediate-release opioids instead of extended-release and long-acting (ER/LA) opioids (recommendation category: A; evidence type: 4).
 
 ```
 "Opioid counseling procedure": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-counseling-procedure'
@@ -332,7 +397,9 @@ NOTE: There is no US Core profile for the ServiceRequest resource at this time.
 "Therapies indicating end of life care": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/therapies-indicating-end-of-life-care-enum'
 ```
 
-**Recommendation 3**
+***[Recommendation 3:](http://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-03-order-sign.html){:target="_blank"}*** 
+
+When starting opioid therapy for acute, subacute, or chronic pain, clinicians should prescribe immediate-release opioids instead of extended-release and long-acting (ER/LA) opioids (recommendation category: A; evidence type: 4).
 
 ```
 "Opioid counseling procedure": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-counseling-procedure'
