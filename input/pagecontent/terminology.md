@@ -52,13 +52,13 @@ Replaces F2C valueset Anxiety: 2.16.840.1.113762.1.4.1032.52
 valueset "Anxiety": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.94'
 ```
 
-// Empty
+Empty
 Replaces the "Anxiety Disorders ICD9" value set from F2C (2.16.840.1.113883.3.1240.2017.3.2.1015/expansion)
 ```
 valueset "Anxiety Disorders ICD9": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/empty'
 ```
 
-// Empty
+Empty
 Replaces the "Substance use disorder" value set from F2C (2.16.840.1.113883.3.464.1003.106.12.1004)
 ```
 valueset "Substance use disorder": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/empty'
@@ -130,23 +130,23 @@ Replaces the "Risk assessments relevant to pain management": '2.16.840.1.113762.
 valueset "Risk assessments relevant to pain management": 'http://fhir.org/guides/cqf/cds4cpm/ValueSet/empty'
 ```
 
-[Benzodiazepine medications](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-benzodiazepine-medications.html)
+[Benzodiazepine medications](http://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-benzodiazepine-medications.html)
 Replaces the "Benzodiazepine medications" value set from F2C (2.16.840.1.113762.1.4.1032.43)
 ```
 valueset "Benzodiazepine medications": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/benzodiazepine-medications'
 ```
 
-[Naloxone medications](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-naloxone-medications.html)
+[Naloxone medications](https://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-naloxone-medications.html)
 Replaces the "Naloxone medications" value set from F2C (2.16.840.1.113762.1.4.1032.42)
 ```
 valueset "Naloxone medications": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/naloxone-medications'
 ```
 
-[Drug Urine Screening](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-drug-urine-screening.html)
+[Drug Urine Screening](http://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-drug-urine-screening.html)
 Replaces the "Urine drug screen for pain management" value set from F2C ('2.16.840.1.113762.1.4.1032.28')
 NOTE: This valueset is defined as a compose of these two value sets, and is not available yet at the Opioid Prescribing Support  IG site
-[Non-opioid Illicit Drug Urine Screening](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-non-opioid-drug-urine-screening.html)
-[Opioid Drug Urine Screening](http://build.fhir.org/ig/cqframework/opioid-cds/ValueSet-opioid-drug-urine-screening.html)
+[Non-opioid Drug Urine Screening](https://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-non-opioid-drug-urine-screening.html)
+[Opioid Drug Urine Screening](https://build.fhir.org/ig/cqframework/opioid-cds-r4/ValueSet-opioid-drug-urine-screening.html)
 
 ```
 valueset "Urine drug screen for pain management": http://fhir.org/guides/cqf/cds4cpm/ValueSet/drug-urine-screening'
@@ -187,7 +187,7 @@ For value sets defined in the VSAC:
 3. Include the resulting ValueSet resource in the vocabulary/ValueSet folder for inclusion in the IG.
 
 ```
-java -jar CQFTooling.jar -VsacXlsxToValueSetBatch -ptsd="C:\Users\Bryn\Documents\Src\RTI\cds4cpm\input\vocabulary\valueset\spreadsheets" -burl="http://cts.nlm.nih.gov/fhir/ValueSet/"
+java -jar CQFTooling.jar -VsacXlsxToValueSetBatch -ptsd="%USERPROFILE%\Documents\Src\RTI\cds4cpm\input\vocabulary\valueset\spreadsheets" -burl="http://cts.nlm.nih.gov/fhir/ValueSet/"
 ```
 
 Alternatively, these value set expansions can be refreshed using the VSAC FHIR API directly (requires an NLM license). For example:
@@ -216,7 +216,7 @@ Note that this will only work for ValueSets with simple `compose` definitions. I
 compose, the expansion will need to be included in the expression of the ValueSet used in the Gather step.
 
 ```
-java -jar CQFTooling.jar -EnsureExecutableValueSet -path="C:\Users\Bryn\Documents\Src\RTI\cds4cpm\input\vocabulary\valueset"
+java -jar CQFTooling.jar -EnsureExecutableValueSet -path="%USERPROFILE%\Documents\Src\RTI\cds4cpm\input\vocabulary\valueset"
 ```
 
 ##### Publish
@@ -259,5 +259,5 @@ Where `<value-set-id-or-url>` is the value set ID (as an OID) or the URL of the 
 and `<value-set-version>` is the value set version,
 
 ```
-java -jar CQFTooling.jar -ToJsonValueSetDb -path="C:\Users\Bryn\Documents\Src\RTI\cds4cpm\output"
+java -jar CQFTooling.jar -ToJsonValueSetDb -path="%USERPROFILE%\Documents\Src\RTI\cds4cpm\output"
 ```
