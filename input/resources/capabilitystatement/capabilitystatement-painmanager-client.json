@@ -16,7 +16,7 @@
       "resource": [
         {
           "type": "Patient",
-          "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+          "profile": "http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html",
           "interaction": [
             {
               "extension": [
@@ -31,7 +31,7 @@
         },
         {
           "type": "Practitioner",
-          "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+          "profile": "https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-practitioner.html",
           "interaction": [
             {
               "extension": [
@@ -125,7 +125,10 @@
         },
         {
           "type": "Condition",
-          "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition",
+          "supportedProfile": [
+            "https://hl7.org/fhir/us/core/StructureDefinition-us-core-condition-encounter-diagnosis.html",
+            "https://hl7.org/fhir/us/core/StructureDefinition-us-core-condition-problems-health-concerns.html"
+          ],
           "interaction": [
             {
               "extension": [
@@ -191,7 +194,7 @@
         },
         {
           "type": "Encounter",
-          "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
+          "profile": "https://hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html",
           "interaction": [
             {
               "extension": [
@@ -237,8 +240,10 @@
         },
         {
           "type": "MedicationRequest",
-          "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
-          "supportedProfile": [ "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-medicationrequest" ],
+          "profile": "https://hl7.org/fhir/us/core/StructureDefinition-us-core-medicationrequest.html",
+          "supportedProfile": [
+            "https://build.fhir.org/ig/cqframework/opioid-cds-r4/StructureDefinition-cdc-medicationrequest"
+          ],
           "interaction": [
             {
               "extension": [
@@ -284,7 +289,7 @@
         },
         {
           "type": "Procedure",
-          "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
+          "profile": "https://hl7.org/fhir/us/core/StructureDefinition-us-core-procedure.html",
           "interaction": [
             {
               "extension": [
@@ -330,6 +335,7 @@
         },
         {
           "type": "ServiceRequest",
+          "profile": "https://hl7.org/fhir/us/core/StructureDefinition-us-core-servicerequest.html",
           "interaction": [
             {
               "extension": [
@@ -375,6 +381,7 @@
         },
         {
           "type": "PractitionerRole",
+          "profile": "https://hl7.org/fhir/us/core/StructureDefinition-us-core-practitionerrole.html",
           "interaction": [
             {
               "extension": [

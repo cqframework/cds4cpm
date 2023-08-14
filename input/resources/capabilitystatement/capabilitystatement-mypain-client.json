@@ -25,7 +25,7 @@
         },
         {
           "type": "Appointment",
-          "profile": "http://fhir.org/guides/argonaut-scheduling/StructureDefinition/argo-appt",
+          "profile": "http://www.fhir.org/guides/argonaut/scheduling/StructureDefinition-argo-appt.html",
           "interaction": [
             {
               "code": "read"
