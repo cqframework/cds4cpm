@@ -53,7 +53,7 @@
   "subjectType": [
     "Patient"
   ],
-  "description": "A questionnaire to use with the MyPAIN application for a patient to assess their pain levels, locations, and treatments for use in consultation with a clinician to determine further treatments. Created for UFL pilot.",
+  "description": "A questionnaire to use with the MyPAIN application for a patient to assess their pain levels, locations, and treatments for use in consultation with a clinician to determine further treatments. Created for University of Florida pilot.",
   "item": [
     {
       "linkId": "1",
