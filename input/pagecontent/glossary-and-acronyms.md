@@ -202,6 +202,8 @@
 
 **UCM**: University of Chicago Medicine
 
+**UF**: University of Florida
+
 **UI**: user interface
 
 **USCDI**: United States Core Data for Interoperability
