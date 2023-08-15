@@ -105,15 +105,15 @@ Summary of PainManager minimum API usage (SHALL support data elements):
 
 PainManager:
 `GET [base]/Patient/1234`
-`GET [base]/Observation?patient=1234&category=http://terminology.hl7.org/CodeSystem/observation-category|survey`
-`GET [base]/Observation?patient=1234&category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory`
+`GET [base]/Observation?patient=1234&category=http://hl7.org/fhir/observation-category%7Csurvey`
+`GET [base]/Observation?patient=1234&category=http://hl7.org/fhir/observation-category%7Claboratory`
 `GET [base]/Observation?patient=1234&date=ge2019-09-19`
 `GET [base]/Observation?patient=1234&code=http://fhir.org/guides/cqf/cds4cpm/CodeSystem/MyPAIN-questionnaire-codes|mpq-1000`
 `GET [base]/MedicationRequest?patient=1234`
 `GET [base]/MedicationRequest?patient=1234&authoredon=ge2019-09-19`
-`GET [base]/Condition?patient=1234&category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item`
-`GET [base]/Condition?patient=1234&category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis`
-`GET [base]/Condition?patient=1234&category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis&onset-date=ge2019-09-19`
+`GET [base]/Condition?patient=1234&category=http://hl7.org/fhir/condition-category%7Cproblem-list-item`
+`GET [base]/Condition?patient=1234&category=http://terminology.hl7.org/CodeSystem/condition-category%7Cencounter-diagnosis`
+`GET [base]/Condition?patient=1234&category=http://terminology.hl7.org/CodeSystem/condition-category%7Cencounter-diagnosis&onset-date=ge2019-09-19`
 
 ### Input Data
 
@@ -155,9 +155,9 @@ PainManager:
 
 Implementations SHALL support searching for Observation by patient, category, and, optionally, date:
 
-`GET [base]/Observation?patient=1234&category=http://terminology.hl7.org/CodeSystem/observation-category|survey`
+`GET [base]/Observation?patient=1234&category=http://hl7.org/fhir/observation-category%7Csurvey`
 
-`GET [base]/Observation?patient=1234&category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory`
+`GET [base]/Observation?patient=1234&category=http://hl7.org/fhir/observation-category%7Claboratory`
 
 `GET [base]/Observation?patient=1234&date=ge2019-01-01`
 
@@ -259,15 +259,15 @@ Implementations SHALL support searching for Condition by patient and category, r
 
 Condition search by patient, and category of problem-list-item:
 
-`GET [base]/Condition?patient=1234&category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item`
+`GET [base]/Condition?patient=1234&category=http://hl7.org/fhir/condition-category%7Cproblem-list-item`
 
 Condition search by patient, and category of encounter-diagnosis:
 
-`GET [base]/Condition?patient=1234&category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis`
+`GET [base]/Condition?patient=1234&category=http://terminology.hl7.org/CodeSystem/condition-category%7Cencounter-diagnosis`
 
 Condition search by patient, category, and onset-date:
 
-`GET [base]/Condition?patient=1234&category=http://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis&onset-date=ge2019`
+`GET [base]/Condition?patient=1234&category=http://terminology.hl7.org/CodeSystem/condition-category%7Cencounter-diagnosis&onset-date=ge2019`
 
 The PainManager application will then use Conditions with `code` values in the following value sets:
 
