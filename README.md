@@ -30,6 +30,7 @@ Open design questions:
 
 When browsing Markdown documents such as the [SDD](https://github.com/DBCG/cds4cpm/blob/master/input/pagecontent/sdd.md) in Github a preview of the document is automatically rendered, showing headers, tables, links, images, etc.
 
+
 A user with write permissions on the repository may see the original source Markdown and edit it directly in Github by pressing the pencil icon at the upper right of the preview.This will activate a Markdown editor where changes can be made and previewed.
 
 Once the desired changes have been made a user can provide a description of the changes and link "Commit Changes" at the bottom of the page.
