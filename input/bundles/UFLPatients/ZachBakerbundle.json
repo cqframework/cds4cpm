@@ -205,7 +205,7 @@
                 "dispenseRequest": {
                     "validityPeriod": {
                         "start": "2022-10-07",
-                        "end": "2023-10-07"
+                        "end": "2024-10-07"
                     },
                     "numberOfRepeatsAllowed": 3,
                     "expectedSupplyDuration": {
@@ -267,7 +267,7 @@
                 "subject": {
                     "reference": "Patient/zachbaker"
                 },
-                "authoredOn": "2023-02-01",
+                "authoredOn": "2024-02-01",
                 "dosageInstruction": [
                     {
                         "timing": {
@@ -291,8 +291,8 @@
                 ],
                 "dispenseRequest": {
                     "validityPeriod": {
-                        "start": "2023-02-01",
-                        "end": "2023-05-01"
+                        "start": "2024-02-01",
+                        "end": "2024-05-01"
                     },
                     "numberOfRepeatsAllowed": 3,
                     "expectedSupplyDuration": {
@@ -347,7 +347,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -412,7 +412,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -472,7 +472,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -532,7 +532,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -592,7 +592,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -652,7 +652,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -712,7 +712,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -772,7 +772,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -832,7 +832,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -892,7 +892,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -952,7 +952,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -1012,7 +1012,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -1072,7 +1072,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -1132,7 +1132,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueString": "Clonazepam",
                 "derivedFrom": [
                     {
@@ -1184,7 +1184,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -1244,7 +1244,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -1304,7 +1304,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueBoolean": true,
                 "derivedFrom": [
                     {
@@ -1356,7 +1356,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueBoolean": true,
                 "derivedFrom": [
                     {
@@ -1408,7 +1408,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -1468,7 +1468,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueCodeableConcept": {
                     "coding": [
                         {
@@ -1528,7 +1528,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueBoolean": true,
                 "derivedFrom": [
                     {
@@ -1580,7 +1580,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueString": "I would like to stop taking pain medication as I do not deal with some of the side effects, specifically affecting my sleep.",
                 "derivedFrom": [
                     {
@@ -1632,7 +1632,7 @@
                     "reference": "Patient/zachbaker",
                     "display": "Zach Baker"
                 },
-                "effectiveDateTime": "2023-04-11T22:08:49-06:00",
+                "effectiveDateTime": "2024-04-11T22:08:49-06:00",
                 "valueString": "I don’t want to make the pain worse.",
                 "derivedFrom": [
                     {
